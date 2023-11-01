@@ -22,6 +22,10 @@ class System {
 
         bool setValue(double);
         const double getValue();
+
+        //Sobrecarga para os operadores
+        System operator= (const System);
+
 };
 
 #endif

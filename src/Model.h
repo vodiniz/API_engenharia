@@ -34,6 +34,14 @@ class Model{
         bool update(string, System*);
         bool update(string, Flow*);
 
+        //Iterator para os containers
+        typedef vector<System*>::iterator SystemIterator;
+        typedef vector<Flow*>::iterator FlowIterator;
+
+        //Sobrecarga para os operadores
+        Model operator= (const Model);
+
+
     protected:
 
 };

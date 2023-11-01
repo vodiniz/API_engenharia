@@ -36,6 +36,10 @@ class Flow{
         //Metodo para executar o Flow
         bool execute();
 
+        //Sobrecarga para os operadores
+        // será se é legal com as referências?
+        Flow& operator= (const Flow&);
+
     protected:
         
         //Método para calcular a equação do Flow
