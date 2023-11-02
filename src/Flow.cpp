@@ -57,6 +57,7 @@ bool Flow::clearSource(){
 
 // --------------------------------------------------
 
+//TIRAR EXECUTE, CÓDIGO MELHOR E MAIS EM LINHA COM O MODELO QUE O CLIENTE PEDIU.
 bool Flow::execute(){
 
     if(target == NULL && source == NULL)

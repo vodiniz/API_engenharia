@@ -45,8 +45,6 @@ class Flow{
         //Sobrecarga para os operadores
         // será se é legal com as referências?
         Flow& operator= (const Flow&);
-
-    protected:
         
         //Método para calcular a equação do Flow
         virtual double equation() = 0;
