@@ -12,20 +12,24 @@ class System {
     public:
 
         //construtor e destrutor
-        System(string, double = 0.);
+        System(string = "", double = 0.);
         virtual ~System();
 
+        // Construtor de cópia
+        System(const System&) ;
+
         //getters e setters
+        const string getName() const;
+        bool setName(string) ;
 
-        bool setName(string);
-        const string getName();
-
+        const double getValue() const;
         bool setValue(double);
-        const double getValue();
 
         //Sobrecarga para os operadores
-        System operator= (const System);
+        System &operator= (const System&);
+
 
 };
+
 
 #endif

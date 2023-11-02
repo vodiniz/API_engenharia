@@ -9,24 +9,30 @@ using namespace std;
 class Flow{
 
     string name;
-    System* source;
-    System* target;
+    System *source;
+    System *target;
 
     public:
 
         //Construtor e Destrutor
-        Flow(string, System* = NULL, System* = NULL);
+        Flow(string=""); 
+        //Dá pra por string como "" ?
+        Flow(string, System*, System*);
+
         virtual ~Flow();
 
+        //Construtor de cópia
+        Flow(const Flow&) ;
+
         //Getters e Setters
+        const string getName() const;
         bool setName(string);
-        const string getName();
 
+        System* getSource() const;
         bool setSource(System*);
-        const System* getSource();
 
+        System* getTarget() const;
         bool setTarget(System*);
-        const System* getTarget();
 
         //Método para limpar o source/target
 
@@ -43,7 +49,7 @@ class Flow{
     protected:
         
         //Método para calcular a equação do Flow
-        virtual bool equation() = 0;
+        virtual double equation() = 0;
 
 };
 
