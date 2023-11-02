@@ -15,14 +15,14 @@ System.o: src/System.cpp
 
 
 
-testFlow: testFlow.o Flow.o
-	@g++ -o testFlow Flow.o testFlow.o -Wall -lm
+testFlow: testFlow.o Flow.o System.o
+	@g++ -o testFlow Flow.o testFlow.o System.o -Wall -lm
 
-testFlow.o: test/unit/testFlow.cpp System.o
-	@g++ -c test/unit/testFlow.cpp System.o -Wall -lm
+testFlow.o: test/unit/testFlow.cpp 
+	@g++ -c test/unit/testFlow.cpp -Wall -lm
 
-Flow.o: System.o src/Flow.cpp
-	@g++ -c src/Flow.cpp System.o -Wall
+Flow.o: src/Flow.cpp
+	@g++ -c src/Flow.cpp -Wall
 
 
 

@@ -72,7 +72,7 @@ void testEquation(){
 
     flow.execute();
     assert(fabs(system1.getValue() - 5.0) < 0.0001);
-    assert(fabs(system2.getValue() - 15.0) < 0.0001);
+    assert(fabs(system2.getValue() - 25.0) < 0.0001);
 
 
     cout << "Passed testEquation" << endl;

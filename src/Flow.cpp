@@ -20,7 +20,7 @@ const string Flow::getName() const{
     return name;
 }
 
-bool System::setName(string name){
+bool Flow::setName(string name){
     this->name = name;
     return true;
 }
