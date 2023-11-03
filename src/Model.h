@@ -28,6 +28,9 @@ class Model{
         bool setName(string);
         const string getName() const;
 
+        const vector<System*> getSystems() const;
+        const vector<Flow*> getFlows() const;
+
         //MÉTODOS CRUD
         bool add(System*);
         bool add(Flow*);
@@ -42,18 +45,20 @@ class Model{
         bool removeFlow(string);
 
 
-
         bool update(string, System*);
         bool update(string, Flow*);
 
 
         //Método executar simulação
-        bool run(int, int, int = 1);
+        bool run(int, int);
 
 
         //Iterator para os containers
         typedef vector<System*>::iterator SystemIterator;
         SystemIterator systemsBegin();
+
+
+        
         SystemIterator systemsEnd();
 
         typedef vector<Flow*>::iterator FlowIterator;
@@ -67,7 +72,7 @@ class Model{
 
 
         //Sobrecarga para os operadores
-        Model& operator= (Model&);
+        Model& operator= (const Model&);
 
 
     protected:

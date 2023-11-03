@@ -38,6 +38,19 @@ void modelTestSetterGetter(){
     assert("populacao1" == model.getName());
 
 
+    myFlow f1;
+    System s1;
+
+    model.add(&f1);
+    model.add(&s1);
+
+    for(System* element: model.getSystems())
+        assert(&s1 == element);
+
+    for(Flow* element: model.getFlows())
+        assert(&f1 == element);
+
+
     cout << "Passed modelTestSetterGetter" << endl;
     cout << "-------------------------------\n";
 }

@@ -21,7 +21,7 @@ void systemTestSetterGetter(){
     assert(fabs(system1.getValue() - 10.0) < 0.0001);
 
 
-    cout << "Passed testSetterGetter" << endl;
+    cout << "Passed systemTestSetterGetter" << endl;
     cout << "-------------------------------\n";
 }
 
@@ -35,7 +35,7 @@ void systemTestCopyOverload(){
     assert(b.getName() == a.getName());
     assert(fabs(a.getValue() - b.getValue()) < 0.0001);
 
-    cout << "Passed testCopyOverload" << endl;
+    cout << "Passed systemTestCopyOverload" << endl;
     cout << "-------------------------------\n";
 
 }

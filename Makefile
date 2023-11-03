@@ -1,11 +1,9 @@
-all : unitTests #testSystem testFlow
+all : unitTests functional_tests
 
+# ----------------------------------------------------------
 
 unitTests: main.o testSystem.o System.o testFlow.o Flow.o testModel.o Model.o 
 	@g++ -Wall -lm -o unitTests main.o testSystem.o System.o testFlow.o Flow.o testModel.o Model.o 
-
-# testSystem: testSystem.o System.o
-# 	@g++ -o testSystem System.o testSystem.o -Wall -lm
 
 main.o: test/unit/main.cpp
 	@g++ -c test/unit/main.cpp -Wall
@@ -15,11 +13,6 @@ testSystem.o: test/unit/testSystem.cpp
 
 System.o: src/System.cpp
 	@g++ -c src/System.cpp -Wall
-
-
-
-# testFlow: testFlow.o Flow.o System.o
-# 	@g++ -o testFlow Flow.o testFlow.o System.o -Wall -lm
 
 testFlow.o: test/unit/testFlow.cpp 
 	@g++ -c test/unit/testFlow.cpp -Wall -lm
@@ -33,3 +26,16 @@ testModel.o: test/unit/testModel.cpp
 
 Model.o: src/Model.cpp
 	@g++ -c src/Model.cpp -Wall
+
+
+# ----------------------------------------------------------
+
+functional_tests: mainFunctional.o functional_tests.o System.o Flow.o Model.o
+	@g++ -Wall -lm -o functionalTests mainFunctional.o functional_tests.o System.o Flow.o Model.o
+
+mainFunctional.o: test/func/mainFunctional.cpp
+	@g++ -c test/func/mainFunctional.cpp -Wall
+
+functional_tests.o: test/func/functional_tests.cpp
+	@g++ -c test/func/functional_tests.cpp -Wall
+

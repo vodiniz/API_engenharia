@@ -20,12 +20,20 @@ const string Model::getName() const{
     return name;
 }
 
+const vector<System*> Model::getSystems() const{
+    return systems;
+}
+
+const vector<Flow*> Model::getFlows() const{
+    return flows;
+}
 
 // ---------------------------------
 //Iterator
 Model::SystemIterator Model::systemsBegin(){
     return systems.begin();
 }
+
 
 Model::SystemIterator Model::systemsEnd(){
     return systems.end();
@@ -185,20 +193,15 @@ Model& Model::operator= (const Model &model){
 
     name = model.getName();
 
-    SystemIterator systemIterator = systemsBegin();
-    while(systemIterator < systemsEnd()){
-        add(*systemIterator);
-        systemIterator++;
+    for(System* element: model.getSystems()){
+        add(element);
     }
 
-    cout << "\n\n\nTamanho system: " << systems.size() << "\n\n\n";
 
-    FlowIterator flowIterator = flowsBegin();
-    while(flowIterator < flowsEnd()){
-        add(*flowIterator);
-        flowIterator++;
+    for(Flow* element: model.getFlows()){
+        add(element);
     }
-    
+
     return *this;
 }
 
@@ -207,26 +210,26 @@ Model& Model::operator= (const Model &model){
 //Run
 
 
-bool Model::run(int startTime, int endTime, int increment){
+bool Model::run(int startTime, int endTime){
 
-    for(int i = startTime; i < endTime; i+= increment){
+    for(int i = startTime; i < endTime; i++){
 
         int flowsSize = Model::flowsSize();
         int counter = 0;
         double *equationArray = new double[flowsSize];
 
 
-        for(FlowIterator i = flowsBegin(); i < flowsEnd(); i++, counter++){
-            equationArray[counter] = (*i)->equation();
+        for(FlowIterator it = flowsBegin(); it < flowsEnd(); it++, counter++){
+            equationArray[counter] = (*it)->equation();
         }
 
         counter = 0;
-        for(FlowIterator i = flowsBegin(); i < flowsEnd(); i++, counter++){
+        for(FlowIterator it = flowsBegin(); it < flowsEnd(); it++, counter++){
 
-            System *source = (*i)->getSource(); 
+            System *source = (*it)->getSource(); 
             source->setValue((source->getValue() - equationArray[counter]));
 
-            System *target = (*i)->getTarget();
+            System *target = (*it)->getTarget();
             target->setValue(target->getValue() + equationArray[counter]);
         }
     }
