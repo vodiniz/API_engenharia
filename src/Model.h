@@ -32,14 +32,22 @@ class Model{
         bool add(System*);
         bool add(Flow*);
 
-        bool remove(System*);
-        bool remove(Flow*);
+        // bool remove(System*);
+        bool removeSystem(System*);
+        bool removeSystem(string);
+
+
+        // bool remove(Flow*);
+        bool removeFlow(Flow*);
+        bool removeFlow(string);
+
+
 
         bool update(string, System*);
         bool update(string, Flow*);
 
-        //Método executar simulação
 
+        //Método executar simulação
         bool run(int, int, int = 1);
 
 
@@ -52,9 +60,14 @@ class Model{
         FlowIterator flowsBegin();
         FlowIterator flowsEnd();
 
+        //Vector size
+        int flowsSize();
+        int systemsSize();
+
+
 
         //Sobrecarga para os operadores
-        Model& operator= (const Model&);
+        Model& operator= (Model&);
 
 
     protected:

@@ -20,6 +20,7 @@ const string Model::getName() const{
     return name;
 }
 
+
 // ---------------------------------
 //Iterator
 Model::SystemIterator Model::systemsBegin(){
@@ -39,6 +40,16 @@ Model::FlowIterator Model::flowsEnd(){
 }
 
 
+//Vector size
+int Model::flowsSize(){
+    return flows.size();
+}
+int Model::systemsSize(){
+    return systems.size();
+}
+
+
+
 // ---------------------------------
 //Métodos CRUD
 //tenho que checar se já existe o elemento no Vetor antes de adicionar????
@@ -46,22 +57,38 @@ Model::FlowIterator Model::flowsEnd(){
 //SYSTEM
 
 bool Model::add(System *system){
-    int vectorSize = systems.size();
+    int vectorSize = flowsSize();
     systems.push_back(system);
 
-    if(systems.size() > vectorSize)
+    if(systemsSize() > vectorSize)
         return true;
     
     return false;
 }
 
-bool Model::remove(System *system){
+bool Model::removeSystem(System *system){
 
     SystemIterator systemIterator = systemsBegin();
 
     while(systemIterator < systemsEnd()){
 
         if(*systemIterator == system){
+            systems.erase(systemIterator);
+            return true;
+        }
+        systemIterator++;
+    }
+
+    return false;
+}
+
+bool Model::removeSystem(string name){
+
+    SystemIterator systemIterator = systemsBegin();
+
+    while(systemIterator < systemsEnd()){
+
+        if(((*systemIterator)->getName()) == name){
             systems.erase(systemIterator);
             return true;
         }
@@ -83,28 +110,46 @@ bool Model::update(string name, System *system){
         }
         systemIterator++;
     }
+
+    return false;
 }
 
 
 
 //FLOW
 bool Model::add(Flow *flow){
-    int vectorSize = flows.size();
+    int vectorSize = flowsSize();
     flows.push_back(flow);
 
-    if(flows.size() > vectorSize)
+    if(flowsSize() > vectorSize)
         return true;
     
     return false;
 }
 
-bool Model::remove(Flow *flow){
+bool Model::removeFlow(Flow *flow){
 
     FlowIterator flowIterator = flowsBegin();
 
     while(flowIterator < flowsEnd()){
 
         if(*flowIterator == flow){
+            flows.erase(flowIterator);
+            return true;
+        }
+        flowIterator++;
+    }
+
+    return false;
+}
+
+bool Model::removeFlow(string name){
+
+    FlowIterator flowIterator = flowsBegin();
+
+    while(flowIterator < flowsEnd()){
+
+        if((*flowIterator)->getName() == name){
             flows.erase(flowIterator);
             return true;
         }
@@ -146,11 +191,15 @@ Model& Model::operator= (const Model &model){
         systemIterator++;
     }
 
+    cout << "\n\n\nTamanho system: " << systems.size() << "\n\n\n";
+
     FlowIterator flowIterator = flowsBegin();
     while(flowIterator < flowsEnd()){
         add(*flowIterator);
         flowIterator++;
     }
+    
+    return *this;
 }
 
 
@@ -162,7 +211,7 @@ bool Model::run(int startTime, int endTime, int increment){
 
     for(int i = startTime; i < endTime; i+= increment){
 
-        int flowsSize = flows.size();
+        int flowsSize = Model::flowsSize();
         int counter = 0;
         double *equationArray = new double[flowsSize];
 
@@ -171,7 +220,7 @@ bool Model::run(int startTime, int endTime, int increment){
             equationArray[counter] = (*i)->equation();
         }
 
-        int counter = 0;
+        counter = 0;
         for(FlowIterator i = flowsBegin(); i < flowsEnd(); i++, counter++){
 
             System *source = (*i)->getSource(); 
@@ -181,6 +230,8 @@ bool Model::run(int startTime, int endTime, int increment){
             target->setValue(target->getValue() + equationArray[counter]);
         }
     }
+
+    return true;
 }
 
 

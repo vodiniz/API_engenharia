@@ -23,7 +23,7 @@ class myFlow : public Flow {
     
 };
 
-void testSetterGetter(){
+void flowTestSetterGetter(){
 
     cout << "-------------------------------\n";
 
@@ -57,12 +57,12 @@ void testSetterGetter(){
 
 
 
-    cout << "Passed testSetterGetter" << endl;
+    cout << "Passed FlowTestSetterGetter" << endl;
     cout << "-------------------------------\n";
 }
 
 
-void testEquation(){
+void flowTestEquation(){
     cout << "-------------------------------\n";
 
     System system1("Fulano", 10.);
@@ -75,11 +75,11 @@ void testEquation(){
     assert(fabs(system2.getValue() - 25.0) < 0.0001);
 
 
-    cout << "Passed testEquation" << endl;
+    cout << "Passed FlowTestEquation" << endl;
     cout << "-------------------------------\n";
 }
 
-void testClear(){
+void flowTestClear(){
 
     cout << "-------------------------------\n";
     System system1("Fulano", 10.);
@@ -93,12 +93,13 @@ void testClear(){
     assert(flow.getSource() == NULL);
     assert(flow.getTarget() == NULL);
 
-    cout << "Passed testClear" << endl;
+    cout << "Passed FlowTestClear" << endl;
     cout << "-------------------------------\n";
 }
 
-void testCopyOVerload(){
+void flowTestCopyOverload(){
 
+    cout << "-------------------------------\n";
     System system1("Fulano", 10.);
     System system2("Ciclano", 20.);
 
@@ -113,16 +114,6 @@ void testCopyOVerload(){
 
     assert((flow2.getTarget()->getName()) == flow.getTarget()->getName());
     assert(flow2.getTarget()->getValue() == flow.getTarget()->getValue());
-
-}
-
-
-int main(void){
-
-    testSetterGetter();
-    testClear();
-    testEquation();
-    testCopyOVerload();
-
-    return 0;
+    cout << "Passed FlowTestOverload" << endl;
+    cout << "-------------------------------\n";
 }

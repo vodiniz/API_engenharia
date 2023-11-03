@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void testSetterGetter(){
+void systemTestSetterGetter(){
 
     cout << "-------------------------------\n";
 
@@ -25,7 +25,7 @@ void testSetterGetter(){
     cout << "-------------------------------\n";
 }
 
-void testCopyOverload(){
+void systemTestCopyOverload(){
     cout << "-------------------------------\n";
 
     System a("Fulano", 13.0);
@@ -38,12 +38,4 @@ void testCopyOverload(){
     cout << "Passed testCopyOverload" << endl;
     cout << "-------------------------------\n";
 
-}
-
-int main(void){
-
-    testSetterGetter();
-    testCopyOverload();
-
-    return 0;
 }
