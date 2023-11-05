@@ -3,6 +3,6 @@
 
 void exponentialTest();
 void logisticTest();
-void multipleSystemsTest();
+void complexTest();
 
 #endif

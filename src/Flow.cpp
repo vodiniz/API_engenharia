@@ -13,6 +13,15 @@ Flow::Flow(string name, System* source, System* target):
 
 Flow::~Flow(){}
 
+Flow::Flow(const Flow& flow){
+    if(this == &flow)
+        return;
+
+    name = flow.getName();
+    source = flow.getSource();
+    target = flow.getTarget();
+}
+
 // --------------------------------------------------
 //Getters e Setters
 

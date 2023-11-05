@@ -22,7 +22,7 @@ class Flow{
         virtual ~Flow();
 
         //Construtor de cópia
-        Flow(const Flow&) ;
+        Flow(const Flow&);
 
         //Getters e Setters
         const string getName() const;

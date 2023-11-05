@@ -9,6 +9,24 @@ Model::Model(string name):
 
 Model::~Model(){}
 
+Model::Model(const Model& model){
+
+    if(this == &model)
+        return;
+
+    name = model.getName();
+
+    for(System* element: model.getSystems()){
+        add(element);
+    }
+
+
+    for(Flow* element: model.getFlows()){
+        add(element);
+    }
+
+}
+
 // ---------------------------------
 //Getters e Setters
 bool::Model::setName(string name){

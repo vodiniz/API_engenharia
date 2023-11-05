@@ -138,10 +138,10 @@ void logisticTest(){
 }
 
 
-void multipleSystemsTest(){
+void complexTest(){
     cout << "-------------------------------\n";
 
-    Model model("MultipleSystems");
+    Model model("complexModel");
 
     System Q1("Q1", 100.), Q2("Q2", 0.), Q3("Q3", 100.),
         Q4("Q4", 0.), Q5("Q5", 0.);
@@ -204,7 +204,7 @@ void multipleSystemsTest(){
 
 
 
-    cout << "Passed multipleSystemsTest" << endl;
+    cout << "Passed complexTest" << endl;
     cout << "-------------------------------\n";
 }
 

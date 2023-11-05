@@ -1,41 +1,41 @@
-all : unitTests functional_tests
+all : bin/unitTests bin/functional_tests
 
 # ----------------------------------------------------------
 
-unitTests: main.o testSystem.o System.o testFlow.o Flow.o testModel.o Model.o 
-	@g++ -Wall -lm -o unitTests main.o testSystem.o System.o testFlow.o Flow.o testModel.o Model.o 
+bin/unitTests: bin/main.o bin/testSystem.o bin/System.o bin/testFlow.o bin/Flow.o bin/testModel.o bin/Model.o 
+	@g++ -Wall -lm -o bin/unitTests bin/main.o bin/testSystem.o bin/System.o bin/testFlow.o bin/Flow.o bin/testModel.o bin/Model.o 
 
-main.o: test/unit/main.cpp
-	@g++ -c test/unit/main.cpp -Wall
+bin/main.o: test/unit/main.cpp
+	@g++ -c -o bin/main.o test/unit/main.cpp -Wall
 
-testSystem.o: test/unit/testSystem.cpp
-	@g++ -c test/unit/testSystem.cpp -Wall
+bin/testSystem.o: test/unit/testSystem.cpp
+	@g++ -c -o bin/testSystem.o test/unit/testSystem.cpp -Wall
 
-System.o: src/System.cpp
-	@g++ -c src/System.cpp -Wall
+bin/System.o: src/System.cpp
+	@g++ -c -o bin/System.o src/System.cpp -Wall
 
-testFlow.o: test/unit/testFlow.cpp 
-	@g++ -c test/unit/testFlow.cpp -Wall -lm
+bin/testFlow.o: test/unit/testFlow.cpp 
+	@g++ -c -o bin/testFlow.o test/unit/testFlow.cpp -Wall -lm
 
-Flow.o: src/Flow.cpp
-	@g++ -c src/Flow.cpp -Wall
+bin/Flow.o: src/Flow.cpp
+	@g++ -c -o bin/Flow.o src/Flow.cpp -Wall
 
 
-testModel.o: test/unit/testModel.cpp
-	@g++ -c test/unit/testModel.cpp -Wall -lm
+bin/testModel.o: test/unit/testModel.cpp
+	@g++ -c -o bin/testModel.o test/unit/testModel.cpp -Wall -lm
 
-Model.o: src/Model.cpp
-	@g++ -c src/Model.cpp -Wall
+bin/Model.o: src/Model.cpp
+	@g++ -c -o bin/Model.o src/Model.cpp -Wall
 
 
 # ----------------------------------------------------------
 
-functional_tests: mainFunctional.o functional_tests.o System.o Flow.o Model.o
-	@g++ -Wall -lm -o functionalTests mainFunctional.o functional_tests.o System.o Flow.o Model.o
+bin/functional_tests: bin/mainFunctional.o bin/functional_tests.o bin/System.o bin/Flow.o bin/Model.o
+	@g++ -Wall -lm -o bin/functionalTests bin/mainFunctional.o bin/functional_tests.o bin/System.o bin/Flow.o bin/Model.o
 
-mainFunctional.o: test/func/mainFunctional.cpp
-	@g++ -c test/func/mainFunctional.cpp -Wall
+bin/mainFunctional.o: test/func/mainFunctional.cpp
+	@g++ -c -o bin/mainFunctional.o test/func/mainFunctional.cpp -Wall
 
-functional_tests.o: test/func/functional_tests.cpp
-	@g++ -c test/func/functional_tests.cpp -Wall
+bin/functional_tests.o: test/func/functional_tests.cpp
+	@g++ -c -o bin/functional_tests.o test/func/functional_tests.cpp -Wall
 

@@ -7,7 +7,20 @@ using namespace std;
 System::System(string name, double value):
     name(name), value(value){}
 
+
+
 System::~System(){}
+
+System::System(const System& system){
+
+    
+    if(this == &system)
+        return;
+
+    name = system.getName();
+    value = system.getValue();
+
+}
 
 // --------------------------------------------------
 //Getters e Setters
