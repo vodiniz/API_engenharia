@@ -66,22 +66,6 @@ bool Flow::clearSource(){
 
 // --------------------------------------------------
 
-//TIRAR EXECUTE, CÓDIGO MELHOR E MAIS EM LINHA COM O MODELO QUE O CLIENTE PEDIU.
-bool Flow::execute(){
-
-    if(target == NULL && source == NULL)
-        return 0;
-
-    double equationResult = equation();
-
-    if(source != NULL)
-        source->setValue(source->getValue() - equationResult);
-    if(target != NULL){
-        target->setValue(target->getValue() + equationResult);
-    }
-
-    return 1;
-}
 
 
 Flow& Flow::operator= (const Flow &flow){

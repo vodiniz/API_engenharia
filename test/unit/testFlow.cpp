@@ -27,6 +27,7 @@ void flowTestSetterGetter(){
 
     cout << "-------------------------------\n";
 
+    myFlow test1;
     myFlow flow;
 
     flow.setName("meuFlow");
@@ -61,23 +62,6 @@ void flowTestSetterGetter(){
     cout << "-------------------------------\n";
 }
 
-
-void flowTestEquation(){
-    cout << "-------------------------------\n";
-
-    System system1("Fulano", 10.);
-    System system2("Ciclano", 20.);
-
-    myFlow flow("meuFlow", &system1, &system2);
-
-    flow.execute();
-    assert(fabs(system1.getValue() - 5.0) < 0.0001);
-    assert(fabs(system2.getValue() - 25.0) < 0.0001);
-
-
-    cout << "Passed FlowTestEquation" << endl;
-    cout << "-------------------------------\n";
-}
 
 void flowTestClear(){
 

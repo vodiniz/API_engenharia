@@ -16,7 +16,6 @@ class Flow{
 
         //Construtor e Destrutor
         Flow(string=""); 
-        //Dá pra por string como "" ?
         Flow(string, System*, System*);
 
         virtual ~Flow();
@@ -39,8 +38,6 @@ class Flow{
         bool clearTarget();
         bool clearSource();
 
-        //Metodo para executar o Flow
-        bool execute();
 
         //Sobrecarga para os operadores
         // será se é legal com as referências?

@@ -30,6 +30,7 @@ void modelTestSetterGetter(){
 
     cout << "-------------------------------\n";
 
+    Model test;
     Model model("modelo");
 
     assert("modelo" == model.getName());

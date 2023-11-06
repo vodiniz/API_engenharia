@@ -17,7 +17,7 @@ class Model{
 
     public:
         //Construtor e Destrutor        
-        Model(string);
+        Model(string="");
         virtual ~Model();
 
         //Construtor de cópia

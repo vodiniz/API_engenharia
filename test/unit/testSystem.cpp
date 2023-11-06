@@ -9,6 +9,7 @@ void systemTestSetterGetter(){
 
     cout << "-------------------------------\n";
 
+    System test;
     System system1("Fulano");
     assert("Fulano" == system1.getName());
 
