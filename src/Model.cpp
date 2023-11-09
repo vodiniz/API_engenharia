@@ -11,18 +11,21 @@ Model::~Model(){}
 
 Model::Model(const Model& model){
 
-    if(this == &model)
-        return;
+    // if(this == &model)
+    //     return;
+
+    systems.clear();
+    flows.clear();
 
     name = model.getName();
 
-    for(System* element: model.getSystems()){
-        add(element);
+    for(SystemIterator it = systemsBegin(); it < systemsEnd(); it++){
+        add(*it);
     }
 
 
-    for(Flow* element: model.getFlows()){
-        add(element);
+    for(FlowIterator it = flowsBegin(); it < flowsEnd(); it++){
+        add(*it);
     }
 
 }
@@ -36,14 +39,6 @@ bool::Model::setName(string name){
 
 const string Model::getName() const{
     return name;
-}
-
-const vector<System*> Model::getSystems() const{
-    return systems;
-}
-
-const vector<Flow*> Model::getFlows() const{
-    return flows;
 }
 
 // ---------------------------------
@@ -92,6 +87,7 @@ bool Model::add(System *system){
     return false;
 }
 
+//???? Pode remover o While e usar um for, ficaria bem mais legível
 bool Model::removeSystem(System *system){
 
     SystemIterator systemIterator = systemsBegin();
@@ -143,6 +139,8 @@ bool Model::update(string name, System *system){
 
 
 //FLOW
+// ???? Checar com vector.back é mais esperto que conferir o tamanho.
+
 bool Model::add(Flow *flow){
     int vectorSize = flowsSize();
     flows.push_back(flow);
@@ -206,18 +204,21 @@ bool Model::update(string name, Flow *flow){
 
 Model& Model::operator= (const Model &model){
 
-    if(this == &model)
-        return *this;
+    // if(this == &model)
+    //     return *this;
+
+    systems.clear();
+    flows.clear();
 
     name = model.getName();
 
-    for(System* element: model.getSystems()){
-        add(element);
+    for(SystemIterator it = systemsBegin(); it < systemsEnd(); it++){
+        add(*it);
     }
 
 
-    for(Flow* element: model.getFlows()){
-        add(element);
+    for(FlowIterator it = flowsBegin(); it < flowsEnd(); it++){
+        add(*it);
     }
 
     return *this;

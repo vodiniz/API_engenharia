@@ -6,8 +6,10 @@
 using namespace std;
 
 class System {
-    string name;
-    double value;
+
+    protected:
+        string name;
+        double value;
 
     public:
 

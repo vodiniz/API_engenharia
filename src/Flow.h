@@ -8,13 +8,15 @@ using namespace std;
 
 class Flow{
 
-    string name;
-    System *source;
-    System *target;
+    protected:
+        string name;
+        System *source;
+        System *target;
 
     public:
 
         //Construtor e Destrutor
+        //???? Apenas um construtor, inicializando System como NULL pode ser interessante.
         Flow(string=""); 
         Flow(string, System*, System*);
 

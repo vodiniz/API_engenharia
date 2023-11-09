@@ -11,25 +11,22 @@ using namespace std;
 
 class Model{
 
-    string name;
-    vector<System*> systems;
-    vector<Flow*> flows;
+
+    protected:
+        string name;
+        vector<System*> systems;
+        vector<Flow*> flows;
 
     public:
-        //Construtor e Destrutor        
+        //Construtor e Destrutor   
         Model(string="");
         virtual ~Model();
 
-        //Construtor de cópia
-        Model(const Model&) ;
 
 
         //Getters e Setters
         bool setName(string);
         const string getName() const;
-
-        const vector<System*> getSystems() const;
-        const vector<Flow*> getFlows() const;
 
         //MÉTODOS CRUD
         bool add(System*);
@@ -70,12 +67,15 @@ class Model{
         int systemsSize();
 
 
-
+    private:
+        //Construtor de cópia
+        Model(const Model&);
+    
         //Sobrecarga para os operadores
         Model& operator= (const Model&);
 
+        //Construtor de cópia
 
-    protected:
 
 };
 
