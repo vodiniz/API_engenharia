@@ -14,8 +14,6 @@ Model::Model(const Model& model){
     // if(this == &model)
     //     return;
 
-    systems.clear();
-    flows.clear();
 
     name = model.getName();
 
