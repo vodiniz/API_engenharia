@@ -14,8 +14,7 @@ using namespace std;
  * Model will keep track of all the Systems and Flows added to it.
  * We can add, remove and update Systems and Flows.
  * We also run simulations based on the startTime and endTime.
- */
-
+*/
 class Model{
 
 
@@ -35,7 +34,6 @@ class Model{
          * 
          *
          * @param name
-
         */
         Model(string="");
 
@@ -114,7 +112,6 @@ class Model{
          * 
          * @return return true if sucefully removed the System, and false if it failed.
         */
-
         bool removeSystem(string name);
 
 

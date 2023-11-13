@@ -10,9 +10,7 @@ using namespace std;
 
 /**
  * \brief Class for representing stock, quantities, mass or even energy.
- */
-
-
+*/
 class System {
 
     protected:
@@ -42,8 +40,8 @@ class System {
         /**
          * @brief Copy constructor
          * 
-         * 
          * Copy constructor takes a reference to system as an argument.
+         * 
          * @param system 
         */
         System(const System& system) ;
@@ -52,8 +50,6 @@ class System {
 
         /**
          * @brief Get the Name field on System.
-         * 
-         * 
          * 
          * @return return a const string containing the System name.
         */
@@ -72,13 +68,8 @@ class System {
         /**
          * @brief Get the value field on System.
          * 
-         * 
-         * 
          * @return return a const double containing the System current value.
-         *
-         *
          */
-
         const double getValue() const;
 
 
