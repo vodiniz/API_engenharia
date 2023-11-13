@@ -1,5 +1,5 @@
-#include "../../src/Flow.h"
-#include "../../src/System.h"
+#include "../../src/Flow.hpp"
+#include "../../src/System.hpp"
 
 #include <assert.h>
 #include <math.h>

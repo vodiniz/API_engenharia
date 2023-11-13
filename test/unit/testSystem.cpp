@@ -1,4 +1,4 @@
-#include "../../src/System.h"
+#include "../../src/System.hpp"
 
 #include <assert.h>
 #include <math.h>

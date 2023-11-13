@@ -1,15 +1,5 @@
-// exponential 0.01*pop1
-// Logistica 0.01*p2*(1-p2/70)
-// V 0.01*Q4
-// U 0.01*Q3
-// F 0.01*Q1
-// G 0.01*Q1
-// T 0.01*Q2
-// R 0.01*Q2
-
-
-#include "functional_tests.h"
-#include "../../src/Model.h"
+#include "functional_tests.hpp"
+#include "../../src/Model.hpp"
 
 #include <math.h>
 #include <assert.h>
@@ -142,4 +132,15 @@ void complexTest(){
     cout << "Passed complexTest" << endl;
     cout << "-------------------------------\n";
 }
+
+
+
+// exponential 0.01*pop1
+// Logistica 0.01*p2*(1-p2/70)
+// V 0.01*Q4
+// U 0.01*Q3
+// F 0.01*Q1
+// G 0.01*Q1
+// T 0.01*Q2
+// R 0.01*Q2
 

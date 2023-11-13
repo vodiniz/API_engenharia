@@ -1,4 +1,4 @@
-#include "functional_tests.h"
+#include "functional_tests.hpp"
 
 using namespace std;
 

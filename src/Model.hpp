@@ -4,8 +4,8 @@
 #include <iostream>
 #include <vector>
 
-#include "System.h"
-#include "Flow.h"
+#include "System.hpp"
+#include "Flow.hpp"
 
 using namespace std;
 /**
