@@ -5,7 +5,7 @@ var searchData=
   ['settarget_2',['setTarget',['../classFlow.html#a6090fbf67c2da00de779bd14db835c66',1,'Flow']]],
   ['setvalue_3',['setValue',['../classSystem.html#a477d387edd51ccf7a58c0d496de781e5',1,'System']]],
   ['source_4',['source',['../classFlow.html#a963ca162995d112f0f30322e2bb9de63',1,'Flow']]],
-  ['system_5',['system',['../classSystem.html',1,'System'],['../classSystem.html#ac888972ef9b5778076b1cb552320ae52',1,'System::System(const System &amp;)'],['../classSystem.html#a37c7b1011c0e1817edc585c050749a11',1,'System::System(string=&quot;&quot;, double=0.)']]],
+  ['system_5',['system',['../classSystem.html',1,'System'],['../classSystem.html#a603517c422f63503086dc7935e2398f3',1,'System::System(const System &amp;system)'],['../classSystem.html#a37c7b1011c0e1817edc585c050749a11',1,'System::System(string=&quot;&quot;, double=0.)']]],
   ['system_2ecpp_6',['System.cpp',['../System_8cpp.html',1,'']]],
   ['system_2eh_7',['System.h',['../System_8h.html',1,'']]],
   ['systemiterator_8',['SystemIterator',['../classModel.html#aa298940a05166ef87cb083e46b101019',1,'Model']]],

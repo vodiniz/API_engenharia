@@ -6,6 +6,13 @@
 using namespace std;
 
 /*! System class for representing stock, quantities, mass or even energy. */
+
+
+/**
+ * \brief Class for representing stock, quantities, mass or even energy.
+ */
+
+
 class System {
 
     protected:
@@ -15,10 +22,12 @@ class System {
     public:
 
         /**
-         * @brief Default constructor
+         * @brief Creates a new System
          * 
          * 
-         * A default constructor with overloaded constructor and default value for @param name and @param value;
+         * A default constructor with overloaded constructor and default value for name and value
+         * @param name
+         * @param value;
         */
         System(string = "", double = 0.);
 
@@ -35,9 +44,9 @@ class System {
          * 
          * 
          * Copy constructor takes a reference to system as an argument.
-         * @param System& 
+         * @param system 
         */
-        System(const System&) ;
+        System(const System& system) ;
 
         //---------------------------------getters e setters---------------------------------
 
@@ -51,9 +60,9 @@ class System {
         const string getName() const;
 
         /**
-         * @brief Set a new Name for the System.
+         * @brief Set a new name for the System.
          * 
-         * Will set a new Name based on the string passed as a param. 
+         * Will set a new name based on the string passed as a param. 
          * 
          * @return return true if sucefully setted the new name, and false if it failed.
         */
@@ -61,7 +70,7 @@ class System {
 
 
         /**
-         * @brief Get the Value field on System.
+         * @brief Get the value field on System.
          * 
          * 
          * 
@@ -85,10 +94,9 @@ class System {
         /**
          * @brief Overload for = operator.
          * 
-         * This is an overload for = operator, in which all fields of the copied System will be assigned
-         * to the first System. 
+         * This is an overload for = operator, in the format of a = b, in which a is being assigned as b.
          * 
-         * @return return true if sucefully setted the new Value, and false if it failed.
+         * @return return a System reference which is a copy to the assigned System.
         */
         System &operator= (const System&);
 

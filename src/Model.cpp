@@ -30,7 +30,7 @@ Model::Model(const Model& model){
 
 // ---------------------------------
 //Getters e Setters
-bool::Model::setName(string name){
+bool Model::setName(string name){
     this->name = name;
     return true;
 }

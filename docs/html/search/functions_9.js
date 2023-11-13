@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['update_0',['update',['../classModel.html#af193dace02b74173ba522860868694ea',1,'Model::update(string, System *)'],['../classModel.html#a7a431fc58ee0dbcc26ee25eaeb7cae13',1,'Model::update(string, Flow *)']]]
+  ['update_0',['update',['../classModel.html#a5fae22d205d135bee64724372a65d3fb',1,'Model::update(string name, System *system)'],['../classModel.html#aaaf021c002ef8491cb38ffca2e61bb3f',1,'Model::update(string name, Flow *flow)']]]
 ];

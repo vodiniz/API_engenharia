@@ -1380,7 +1380,7 @@ HTML_EXTRA_FILES       =
 # The default value is: AUTO_LIGHT.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_COLORSTYLE        = AUTO_LIGHT
+HTML_COLORSTYLE        = LIGHT
 
 # The HTML_COLORSTYLE_HUE tag controls the color of the HTML output. Doxygen
 # will adjust the colors in the style sheet and background images according to
@@ -2465,7 +2465,7 @@ EXTERNAL_PAGES         = YES
 # and usage relations if the target is undocumented or is not a class.
 # The default value is: YES.
 
-HIDE_UNDOC_RELATIONS   = YES
+HIDE_UNDOC_RELATIONS   = NO
 
 # If you set the HAVE_DOT tag to YES then doxygen will assume the dot tool is
 # available from the path. This tool is part of Graphviz (see:
@@ -2642,7 +2642,7 @@ INCLUDED_BY_GRAPH      = YES
 # The default value is: NO.
 # This tag requires that the tag HAVE_DOT is set to YES.
 
-CALL_GRAPH             = NO
+CALL_GRAPH             = YES
 
 # If the CALLER_GRAPH tag is set to YES then doxygen will generate a caller
 # dependency graph for every global function or class method.
@@ -2654,7 +2654,7 @@ CALL_GRAPH             = NO
 # The default value is: NO.
 # This tag requires that the tag HAVE_DOT is set to YES.
 
-CALLER_GRAPH           = NO
+CALLER_GRAPH           = YES
 
 # If the GRAPHICAL_HIERARCHY tag is set to YES then doxygen will graphical
 # hierarchy of all classes instead of a textual one.
@@ -2675,7 +2675,7 @@ GRAPHICAL_HIERARCHY    = YES
 
 DIRECTORY_GRAPH        = YES
 
-# The DIR_GRAPH_MAX_DEPTH tag can be used to limit the maximum number of levels
+# The DIR_GRAPH_MAX_DEPTH tag canquye tem be used to limit the maximum number of levels
 # of child directories generated in directory dependency graphs by dot.
 # Minimum value: 1, maximum value: 25, default value: 1.
 # This tag requires that the tag DIRECTORY_GRAPH is set to YES.
@@ -2820,3 +2820,5 @@ MSCGEN_TOOL            =
 # command).
 
 MSCFILE_DIRS           =
+
+
