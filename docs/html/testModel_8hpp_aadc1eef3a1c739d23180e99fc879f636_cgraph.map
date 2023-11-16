@@ -1,0 +1,17 @@
+<map id="modelTestIterator" name="modelTestIterator">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,132,128,159"/>
+<area shape="rect" id="Node000002" href="$classModel.html#ad4fcd314fc1c2f581e8469c8767587bc" title="Add a System pointer to the systems container." alt="" coords="207,31,292,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,129,123,99,174,67,191,59,193,64,177,72,126,103,86,134"/>
+<area shape="rect" id="Node000005" href="$classModel.html#ab323d582a76cf60eb75b581f38551525" title="Return a iterator to the first Flow in the container." alt="" coords="185,81,314,108"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="117,129,183,110,185,115,118,134"/>
+<area shape="rect" id="Node000006" href="$classModel.html#ab1d42dc05fe348f907372f3139b6c0f5" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="190,132,309,159"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="128,143,175,143,175,148,128,148"/>
+<area shape="rect" id="Node000007" href="$classModel.html#a618af90bbfd2b01cd0bc12d7d45739ed" title="Return a iterator to the first System in the container." alt="" coords="176,183,323,209"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="118,157,185,175,183,181,117,162"/>
+<area shape="rect" id="Node000008" href="$classModel.html#a8e232479172c73b87313feba7c0d409c" title="Returns an iterator referring to the past&#45;the&#45;end element in the systems container." alt="" coords="181,233,318,260"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="86,157,126,188,177,219,189,225,187,230,174,224,123,192,83,161"/>
+<area shape="rect" id="Node000003" href="$classModel.html#a61db3ce77d42741a911a44aba7b320c7" title="Function for getting the size of the flows container." alt="" coords="381,5,502,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="292,36,365,26,365,31,293,41"/>
+<area shape="rect" id="Node000004" href="$classModel.html#ac63ddb11d77ea78d5d427af1f8d154fc" title="Function for getting the size of the systems container." alt="" coords="371,56,511,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="293,47,356,55,355,61,292,52"/>
+</map>

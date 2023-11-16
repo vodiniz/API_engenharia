@@ -86,11 +86,11 @@ Collaboration diagram for System:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSystem__coll__graph.png" border="0" usemap="#aSystem_coll__map" alt="Collaboration graph"/></div>
 <map name="aSystem_coll__map" id="aSystem_coll__map">
-<area shape="rect" title="Class for representing stock, quantities, mass or even energy." alt="" coords="21,139,107,357"/>
-<area shape="rect" title=" " alt="" coords="5,5,51,75"/>
-<area shape="poly" title=" " alt="" coords="29,74,32,114,33,121,27,122,26,115,24,74"/>
-<area shape="rect" title=" " alt="" coords="76,5,127,75"/>
-<area shape="poly" title=" " alt="" coords="98,75,89,122,84,121,93,74"/>
+<area shape="rect" title="Class for representing stock, quantities, mass or even energy." alt="" coords="5,139,159,437"/>
+<area shape="rect" title=" " alt="" coords="23,5,69,75"/>
+<area shape="poly" title=" " alt="" coords="48,75,50,114,50,121,45,122,44,115,42,75"/>
+<area shape="rect" title=" " alt="" coords="94,5,145,75"/>
+<area shape="poly" title=" " alt="" coords="117,75,110,123,104,122,112,74"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -161,8 +161,8 @@ Protected Attributes</h2></td></tr>
 <p>Creates a new <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a>. </p>
 <p>A default constructor with overloaded constructor and default value for name and value </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td></td></tr>
-    <tr><td class="paramname">value;</td><td></td></tr>
+    <tr><td class="paramname">name</td><td>A string for naming the systems. </td></tr>
+    <tr><td class="paramname">value</td><td>A double value for representing mass, quantities or energy </td></tr>
   </table>
   </dd>
 </dl>
@@ -217,7 +217,7 @@ Protected Attributes</h2></td></tr>
 <p>Copy constructor takes a reference to system as an argument.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">system</td><td></td></tr>
+    <tr><td class="paramname">system&amp;</td><td>A system reference which will be used as the value for our system. </td></tr>
   </table>
   </dd>
 </dl>
@@ -259,11 +259,24 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSystem_a703d2f8140d276094d078f1b9c229638_icgraph.png" border="0" usemap="#aclassSystem_a703d2f8140d276094d078f1b9c229638_icgraph" alt=""/></div>
 <map name="aclassSystem_a703d2f8140d276094d078f1b9c229638_icgraph" id="aclassSystem_a703d2f8140d276094d078f1b9c229638_icgraph">
-<area shape="rect" title="Get the Name field on System." alt="" coords="183,31,310,57"/>
-<area shape="rect" href="classSystem.html#ab96adee223ec4fd0da0edeff35ec3599" title="Overload for = operator." alt="" coords="5,5,135,32"/>
-<area shape="poly" title=" " alt="" coords="167,35,135,31,135,25,168,30"/>
-<area shape="rect" href="classSystem.html#a603517c422f63503086dc7935e2398f3" title="Copy constructor." alt="" coords="10,56,130,83"/>
-<area shape="poly" title=" " alt="" coords="168,58,130,63,130,58,167,53"/>
+<area shape="rect" title="Get the Name field on System." alt="" coords="323,132,450,159"/>
+<area shape="rect" href="testFlow_8cpp.html#a0e166fed5514983896faa6cce93c1de0" title=" " alt="" coords="112,5,266,32"/>
+<area shape="poly" title=" " alt="" coords="362,122,323,83,274,46,248,35,251,30,276,42,327,79,366,118"/>
+<area shape="rect" href="testFlow_8cpp.html#a8412dfebe7ee0fb54e21a9ff601a1013" title=" " alt="" coords="118,56,260,83"/>
+<area shape="poly" title=" " alt="" coords="344,127,274,97,240,86,242,81,276,92,346,123"/>
+<area shape="rect" href="classSystem.html#ab96adee223ec4fd0da0edeff35ec3599" title="Overload for = operator." alt="" coords="124,107,254,133"/>
+<area shape="poly" title=" " alt="" coords="307,138,254,131,254,126,308,133"/>
+<area shape="rect" href="classSystem.html#a603517c422f63503086dc7935e2398f3" title="Copy constructor." alt="" coords="129,157,249,184"/>
+<area shape="poly" title=" " alt="" coords="308,158,249,166,249,160,307,153"/>
+<area shape="rect" href="testSystem_8cpp.html#a36f9df2a09e33493258831827a52f8d1" title=" " alt="" coords="103,208,275,235"/>
+<area shape="poly" title=" " alt="" coords="346,168,276,198,242,210,240,205,274,194,344,163"/>
+<area shape="rect" href="testSystem_8cpp.html#aaabd891ff16521d89ed439b917f80357" title=" " alt="" coords="109,259,269,285"/>
+<area shape="poly" title=" " alt="" coords="366,173,327,212,276,249,251,260,248,256,274,244,323,208,362,169"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,132,55,159"/>
+<area shape="poly" title=" " alt="" coords="112,41,104,46,82,66,64,90,40,133,35,130,59,87,78,63,101,42,109,37"/>
+<area shape="poly" title=" " alt="" coords="118,91,104,97,74,115,49,134,46,129,71,110,101,92,116,86"/>
+<area shape="poly" title=" " alt="" coords="116,205,101,198,71,180,46,161,49,157,74,176,104,194,118,200"/>
+<area shape="poly" title=" " alt="" coords="109,254,101,249,78,228,59,204,35,160,40,158,64,201,82,224,104,245,112,249"/>
 </map>
 </div>
 
@@ -291,13 +304,43 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSystem_a8459db57c2462ae8f71ef9ebc7347539_icgraph.png" border="0" usemap="#aclassSystem_a8459db57c2462ae8f71ef9ebc7347539_icgraph" alt=""/></div>
 <map name="aclassSystem_a8459db57c2462ae8f71ef9ebc7347539_icgraph" id="aclassSystem_a8459db57c2462ae8f71ef9ebc7347539_icgraph">
-<area shape="rect" title="Get the value field on System." alt="" coords="183,56,307,83"/>
-<area shape="rect" href="classSystem.html#ab96adee223ec4fd0da0edeff35ec3599" title="Overload for = operator." alt="" coords="5,5,135,32"/>
-<area shape="poly" title=" " alt="" coords="181,54,118,35,119,30,182,48"/>
-<area shape="rect" href="classModel.html#ad31ab57899deb9e33c9fd0312553383c" title="Run the simulation." alt="" coords="29,56,111,83"/>
-<area shape="poly" title=" " alt="" coords="167,72,111,72,111,67,167,67"/>
-<area shape="rect" href="classSystem.html#a603517c422f63503086dc7935e2398f3" title="Copy constructor." alt="" coords="10,107,130,133"/>
-<area shape="poly" title=" " alt="" coords="182,90,119,109,118,104,181,85"/>
+<area shape="rect" title="Get the value field on System." alt="" coords="485,276,610,302"/>
+<area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="111,22,207,49"/>
+<area shape="poly" title=" " alt="" coords="541,261,533,210,515,147,501,116,483,86,462,60,436,38,409,24,379,14,317,8,256,14,205,24,204,19,256,8,317,3,380,9,411,19,439,33,466,56,488,83,506,113,520,146,538,209,546,260"/>
+<area shape="rect" href="classExponentialFlow.html#af755dadaf2fe73d8402958b2a2ee9ca3" title="A pure virtual equation method which defines the ExponentialFlow behavior." alt="" coords="263,200,437,226"/>
+<area shape="poly" title=" " alt="" coords="505,271,436,241,402,229,404,224,438,236,507,266"/>
+<area shape="rect" href="classlogisticFlow.html#ae380ca5d015a848848a468e749e70333" title="A pure virtual equation method which defines the LogisticFlow behavior." alt="" coords="277,250,424,277"/>
+<area shape="poly" title=" " alt="" coords="470,282,424,276,425,270,471,276"/>
+<area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="103,73,215,100"/>
+<area shape="poly" title=" " alt="" coords="531,263,493,204,467,174,436,149,381,122,322,104,265,94,215,90,216,85,266,89,324,99,383,117,439,144,471,170,498,201,535,260"/>
+<area shape="rect" href="testFlow_8cpp.html#a0e166fed5514983896faa6cce93c1de0" title=" " alt="" coords="274,301,427,328"/>
+<area shape="poly" title=" " alt="" coords="471,301,428,307,427,302,470,296"/>
+<area shape="rect" href="testFlow_8cpp.html#a8412dfebe7ee0fb54e21a9ff601a1013" title=" " alt="" coords="280,352,421,378"/>
+<area shape="poly" title=" " alt="" coords="507,312,438,342,404,354,402,349,436,337,505,307"/>
+<area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="115,124,203,150"/>
+<area shape="poly" title=" " alt="" coords="524,265,486,225,462,206,436,190,376,166,312,152,252,143,203,140,203,135,253,138,313,146,377,161,439,185,465,202,490,222,528,262"/>
+<area shape="rect" href="classSystem.html#ab96adee223ec4fd0da0edeff35ec3599" title="Overload for = operator." alt="" coords="286,504,415,530"/>
+<area shape="poly" title=" " alt="" coords="541,318,528,358,507,405,477,453,439,494,417,507,414,502,436,490,473,449,502,402,523,356,536,317"/>
+<area shape="rect" href="classModel.html#ad31ab57899deb9e33c9fd0312553383c" title="Run the simulation." alt="" coords="309,48,391,74"/>
+<area shape="poly" title=" " alt="" coords="535,262,521,225,500,180,472,135,436,95,414,81,391,72,393,67,417,77,439,91,476,131,505,178,526,223,540,260"/>
+<area shape="rect" href="classSystem.html#a603517c422f63503086dc7935e2398f3" title="Copy constructor." alt="" coords="291,554,410,581"/>
+<area shape="poly" title=" " alt="" coords="544,319,534,367,514,428,483,490,463,519,439,544,412,560,409,555,436,540,459,516,479,488,509,426,529,366,539,317"/>
+<area shape="rect" href="testSystem_8cpp.html#a36f9df2a09e33493258831827a52f8d1" title=" " alt="" coords="264,402,436,429"/>
+<area shape="poly" title=" " alt="" coords="527,316,488,356,439,393,413,404,411,399,436,388,485,352,523,313"/>
+<area shape="rect" href="testSystem_8cpp.html#aaabd891ff16521d89ed439b917f80357" title=" " alt="" coords="270,453,430,480"/>
+<area shape="poly" title=" " alt="" coords="536,317,499,381,471,414,439,443,417,455,415,450,436,439,467,411,494,378,532,315"/>
+<area shape="rect" href="mainFunctional_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,73,55,100"/>
+<area shape="poly" title=" " alt="" coords="110,58,56,79,54,74,108,53"/>
+<area shape="poly" title=" " alt="" coords="87,89,55,89,55,84,87,84"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="134,377,184,404"/>
+<area shape="poly" title=" " alt="" coords="283,335,264,342,185,379,183,375,262,337,281,330"/>
+<area shape="poly" title=" " alt="" coords="264,379,184,390,184,384,264,374"/>
+<area shape="poly" title=" " alt="" coords="108,120,54,98,56,93,110,115"/>
+<area shape="poly" title=" " alt="" coords="293,56,207,45,207,39,294,51"/>
+<area shape="poly" title=" " alt="" coords="294,71,216,81,215,76,293,66"/>
+<area shape="poly" title=" " alt="" coords="301,83,196,126,194,121,299,78"/>
+<area shape="poly" title=" " alt="" coords="248,405,184,396,184,391,249,400"/>
+<area shape="poly" title=" " alt="" coords="281,450,262,443,183,406,185,401,264,439,283,445"/>
 </map>
 </div>
 
@@ -356,6 +399,18 @@ Here is the call graph for this function:</div>
 <p>Set a new name for the <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a>. </p>
 <p>Will set a new name based on the string passed as a param.</p>
 <dl class="section return"><dt>Returns</dt><dd>return true if sucefully setted the new name, and false if it failed. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSystem_a21b22c047bf1e7decdc6454219b022f2_icgraph.png" border="0" usemap="#aclassSystem_a21b22c047bf1e7decdc6454219b022f2_icgraph" alt=""/></div>
+<map name="aclassSystem_a21b22c047bf1e7decdc6454219b022f2_icgraph" id="aclassSystem_a21b22c047bf1e7decdc6454219b022f2_icgraph">
+<area shape="rect" title="Set a new name for the System." alt="" coords="311,5,438,32"/>
+<area shape="rect" href="testSystem_8cpp.html#aaabd891ff16521d89ed439b917f80357" title=" " alt="" coords="103,5,263,32"/>
+<area shape="poly" title=" " alt="" coords="295,21,263,21,263,16,295,16"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -383,9 +438,23 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSystem_a477d387edd51ccf7a58c0d496de781e5_icgraph.png" border="0" usemap="#aclassSystem_a477d387edd51ccf7a58c0d496de781e5_icgraph" alt=""/></div>
 <map name="aclassSystem_a477d387edd51ccf7a58c0d496de781e5_icgraph" id="aclassSystem_a477d387edd51ccf7a58c0d496de781e5_icgraph">
-<area shape="rect" title="Set a new Value for the System." alt="" coords="136,5,260,32"/>
-<area shape="rect" href="classModel.html#ad31ab57899deb9e33c9fd0312553383c" title="Run the simulation." alt="" coords="5,5,88,32"/>
-<area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
+<area shape="rect" title="Set a new Value for the System." alt="" coords="471,107,596,133"/>
+<area shape="rect" href="classModel.html#ad31ab57899deb9e33c9fd0312553383c" title="Run the simulation." alt="" coords="302,69,384,96"/>
+<area shape="poly" title=" " alt="" coords="455,107,384,93,385,88,456,102"/>
+<area shape="rect" href="testSystem_8cpp.html#aaabd891ff16521d89ed439b917f80357" title=" " alt="" coords="263,132,423,159"/>
+<area shape="poly" title=" " alt="" coords="456,133,424,137,424,132,455,128"/>
+<area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="111,5,207,32"/>
+<area shape="poly" title=" " alt="" coords="287,66,199,35,200,30,289,61"/>
+<area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="103,56,215,83"/>
+<area shape="poly" title=" " alt="" coords="286,81,215,76,216,71,287,76"/>
+<area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="115,107,203,133"/>
+<area shape="poly" title=" " alt="" coords="287,97,203,114,202,109,286,91"/>
+<area shape="rect" href="mainFunctional_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="110,41,56,62,54,57,108,36"/>
+<area shape="poly" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
+<area shape="poly" title=" " alt="" coords="108,103,54,81,56,76,110,98"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="134,157,184,184"/>
+<area shape="poly" title=" " alt="" coords="248,161,184,170,184,165,247,156"/>
 </map>
 </div>
 

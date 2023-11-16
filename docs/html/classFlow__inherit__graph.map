@@ -1,0 +1,10 @@
+<map id="Flow" name="Flow">
+<area shape="rect" id="Node000001" title="Represents a flow beetwen Systems." alt="" coords="283,5,459,475"/>
+<area shape="rect" id="Node000002" href="$classExponentialFlow.html" title="Represents a Flow with Exponential behavior." alt="" coords="5,563,169,723"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="277,379,145,564,141,561,273,376"/>
+<area shape="rect" id="Node000003" href="$classlogisticFlow.html" title="Represents a Flow with Exponential behavior." alt="" coords="193,563,357,723"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="314,490,297,564,292,562,309,489"/>
+<area shape="rect" id="Node000004" href="$classmyFlow.html" title=" " alt="" coords="382,523,555,763"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="425,489,434,522,429,524,420,490"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="443,489,451,522,446,524,438,490"/>
+</map>

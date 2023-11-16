@@ -25,7 +25,7 @@ class Model{
 
     public:
          /**
-         * \brief Creates a Model.
+         * @brief Creates a Model.
          *
          * Creates a new Model. Is overloaded with a default value for name.
          * Can also accept a string as a parameter.
@@ -33,7 +33,7 @@ class Model{
          * When not passing the name, the default name string will be empty.
          * 
          *
-         * @param name
+         * @param name A string for naming the Model.
         */
         Model(string="");
 
@@ -97,7 +97,7 @@ class Model{
          * 
          * Uses a system pointer as a parameter for removing the System.
          * 
-         * @param system
+         * @param system* The System pointer which we will compare to our list element to remove.
          * 
          * @return return true if sucefully removed the System, and false if it failed.
         */
@@ -108,7 +108,7 @@ class Model{
          * 
          * Uses a system name as a parameter for removing the System.
          * 
-         * @param name
+         * @param name A string for naming the Model.
          * 
          * @return return true if sucefully removed the System, and false if it failed.
         */
@@ -121,7 +121,7 @@ class Model{
          * 
          * Uses a Flow pointer as a parameter for removing the System.
          * 
-         * @param flow
+         * @param flow* The Flow pointer which we will compare to our list element to remove.
          * 
          * @return return true if sucefully removed the Flow, and false if it failed.
         */
@@ -133,7 +133,7 @@ class Model{
          * 
          * Uses a name as a parameter for removing the System.
          * 
-         * @param name
+         * @param name A string for naming the Model.
          * 
          * @return return true if sucefully removed the Flow, and false if it failed.
         */
@@ -146,8 +146,8 @@ class Model{
          * Uses a name as a parameter for identifying the System which will be updated on the container.
          * Also receives a System pointer as a param which will substitute the System identified with the name. 
          * 
-         * @param name
-         * @param system
+         * @param name A string for naming the Model.
+         * @param system The system which we will update the element on our list.
          * 
          * @return return true if sucefully update the System, and false if it failed.
         */
@@ -159,8 +159,8 @@ class Model{
          * Uses a name as a parameter for identifying the Flow which will be updated on the container.
          * Also receives a Flow pointer as a param which will substitute the Flow identified with the name. 
          * 
-         * @param name
-         * @param flow
+         * @param name A string for naming the Model.
+         * @param flow* The Flow pointer which we will compare to our list element to remove.
          * 
          * @return return true if sucefully update the Flow, and false if it failed.
         */
@@ -261,7 +261,7 @@ class Model{
          * It is a private method because as we have a container with a pointer to Flows and Systems 
          * we can cause problems on the long run of the API because a copy of a model can interfere with 
          * another existing model. So to prevent the API user to make a copy we need to "hide" the method.
-         * @param model
+         * @param model& The model reference which will be assigned to the Model being called.
         */
         Model(const Model& model);
     

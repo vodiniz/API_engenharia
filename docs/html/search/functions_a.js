@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['_7eflow_0',['~Flow',['../classFlow.html#a5991efa6e8cf88c4ef2125cc727db333',1,'Flow']]],
-  ['_7emodel_1',['~Model',['../classModel.html#ad6ebd2062a0b823db841a0b88baac4c0',1,'Model']]],
-  ['_7esystem_2',['~System',['../classSystem.html#a3be70bb338e3f062f821173fd15680d0',1,'System']]]
+  ['update_0',['update',['../classModel.html#a5fae22d205d135bee64724372a65d3fb',1,'Model::update(string name, System *system)'],['../classModel.html#aaaf021c002ef8491cb38ffca2e61bb3f',1,'Model::update(string name, Flow *flow)']]]
 ];

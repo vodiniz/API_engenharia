@@ -1,9 +1,30 @@
 <map id="Model::systemsSize" name="Model::systemsSize">
-<area shape="rect" id="Node000001" title="Function for getting the size of the systems container." alt="" coords="306,31,446,57"/>
-<area shape="rect" id="Node000002" href="$classModel.html#ad4fcd314fc1c2f581e8469c8767587bc" title="Add a System pointer to the systems container." alt="" coords="173,31,258,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="290,47,258,47,258,41,290,41"/>
-<area shape="rect" id="Node000003" href="$classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="15,5,115,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="157,37,115,30,116,24,157,32"/>
-<area shape="rect" id="Node000004" href="$classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="5,56,125,83"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="158,56,125,62,124,57,157,51"/>
+<area shape="rect" id="Node000001" title="Function for getting the size of the systems container." alt="" coords="448,284,589,311"/>
+<area shape="rect" id="Node000002" href="$classModel.html#ad4fcd314fc1c2f581e8469c8767587bc" title="Add a System pointer to the systems container." alt="" coords="315,208,400,235"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="473,279,387,238,389,233,476,274"/>
+<area shape="rect" id="Node000010" href="$testModel_8cpp.html#aafd29634c0b4542428a53fb08352b80f" title=" " alt="" coords="130,360,240,387"/>
+<area shape="poly" id="edge16_Node000001_Node000010" title=" " alt="" coords="442,317,241,364,239,358,441,312"/>
+<area shape="rect" id="Node000003" href="$functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="137,5,233,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="347,194,336,160,319,120,296,80,265,46,250,36,232,29,234,24,252,31,269,42,300,77,324,117,341,158,352,192"/>
+<area shape="rect" id="Node000005" href="$functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="129,56,241,83"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="341,195,311,145,290,119,265,97,240,84,243,79,269,92,294,115,315,142,346,193"/>
+<area shape="rect" id="Node000006" href="$functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="141,107,229,133"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="331,199,301,172,266,148,228,132,230,127,268,143,305,168,335,195"/>
+<area shape="rect" id="Node000007" href="$classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="135,157,235,184"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="299,207,232,187,234,182,301,202"/>
+<area shape="rect" id="Node000008" href="$testModel_8cpp.html#a686821eb1d14aa6af3386f3eff9430e9" title=" " alt="" coords="103,208,267,235"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="300,224,268,224,268,219,300,219"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="346,250,315,301,294,327,269,350,241,364,239,360,265,346,290,324,311,298,341,247"/>
+<area shape="rect" id="Node000011" href="$testModel_8cpp.html#aadc1eef3a1c739d23180e99fc879f636" title=" " alt="" coords="124,259,246,285"/>
+<area shape="poly" id="edge13_Node000002_Node000011" title=" " alt="" coords="301,241,234,261,232,256,299,236"/>
+<area shape="rect" id="Node000012" href="$classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="125,309,245,336"/>
+<area shape="poly" id="edge15_Node000002_Node000012" title=" " alt="" coords="335,248,305,275,268,300,242,311,240,306,266,295,301,270,331,244"/>
+<area shape="rect" id="Node000004" href="$mainFunctional_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="125,40,104,47,56,63,54,58,102,41,123,35"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="113,72,55,72,55,67,113,67"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="126,105,102,97,54,81,56,75,104,92,127,100"/>
+<area shape="rect" id="Node000009" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,259,55,285"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="125,242,104,249,56,266,54,261,102,244,123,237"/>
+<area shape="poly" id="edge12_Node000010_Node000009" title=" " alt="" coords="114,357,101,350,65,319,39,288,43,284,68,315,104,346,117,353"/>
+<area shape="poly" id="edge14_Node000011_Node000009" title=" " alt="" coords="108,275,55,275,55,269,108,269"/>
 </map>

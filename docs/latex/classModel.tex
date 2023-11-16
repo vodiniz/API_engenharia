@@ -15,7 +15,7 @@ Collaboration diagram for Model\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=328pt]{classModel__coll__graph}
+\includegraphics[height=550pt]{classModel__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Types}
@@ -129,7 +129,7 @@ When not passing the name, the default name string will be empty.
 
 
 \begin{DoxyParams}{Parameters}
-{\em name} & \\
+{\em name} & A string for naming the \doxylink{classModel}{Model}. \\
 \hline
 \end{DoxyParams}
 \Hypertarget{classModel_ad6ebd2062a0b823db841a0b88baac4c0}\label{classModel_ad6ebd2062a0b823db841a0b88baac4c0} 
@@ -156,7 +156,7 @@ Copy constructor takes a reference to \doxylink{classModel}{Model} as an argumen
 
 It is a private method because as we have a container with a pointer to Flows and Systems we can cause problems on the long run of the API because a copy of a model can interfere with another existing model. So to prevent the API user to make a copy we need to "{}hide"{} the method. 
 \begin{DoxyParams}{Parameters}
-{\em model} & \\
+{\em model\&} & The model reference which will be assigned to the \doxylink{classModel}{Model} being called. \\
 \hline
 \end{DoxyParams}
 Here is the call graph for this function\+:\nopagebreak
@@ -213,7 +213,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=270pt]{classModel_ad4fcd314fc1c2f581e8469c8767587bc_icgraph}
+\includegraphics[width=350pt]{classModel_ad4fcd314fc1c2f581e8469c8767587bc_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classModel_ab323d582a76cf60eb75b581f38551525}\label{classModel_ab323d582a76cf60eb75b581f38551525} 
@@ -233,7 +233,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=314pt]{classModel_ab323d582a76cf60eb75b581f38551525_icgraph}
+\includegraphics[width=350pt]{classModel_ab323d582a76cf60eb75b581f38551525_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classModel_ab1d42dc05fe348f907372f3139b6c0f5}\label{classModel_ab1d42dc05fe348f907372f3139b6c0f5} 
@@ -253,7 +253,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=306pt]{classModel_ab1d42dc05fe348f907372f3139b6c0f5_icgraph}
+\includegraphics[width=350pt]{classModel_ab1d42dc05fe348f907372f3139b6c0f5_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classModel_a61db3ce77d42741a911a44aba7b320c7}\label{classModel_a61db3ce77d42741a911a44aba7b320c7} 
@@ -293,7 +293,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=294pt]{classModel_a951151667f4f186256198e02272a932d_icgraph}
+\includegraphics[width=350pt]{classModel_a951151667f4f186256198e02272a932d_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classModel_aad5eadb989dae838966ef6d27769aea1}\label{classModel_aad5eadb989dae838966ef6d27769aea1} 
@@ -334,7 +334,7 @@ Uses a \doxylink{classFlow}{Flow} pointer as a parameter for removing the \doxyl
 
 
 \begin{DoxyParams}{Parameters}
-{\em flow} & \\
+{\em flow\texorpdfstring{$\ast$}{*}} & The \doxylink{classFlow}{Flow} pointer which we will compare to our list element to remove.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -345,6 +345,13 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=314pt]{classModel_a4876989208f629dc7861a74ddddf27c2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModel_a4876989208f629dc7861a74ddddf27c2_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classModel_a3157dc9e5f2e9874ef96c0c221714597}\label{classModel_a3157dc9e5f2e9874ef96c0c221714597} 
@@ -361,7 +368,7 @@ Uses a name as a parameter for removing the \doxylink{classSystem}{System}.
 
 
 \begin{DoxyParams}{Parameters}
-{\em name} & \\
+{\em name} & A string for naming the \doxylink{classModel}{Model}.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -388,7 +395,7 @@ Uses a system name as a parameter for removing the \doxylink{classSystem}{System
 
 
 \begin{DoxyParams}{Parameters}
-{\em name} & \\
+{\em name} & A string for naming the \doxylink{classModel}{Model}.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -415,7 +422,7 @@ Uses a system pointer as a parameter for removing the \doxylink{classSystem}{Sys
 
 
 \begin{DoxyParams}{Parameters}
-{\em system} & \\
+{\em system\texorpdfstring{$\ast$}{*}} & The \doxylink{classSystem}{System} pointer which we will compare to our list element to remove.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -426,6 +433,13 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=341pt]{classModel_abf3596e42d008b113ed4e9f877e83e24_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModel_abf3596e42d008b113ed4e9f877e83e24_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classModel_ad31ab57899deb9e33c9fd0312553383c}\label{classModel_ad31ab57899deb9e33c9fd0312553383c} 
@@ -457,6 +471,13 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=274pt]{classModel_ad31ab57899deb9e33c9fd0312553383c_cgraph}
 \end{center}
 \end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{classModel_ad31ab57899deb9e33c9fd0312553383c_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classModel_ad301d6f19d848ab5b9feece5b24a93a2}\label{classModel_ad301d6f19d848ab5b9feece5b24a93a2} 
 \index{Model@{Model}!setName@{setName}}
 \index{setName@{setName}!Model@{Model}}
@@ -472,6 +493,13 @@ Will set a new name based on the string passed as a param.
 \begin{DoxyReturn}{Returns}
 return true if sucefully setted the new name, and false if it failed. 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModel_ad301d6f19d848ab5b9feece5b24a93a2_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classModel_a618af90bbfd2b01cd0bc12d7d45739ed}\label{classModel_a618af90bbfd2b01cd0bc12d7d45739ed} 
 \index{Model@{Model}!systemsBegin@{systemsBegin}}
 \index{systemsBegin@{systemsBegin}!Model@{Model}}
@@ -489,7 +517,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=341pt]{classModel_a618af90bbfd2b01cd0bc12d7d45739ed_icgraph}
+\includegraphics[width=350pt]{classModel_a618af90bbfd2b01cd0bc12d7d45739ed_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classModel_a8e232479172c73b87313feba7c0d409c}\label{classModel_a8e232479172c73b87313feba7c0d409c} 
@@ -509,7 +537,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=333pt]{classModel_a8e232479172c73b87313feba7c0d409c_icgraph}
+\includegraphics[width=350pt]{classModel_a8e232479172c73b87313feba7c0d409c_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classModel_ac63ddb11d77ea78d5d427af1f8d154fc}\label{classModel_ac63ddb11d77ea78d5d427af1f8d154fc} 
@@ -546,9 +574,9 @@ Uses a name as a parameter for identifying the \doxylink{classFlow}{Flow} which 
 
 
 \begin{DoxyParams}{Parameters}
-{\em name} & \\
+{\em name} & A string for naming the \doxylink{classModel}{Model}. \\
 \hline
-{\em flow} & \\
+{\em flow\texorpdfstring{$\ast$}{*}} & The \doxylink{classFlow}{Flow} pointer which we will compare to our list element to remove.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -575,9 +603,9 @@ Uses a name as a parameter for identifying the \doxylink{classSystem}{System} wh
 
 
 \begin{DoxyParams}{Parameters}
-{\em name} & \\
+{\em name} & A string for naming the \doxylink{classModel}{Model}. \\
 \hline
-{\em system} & \\
+{\em system} & The system which we will update the element on our list.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -588,6 +616,13 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=304pt]{classModel_a5fae22d205d135bee64724372a65d3fb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classModel_a5fae22d205d135bee64724372a65d3fb_icgraph}
 \end{center}
 \end{figure}
 

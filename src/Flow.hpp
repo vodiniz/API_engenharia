@@ -32,7 +32,7 @@ class Flow{
          * When not passing the name, the default name string will be empty.
          * 
          *
-         * @param name
+         * @param name A string for naming the Flow.
 
         */
         Flow(string=""); 
@@ -43,10 +43,9 @@ class Flow{
          *
          * This overloaded constructor acepts tree parameters, the name, a source and a target.
          * 
-         * @param name
-         * @param source
-         * @param target
-
+         * @param name A string for naming the Flow.
+         * @param source A System pointer for the source*
+         * @param target A System pointer for the source*
         */
         Flow(string, System*, System*);
 
@@ -64,7 +63,7 @@ class Flow{
          * 
          * 
          * Copy constructor takes a reference to Flow as an argument.
-         * @param flow 
+         * @param flow& The base Flow which the copy will be based.
         */
         Flow(const Flow& flow);
 
@@ -164,7 +163,6 @@ class Flow{
          * The equation method will define the mathematical relation beetwen the source and target Systems
          * As we do not know the needed implementation we defined flow as an abstract class
          * Whoever is using the API will need to implement this method with the behavior they want.
-         * 
          * 
          * @return return a double value defined by the implemented equation.
         */

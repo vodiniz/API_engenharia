@@ -1,0 +1,10 @@
+<map id="modelTestCopyOverload" name="modelTestCopyOverload">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,170,57"/>
+<area shape="rect" id="Node000002" href="$classModel.html#ad4fcd314fc1c2f581e8469c8767587bc" title="Add a System pointer to the systems container." alt="" coords="218,56,303,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,53,203,58,202,64,170,59"/>
+<area shape="rect" id="Node000003" href="$classModel.html#a61db3ce77d42741a911a44aba7b320c7" title="Function for getting the size of the flows container." alt="" coords="361,5,482,32"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="170,35,345,22,345,27,170,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="303,53,361,35,363,40,304,58"/>
+<area shape="rect" id="Node000004" href="$classModel.html#ac63ddb11d77ea78d5d427af1f8d154fc" title="Function for getting the size of the systems container." alt="" coords="351,56,491,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="304,67,336,67,336,72,304,72"/>
+</map>

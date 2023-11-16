@@ -1,0 +1,7 @@
+<map id="System::setName" name="System::setName">
+<area shape="rect" id="Node000001" title="Set a new name for the System." alt="" coords="311,5,438,32"/>
+<area shape="rect" id="Node000002" href="$testSystem_8cpp.html#aaabd891ff16521d89ed439b917f80357" title=" " alt="" coords="103,5,263,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,21,263,21,263,16,295,16"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

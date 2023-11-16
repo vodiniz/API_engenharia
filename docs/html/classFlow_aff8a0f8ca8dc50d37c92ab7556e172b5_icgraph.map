@@ -1,7 +1,19 @@
 <map id="Flow::getTarget" name="Flow::getTarget">
-<area shape="rect" id="Node000001" title="Get the target field on Flow." alt="" coords="166,31,277,57"/>
-<area shape="rect" id="Node000002" href="$classFlow.html#a27af85e46a53aa5ff8c8016f012b0c24" title="Copy constructor." alt="" coords="19,5,104,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,35,104,28,105,23,151,30"/>
-<area shape="rect" id="Node000003" href="$classFlow.html#ae153a1f37345b026a1e4f5ee88d0d40f" title="Overload for = operator." alt="" coords="5,56,118,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,58,118,63,118,58,150,53"/>
+<area shape="rect" id="Node000001" title="Get the target field on Flow." alt="" coords="304,132,415,159"/>
+<area shape="rect" id="Node000002" href="$classlogisticFlow.html#ae380ca5d015a848848a468e749e70333" title="A pure virtual equation method which defines the LogisticFlow behavior." alt="" coords="106,5,253,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="337,122,301,83,255,46,231,35,234,30,257,42,304,79,341,118"/>
+<area shape="rect" id="Node000003" href="$classFlow.html#a27af85e46a53aa5ff8c8016f012b0c24" title="Copy constructor." alt="" coords="137,56,222,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="318,127,255,97,222,85,223,80,257,92,320,122"/>
+<area shape="rect" id="Node000004" href="$testFlow_8cpp.html#af26d25bb7188b044713ef82b964f420d" title=" " alt="" coords="129,107,230,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="289,138,230,130,230,124,289,133"/>
+<area shape="rect" id="Node000006" href="$testFlow_8cpp.html#a0e166fed5514983896faa6cce93c1de0" title=" " alt="" coords="103,157,256,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="289,158,257,162,256,157,288,153"/>
+<area shape="rect" id="Node000007" href="$testFlow_8cpp.html#a8412dfebe7ee0fb54e21a9ff601a1013" title=" " alt="" coords="109,208,250,235"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="320,169,257,198,226,210,224,205,255,194,318,164"/>
+<area shape="rect" id="Node000008" href="$classFlow.html#ae153a1f37345b026a1e4f5ee88d0d40f" title="Overload for = operator." alt="" coords="123,259,236,285"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="341,172,304,211,257,249,234,261,231,256,255,244,301,208,337,169"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,157,55,184"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="123,141,104,148,56,165,54,160,102,143,121,136"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="87,173,55,173,55,168,87,168"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="121,205,102,199,54,182,56,177,104,193,123,200"/>
 </map>

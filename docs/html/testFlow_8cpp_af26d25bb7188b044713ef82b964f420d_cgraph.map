@@ -1,0 +1,11 @@
+<map id="flowTestClear" name="flowTestClear">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,107,108"/>
+<area shape="rect" id="Node000002" href="$classFlow.html#a0a6b4175fc5d597f550bccde9312e648" title="Clear the pointer to the source System." alt="" coords="155,5,281,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,78,154,42,166,36,168,41,156,46,84,83"/>
+<area shape="rect" id="Node000003" href="$classFlow.html#aabda5e8d035210c368e7edc26c6e2a2a" title="Clear the pointer to the target System." alt="" coords="157,56,279,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,84,141,79,142,84,108,89"/>
+<area shape="rect" id="Node000004" href="$classFlow.html#a1f3858f90d141807377c2640fb5dd0fc" title="Get the source field on Flow." alt="" coords="160,107,276,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="108,100,145,106,144,111,107,105"/>
+<area shape="rect" id="Node000005" href="$classFlow.html#aff8a0f8ca8dc50d37c92ab7556e172b5" title="Get the target field on Flow." alt="" coords="162,157,274,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="84,106,156,143,168,148,166,153,154,148,81,111"/>
+</map>

@@ -82,18 +82,33 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="Flow_8hpp_source.html">Flow.hpp</a>&gt;</code></p>
 <div class="dynheader">
+Inheritance diagram for Flow:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFlow__inherit__graph.png" border="0" usemap="#aFlow_inherit__map" alt="Inheritance graph"/></div>
+<map name="aFlow_inherit__map" id="aFlow_inherit__map">
+<area shape="rect" title="Represents a flow beetwen Systems." alt="" coords="283,5,459,475"/>
+<area shape="rect" href="classExponentialFlow.html" title="Represents a Flow with Exponential behavior." alt="" coords="5,563,169,723"/>
+<area shape="poly" title=" " alt="" coords="277,379,145,564,141,561,273,376"/>
+<area shape="rect" href="classlogisticFlow.html" title="Represents a Flow with Exponential behavior." alt="" coords="193,563,357,723"/>
+<area shape="poly" title=" " alt="" coords="314,490,297,564,292,562,309,489"/>
+<area shape="rect" href="classmyFlow.html" title=" " alt="" coords="382,523,555,763"/>
+<area shape="poly" title=" " alt="" coords="425,489,434,522,429,524,420,490"/>
+<area shape="poly" title=" " alt="" coords="443,489,451,522,446,524,438,490"/>
+</map>
+</div>
+<div class="dynheader">
 Collaboration diagram for Flow:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFlow__coll__graph.png" border="0" usemap="#aFlow_coll__map" alt="Collaboration graph"/></div>
 <map name="aFlow_coll__map" id="aFlow_coll__map">
-<area shape="rect" title="Represents a flow beetwen Systems." alt="" coords="5,437,105,784"/>
-<area shape="rect" title=" " alt="" coords="34,5,79,75"/>
-<area shape="poly" title=" " alt="" coords="55,75,48,139,45,282,48,421,42,421,39,282,43,139,49,74"/>
-<area shape="rect" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy." alt="" coords="101,139,188,357"/>
-<area shape="poly" title=" " alt="" coords="73,73,97,129,92,131,68,75"/>
-<area shape="poly" title=" " alt="" coords="121,357,105,421,100,420,115,356"/>
-<area shape="rect" title=" " alt="" coords="126,5,177,75"/>
-<area shape="poly" title=" " alt="" coords="153,74,151,122,146,122,148,74"/>
+<area shape="rect" title="Represents a flow beetwen Systems." alt="" coords="5,517,181,944"/>
+<area shape="rect" title=" " alt="" coords="72,5,117,75"/>
+<area shape="poly" title=" " alt="" coords="93,75,86,139,82,323,85,500,79,500,76,323,81,139,87,74"/>
+<area shape="rect" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy." alt="" coords="139,139,293,437"/>
+<area shape="poly" title=" " alt="" coords="113,73,138,123,133,125,109,76"/>
+<area shape="poly" title=" " alt="" coords="177,438,160,502,154,500,172,436"/>
+<area shape="rect" title=" " alt="" coords="191,5,241,75"/>
+<area shape="poly" title=" " alt="" coords="219,74,219,122,213,122,213,74"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -176,7 +191,7 @@ Protected Attributes</h2></td></tr>
 <p>When not passing the name, the default name string will be empty.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td></td></tr>
+    <tr><td class="paramname">name</td><td>A string for naming the <a class="el" href="classFlow.html" title="Represents a flow beetwen Systems.">Flow</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -219,9 +234,9 @@ Protected Attributes</h2></td></tr>
 <p>This overloaded constructor acepts tree parameters, the name, a source and a target.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td></td></tr>
-    <tr><td class="paramname">source</td><td></td></tr>
-    <tr><td class="paramname">target</td><td></td></tr>
+    <tr><td class="paramname">name</td><td>A string for naming the <a class="el" href="classFlow.html" title="Represents a flow beetwen Systems.">Flow</a>. </td></tr>
+    <tr><td class="paramname">source</td><td>A <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a> pointer for the source* </td></tr>
+    <tr><td class="paramname">target</td><td>A <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a> pointer for the source* </td></tr>
   </table>
   </dd>
 </dl>
@@ -275,7 +290,7 @@ Protected Attributes</h2></td></tr>
 <p>Copy constructor. </p>
 <p>Copy constructor takes a reference to <a class="el" href="classFlow.html" title="Represents a flow beetwen Systems.">Flow</a> as an argument. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">flow</td><td></td></tr>
+    <tr><td class="paramname">flow&amp;</td><td>The base <a class="el" href="classFlow.html" title="Represents a flow beetwen Systems.">Flow</a> which the copy will be based. </td></tr>
   </table>
   </dd>
 </dl>
@@ -315,6 +330,18 @@ Here is the call graph for this function:</div>
 <p>Clear the pointer to the source <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a>. </p>
 <p>Will set the source pointer to NULL.</p>
 <dl class="section return"><dt>Returns</dt><dd>return true if sucefully setted source to NULL, and false if it failed. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFlow_a0a6b4175fc5d597f550bccde9312e648_icgraph.png" border="0" usemap="#aclassFlow_a0a6b4175fc5d597f550bccde9312e648_icgraph" alt=""/></div>
+<map name="aclassFlow_a0a6b4175fc5d597f550bccde9312e648_icgraph" id="aclassFlow_a0a6b4175fc5d597f550bccde9312e648_icgraph">
+<area shape="rect" title="Clear the pointer to the source System." alt="" coords="252,5,378,32"/>
+<area shape="rect" href="testFlow_8cpp.html#af26d25bb7188b044713ef82b964f420d" title=" " alt="" coords="103,5,204,32"/>
+<area shape="poly" title=" " alt="" coords="236,21,205,21,205,16,236,16"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -336,6 +363,18 @@ Here is the call graph for this function:</div>
 <p>Clear the pointer to the target <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a>. </p>
 <p>Will set the target pointer to NULL.</p>
 <dl class="section return"><dt>Returns</dt><dd>return true if sucefully setted target to NULL, and false if it failed. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFlow_aabda5e8d035210c368e7edc26c6e2a2a_icgraph.png" border="0" usemap="#aclassFlow_aabda5e8d035210c368e7edc26c6e2a2a_icgraph" alt=""/></div>
+<map name="aclassFlow_aabda5e8d035210c368e7edc26c6e2a2a_icgraph" id="aclassFlow_aabda5e8d035210c368e7edc26c6e2a2a_icgraph">
+<area shape="rect" title="Clear the pointer to the target System." alt="" coords="252,5,373,32"/>
+<area shape="rect" href="testFlow_8cpp.html#af26d25bb7188b044713ef82b964f420d" title=" " alt="" coords="103,5,204,32"/>
+<area shape="poly" title=" " alt="" coords="236,21,204,21,204,16,236,16"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -366,6 +405,8 @@ Here is the call graph for this function:</div>
 <p>The equation method will define the mathematical relation beetwen the source and target Systems As we do not know the needed implementation we defined flow as an abstract class Whoever is using the API will need to implement this method with the behavior they want.</p>
 <dl class="section return"><dt>Returns</dt><dd>return a double value defined by the implemented equation. </dd></dl>
 
+<p>Implemented in <a class="el" href="classExponentialFlow.html#af755dadaf2fe73d8402958b2a2ee9ca3">ExponentialFlow</a>, <a class="el" href="classlogisticFlow.html#ae380ca5d015a848848a468e749e70333">logisticFlow</a>, <a class="el" href="classmyFlow.html#a867e147716ba2bda3bb04380669e5fb1">myFlow</a>, and <a class="el" href="classmyFlow.html#a867e147716ba2bda3bb04380669e5fb1">myFlow</a>.</p>
+
 </div>
 </div>
 <a id="a34d6b868ba50fc09c72548121f363b10" name="a34d6b868ba50fc09c72548121f363b10"></a>
@@ -390,11 +431,15 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFlow_a34d6b868ba50fc09c72548121f363b10_icgraph.png" border="0" usemap="#aclassFlow_a34d6b868ba50fc09c72548121f363b10_icgraph" alt=""/></div>
 <map name="aclassFlow_a34d6b868ba50fc09c72548121f363b10_icgraph" id="aclassFlow_a34d6b868ba50fc09c72548121f363b10_icgraph">
-<area shape="rect" title="Get the name field on Flow." alt="" coords="166,31,276,57"/>
-<area shape="rect" href="classFlow.html#a27af85e46a53aa5ff8c8016f012b0c24" title="Copy constructor." alt="" coords="19,5,104,32"/>
-<area shape="poly" title=" " alt="" coords="150,35,104,28,105,23,151,30"/>
-<area shape="rect" href="classFlow.html#ae153a1f37345b026a1e4f5ee88d0d40f" title="Overload for = operator." alt="" coords="5,56,118,83"/>
-<area shape="poly" title=" " alt="" coords="151,58,119,63,118,58,150,53"/>
+<area shape="rect" title="Get the name field on Flow." alt="" coords="292,56,402,83"/>
+<area shape="rect" href="classFlow.html#a27af85e46a53aa5ff8c8016f012b0c24" title="Copy constructor." alt="" coords="131,5,216,32"/>
+<area shape="poly" title=" " alt="" coords="283,54,216,34,217,28,285,49"/>
+<area shape="rect" href="testFlow_8cpp.html#a8412dfebe7ee0fb54e21a9ff601a1013" title=" " alt="" coords="103,56,244,83"/>
+<area shape="poly" title=" " alt="" coords="276,72,244,72,244,67,276,67"/>
+<area shape="rect" href="classFlow.html#ae153a1f37345b026a1e4f5ee88d0d40f" title="Overload for = operator." alt="" coords="117,107,230,133"/>
+<area shape="poly" title=" " alt="" coords="285,90,222,109,221,104,283,85"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
 </map>
 </div>
 
@@ -422,11 +467,25 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFlow_a1f3858f90d141807377c2640fb5dd0fc_icgraph.png" border="0" usemap="#aclassFlow_a1f3858f90d141807377c2640fb5dd0fc_icgraph" alt=""/></div>
 <map name="aclassFlow_a1f3858f90d141807377c2640fb5dd0fc_icgraph" id="aclassFlow_a1f3858f90d141807377c2640fb5dd0fc_icgraph">
-<area shape="rect" title="Get the source field on Flow." alt="" coords="166,31,282,57"/>
-<area shape="rect" href="classFlow.html#a27af85e46a53aa5ff8c8016f012b0c24" title="Copy constructor." alt="" coords="19,5,104,32"/>
-<area shape="poly" title=" " alt="" coords="150,35,104,28,105,23,151,30"/>
-<area shape="rect" href="classFlow.html#ae153a1f37345b026a1e4f5ee88d0d40f" title="Overload for = operator." alt="" coords="5,56,118,83"/>
-<area shape="poly" title=" " alt="" coords="151,58,118,63,118,58,150,53"/>
+<area shape="rect" title="Get the source field on Flow." alt="" coords="325,157,441,184"/>
+<area shape="rect" href="classExponentialFlow.html#af755dadaf2fe73d8402958b2a2ee9ca3" title="A pure virtual equation method which defines the ExponentialFlow behavior." alt="" coords="103,5,277,32"/>
+<area shape="poly" title=" " alt="" coords="364,145,328,95,303,68,276,46,253,35,256,30,278,42,307,65,332,91,369,142"/>
+<area shape="rect" href="classmyFlow.html#a867e147716ba2bda3bb04380669e5fb1" title="A pure virtual equation method which defines the flow behavior." alt="" coords="128,56,252,83"/>
+<area shape="poly" title=" " alt="" coords="353,149,318,122,276,97,248,86,250,81,278,92,321,118,356,145"/>
+<area shape="rect" href="classFlow.html#a27af85e46a53aa5ff8c8016f012b0c24" title="Copy constructor." alt="" coords="147,107,233,133"/>
+<area shape="poly" title=" " alt="" coords="314,155,232,134,233,128,315,150"/>
+<area shape="rect" href="testFlow_8cpp.html#af26d25bb7188b044713ef82b964f420d" title=" " alt="" coords="139,157,241,184"/>
+<area shape="poly" title=" " alt="" coords="310,173,241,173,241,168,310,168"/>
+<area shape="rect" href="testFlow_8cpp.html#a0e166fed5514983896faa6cce93c1de0" title=" " alt="" coords="113,208,267,235"/>
+<area shape="poly" title=" " alt="" coords="316,191,244,210,243,205,314,186"/>
+<area shape="rect" href="testFlow_8cpp.html#a8412dfebe7ee0fb54e21a9ff601a1013" title=" " alt="" coords="119,259,261,285"/>
+<area shape="poly" title=" " alt="" coords="356,196,321,224,278,249,250,261,248,256,276,244,318,219,353,192"/>
+<area shape="rect" href="classFlow.html#ae153a1f37345b026a1e4f5ee88d0d40f" title="Overload for = operator." alt="" coords="134,309,246,336"/>
+<area shape="poly" title=" " alt="" coords="369,199,332,250,307,277,278,300,248,314,245,309,276,295,303,273,328,247,364,196"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,208,55,235"/>
+<area shape="poly" title=" " alt="" coords="126,191,104,199,56,215,54,210,102,193,124,186"/>
+<area shape="poly" title=" " alt="" coords="98,224,55,224,55,219,98,219"/>
+<area shape="poly" title=" " alt="" coords="124,256,102,249,54,233,56,228,104,244,126,251"/>
 </map>
 </div>
 
@@ -454,11 +513,23 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5_icgraph.png" border="0" usemap="#aclassFlow_aff8a0f8ca8dc50d37c92ab7556e172b5_icgraph" alt=""/></div>
 <map name="aclassFlow_aff8a0f8ca8dc50d37c92ab7556e172b5_icgraph" id="aclassFlow_aff8a0f8ca8dc50d37c92ab7556e172b5_icgraph">
-<area shape="rect" title="Get the target field on Flow." alt="" coords="166,31,277,57"/>
-<area shape="rect" href="classFlow.html#a27af85e46a53aa5ff8c8016f012b0c24" title="Copy constructor." alt="" coords="19,5,104,32"/>
-<area shape="poly" title=" " alt="" coords="150,35,104,28,105,23,151,30"/>
-<area shape="rect" href="classFlow.html#ae153a1f37345b026a1e4f5ee88d0d40f" title="Overload for = operator." alt="" coords="5,56,118,83"/>
-<area shape="poly" title=" " alt="" coords="151,58,118,63,118,58,150,53"/>
+<area shape="rect" title="Get the target field on Flow." alt="" coords="304,132,415,159"/>
+<area shape="rect" href="classlogisticFlow.html#ae380ca5d015a848848a468e749e70333" title="A pure virtual equation method which defines the LogisticFlow behavior." alt="" coords="106,5,253,32"/>
+<area shape="poly" title=" " alt="" coords="337,122,301,83,255,46,231,35,234,30,257,42,304,79,341,118"/>
+<area shape="rect" href="classFlow.html#a27af85e46a53aa5ff8c8016f012b0c24" title="Copy constructor." alt="" coords="137,56,222,83"/>
+<area shape="poly" title=" " alt="" coords="318,127,255,97,222,85,223,80,257,92,320,122"/>
+<area shape="rect" href="testFlow_8cpp.html#af26d25bb7188b044713ef82b964f420d" title=" " alt="" coords="129,107,230,133"/>
+<area shape="poly" title=" " alt="" coords="289,138,230,130,230,124,289,133"/>
+<area shape="rect" href="testFlow_8cpp.html#a0e166fed5514983896faa6cce93c1de0" title=" " alt="" coords="103,157,256,184"/>
+<area shape="poly" title=" " alt="" coords="289,158,257,162,256,157,288,153"/>
+<area shape="rect" href="testFlow_8cpp.html#a8412dfebe7ee0fb54e21a9ff601a1013" title=" " alt="" coords="109,208,250,235"/>
+<area shape="poly" title=" " alt="" coords="320,169,257,198,226,210,224,205,255,194,318,164"/>
+<area shape="rect" href="classFlow.html#ae153a1f37345b026a1e4f5ee88d0d40f" title="Overload for = operator." alt="" coords="123,259,236,285"/>
+<area shape="poly" title=" " alt="" coords="341,172,304,211,257,249,234,261,231,256,255,244,301,208,337,169"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,157,55,184"/>
+<area shape="poly" title=" " alt="" coords="123,141,104,148,56,165,54,160,102,143,121,136"/>
+<area shape="poly" title=" " alt="" coords="87,173,55,173,55,168,87,168"/>
+<area shape="poly" title=" " alt="" coords="121,205,102,199,54,182,56,177,104,193,123,200"/>
 </map>
 </div>
 
@@ -519,6 +590,18 @@ Here is the call graph for this function:</div>
 <p>Set a new name for the <a class="el" href="classFlow.html" title="Represents a flow beetwen Systems.">Flow</a>. </p>
 <p>Will set a new name based on the string passed as a param.</p>
 <dl class="section return"><dt>Returns</dt><dd>return true if sucefully setted the new name, and false if it failed. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFlow_a31247277f56c4ca861583770fee2497b_icgraph.png" border="0" usemap="#aclassFlow_a31247277f56c4ca861583770fee2497b_icgraph" alt=""/></div>
+<map name="aclassFlow_a31247277f56c4ca861583770fee2497b_icgraph" id="aclassFlow_a31247277f56c4ca861583770fee2497b_icgraph">
+<area shape="rect" title="Set a new name for the Flow." alt="" coords="292,5,402,32"/>
+<area shape="rect" href="testFlow_8cpp.html#a8412dfebe7ee0fb54e21a9ff601a1013" title=" " alt="" coords="103,5,244,32"/>
+<area shape="poly" title=" " alt="" coords="276,21,244,21,244,16,276,16"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -541,6 +624,18 @@ Here is the call graph for this function:</div>
 <p>Set a new source for the <a class="el" href="classFlow.html" title="Represents a flow beetwen Systems.">Flow</a>. </p>
 <p>Will set a new source based on the <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a> pointer passed as a param.</p>
 <dl class="section return"><dt>Returns</dt><dd>return true if sucefully setted the new source, and false if it failed. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFlow_ae15d33c652e4f82f56b90cc557e46e7c_icgraph.png" border="0" usemap="#aclassFlow_ae15d33c652e4f82f56b90cc557e46e7c_icgraph" alt=""/></div>
+<map name="aclassFlow_ae15d33c652e4f82f56b90cc557e46e7c_icgraph" id="aclassFlow_ae15d33c652e4f82f56b90cc557e46e7c_icgraph">
+<area shape="rect" title="Set a new source for the Flow." alt="" coords="292,5,408,32"/>
+<area shape="rect" href="testFlow_8cpp.html#a8412dfebe7ee0fb54e21a9ff601a1013" title=" " alt="" coords="103,5,244,32"/>
+<area shape="poly" title=" " alt="" coords="277,21,245,21,245,16,277,16"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -563,6 +658,18 @@ Here is the call graph for this function:</div>
 <p>Set a new target for the <a class="el" href="classFlow.html" title="Represents a flow beetwen Systems.">Flow</a>. </p>
 <p>Will set a new target based on the <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a> pointer passed as a param.</p>
 <dl class="section return"><dt>Returns</dt><dd>return true if sucefully setted the new target, and false if it failed. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFlow_a6090fbf67c2da00de779bd14db835c66_icgraph.png" border="0" usemap="#aclassFlow_a6090fbf67c2da00de779bd14db835c66_icgraph" alt=""/></div>
+<map name="aclassFlow_a6090fbf67c2da00de779bd14db835c66_icgraph" id="aclassFlow_a6090fbf67c2da00de779bd14db835c66_icgraph">
+<area shape="rect" title="Set a new target for the Flow." alt="" coords="292,5,403,32"/>
+<area shape="rect" href="testFlow_8cpp.html#a8412dfebe7ee0fb54e21a9ff601a1013" title=" " alt="" coords="103,5,244,32"/>
+<area shape="poly" title=" " alt="" coords="276,21,245,21,245,16,276,16"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
 
 </div>
 </div>

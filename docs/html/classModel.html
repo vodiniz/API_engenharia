@@ -88,13 +88,13 @@ Collaboration diagram for Model:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel__coll__graph.png" border="0" usemap="#aModel_coll__map" alt="Collaboration graph"/></div>
 <map name="aModel_coll__map" id="aModel_coll__map">
-<area shape="rect" title="Represents the simulation model." alt="" coords="79,139,199,464"/>
+<area shape="rect" title="Represents the simulation model." alt="" coords="37,139,241,795"/>
 <area shape="rect" title=" " alt="" coords="5,5,51,75"/>
-<area shape="poly" title=" " alt="" coords="45,74,75,143,70,146,40,76"/>
+<area shape="poly" title=" " alt="" coords="39,74,52,121,47,123,34,75"/>
 <area shape="rect" title=" " alt="" coords="75,5,202,75"/>
-<area shape="poly" title=" " alt="" coords="141,75,141,121,136,121,136,75"/>
+<area shape="poly" title=" " alt="" coords="141,75,141,122,136,122,136,75"/>
 <area shape="rect" title=" " alt="" coords="227,5,336,75"/>
-<area shape="poly" title=" " alt="" coords="265,76,209,178,205,175,261,73"/>
+<area shape="poly" title=" " alt="" coords="273,75,249,147,243,146,268,74"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -245,7 +245,7 @@ Private Member Functions</h2></td></tr>
 <p>When not passing the name, the default name string will be empty.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td></td></tr>
+    <tr><td class="paramname">name</td><td>A string for naming the <a class="el" href="classModel.html" title="Represents the simulation model.">Model</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -308,7 +308,7 @@ Private Member Functions</h2></td></tr>
 <p>Copy constructor takes a reference to <a class="el" href="classModel.html" title="Represents the simulation model.">Model</a> as an argument.</p>
 <p>It is a private method because as we have a container with a pointer to Flows and Systems we can cause problems on the long run of the API because a copy of a model can interfere with another existing model. So to prevent the API user to make a copy we need to "hide" the method. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">model</td><td></td></tr>
+    <tr><td class="paramname">model&amp;</td><td>The model reference which will be assigned to the <a class="el" href="classModel.html" title="Represents the simulation model.">Model</a> being called. </td></tr>
   </table>
   </dd>
 </dl>
@@ -406,11 +406,31 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel_ad4fcd314fc1c2f581e8469c8767587bc_icgraph.png" border="0" usemap="#aclassModel_ad4fcd314fc1c2f581e8469c8767587bc_icgraph" alt=""/></div>
 <map name="aclassModel_ad4fcd314fc1c2f581e8469c8767587bc_icgraph" id="aclassModel_ad4fcd314fc1c2f581e8469c8767587bc_icgraph">
-<area shape="rect" title="Add a System pointer to the systems container." alt="" coords="173,31,258,57"/>
-<area shape="rect" href="classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="15,5,115,32"/>
-<area shape="poly" title=" " alt="" coords="157,37,115,30,116,24,157,32"/>
-<area shape="rect" href="classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="5,56,125,83"/>
-<area shape="poly" title=" " alt="" coords="158,56,125,62,124,57,157,51"/>
+<area shape="rect" title="Add a System pointer to the systems container." alt="" coords="315,183,400,209"/>
+<area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="137,5,233,32"/>
+<area shape="poly" title=" " alt="" coords="345,169,315,107,293,74,265,46,232,29,234,25,269,42,297,71,320,104,349,167"/>
+<area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="129,56,241,83"/>
+<area shape="poly" title=" " alt="" coords="337,172,307,133,266,97,240,85,243,80,268,92,310,129,342,168"/>
+<area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="141,107,229,133"/>
+<area shape="poly" title=" " alt="" coords="321,177,266,148,228,134,230,129,268,143,324,172"/>
+<area shape="rect" href="classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="135,157,235,184"/>
+<area shape="poly" title=" " alt="" coords="299,190,234,181,235,175,300,185"/>
+<area shape="rect" href="testModel_8cpp.html#a686821eb1d14aa6af3386f3eff9430e9" title=" " alt="" coords="103,208,267,235"/>
+<area shape="poly" title=" " alt="" coords="300,207,268,212,267,207,299,202"/>
+<area shape="rect" href="testModel_8cpp.html#aafd29634c0b4542428a53fb08352b80f" title=" " alt="" coords="130,259,240,285"/>
+<area shape="poly" title=" " alt="" coords="324,220,268,249,237,261,235,256,266,244,321,215"/>
+<area shape="rect" href="testModel_8cpp.html#aadc1eef3a1c739d23180e99fc879f636" title=" " alt="" coords="124,309,246,336"/>
+<area shape="poly" title=" " alt="" coords="342,224,310,263,268,300,245,311,243,306,266,295,307,259,337,220"/>
+<area shape="rect" href="classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="125,360,245,387"/>
+<area shape="poly" title=" " alt="" coords="349,225,320,288,297,321,269,350,246,363,244,358,265,346,293,318,315,285,345,223"/>
+<area shape="rect" href="mainFunctional_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="125,40,104,47,56,63,54,58,102,41,123,35"/>
+<area shape="poly" title=" " alt="" coords="113,72,55,72,55,67,113,67"/>
+<area shape="poly" title=" " alt="" coords="126,105,102,97,54,81,56,75,104,92,127,100"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,259,55,285"/>
+<area shape="poly" title=" " alt="" coords="125,242,104,249,56,266,54,261,102,244,123,237"/>
+<area shape="poly" title=" " alt="" coords="115,275,55,275,55,269,115,269"/>
+<area shape="poly" title=" " alt="" coords="123,307,102,300,54,283,56,278,104,295,125,302"/>
 </map>
 </div>
 
@@ -438,19 +458,37 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel_ab323d582a76cf60eb75b581f38551525_icgraph.png" border="0" usemap="#aclassModel_ab323d582a76cf60eb75b581f38551525_icgraph" alt=""/></div>
 <map name="aclassModel_ab323d582a76cf60eb75b581f38551525_icgraph" id="aclassModel_ab323d582a76cf60eb75b581f38551525_icgraph">
-<area shape="rect" title="Return a iterator to the first Flow in the container." alt="" coords="189,132,317,159"/>
-<area shape="rect" href="classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="23,5,123,32"/>
-<area shape="poly" title=" " alt="" coords="227,122,188,84,139,46,117,35,119,30,142,42,192,80,231,118"/>
-<area shape="rect" href="classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="13,56,133,83"/>
-<area shape="poly" title=" " alt="" coords="208,128,140,97,111,86,113,81,142,92,210,123"/>
-<area shape="rect" href="classModel.html#a4876989208f629dc7861a74ddddf27c2" title="Remove a Flow pointer from the flows container." alt="" coords="5,107,141,133"/>
-<area shape="poly" title=" " alt="" coords="173,137,141,132,141,127,173,131"/>
-<area shape="rect" href="classModel.html#a3157dc9e5f2e9874ef96c0c221714597" title="Remove a Flow pointer from the flows container." alt="" coords="5,157,141,184"/>
-<area shape="poly" title=" " alt="" coords="173,159,141,164,141,159,173,154"/>
-<area shape="rect" href="classModel.html#ad31ab57899deb9e33c9fd0312553383c" title="Run the simulation." alt="" coords="32,208,114,235"/>
-<area shape="poly" title=" " alt="" coords="210,168,142,198,113,210,111,205,140,194,208,163"/>
-<area shape="rect" href="classModel.html#aaaf021c002ef8491cb38ffca2e61bb3f" title="Update a Flow pointer from the flows container." alt="" coords="21,259,125,285"/>
-<area shape="poly" title=" " alt="" coords="231,172,192,211,142,249,119,260,117,256,139,244,188,207,227,169"/>
+<area shape="rect" title="Return a iterator to the first Flow in the container." alt="" coords="456,183,585,209"/>
+<area shape="rect" href="classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="291,5,390,32"/>
+<area shape="poly" title=" " alt="" coords="502,171,463,113,436,81,407,53,377,35,380,30,410,49,440,77,467,109,506,168"/>
+<area shape="rect" href="testModel_8cpp.html#aafd29634c0b4542428a53fb08352b80f" title=" " alt="" coords="109,107,219,133"/>
+<area shape="poly" title=" " alt="" coords="480,177,446,161,408,148,358,137,308,130,219,123,219,118,309,124,359,132,409,143,448,156,483,173"/>
+<area shape="rect" href="testModel_8cpp.html#aadc1eef3a1c739d23180e99fc879f636" title=" " alt="" coords="103,56,225,83"/>
+<area shape="poly" title=" " alt="" coords="491,175,453,146,407,120,361,103,313,91,225,77,226,71,314,86,363,98,409,115,456,141,495,170"/>
+<area shape="rect" href="classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="281,157,400,184"/>
+<area shape="poly" title=" " alt="" coords="440,187,401,182,401,176,441,182"/>
+<area shape="rect" href="classModel.html#a4876989208f629dc7861a74ddddf27c2" title="Remove a Flow pointer from the flows container." alt="" coords="273,208,408,235"/>
+<area shape="poly" title=" " alt="" coords="441,210,409,214,408,209,440,205"/>
+<area shape="rect" href="classModel.html#a3157dc9e5f2e9874ef96c0c221714597" title="Remove a Flow pointer from the flows container." alt="" coords="273,259,408,285"/>
+<area shape="poly" title=" " alt="" coords="478,219,409,249,381,261,379,256,407,244,476,214"/>
+<area shape="rect" href="classModel.html#ad31ab57899deb9e33c9fd0312553383c" title="Run the simulation." alt="" coords="300,309,382,336"/>
+<area shape="poly" title=" " alt="" coords="499,223,459,262,410,300,384,312,381,308,407,295,456,258,495,219"/>
+<area shape="rect" href="classModel.html#aaaf021c002ef8491cb38ffca2e61bb3f" title="Update a Flow pointer from the flows container." alt="" coords="289,360,392,387"/>
+<area shape="poly" title=" " alt="" coords="508,224,469,287,442,321,410,350,390,362,387,357,407,346,438,317,465,284,503,222"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,81,55,108"/>
+<area shape="poly" title=" " alt="" coords="93,109,55,102,56,97,94,104"/>
+<area shape="poly" title=" " alt="" coords="88,86,56,93,55,87,87,81"/>
+<area shape="poly" title=" " alt="" coords="283,204,272,198,221,166,180,136,183,132,224,162,274,194,285,199"/>
+<area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="116,360,212,387"/>
+<area shape="poly" title=" " alt="" coords="285,341,213,362,211,357,284,336"/>
+<area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="108,259,220,285"/>
+<area shape="poly" title=" " alt="" coords="284,309,212,288,214,283,285,304"/>
+<area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="120,309,208,336"/>
+<area shape="poly" title=" " alt="" coords="284,325,208,325,208,320,284,320"/>
+<area shape="rect" href="mainFunctional_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,309,55,336"/>
+<area shape="poly" title=" " alt="" coords="111,356,54,334,56,329,113,351"/>
+<area shape="poly" title=" " alt="" coords="113,294,56,316,54,311,111,289"/>
+<area shape="poly" title=" " alt="" coords="105,325,55,325,55,320,105,320"/>
 </map>
 </div>
 
@@ -478,19 +516,36 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel_ab1d42dc05fe348f907372f3139b6c0f5_icgraph.png" border="0" usemap="#aclassModel_ab1d42dc05fe348f907372f3139b6c0f5_icgraph" alt=""/></div>
 <map name="aclassModel_ab1d42dc05fe348f907372f3139b6c0f5_icgraph" id="aclassModel_ab1d42dc05fe348f907372f3139b6c0f5_icgraph">
-<area shape="rect" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="189,132,307,159"/>
-<area shape="rect" href="classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="23,5,123,32"/>
-<area shape="poly" title=" " alt="" coords="223,122,186,83,139,46,117,35,120,30,142,42,190,79,227,118"/>
-<area shape="rect" href="classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="13,56,133,83"/>
-<area shape="poly" title=" " alt="" coords="204,127,140,97,111,86,113,81,142,92,207,122"/>
-<area shape="rect" href="classModel.html#a4876989208f629dc7861a74ddddf27c2" title="Remove a Flow pointer from the flows container." alt="" coords="5,107,141,133"/>
-<area shape="poly" title=" " alt="" coords="173,137,140,132,141,127,174,132"/>
-<area shape="rect" href="classModel.html#a3157dc9e5f2e9874ef96c0c221714597" title="Remove a Flow pointer from the flows container." alt="" coords="5,157,141,184"/>
-<area shape="poly" title=" " alt="" coords="174,159,141,164,140,158,173,153"/>
-<area shape="rect" href="classModel.html#ad31ab57899deb9e33c9fd0312553383c" title="Run the simulation." alt="" coords="32,208,114,235"/>
-<area shape="poly" title=" " alt="" coords="207,168,142,198,113,210,111,205,140,194,204,163"/>
-<area shape="rect" href="classModel.html#aaaf021c002ef8491cb38ffca2e61bb3f" title="Update a Flow pointer from the flows container." alt="" coords="21,259,125,285"/>
-<area shape="poly" title=" " alt="" coords="227,172,190,211,142,249,120,260,117,256,139,244,186,207,223,169"/>
+<area shape="rect" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="456,157,575,184"/>
+<area shape="rect" href="classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="291,5,390,32"/>
+<area shape="poly" title=" " alt="" coords="494,146,456,100,407,53,376,35,379,30,410,49,460,96,498,143"/>
+<area shape="rect" href="testModel_8cpp.html#aadc1eef3a1c739d23180e99fc879f636" title=" " alt="" coords="103,69,225,96"/>
+<area shape="poly" title=" " alt="" coords="488,149,452,120,407,97,361,85,313,79,225,79,225,74,314,74,362,80,409,92,455,116,491,144"/>
+<area shape="rect" href="classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="281,107,400,133"/>
+<area shape="poly" title=" " alt="" coords="451,155,389,136,390,131,453,150"/>
+<area shape="rect" href="classModel.html#a4876989208f629dc7861a74ddddf27c2" title="Remove a Flow pointer from the flows container." alt="" coords="273,157,408,184"/>
+<area shape="poly" title=" " alt="" coords="441,173,409,173,409,168,441,168"/>
+<area shape="rect" href="classModel.html#a3157dc9e5f2e9874ef96c0c221714597" title="Remove a Flow pointer from the flows container." alt="" coords="273,208,408,235"/>
+<area shape="poly" title=" " alt="" coords="453,192,390,210,389,205,451,186"/>
+<area shape="rect" href="classModel.html#ad31ab57899deb9e33c9fd0312553383c" title="Run the simulation." alt="" coords="300,259,382,285"/>
+<area shape="poly" title=" " alt="" coords="488,196,452,223,410,249,383,261,381,256,407,244,449,218,485,192"/>
+<area shape="rect" href="classModel.html#aaaf021c002ef8491cb38ffca2e61bb3f" title="Update a Flow pointer from the flows container." alt="" coords="289,309,392,336"/>
+<area shape="poly" title=" " alt="" coords="500,199,463,249,438,276,410,300,389,311,387,306,407,295,434,272,458,246,496,196"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,101,55,128"/>
+<area shape="poly" title=" " alt="" coords="91,103,56,111,54,106,90,98"/>
+<area shape="rect" href="testModel_8cpp.html#aafd29634c0b4542428a53fb08352b80f" title=" " alt="" coords="109,132,219,159"/>
+<area shape="poly" title=" " alt="" coords="257,161,219,156,220,151,258,156"/>
+<area shape="poly" title=" " alt="" coords="94,132,54,123,56,118,95,127"/>
+<area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="116,208,212,235"/>
+<area shape="poly" title=" " alt="" coords="284,259,211,238,213,232,285,253"/>
+<area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="108,259,220,285"/>
+<area shape="poly" title=" " alt="" coords="284,275,221,275,221,269,284,269"/>
+<area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="120,309,208,336"/>
+<area shape="poly" title=" " alt="" coords="285,291,209,313,207,308,284,285"/>
+<area shape="rect" href="mainFunctional_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,259,55,285"/>
+<area shape="poly" title=" " alt="" coords="113,243,56,265,54,260,111,238"/>
+<area shape="poly" title=" " alt="" coords="92,275,55,275,55,269,92,269"/>
+<area shape="poly" title=" " alt="" coords="111,306,54,284,56,279,113,301"/>
 </map>
 </div>
 
@@ -518,17 +573,42 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel_a61db3ce77d42741a911a44aba7b320c7_icgraph.png" border="0" usemap="#aclassModel_a61db3ce77d42741a911a44aba7b320c7_icgraph" alt=""/></div>
 <map name="aclassModel_a61db3ce77d42741a911a44aba7b320c7_icgraph" id="aclassModel_a61db3ce77d42741a911a44aba7b320c7_icgraph">
-<area shape="rect" title="Function for getting the size of the flows container." alt="" coords="306,56,427,83"/>
-<area shape="rect" href="classModel.html#a05f2e5dabdb1dbeb5605ff6f4c84ded0" title="Add a Flow pointer to the flows container." alt="" coords="173,5,258,32"/>
-<area shape="poly" title=" " alt="" coords="309,53,257,35,258,30,311,48"/>
-<area shape="rect" href="classModel.html#ad4fcd314fc1c2f581e8469c8767587bc" title="Add a System pointer to the systems container." alt="" coords="173,56,258,83"/>
-<area shape="poly" title=" " alt="" coords="291,72,258,72,258,67,291,67"/>
-<area shape="rect" href="classModel.html#ad31ab57899deb9e33c9fd0312553383c" title="Run the simulation." alt="" coords="174,107,257,133"/>
-<area shape="poly" title=" " alt="" coords="311,91,258,109,256,104,309,86"/>
-<area shape="rect" href="classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="15,31,115,57"/>
-<area shape="poly" title=" " alt="" coords="157,62,115,55,116,50,157,57"/>
-<area shape="rect" href="classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="5,81,125,108"/>
-<area shape="poly" title=" " alt="" coords="158,82,125,87,124,82,157,76"/>
+<area shape="rect" title="Function for getting the size of the flows container." alt="" coords="448,169,570,196"/>
+<area shape="rect" href="classModel.html#a05f2e5dabdb1dbeb5605ff6f4c84ded0" title="Add a Flow pointer to the flows container." alt="" coords="315,56,400,83"/>
+<area shape="poly" title=" " alt="" coords="479,161,399,97,382,85,384,81,402,93,483,157"/>
+<area shape="rect" href="classModel.html#ad4fcd314fc1c2f581e8469c8767587bc" title="Add a System pointer to the systems container." alt="" coords="315,169,400,196"/>
+<area shape="poly" title=" " alt="" coords="433,185,401,185,401,180,433,180"/>
+<area shape="rect" href="testModel_8cpp.html#a686821eb1d14aa6af3386f3eff9430e9" title=" " alt="" coords="103,309,267,336"/>
+<area shape="poly" title=" " alt="" coords="469,206,378,251,268,300,235,311,234,306,266,295,376,247,467,201"/>
+<area shape="rect" href="testModel_8cpp.html#aafd29634c0b4542428a53fb08352b80f" title=" " alt="" coords="130,360,240,387"/>
+<area shape="poly" title=" " alt="" coords="487,209,449,246,402,284,337,322,268,350,236,362,234,357,266,346,335,317,399,279,445,242,483,205"/>
+<area shape="rect" href="classModel.html#ad31ab57899deb9e33c9fd0312553383c" title="Run the simulation." alt="" coords="317,107,399,133"/>
+<area shape="poly" title=" " alt="" coords="460,165,391,136,393,131,462,160"/>
+<area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="137,107,233,133"/>
+<area shape="poly" title=" " alt="" coords="310,165,266,148,232,136,234,131,268,143,312,160"/>
+<area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="129,5,241,32"/>
+<area shape="poly" title=" " alt="" coords="325,160,313,147,298,118,291,93,284,69,265,46,240,32,243,27,269,42,289,67,297,91,303,116,317,144,329,157"/>
+<area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="141,56,229,83"/>
+<area shape="poly" title=" " alt="" coords="327,161,313,147,291,120,281,108,266,97,228,81,230,76,268,92,284,105,295,116,317,144,331,157"/>
+<area shape="rect" href="classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="135,157,235,184"/>
+<area shape="poly" title=" " alt="" coords="300,181,234,177,235,171,300,176"/>
+<area shape="poly" title=" " alt="" coords="344,211,313,256,292,280,268,300,247,311,244,306,266,295,289,276,309,253,339,208"/>
+<area shape="poly" title=" " alt="" coords="351,212,339,244,322,281,299,318,269,350,241,365,239,361,265,346,295,315,317,278,334,242,346,210"/>
+<area shape="rect" href="testModel_8cpp.html#aadc1eef3a1c739d23180e99fc879f636" title=" " alt="" coords="124,259,246,285"/>
+<area shape="poly" title=" " alt="" coords="330,208,301,230,268,249,240,260,238,256,266,244,298,225,327,204"/>
+<area shape="rect" href="classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="125,208,245,235"/>
+<area shape="poly" title=" " alt="" coords="300,198,245,211,244,205,299,193"/>
+<area shape="rect" href="mainFunctional_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="123,104,102,97,54,81,56,75,104,92,125,99"/>
+<area shape="poly" title=" " alt="" coords="125,40,104,47,56,63,54,58,102,41,123,35"/>
+<area shape="poly" title=" " alt="" coords="125,72,55,72,55,67,125,67"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,309,55,336"/>
+<area shape="poly" title=" " alt="" coords="87,325,55,325,55,320,87,320"/>
+<area shape="poly" title=" " alt="" coords="123,357,102,351,54,334,56,329,104,345,125,352"/>
+<area shape="poly" title=" " alt="" coords="125,293,104,300,56,317,54,311,102,295,123,288"/>
+<area shape="poly" title=" " alt="" coords="301,123,233,123,233,117,301,117"/>
+<area shape="poly" title=" " alt="" coords="317,100,313,97,290,70,280,58,266,46,240,34,242,29,268,42,284,54,294,66,317,93,320,96"/>
+<area shape="poly" title=" " alt="" coords="301,106,228,85,229,79,302,101"/>
 </map>
 </div>
 
@@ -556,11 +636,15 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel_a951151667f4f186256198e02272a932d_icgraph.png" border="0" usemap="#aclassModel_a951151667f4f186256198e02272a932d_icgraph" alt=""/></div>
 <map name="aclassModel_a951151667f4f186256198e02272a932d_icgraph" id="aclassModel_a951151667f4f186256198e02272a932d_icgraph">
-<area shape="rect" title="Get the name field on Flow." alt="" coords="173,31,290,57"/>
-<area shape="rect" href="classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="15,5,115,32"/>
-<area shape="poly" title=" " alt="" coords="157,35,114,29,115,24,158,30"/>
-<area shape="rect" href="classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="5,56,125,83"/>
-<area shape="poly" title=" " alt="" coords="158,58,126,63,125,58,157,53"/>
+<area shape="rect" title="Get the name field on Flow." alt="" coords="303,56,420,83"/>
+<area shape="rect" href="classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="129,5,229,32"/>
+<area shape="poly" title=" " alt="" coords="296,54,228,35,230,30,297,49"/>
+<area shape="rect" href="testModel_8cpp.html#a139aa96505ebac820c1fe889f8e8ecfa" title=" " alt="" coords="103,56,255,83"/>
+<area shape="poly" title=" " alt="" coords="287,72,255,72,255,67,287,67"/>
+<area shape="rect" href="classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="119,107,239,133"/>
+<area shape="poly" title=" " alt="" coords="297,90,230,109,229,103,295,85"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
 </map>
 </div>
 
@@ -641,7 +725,7 @@ Here is the call graph for this function:</div>
 <p>Uses a <a class="el" href="classFlow.html" title="Represents a flow beetwen Systems.">Flow</a> pointer as a parameter for removing the <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">flow</td><td></td></tr>
+    <tr><td class="paramname">flow*</td><td>The <a class="el" href="classFlow.html" title="Represents a flow beetwen Systems.">Flow</a> pointer which we will compare to our list element to remove.</td></tr>
   </table>
   </dd>
 </dl>
@@ -656,6 +740,18 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="141,32,173,27,174,32,142,37"/>
 <area shape="rect" href="classModel.html#ab1d42dc05fe348f907372f3139b6c0f5" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="194,56,312,83"/>
 <area shape="poly" title=" " alt="" coords="142,51,178,56,178,61,141,56"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_a4876989208f629dc7861a74ddddf27c2_icgraph.png" border="0" usemap="#aclassModel_a4876989208f629dc7861a74ddddf27c2_icgraph" alt=""/></div>
+<map name="aclassModel_a4876989208f629dc7861a74ddddf27c2_icgraph" id="aclassModel_a4876989208f629dc7861a74ddddf27c2_icgraph">
+<area shape="rect" title="Remove a Flow pointer from the flows container." alt="" coords="260,5,395,32"/>
+<area shape="rect" href="testModel_8cpp.html#aafd29634c0b4542428a53fb08352b80f" title=" " alt="" coords="103,5,212,32"/>
+<area shape="poly" title=" " alt="" coords="244,21,212,21,212,16,244,16"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>
 </div>
 
@@ -681,7 +777,7 @@ Here is the call graph for this function:</div>
 <p>Uses a name as a parameter for removing the <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td></td></tr>
+    <tr><td class="paramname">name</td><td>A string for naming the <a class="el" href="classModel.html" title="Represents the simulation model.">Model</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -721,7 +817,7 @@ Here is the call graph for this function:</div>
 <p>Uses a system name as a parameter for removing the <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td></td></tr>
+    <tr><td class="paramname">name</td><td>A string for naming the <a class="el" href="classModel.html" title="Represents the simulation model.">Model</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -761,7 +857,7 @@ Here is the call graph for this function:</div>
 <p>Uses a system pointer as a parameter for removing the <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">system</td><td></td></tr>
+    <tr><td class="paramname">system*</td><td>The <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a> pointer which we will compare to our list element to remove.</td></tr>
   </table>
   </dd>
 </dl>
@@ -776,6 +872,18 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="158,32,190,27,191,33,159,37"/>
 <area shape="rect" href="classModel.html#a8e232479172c73b87313feba7c0d409c" title="Returns an iterator referring to the past&#45;the&#45;end element in the systems container." alt="" coords="211,56,348,83"/>
 <area shape="poly" title=" " alt="" coords="159,51,196,56,195,61,158,56"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_abf3596e42d008b113ed4e9f877e83e24_icgraph.png" border="0" usemap="#aclassModel_abf3596e42d008b113ed4e9f877e83e24_icgraph" alt=""/></div>
+<map name="aclassModel_abf3596e42d008b113ed4e9f877e83e24_icgraph" id="aclassModel_abf3596e42d008b113ed4e9f877e83e24_icgraph">
+<area shape="rect" title="Remove a System pointer from the systems container." alt="" coords="260,5,412,32"/>
+<area shape="rect" href="testModel_8cpp.html#aafd29634c0b4542428a53fb08352b80f" title=" " alt="" coords="103,5,212,32"/>
+<area shape="poly" title=" " alt="" coords="245,21,212,21,212,16,245,16"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>
 </div>
 
@@ -835,6 +943,24 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="63,132,95,162,137,194,146,199,143,203,134,198,92,167,59,136"/>
 </map>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_ad31ab57899deb9e33c9fd0312553383c_icgraph.png" border="0" usemap="#aclassModel_ad31ab57899deb9e33c9fd0312553383c_icgraph" alt=""/></div>
+<map name="aclassModel_ad31ab57899deb9e33c9fd0312553383c_icgraph" id="aclassModel_ad31ab57899deb9e33c9fd0312553383c_icgraph">
+<area shape="rect" title="Run the simulation." alt="" coords="263,56,345,83"/>
+<area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="111,5,207,32"/>
+<area shape="poly" title=" " alt="" coords="248,53,199,35,200,30,250,48"/>
+<area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="103,56,215,83"/>
+<area shape="poly" title=" " alt="" coords="248,72,215,72,215,67,248,67"/>
+<area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="115,107,203,133"/>
+<area shape="poly" title=" " alt="" coords="250,91,200,109,199,104,248,86"/>
+<area shape="rect" href="mainFunctional_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="110,41,56,62,54,57,108,36"/>
+<area shape="poly" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
+<area shape="poly" title=" " alt="" coords="108,103,54,81,56,76,110,98"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -857,6 +983,18 @@ Here is the call graph for this function:</div>
 <p>Set a new <a class="el" href="classModel.html#a2d9aef6a80a205a03e4e99b5483af9a0">name</a> for the <a class="el" href="classModel.html" title="Represents the simulation model.">Model</a>. </p>
 <p>Will set a new name based on the string passed as a param.</p>
 <dl class="section return"><dt>Returns</dt><dd>return true if sucefully setted the new name, and false if it failed. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_ad301d6f19d848ab5b9feece5b24a93a2_icgraph.png" border="0" usemap="#aclassModel_ad301d6f19d848ab5b9feece5b24a93a2_icgraph" alt=""/></div>
+<map name="aclassModel_ad301d6f19d848ab5b9feece5b24a93a2_icgraph" id="aclassModel_ad301d6f19d848ab5b9feece5b24a93a2_icgraph">
+<area shape="rect" title="Set a new name for the Model." alt="" coords="303,5,420,32"/>
+<area shape="rect" href="testModel_8cpp.html#a139aa96505ebac820c1fe889f8e8ecfa" title=" " alt="" coords="103,5,255,32"/>
+<area shape="poly" title=" " alt="" coords="287,21,255,21,255,16,287,16"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -882,17 +1020,26 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel_a618af90bbfd2b01cd0bc12d7d45739ed_icgraph.png" border="0" usemap="#aclassModel_a618af90bbfd2b01cd0bc12d7d45739ed_icgraph" alt=""/></div>
 <map name="aclassModel_a618af90bbfd2b01cd0bc12d7d45739ed_icgraph" id="aclassModel_a618af90bbfd2b01cd0bc12d7d45739ed_icgraph">
-<area shape="rect" title="Return a iterator to the first System in the container." alt="" coords="206,107,353,133"/>
-<area shape="rect" href="classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="32,5,131,32"/>
-<area shape="poly" title=" " alt="" coords="246,100,204,73,157,46,128,35,130,30,159,42,207,68,249,95"/>
-<area shape="rect" href="classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="22,56,141,83"/>
-<area shape="poly" title=" " alt="" coords="209,105,136,86,137,81,210,100"/>
-<area shape="rect" href="classModel.html#a29e38c88860bdaed6811b32754181b5a" title="Remove a System pointer from the systems container." alt="" coords="5,107,158,133"/>
-<area shape="poly" title=" " alt="" coords="190,123,158,123,158,117,190,117"/>
-<area shape="rect" href="classModel.html#abf3596e42d008b113ed4e9f877e83e24" title="Remove a System pointer from the systems container." alt="" coords="5,157,158,184"/>
-<area shape="poly" title=" " alt="" coords="210,140,137,159,136,154,209,135"/>
-<area shape="rect" href="classModel.html#a5fae22d205d135bee64724372a65d3fb" title="Update a System pointer from the systems container." alt="" coords="30,208,133,235"/>
-<area shape="poly" title=" " alt="" coords="249,145,207,172,159,198,130,210,128,205,157,194,204,167,246,140"/>
+<area shape="rect" title="Return a iterator to the first System in the container." alt="" coords="473,157,621,184"/>
+<area shape="rect" href="classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="300,5,399,32"/>
+<area shape="poly" title=" " alt="" coords="523,147,480,100,424,53,390,35,392,30,427,48,484,96,527,143"/>
+<area shape="rect" href="testModel_8cpp.html#aafd29634c0b4542428a53fb08352b80f" title=" " alt="" coords="109,183,219,209"/>
+<area shape="poly" title=" " alt="" coords="480,156,434,147,382,142,327,141,274,148,227,164,188,184,186,180,225,159,272,143,327,136,382,136,435,142,481,151"/>
+<area shape="rect" href="testModel_8cpp.html#aadc1eef3a1c739d23180e99fc879f636" title=" " alt="" coords="103,95,225,121"/>
+<area shape="poly" title=" " alt="" coords="502,153,465,138,425,127,373,118,320,112,225,109,225,104,320,107,373,112,426,121,467,133,504,148"/>
+<area shape="rect" href="classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="290,157,409,184"/>
+<area shape="poly" title=" " alt="" coords="458,173,409,173,409,168,458,168"/>
+<area shape="rect" href="classModel.html#a29e38c88860bdaed6811b32754181b5a" title="Remove a System pointer from the systems container." alt="" coords="273,208,425,235"/>
+<area shape="poly" title=" " alt="" coords="478,191,405,210,404,205,477,186"/>
+<area shape="rect" href="classModel.html#abf3596e42d008b113ed4e9f877e83e24" title="Remove a System pointer from the systems container." alt="" coords="273,259,425,285"/>
+<area shape="poly" title=" " alt="" coords="516,195,475,223,426,249,398,261,396,256,424,244,472,218,513,191"/>
+<area shape="rect" href="classModel.html#a5fae22d205d135bee64724372a65d3fb" title="Update a System pointer from the systems container." alt="" coords="298,309,401,336"/>
+<area shape="poly" title=" " alt="" coords="529,198,486,249,458,276,427,300,402,312,400,307,424,295,454,272,482,246,525,195"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,157,55,184"/>
+<area shape="poly" title=" " alt="" coords="93,185,55,178,56,173,94,180"/>
+<area shape="poly" title=" " alt="" coords="121,131,56,162,54,157,119,126"/>
+<area shape="poly" title=" " alt="" coords="289,256,272,249,192,212,194,208,274,244,291,251"/>
+<area shape="poly" title=" " alt="" coords="282,305,272,300,242,279,214,254,174,212,178,208,218,251,245,274,274,295,284,300"/>
 </map>
 </div>
 
@@ -920,17 +1067,25 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel_a8e232479172c73b87313feba7c0d409c_icgraph.png" border="0" usemap="#aclassModel_a8e232479172c73b87313feba7c0d409c_icgraph" alt=""/></div>
 <map name="aclassModel_a8e232479172c73b87313feba7c0d409c_icgraph" id="aclassModel_a8e232479172c73b87313feba7c0d409c_icgraph">
-<area shape="rect" title="Returns an iterator referring to the past&#45;the&#45;end element in the systems container." alt="" coords="206,107,343,133"/>
-<area shape="rect" href="classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="32,5,131,32"/>
-<area shape="poly" title=" " alt="" coords="242,99,202,72,156,46,129,35,131,30,159,42,205,68,245,95"/>
-<area shape="rect" href="classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="22,56,141,83"/>
-<area shape="poly" title=" " alt="" coords="205,105,134,86,136,81,206,99"/>
-<area shape="rect" href="classModel.html#a29e38c88860bdaed6811b32754181b5a" title="Remove a System pointer from the systems container." alt="" coords="5,107,158,133"/>
-<area shape="poly" title=" " alt="" coords="190,123,158,123,158,117,190,117"/>
-<area shape="rect" href="classModel.html#abf3596e42d008b113ed4e9f877e83e24" title="Remove a System pointer from the systems container." alt="" coords="5,157,158,184"/>
-<area shape="poly" title=" " alt="" coords="206,141,136,159,134,154,205,135"/>
-<area shape="rect" href="classModel.html#a5fae22d205d135bee64724372a65d3fb" title="Update a System pointer from the systems container." alt="" coords="30,208,133,235"/>
-<area shape="poly" title=" " alt="" coords="245,145,205,172,159,198,131,210,129,205,156,194,202,168,242,141"/>
+<area shape="rect" title="Returns an iterator referring to the past&#45;the&#45;end element in the systems container." alt="" coords="473,132,611,159"/>
+<area shape="rect" href="classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="300,5,399,32"/>
+<area shape="poly" title=" " alt="" coords="514,123,473,88,424,53,388,35,390,30,427,48,476,84,517,119"/>
+<area shape="rect" href="testModel_8cpp.html#aadc1eef3a1c739d23180e99fc879f636" title=" " alt="" coords="103,107,225,133"/>
+<area shape="poly" title=" " alt="" coords="502,127,466,110,425,97,383,90,350,89,273,97,214,109,213,103,273,92,349,84,383,85,426,92,467,105,505,122"/>
+<area shape="rect" href="classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="290,107,409,133"/>
+<area shape="poly" title=" " alt="" coords="458,137,409,130,409,125,458,132"/>
+<area shape="rect" href="classModel.html#a29e38c88860bdaed6811b32754181b5a" title="Remove a System pointer from the systems container." alt="" coords="273,157,425,184"/>
+<area shape="poly" title=" " alt="" coords="458,159,426,163,425,158,458,154"/>
+<area shape="rect" href="classModel.html#abf3596e42d008b113ed4e9f877e83e24" title="Remove a System pointer from the systems container." alt="" coords="273,208,425,235"/>
+<area shape="poly" title=" " alt="" coords="498,168,426,198,395,210,393,205,424,194,496,163"/>
+<area shape="rect" href="classModel.html#a5fae22d205d135bee64724372a65d3fb" title="Update a System pointer from the systems container." alt="" coords="298,259,401,285"/>
+<area shape="poly" title=" " alt="" coords="520,172,479,211,427,249,402,260,400,256,424,244,476,207,517,168"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,183,55,209"/>
+<area shape="poly" title=" " alt="" coords="127,144,57,184,54,180,124,139"/>
+<area shape="rect" href="testModel_8cpp.html#aafd29634c0b4542428a53fb08352b80f" title=" " alt="" coords="109,208,219,235"/>
+<area shape="poly" title=" " alt="" coords="257,224,219,224,219,219,257,219"/>
+<area shape="poly" title=" " alt="" coords="93,211,55,203,56,198,94,205"/>
+<area shape="poly" title=" " alt="" coords="282,257,215,238,216,233,284,252"/>
 </map>
 </div>
 
@@ -958,13 +1113,34 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel_ac63ddb11d77ea78d5d427af1f8d154fc_icgraph.png" border="0" usemap="#aclassModel_ac63ddb11d77ea78d5d427af1f8d154fc_icgraph" alt=""/></div>
 <map name="aclassModel_ac63ddb11d77ea78d5d427af1f8d154fc_icgraph" id="aclassModel_ac63ddb11d77ea78d5d427af1f8d154fc_icgraph">
-<area shape="rect" title="Function for getting the size of the systems container." alt="" coords="306,31,446,57"/>
-<area shape="rect" href="classModel.html#ad4fcd314fc1c2f581e8469c8767587bc" title="Add a System pointer to the systems container." alt="" coords="173,31,258,57"/>
-<area shape="poly" title=" " alt="" coords="290,47,258,47,258,41,290,41"/>
-<area shape="rect" href="classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="15,5,115,32"/>
-<area shape="poly" title=" " alt="" coords="157,37,115,30,116,24,157,32"/>
-<area shape="rect" href="classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="5,56,125,83"/>
-<area shape="poly" title=" " alt="" coords="158,56,125,62,124,57,157,51"/>
+<area shape="rect" title="Function for getting the size of the systems container." alt="" coords="448,284,589,311"/>
+<area shape="rect" href="classModel.html#ad4fcd314fc1c2f581e8469c8767587bc" title="Add a System pointer to the systems container." alt="" coords="315,208,400,235"/>
+<area shape="poly" title=" " alt="" coords="473,279,387,238,389,233,476,274"/>
+<area shape="rect" href="testModel_8cpp.html#aafd29634c0b4542428a53fb08352b80f" title=" " alt="" coords="130,360,240,387"/>
+<area shape="poly" title=" " alt="" coords="442,317,241,364,239,358,441,312"/>
+<area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="137,5,233,32"/>
+<area shape="poly" title=" " alt="" coords="347,194,336,160,319,120,296,80,265,46,250,36,232,29,234,24,252,31,269,42,300,77,324,117,341,158,352,192"/>
+<area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="129,56,241,83"/>
+<area shape="poly" title=" " alt="" coords="341,195,311,145,290,119,265,97,240,84,243,79,269,92,294,115,315,142,346,193"/>
+<area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="141,107,229,133"/>
+<area shape="poly" title=" " alt="" coords="331,199,301,172,266,148,228,132,230,127,268,143,305,168,335,195"/>
+<area shape="rect" href="classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="135,157,235,184"/>
+<area shape="poly" title=" " alt="" coords="299,207,232,187,234,182,301,202"/>
+<area shape="rect" href="testModel_8cpp.html#a686821eb1d14aa6af3386f3eff9430e9" title=" " alt="" coords="103,208,267,235"/>
+<area shape="poly" title=" " alt="" coords="300,224,268,224,268,219,300,219"/>
+<area shape="poly" title=" " alt="" coords="346,250,315,301,294,327,269,350,241,364,239,360,265,346,290,324,311,298,341,247"/>
+<area shape="rect" href="testModel_8cpp.html#aadc1eef3a1c739d23180e99fc879f636" title=" " alt="" coords="124,259,246,285"/>
+<area shape="poly" title=" " alt="" coords="301,241,234,261,232,256,299,236"/>
+<area shape="rect" href="classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="125,309,245,336"/>
+<area shape="poly" title=" " alt="" coords="335,248,305,275,268,300,242,311,240,306,266,295,301,270,331,244"/>
+<area shape="rect" href="mainFunctional_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="125,40,104,47,56,63,54,58,102,41,123,35"/>
+<area shape="poly" title=" " alt="" coords="113,72,55,72,55,67,113,67"/>
+<area shape="poly" title=" " alt="" coords="126,105,102,97,54,81,56,75,104,92,127,100"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,259,55,285"/>
+<area shape="poly" title=" " alt="" coords="125,242,104,249,56,266,54,261,102,244,123,237"/>
+<area shape="poly" title=" " alt="" coords="114,357,101,350,65,319,39,288,43,284,68,315,104,346,117,353"/>
+<area shape="poly" title=" " alt="" coords="108,275,55,275,55,269,108,269"/>
 </map>
 </div>
 
@@ -1000,8 +1176,8 @@ Here is the caller graph for this function:</div>
 <p>Uses a name as a parameter for identifying the <a class="el" href="classFlow.html" title="Represents a flow beetwen Systems.">Flow</a> which will be updated on the container. Also receives a <a class="el" href="classFlow.html" title="Represents a flow beetwen Systems.">Flow</a> pointer as a param which will substitute the <a class="el" href="classFlow.html" title="Represents a flow beetwen Systems.">Flow</a> identified with the name.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td></td></tr>
-    <tr><td class="paramname">flow</td><td></td></tr>
+    <tr><td class="paramname">name</td><td>A string for naming the <a class="el" href="classModel.html" title="Represents the simulation model.">Model</a>. </td></tr>
+    <tr><td class="paramname">flow*</td><td>The <a class="el" href="classFlow.html" title="Represents a flow beetwen Systems.">Flow</a> pointer which we will compare to our list element to remove.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1051,8 +1227,8 @@ Here is the call graph for this function:</div>
 <p>Uses a name as a parameter for identifying the <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a> which will be updated on the container. Also receives a <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a> pointer as a param which will substitute the <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a> identified with the name.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td></td></tr>
-    <tr><td class="paramname">system</td><td></td></tr>
+    <tr><td class="paramname">name</td><td>A string for naming the <a class="el" href="classModel.html" title="Represents the simulation model.">Model</a>. </td></tr>
+    <tr><td class="paramname">system</td><td>The system which we will update the element on our list.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1067,6 +1243,18 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="109,34,141,29,141,34,109,39"/>
 <area shape="rect" href="classModel.html#a8e232479172c73b87313feba7c0d409c" title="Returns an iterator referring to the past&#45;the&#45;end element in the systems container." alt="" coords="162,56,299,83"/>
 <area shape="poly" title=" " alt="" coords="109,49,147,54,146,60,109,54"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_a5fae22d205d135bee64724372a65d3fb_icgraph.png" border="0" usemap="#aclassModel_a5fae22d205d135bee64724372a65d3fb_icgraph" alt=""/></div>
+<map name="aclassModel_a5fae22d205d135bee64724372a65d3fb_icgraph" id="aclassModel_a5fae22d205d135bee64724372a65d3fb_icgraph">
+<area shape="rect" title="Update a System pointer from the systems container." alt="" coords="260,5,363,32"/>
+<area shape="rect" href="testModel_8cpp.html#aafd29634c0b4542428a53fb08352b80f" title=" " alt="" coords="103,5,212,32"/>
+<area shape="poly" title=" " alt="" coords="244,21,212,21,212,16,244,16"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>
 </div>
 

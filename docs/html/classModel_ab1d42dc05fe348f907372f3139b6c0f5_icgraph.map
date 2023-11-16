@@ -1,15 +1,32 @@
 <map id="Model::flowsEnd" name="Model::flowsEnd">
-<area shape="rect" id="Node000001" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="189,132,307,159"/>
-<area shape="rect" id="Node000002" href="$classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="23,5,123,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,122,186,83,139,46,117,35,120,30,142,42,190,79,227,118"/>
-<area shape="rect" id="Node000003" href="$classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="13,56,133,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,127,140,97,111,86,113,81,142,92,207,122"/>
-<area shape="rect" id="Node000004" href="$classModel.html#a4876989208f629dc7861a74ddddf27c2" title="Remove a Flow pointer from the flows container." alt="" coords="5,107,141,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="173,137,140,132,141,127,174,132"/>
-<area shape="rect" id="Node000005" href="$classModel.html#a3157dc9e5f2e9874ef96c0c221714597" title="Remove a Flow pointer from the flows container." alt="" coords="5,157,141,184"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="174,159,141,164,140,158,173,153"/>
-<area shape="rect" id="Node000006" href="$classModel.html#ad31ab57899deb9e33c9fd0312553383c" title="Run the simulation." alt="" coords="32,208,114,235"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="207,168,142,198,113,210,111,205,140,194,204,163"/>
-<area shape="rect" id="Node000007" href="$classModel.html#aaaf021c002ef8491cb38ffca2e61bb3f" title="Update a Flow pointer from the flows container." alt="" coords="21,259,125,285"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="227,172,190,211,142,249,120,260,117,256,139,244,186,207,223,169"/>
+<area shape="rect" id="Node000001" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="456,157,575,184"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a427a805ff8293a1a55ec9e1e98900405" title="Copy constructor." alt="" coords="291,5,390,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="494,146,456,100,407,53,376,35,379,30,410,49,460,96,498,143"/>
+<area shape="rect" id="Node000003" href="$testModel_8cpp.html#aadc1eef3a1c739d23180e99fc879f636" title=" " alt="" coords="103,69,225,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="488,149,452,120,407,97,361,85,313,79,225,79,225,74,314,74,362,80,409,92,455,116,491,144"/>
+<area shape="rect" id="Node000005" href="$classModel.html#aad5eadb989dae838966ef6d27769aea1" title="Overload for = operator." alt="" coords="281,107,400,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="451,155,389,136,390,131,453,150"/>
+<area shape="rect" id="Node000006" href="$classModel.html#a4876989208f629dc7861a74ddddf27c2" title="Remove a Flow pointer from the flows container." alt="" coords="273,157,408,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="441,173,409,173,409,168,441,168"/>
+<area shape="rect" id="Node000008" href="$classModel.html#a3157dc9e5f2e9874ef96c0c221714597" title="Remove a Flow pointer from the flows container." alt="" coords="273,208,408,235"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="453,192,390,210,389,205,451,186"/>
+<area shape="rect" id="Node000009" href="$classModel.html#ad31ab57899deb9e33c9fd0312553383c" title="Run the simulation." alt="" coords="300,259,382,285"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="488,196,452,223,410,249,383,261,381,256,407,244,449,218,485,192"/>
+<area shape="rect" id="Node000014" href="$classModel.html#aaaf021c002ef8491cb38ffca2e61bb3f" title="Update a Flow pointer from the flows container." alt="" coords="289,309,392,336"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="500,199,463,249,438,276,410,300,389,311,387,306,407,295,434,272,458,246,496,196"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,101,55,128"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="91,103,56,111,54,106,90,98"/>
+<area shape="rect" id="Node000007" href="$testModel_8cpp.html#aafd29634c0b4542428a53fb08352b80f" title=" " alt="" coords="109,132,219,159"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="257,161,219,156,220,151,258,156"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="94,132,54,123,56,118,95,127"/>
+<area shape="rect" id="Node000010" href="$functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="116,208,212,235"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="284,259,211,238,213,232,285,253"/>
+<area shape="rect" id="Node000012" href="$functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="108,259,220,285"/>
+<area shape="poly" id="edge12_Node000009_Node000012" title=" " alt="" coords="284,275,221,275,221,269,284,269"/>
+<area shape="rect" id="Node000013" href="$functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="120,309,208,336"/>
+<area shape="poly" id="edge14_Node000009_Node000013" title=" " alt="" coords="285,291,209,313,207,308,284,285"/>
+<area shape="rect" id="Node000011" href="$mainFunctional_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,259,55,285"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="113,243,56,265,54,260,111,238"/>
+<area shape="poly" id="edge13_Node000012_Node000011" title=" " alt="" coords="92,275,55,275,55,269,92,269"/>
+<area shape="poly" id="edge15_Node000013_Node000011" title=" " alt="" coords="111,306,54,284,56,279,113,301"/>
 </map>

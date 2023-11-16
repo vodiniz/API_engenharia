@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_3d_0',['operator=',['../classFlow.html#ae153a1f37345b026a1e4f5ee88d0d40f',1,'Flow::operator=()'],['../classModel.html#aad5eadb989dae838966ef6d27769aea1',1,'Model::operator=()'],['../classSystem.html#ab96adee223ec4fd0da0edeff35ec3599',1,'System::operator=()']]]
+  ['name_0',['name',['../classFlow.html#a8801d2ed91a9d96003d4bc8024451551',1,'Flow::name'],['../classModel.html#a2d9aef6a80a205a03e4e99b5483af9a0',1,'Model::name'],['../classSystem.html#a29fe2868c0d56fdebc67f1bef5d5cca3',1,'System::name']]]
 ];

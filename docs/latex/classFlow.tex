@@ -11,6 +11,15 @@ Represents a flow beetwen Systems.
 
 
 
+Inheritance diagram for Flow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlow__inherit__graph}
+\end{center}
+\end{figure}
+
+
 Collaboration diagram for Flow\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -82,7 +91,7 @@ When not passing the name, the default name string will be empty.
 
 
 \begin{DoxyParams}{Parameters}
-{\em name} & \\
+{\em name} & A string for naming the \doxylink{classFlow}{Flow}. \\
 \hline
 \end{DoxyParams}
 \Hypertarget{classFlow_a9cc3c3c518ad54411595b50592077aee}\label{classFlow_a9cc3c3c518ad54411595b50592077aee} 
@@ -99,11 +108,11 @@ This overloaded constructor acepts tree parameters, the name, a source and a tar
 
 
 \begin{DoxyParams}{Parameters}
-{\em name} & \\
+{\em name} & A string for naming the \doxylink{classFlow}{Flow}. \\
 \hline
-{\em source} & \\
+{\em source} & A \doxylink{classSystem}{System} pointer for the source\texorpdfstring{$\ast$}{*} \\
 \hline
-{\em target} & \\
+{\em target} & A \doxylink{classSystem}{System} pointer for the source\texorpdfstring{$\ast$}{*} \\
 \hline
 \end{DoxyParams}
 \Hypertarget{classFlow_a5991efa6e8cf88c4ef2125cc727db333}\label{classFlow_a5991efa6e8cf88c4ef2125cc727db333} 
@@ -128,7 +137,7 @@ Copy constructor.
 
 Copy constructor takes a reference to \doxylink{classFlow}{Flow} as an argument. 
 \begin{DoxyParams}{Parameters}
-{\em flow} & \\
+{\em flow\&} & The base \doxylink{classFlow}{Flow} which the copy will be based. \\
 \hline
 \end{DoxyParams}
 Here is the call graph for this function\+:\nopagebreak
@@ -156,6 +165,13 @@ Will set the source pointer to NULL.
 \begin{DoxyReturn}{Returns}
 return true if sucefully setted source to NULL, and false if it failed. 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlow_a0a6b4175fc5d597f550bccde9312e648_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classFlow_aabda5e8d035210c368e7edc26c6e2a2a}\label{classFlow_aabda5e8d035210c368e7edc26c6e2a2a} 
 \index{Flow@{Flow}!clearTarget@{clearTarget}}
 \index{clearTarget@{clearTarget}!Flow@{Flow}}
@@ -171,6 +187,13 @@ Will set the target pointer to NULL.
 \begin{DoxyReturn}{Returns}
 return true if sucefully setted target to NULL, and false if it failed. 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlow_aabda5e8d035210c368e7edc26c6e2a2a_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classFlow_aa1ad5f820c1f10f9e19c555af8bf69f2}\label{classFlow_aa1ad5f820c1f10f9e19c555af8bf69f2} 
 \index{Flow@{Flow}!equation@{equation}}
 \index{equation@{equation}!Flow@{Flow}}
@@ -186,6 +209,10 @@ The equation method will define the mathematical relation beetwen the source and
 \begin{DoxyReturn}{Returns}
 return a double value defined by the implemented equation. 
 \end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classExponentialFlow_af755dadaf2fe73d8402958b2a2ee9ca3}{Exponential\+Flow}}, \mbox{\hyperlink{classlogisticFlow_ae380ca5d015a848848a468e749e70333}{logistic\+Flow}}, \mbox{\hyperlink{classmyFlow_a867e147716ba2bda3bb04380669e5fb1}{my\+Flow}}, and \mbox{\hyperlink{classmyFlow_a867e147716ba2bda3bb04380669e5fb1}{my\+Flow}}.
+
 \Hypertarget{classFlow_a34d6b868ba50fc09c72548121f363b10}\label{classFlow_a34d6b868ba50fc09c72548121f363b10} 
 \index{Flow@{Flow}!getName@{getName}}
 \index{getName@{getName}!Flow@{Flow}}
@@ -203,7 +230,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=283pt]{classFlow_a34d6b868ba50fc09c72548121f363b10_icgraph}
+\includegraphics[width=350pt]{classFlow_a34d6b868ba50fc09c72548121f363b10_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classFlow_a1f3858f90d141807377c2640fb5dd0fc}\label{classFlow_a1f3858f90d141807377c2640fb5dd0fc} 
@@ -223,7 +250,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=288pt]{classFlow_a1f3858f90d141807377c2640fb5dd0fc_icgraph}
+\includegraphics[width=350pt]{classFlow_a1f3858f90d141807377c2640fb5dd0fc_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5}\label{classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5} 
@@ -243,7 +270,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=284pt]{classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5_icgraph}
+\includegraphics[width=350pt]{classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classFlow_ae153a1f37345b026a1e4f5ee88d0d40f}\label{classFlow_ae153a1f37345b026a1e4f5ee88d0d40f} 
@@ -283,6 +310,13 @@ Will set a new name based on the string passed as a param.
 \begin{DoxyReturn}{Returns}
 return true if sucefully setted the new name, and false if it failed. 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlow_a31247277f56c4ca861583770fee2497b_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classFlow_ae15d33c652e4f82f56b90cc557e46e7c}\label{classFlow_ae15d33c652e4f82f56b90cc557e46e7c} 
 \index{Flow@{Flow}!setSource@{setSource}}
 \index{setSource@{setSource}!Flow@{Flow}}
@@ -298,6 +332,13 @@ Will set a new source based on the \doxylink{classSystem}{System} pointer passed
 \begin{DoxyReturn}{Returns}
 return true if sucefully setted the new source, and false if it failed. 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlow_ae15d33c652e4f82f56b90cc557e46e7c_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classFlow_a6090fbf67c2da00de779bd14db835c66}\label{classFlow_a6090fbf67c2da00de779bd14db835c66} 
 \index{Flow@{Flow}!setTarget@{setTarget}}
 \index{setTarget@{setTarget}!Flow@{Flow}}
@@ -313,6 +354,13 @@ Will set a new target based on the \doxylink{classSystem}{System} pointer passed
 \begin{DoxyReturn}{Returns}
 return true if sucefully setted the new target, and false if it failed. 
 \end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlow_a6090fbf67c2da00de779bd14db835c66_icgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Member Data Documentation}

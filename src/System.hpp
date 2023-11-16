@@ -24,8 +24,8 @@ class System {
          * 
          * 
          * A default constructor with overloaded constructor and default value for name and value
-         * @param name
-         * @param value;
+         * @param name A string for naming the systems.
+         * @param value A double value for representing mass, quantities or energy
         */
         System(string = "", double = 0.);
 
@@ -42,7 +42,7 @@ class System {
          * 
          * Copy constructor takes a reference to system as an argument.
          * 
-         * @param system 
+         * @param system& A system reference which  will be used as the value for our system.
         */
         System(const System& system) ;
 

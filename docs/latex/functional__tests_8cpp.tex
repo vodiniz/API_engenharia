@@ -1,0 +1,97 @@
+\doxysection{test/func/functional\+\_\+tests.cpp File Reference}
+\hypertarget{functional__tests_8cpp}{}\label{functional__tests_8cpp}\index{test/func/functional\_tests.cpp@{test/func/functional\_tests.cpp}}
+{\ttfamily \#include "{}functional\+\_\+tests.\+hpp"{}}\newline
+{\ttfamily \#include "{}../../src/\+Model.\+hpp"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+Include dependency graph for functional\+\_\+tests.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{functional__tests_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{functional__tests_8cpp_afc8689ad075e91b2ee99dc91c0834cea}{exponential\+Test}} ()
+\begin{DoxyCompactList}\small\item\em A test for verifying if the model running a exponential\+Test asserts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functional__tests_8cpp_a6c242456889f3f38d4f88e34922fada6}{logistic\+Test}} ()
+\begin{DoxyCompactList}\small\item\em A test for verifying if the model running a \doxylink{classlogisticFlow}{logistic\+Flow} asserts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functional__tests_8cpp_a342098ba1b793b28d015331449d280d5}{complex\+Test}} ()
+\begin{DoxyCompactList}\small\item\em A test for verifying if the model running a \doxylink{classlogisticFlow}{logistic\+Flow} asserts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{functional__tests_8cpp_a342098ba1b793b28d015331449d280d5}\label{functional__tests_8cpp_a342098ba1b793b28d015331449d280d5} 
+\index{functional\_tests.cpp@{functional\_tests.cpp}!complexTest@{complexTest}}
+\index{complexTest@{complexTest}!functional\_tests.cpp@{functional\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{complexTest()}{complexTest()}}
+{\footnotesize\ttfamily void complex\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A test for verifying if the model running a \doxylink{classlogisticFlow}{logistic\+Flow} asserts. 
+
+Given a Complex \doxylink{classModel}{Model} with 6 \doxylink{classSystem}{System}, Q1, Q2, Q3, Q4, Q5 and Q6, with the values 100.\+0, 0.\+0, 100.\+0, 0.\+0, 0.\+0 and 6 Exponential\+Flows. When the \doxylink{classModel}{Model} will ran for 100 time units with one increments Them we will assert the resulting \doxylink{classSystem}{System} value with 31.\+8513, 18.\+4003, 77.\+1143, 56.\+1728, 16.\+4612 respectvely. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{functional__tests_8cpp_a342098ba1b793b28d015331449d280d5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{functional__tests_8cpp_a342098ba1b793b28d015331449d280d5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{functional__tests_8cpp_afc8689ad075e91b2ee99dc91c0834cea}\label{functional__tests_8cpp_afc8689ad075e91b2ee99dc91c0834cea} 
+\index{functional\_tests.cpp@{functional\_tests.cpp}!exponentialTest@{exponentialTest}}
+\index{exponentialTest@{exponentialTest}!functional\_tests.cpp@{functional\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{exponentialTest()}{exponentialTest()}}
+{\footnotesize\ttfamily void exponential\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A test for verifying if the model running a exponential\+Test asserts. 
+
+Given a \doxylink{classModel}{Model} with two \doxylink{classSystem}{System}, pop1 and pop2 with value of 100.\+0 and 0.\+0 When the \doxylink{classModel}{Model} will ran for 100 time units with one increments Them we will assert the resulting value with 36.\+6032 and 63.\+3968, respectvely. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{functional__tests_8cpp_afc8689ad075e91b2ee99dc91c0834cea_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{functional__tests_8cpp_afc8689ad075e91b2ee99dc91c0834cea_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{functional__tests_8cpp_a6c242456889f3f38d4f88e34922fada6}\label{functional__tests_8cpp_a6c242456889f3f38d4f88e34922fada6} 
+\index{functional\_tests.cpp@{functional\_tests.cpp}!logisticTest@{logisticTest}}
+\index{logisticTest@{logisticTest}!functional\_tests.cpp@{functional\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{logisticTest()}{logisticTest()}}
+{\footnotesize\ttfamily void logistic\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A test for verifying if the model running a \doxylink{classlogisticFlow}{logistic\+Flow} asserts. 
+
+Given a \doxylink{classModel}{Model} with two \doxylink{classSystem}{System}, p1 and p2 with value of 100.\+0 and 0.\+0 When the \doxylink{classModel}{Model} will ran for 100 time units with one increments Them we will assert the resulting value with 88.\+2167 and 21.\+7833, respectvely. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{functional__tests_8cpp_a6c242456889f3f38d4f88e34922fada6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{functional__tests_8cpp_a6c242456889f3f38d4f88e34922fada6_icgraph}
+\end{center}
+\end{figure}

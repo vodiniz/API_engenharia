@@ -7,21 +7,6 @@
 using namespace std;
 
 
-//???? Não precisa do construtor se parar pra pensar...
-class ExponentialFlow : public Flow {
-    //Construtor e Destrutor
-    public:
-
-        ExponentialFlow(string name=""):
-            Flow(name){}
-            
-        ExponentialFlow(string name, System *source, System *target): 
-            Flow(name, source, target){}
-            
-        double equation(){
-            return 0.01 * getSource()->getValue();
-        }
-};
 
 
 void exponentialTest(){
@@ -53,20 +38,6 @@ void exponentialTest(){
 
 
 
-class logisticFlow : public Flow {
-    //Construtor e Destrutor
-    public:
-
-        logisticFlow(string name=""):
-            Flow(name){}
-            
-        logisticFlow(string name, System *source, System *target): 
-            Flow(name, source, target){}
-            
-        double equation(){
-            return 0.01 * getTarget()->getValue() * (1 - (getTarget()->getValue()/70.0));
-        }
-};
 
 void logisticTest(){
     cout << "-------------------------------\n";
