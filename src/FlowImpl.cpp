@@ -1,19 +1,19 @@
-#include "Flow.hpp"
-#include "System.hpp"
+#include "FlowImpl.hpp"
+#include "SystemImpl.hpp"
 
 using namespace std;
 
 
 //Construtor e Destrutor
-Flow::Flow(string name):
+FlowImpl::FlowImpl(string name):
     name(name){}
 
-Flow::Flow(string name, System* source, System* target):
+FlowImpl::FlowImpl(string name, System* source, System* target):
     name(name), source(source), target(target){}
 
-Flow::~Flow(){}
+FlowImpl::~FlowImpl(){}
 
-Flow::Flow(const Flow& flow){
+FlowImpl::FlowImpl(const FlowImpl& flow){
     if(this == &flow)
         return;
 
@@ -25,29 +25,29 @@ Flow::Flow(const Flow& flow){
 // --------------------------------------------------
 //Getters e Setters
 
-const string Flow::getName() const{
+const string FlowImpl::getName() const{
     return name;
 }
 
-bool Flow::setName(string name){
+bool FlowImpl::setName(string name){
     this->name = name;
     return true;
 }
 
-System *Flow::getSource() const{
+System *FlowImpl::getSource() const{
     return source;
 }
 
-bool Flow::setSource(System* system){
+bool FlowImpl::setSource(System* system){
     source = system;
     return true;
 }
 
-System *Flow::getTarget() const{
+System *FlowImpl::getTarget() const{
     return target;
 }
 
-bool Flow::setTarget(System* system){
+bool FlowImpl::setTarget(System* system){
     target = system;
     return true;
 }
@@ -55,11 +55,11 @@ bool Flow::setTarget(System* system){
 // --------------------------------------------------
 //Limpar source/target
 
-bool Flow::clearTarget(){
+bool FlowImpl::clearTarget(){
     target = NULL;
     return true;
 }
-bool Flow::clearSource(){
+bool FlowImpl::clearSource(){
     source = NULL;
     return true;
 }
@@ -68,7 +68,7 @@ bool Flow::clearSource(){
 
 
 
-Flow& Flow::operator= (const Flow &flow){
+FlowImpl& FlowImpl::operator= (const FlowImpl& flow){
 
     if(this == &flow)
         return *this;

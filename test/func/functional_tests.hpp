@@ -1,7 +1,10 @@
 #ifndef _FUNCTIONAL_TESTS_H_
 #define _FUNCTIONAL_TESTS_H_
 
-#include "../../src/Flow.hpp"
+#include "../../src/ModelImpl.hpp"
+#include "../../src/SystemImpl.hpp"
+#include "../../src/FlowImpl.hpp"
+
 
 
 using namespace std;
@@ -15,7 +18,7 @@ using namespace std;
  * in which we have a exponential behavior, a specific behavior that is not
  * implemented, so we redefined the equation
 */
-class ExponentialFlow : public Flow {
+class ExponentialFlow : public FlowImpl {
     //Construtor e Destrutor
     public:
 
@@ -30,7 +33,7 @@ class ExponentialFlow : public Flow {
          * @param name
         */
         ExponentialFlow(string name=""):
-            Flow(name){}
+            FlowImpl(name){}
             
         /**
          * \brief Creates a ExponentialFlow.
@@ -42,7 +45,7 @@ class ExponentialFlow : public Flow {
          * @param target
         */
         ExponentialFlow(string name, System *source, System *target): 
-            Flow(name, source, target){}
+            FlowImpl(name, source, target){}
         
 
         /**
@@ -68,7 +71,7 @@ class ExponentialFlow : public Flow {
  * in which we have a logistic behavior, a specific behavior that is not
  * implemented, so we redefined the equation
 */
-class logisticFlow : public Flow {
+class logisticFlow : public FlowImpl {
     //Construtor e Destrutor
     public:
 
@@ -84,7 +87,7 @@ class logisticFlow : public Flow {
          * @param name
         */
         logisticFlow(string name=""):
-            Flow(name){}
+            FlowImpl(name){}
             
 
         /**
@@ -97,7 +100,7 @@ class logisticFlow : public Flow {
          * @param target
         */
         logisticFlow(string name, System *source, System *target): 
-            Flow(name, source, target){}
+            FlowImpl(name, source, target){}
         
 
         /**

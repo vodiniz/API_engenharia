@@ -1,15 +1,16 @@
-#include "Model.hpp"
+#include "ModelImpl.hpp"
+#include "System.hpp"
 #include "Flow.hpp"
 
 using namespace std;
 
 //Construtor e Destrutor
-Model::Model(string name):
+ModelImpl::ModelImpl(string name):
     name(name){}
 
-Model::~Model(){}
+ModelImpl::~ModelImpl(){}
 
-Model::Model(const Model& model){
+ModelImpl::ModelImpl(const ModelImpl& model){
 
     // if(this == &model)
     //     return;
@@ -30,40 +31,40 @@ Model::Model(const Model& model){
 
 // ---------------------------------
 //Getters e Setters
-bool Model::setName(string name){
+bool ModelImpl::setName(string name){
     this->name = name;
     return true;
 }
 
-const string Model::getName() const{
+const string ModelImpl::getName() const{
     return name;
 }
 
 // ---------------------------------
 //Iterator
-Model::SystemIterator Model::systemsBegin(){
+ModelImpl::SystemIterator ModelImpl::systemsBegin(){
     return systems.begin();
 }
 
 
-Model::SystemIterator Model::systemsEnd(){
+ModelImpl::SystemIterator ModelImpl::systemsEnd(){
     return systems.end();
 }
 
-Model::FlowIterator Model::flowsBegin(){
+ModelImpl::FlowIterator ModelImpl::flowsBegin(){
     return flows.begin();
 }
 
-Model::FlowIterator Model::flowsEnd(){
+ModelImpl::FlowIterator ModelImpl::flowsEnd(){
     return flows.end();
 }
 
 
 //Vector size
-int Model::flowsSize(){
+int ModelImpl::flowsSize(){
     return flows.size();
 }
-int Model::systemsSize(){
+int ModelImpl::systemsSize(){
     return systems.size();
 }
 
@@ -75,7 +76,7 @@ int Model::systemsSize(){
 
 //SYSTEM
 
-bool Model::add(System *system){
+bool ModelImpl::add(System *system){
     int vectorSize = flowsSize();
     systems.push_back(system);
 
@@ -86,7 +87,7 @@ bool Model::add(System *system){
 }
 
 //???? Pode remover o While e usar um for, ficaria bem mais legível
-bool Model::removeSystem(System *system){
+bool ModelImpl::removeSystem(System *system){
 
     SystemIterator systemIterator = systemsBegin();
 
@@ -102,7 +103,7 @@ bool Model::removeSystem(System *system){
     return false;
 }
 
-bool Model::removeSystem(string name){
+bool ModelImpl::removeSystem(string name){
 
     SystemIterator systemIterator = systemsBegin();
 
@@ -118,7 +119,7 @@ bool Model::removeSystem(string name){
     return false;
 }
 
-bool Model::update(string name, System *system){
+bool ModelImpl::update(string name, System *system){
 
     SystemIterator systemIterator = systemsBegin();
 
@@ -139,7 +140,7 @@ bool Model::update(string name, System *system){
 //FLOW
 // ???? Checar com vector.back é mais esperto que conferir o tamanho.
 
-bool Model::add(Flow *flow){
+bool ModelImpl::add(Flow *flow){
     int vectorSize = flowsSize();
     flows.push_back(flow);
 
@@ -149,7 +150,7 @@ bool Model::add(Flow *flow){
     return false;
 }
 
-bool Model::removeFlow(Flow *flow){
+bool ModelImpl::removeFlow(Flow *flow){
 
     FlowIterator flowIterator = flowsBegin();
 
@@ -165,7 +166,7 @@ bool Model::removeFlow(Flow *flow){
     return false;
 }
 
-bool Model::removeFlow(string name){
+bool ModelImpl::removeFlow(string name){
 
     FlowIterator flowIterator = flowsBegin();
 
@@ -181,7 +182,7 @@ bool Model::removeFlow(string name){
     return false;
 }
 
-bool Model::update(string name, Flow *flow){
+bool ModelImpl::update(string name, Flow *flow){
 
     FlowIterator flowIterator = flowsBegin();
 
@@ -200,7 +201,7 @@ bool Model::update(string name, Flow *flow){
 // ---------------------------------
 //Operator Overload
 
-Model& Model::operator= (const Model &model){
+ModelImpl& ModelImpl::operator= (const ModelImpl& model){
 
     // if(this == &model)
     //     return *this;
@@ -227,18 +228,22 @@ Model& Model::operator= (const Model &model){
 //Run
 
 
-bool Model::run(int startTime, int endTime){
+bool ModelImpl::run(int startTime, int endTime){
+
+
 
     for(int i = startTime; i < endTime; i++){
 
-        int flowsSize = Model::flowsSize();
+        int flowsSize = ModelImpl::flowsSize();
+
         int counter = 0;
         double *equationArray = new double[flowsSize];
-
+        
 
         for(FlowIterator it = flowsBegin(); it < flowsEnd(); it++, counter++){
             equationArray[counter] = (*it)->equation();
         }
+
 
         counter = 0;
         for(FlowIterator it = flowsBegin(); it < flowsEnd(); it++, counter++){

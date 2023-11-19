@@ -1,7 +1,8 @@
-#include "../../src/System.hpp"
-
+#include <iostream>
 #include <assert.h>
 #include <math.h>
+
+#include "unit_System.hpp"
 
 using namespace std;
 
@@ -9,8 +10,8 @@ void systemTestSetterGetter(){
 
     cout << "-------------------------------\n";
 
-    System test;
-    System system1("Fulano");
+    SystemImpl test;
+    SystemImpl system1("Fulano");
     assert("Fulano" == system1.getName());
 
     system1.setName("Ciclano");
@@ -29,8 +30,8 @@ void systemTestSetterGetter(){
 void systemTestCopyOverload(){
     cout << "-------------------------------\n";
 
-    System a("Fulano", 13.0);
-    System b;
+    SystemImpl a("Fulano", 13.0);
+    SystemImpl b;
 
     b = a;
     assert(b.getName() == a.getName());
