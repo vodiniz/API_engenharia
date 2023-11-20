@@ -190,7 +190,6 @@ class ModelImpl: public Model{
         /**
          * @brief Return a iterator to the first System in the container.
          * 
-         * 
          * @return return SystemIterator type, which is defined as an iterator for the System container.
         */
         SystemIterator systemsBegin();
@@ -199,14 +198,13 @@ class ModelImpl: public Model{
         /**
          * @brief Returns an iterator referring to the past-the-end element in the systems container.
          * 
-         * 
          * @return return SystemIterator type, which is defined as an iterator for the System container.
         */
         SystemIterator systemsEnd();
 
 
         /**
-         * @brief Function for getting the size of the systems container.
+         * @brief Method for getting the size of the systems container.
          * 
          * @return returns the number of elements in the systems container.
         */
@@ -216,7 +214,6 @@ class ModelImpl: public Model{
         /**
          * @brief Return a iterator to the first Flow in the container.
          * 
-         * 
          * @return return FlowIterator type, which is defined as an iterator for the System container.
         */
         FlowIterator flowsBegin();
@@ -224,7 +221,6 @@ class ModelImpl: public Model{
 
         /**
          * @brief Returns an iterator referring to the past-the-end element in the flows container.
-         * 
          * 
          * @return return FlowIterator type, which is defined as an iterator for the flows container.
         */

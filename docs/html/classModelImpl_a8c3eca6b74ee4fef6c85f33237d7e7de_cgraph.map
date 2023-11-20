@@ -14,6 +14,6 @@
 <area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="93,183,137,225,167,249,199,270,211,276,209,280,196,274,164,253,134,229,89,186"/>
 <area shape="rect" id="Node000003" href="$classModelImpl.html#aa4e0c943fef808771f0800f03ae84386" title="Function for getting the size of the flows container." alt="" coords="428,5,574,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="339,35,412,26,412,32,340,40"/>
-<area shape="rect" id="Node000004" href="$classModelImpl.html#ad95b31c43021dec4c4b67cb74a2dc138" title="Function for getting the size of the systems container." alt="" coords="418,56,583,83"/>
+<area shape="rect" id="Node000004" href="$classModelImpl.html#ad95b31c43021dec4c4b67cb74a2dc138" title="Method for getting the size of the systems container." alt="" coords="418,56,583,83"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="340,48,403,55,402,61,339,53"/>
 </map>

@@ -1,0 +1,15 @@
+<map id="Model::getClock" name="Model::getClock">
+<area shape="rect" id="Node000001" title="Virtual method to get the current clock." alt="" coords="307,109,423,136"/>
+<area shape="rect" id="Node000002" href="$unit__Model_8cpp.html#aef9d3af61dfc50dcbd295ee49b77e704" title="A unitary test for asserting the default constructor of Model." alt="" coords="103,5,259,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="328,103,258,62,234,51,236,46,260,58,331,98"/>
+<area shape="rect" id="Node000004" href="$unit__Model_8cpp.html#ad48c8468bb5d2d84e4738063761d1828" title="A unitary test for asserting the constructor of Model with the name parameter." alt="" coords="103,72,259,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="291,114,259,108,260,103,292,108"/>
+<area shape="rect" id="Node000005" href="$unit__Model_8cpp.html#ae6d41c7055d6cab40311bacb885be338" title="A unitary test for asserting the getClock method." alt="" coords="109,139,253,165"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="292,137,253,143,252,138,291,132"/>
+<area shape="rect" id="Node000006" href="$unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title="A unitary test for asserting the run method." alt="" coords="126,189,236,216"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="328,146,260,180,229,191,228,186,258,175,325,142"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,80,55,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="116,57,104,62,56,84,54,80,102,58,114,52"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="87,96,55,96,55,91,87,91"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="111,185,101,180,81,163,63,144,38,109,42,106,67,141,85,159,104,175,113,181"/>
+</map>

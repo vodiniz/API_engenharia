@@ -56,7 +56,7 @@ bool \mbox{\hyperlink{classFlowImpl_a7c6439a664b5fbf00bba05eed441777b}{clear\+So
 \begin{DoxyCompactList}\small\item\em Clear the pointer to the source \doxylink{classSystem}{System}. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classFlowImpl_ab792f8f5ee46682d1be266e25720c2f4}{clear\+Target}} ()
 \begin{DoxyCompactList}\small\item\em Clear the pointer to the target \doxylink{classSystem}{System}. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classFlow}{Flow}} \& \mbox{\hyperlink{classFlowImpl_aa7a27cf4139541f530831db95bfdc534}{operator=}} (const \mbox{\hyperlink{classFlow}{Flow}} \&)
+\mbox{\hyperlink{classFlow}{Flow}} \& \mbox{\hyperlink{classFlowImpl_a8cd91ac0d70cc7295952e0ca2ac0473c}{operator=}} (const \mbox{\hyperlink{classFlow}{Flow}} \&flow)
 \begin{DoxyCompactList}\small\item\em Overload for = operator. \end{DoxyCompactList}\item 
 virtual double \mbox{\hyperlink{classFlowImpl_ac04e369c647b47849edc8f606561ca04}{equation}} ()=0
 \begin{DoxyCompactList}\small\item\em A pure virtual equation method which defines the flow behavior. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -64,7 +64,7 @@ virtual double \mbox{\hyperlink{classFlowImpl_ac04e369c647b47849edc8f606561ca04}
 \begin{DoxyCompactItemize}
 \item 
 virtual \mbox{\hyperlink{classFlow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -147,8 +147,7 @@ Copy constructor takes a reference to \doxylink{classFlow}{Flow} as an argument.
 {\em flow\&} & The base \doxylink{classFlow}{Flow} which the copy will be based. \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -217,7 +216,7 @@ Implements \mbox{\hyperlink{classFlow_aa1ad5f820c1f10f9e19c555af8bf69f2}{Flow}}.
 
 
 
-Implemented in \mbox{\hyperlink{classExponentialFlow_af755dadaf2fe73d8402958b2a2ee9ca3}{Exponential\+Flow}}, \mbox{\hyperlink{classlogisticFlow_ae380ca5d015a848848a468e749e70333}{logistic\+Flow}}, \mbox{\hyperlink{classFlowTest_af8567b29765904e63633959c90edbc70}{Flow\+Test}}, and \mbox{\hyperlink{classmyFlow_a867e147716ba2bda3bb04380669e5fb1}{my\+Flow}}.
+Implemented in \mbox{\hyperlink{classExponentialFlow_af755dadaf2fe73d8402958b2a2ee9ca3}{Exponential\+Flow}}, \mbox{\hyperlink{classlogisticFlow_ae380ca5d015a848848a468e749e70333}{logistic\+Flow}}, \mbox{\hyperlink{classFlowTest_af8567b29765904e63633959c90edbc70}{Flow\+Test}}, and \mbox{\hyperlink{classMyFlow_a244fe13a3141ebd18ba70e55342d3c6a}{My\+Flow}}.
 
 \Hypertarget{classFlowImpl_a24faa1ee1359b914fec408a3ade54dd0}\label{classFlowImpl_a24faa1ee1359b914fec408a3ade54dd0} 
 \index{FlowImpl@{FlowImpl}!getName@{getName}}
@@ -253,8 +252,7 @@ return a const System\texorpdfstring{$\ast$}{*} pointing to the system which is 
 
 Implements \mbox{\hyperlink{classFlow_abf0f3dbb285fe82e5ba6449de06b97c8}{Flow}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -278,19 +276,18 @@ return a const System\texorpdfstring{$\ast$}{*} pointing to the system which is 
 
 Implements \mbox{\hyperlink{classFlow_afb9b8d93ea0fc81868b8e02dd382a787}{Flow}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=329pt]{classFlowImpl_ab07923bc230308cd949f627a92901bca_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{classFlowImpl_aa7a27cf4139541f530831db95bfdc534}\label{classFlowImpl_aa7a27cf4139541f530831db95bfdc534} 
+\Hypertarget{classFlowImpl_a8cd91ac0d70cc7295952e0ca2ac0473c}\label{classFlowImpl_a8cd91ac0d70cc7295952e0ca2ac0473c} 
 \index{FlowImpl@{FlowImpl}!operator=@{operator=}}
 \index{operator=@{operator=}!FlowImpl@{FlowImpl}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classFlow}{Flow}} \& Flow\+Impl\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFlow}{Flow}} \&}]{flow }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFlow}{Flow}} \& Flow\+Impl\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFlow}{Flow}} \&}]{flow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -301,12 +298,15 @@ This is an overload for = operator, in the format of a = b, in which a is being 
 \begin{DoxyReturn}{Returns}
 return a \doxylink{classFlow}{Flow} reference which is a copy to the assigned \doxylink{classFlow}{Flow}. 
 \end{DoxyReturn}
-Here is the call graph for this function\+:
-\nopagebreak
+
+
+Implements \mbox{\hyperlink{classFlow_a1fd4ebe3ee5eb7efb6cbe11c9ce419f6}{Flow}}.
+
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=306pt]{classFlowImpl_aa7a27cf4139541f530831db95bfdc534_cgraph}
+\includegraphics[width=306pt]{classFlowImpl_a8cd91ac0d70cc7295952e0ca2ac0473c_cgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classFlowImpl_a03aa8b1df7c3c4e2c3db047a5cfcc7b3}\label{classFlowImpl_a03aa8b1df7c3c4e2c3db047a5cfcc7b3} 

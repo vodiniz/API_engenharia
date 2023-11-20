@@ -1,5 +1,5 @@
 <map id="unit_Flow_getName" name="unit_Flow_getName">
 <area shape="rect" id="Node000001" title="A unitary test for asserting the getName method." alt="" coords="5,5,143,32"/>
-<area shape="rect" id="Node000002" href="$classFlow.html#a523026b5d1867a809aa167af000fac78" title=" " alt="" coords="191,5,301,32"/>
+<area shape="rect" id="Node000002" href="$classFlow.html#a523026b5d1867a809aa167af000fac78" title="Virtual method to get the Name field on Flow." alt="" coords="191,5,301,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,16,175,16,175,21,143,21"/>
 </map>

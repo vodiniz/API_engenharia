@@ -1,0 +1,19 @@
+<map id="Model::systemsSize" name="Model::systemsSize">
+<area shape="rect" id="Node000001" title="Virtual method for getting the size of the systems container." alt="" coords="369,123,509,149"/>
+<area shape="rect" id="Node000002" href="$unit__Model_8cpp.html#a03cbd84ebb931c593c4d41c2ce90b02b" title="A unitary test for asserting the add method with the System* overload." alt="" coords="130,5,294,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="412,114,371,78,320,46,290,35,292,30,322,42,374,74,415,109"/>
+<area shape="rect" id="Node000004" href="$unit__Model_8cpp.html#aef9d3af61dfc50dcbd295ee49b77e704" title="A unitary test for asserting the default constructor of Model." alt="" coords="134,56,290,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="369,121,290,100,291,95,371,116"/>
+<area shape="rect" id="Node000005" href="$unit__Model_8cpp.html#a587b64c37870f12522e1c139eadb7b76" title="A unitary test for asserting the removeSystem method with a name." alt="" coords="103,123,321,149"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="354,139,321,139,321,133,354,133"/>
+<area shape="rect" id="Node000006" href="$unit__Model_8cpp.html#aaa652095d3099328e761b026d5850b72" title="A unitary test for asserting the removeSystem method with a System pointer." alt="" coords="122,173,302,216"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="371,156,298,175,297,170,369,151"/>
+<area shape="rect" id="Node000007" href="$unit__Model_8cpp.html#abd5bde99de08b7b414e09f40c9dea19c" title="A unitary test for asserting the systemsSize method." alt="" coords="128,240,296,267"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="415,163,374,198,322,230,292,242,290,237,320,226,371,194,412,158"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,123,55,149"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="116,40,104,46,83,64,65,84,40,123,36,121,61,81,79,60,101,42,114,35"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="125,106,104,113,56,130,54,125,102,108,124,101"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="87,139,55,139,55,133,87,133"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="124,171,102,164,54,147,56,142,104,159,125,166"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="113,237,101,230,79,212,61,191,36,151,40,149,65,188,83,208,104,226,115,232"/>
+</map>

@@ -1,11 +1,11 @@
 <map id="logisticFlow" name="logisticFlow">
-<area shape="rect" id="Node000001" title="Represents a Flow with Exponential behavior." alt="" coords="153,935,317,1095"/>
-<area shape="rect" id="Node000002" href="$classFlowImpl.html" title="Represents a flow beetwen Systems." alt="" coords="147,443,323,885"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,901,238,935,233,935,233,901"/>
-<area shape="rect" id="Node000003" href="$classFlow.html" title=" " alt="" coords="5,5,188,363"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="155,376,174,442,169,444,150,377"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="213,149,258,219"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="238,219,238,426,233,426,233,219"/>
-<area shape="rect" id="Node000005" href="$classSystem.html" title="System interface, which will hide the implementation of methods." alt="" coords="282,56,474,312"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="343,313,308,428,303,426,338,311"/>
+<area shape="rect" id="Node000001" title="Represents a Flow with Exponential behavior." alt="" coords="153,972,317,1132"/>
+<area shape="rect" id="Node000002" href="$classFlowImpl.html" title="Represents a flow beetwen Systems." alt="" coords="147,480,323,923"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,938,238,972,233,972,233,938"/>
+<area shape="rect" id="Node000003" href="$classFlow.html" title="Flow interface, which will hide the implementation of methods." alt="" coords="5,5,188,400"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="158,413,176,479,171,481,153,415"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="213,168,258,237"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="238,237,238,463,233,463,233,237"/>
+<area shape="rect" id="Node000005" href="$classSystem.html" title="System interface, which will hide the implementation of methods." alt="" coords="282,75,474,331"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="344,331,306,465,301,463,339,330"/>
 </map>

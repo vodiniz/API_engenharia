@@ -1,5 +1,5 @@
 <map id="Flow::setSource" name="Flow::setSource">
-<area shape="rect" id="Node000001" title=" " alt="" coords="294,5,410,32"/>
+<area shape="rect" id="Node000001" title="Virtual method to set a new source for the Flow." alt="" coords="294,5,410,32"/>
 <area shape="rect" id="Node000002" href="$unit__Flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="A unitary test for asserting the setSource method." alt="" coords="103,5,246,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="278,21,247,21,247,16,278,16"/>
 <area shape="rect" id="Node000003" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>

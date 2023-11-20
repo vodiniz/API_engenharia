@@ -1,5 +1,5 @@
 <map id="Flow::clearSource" name="Flow::clearSource">
-<area shape="rect" id="Node000001" title=" " alt="" coords="304,5,430,32"/>
+<area shape="rect" id="Node000001" title="Virtual method to clear the Flow source." alt="" coords="304,5,430,32"/>
 <area shape="rect" id="Node000002" href="$unit__Flow_8cpp.html#a91e2ffdd821e194708355a4802d9a838" title="A unitary test for asserting the clearSource method." alt="" coords="103,5,256,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="288,21,256,21,256,16,288,16"/>
 <area shape="rect" id="Node000003" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>

@@ -1,8 +1,8 @@
 <map id="Flow::getSource" name="Flow::getSource">
-<area shape="rect" id="Node000001" title=" " alt="" coords="335,249,451,276"/>
+<area shape="rect" id="Node000001" title="Virtual method to get the source System." alt="" coords="335,249,451,276"/>
 <area shape="rect" id="Node000002" href="$classFlowImpl.html#ab6633e6def4d5b66b3d7fc84004be98e" title="Copy constructor." alt="" coords="127,5,263,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="384,235,372,193,353,142,324,90,306,67,285,46,262,32,264,28,289,42,310,63,329,87,358,140,377,191,389,234"/>
-<area shape="rect" id="Node000003" href="$classFlowImpl.html#aa7a27cf4139541f530831db95bfdc534" title="Overload for = operator." alt="" coords="126,56,264,83"/>
+<area shape="rect" id="Node000003" href="$classFlowImpl.html#a8cd91ac0d70cc7295952e0ca2ac0473c" title="Overload for = operator." alt="" coords="126,56,264,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="379,236,365,203,345,166,318,128,285,97,263,84,265,80,289,93,322,125,349,163,370,201,384,234"/>
 <area shape="rect" id="Node000004" href="$unit__Flow_8cpp.html#a2e82a59b324cb964c490e446e8378540" title="A unitary test for asserting the overload of the assignment(=) operator." alt="" coords="108,107,282,133"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="373,238,336,191,312,168,286,148,262,136,264,131,288,143,316,164,340,188,377,235"/>

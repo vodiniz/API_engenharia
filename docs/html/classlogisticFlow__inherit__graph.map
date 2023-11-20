@@ -1,7 +1,7 @@
 <map id="logisticFlow" name="logisticFlow">
-<area shape="rect" id="Node000001" title="Represents a Flow with Exponential behavior." alt="" coords="15,944,179,1104"/>
-<area shape="rect" id="Node000002" href="$classFlowImpl.html" title="Represents a flow beetwen Systems." alt="" coords="9,411,185,896"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,911,99,944,94,944,94,911"/>
-<area shape="rect" id="Node000003" href="$classFlow.html" title=" " alt="" coords="5,5,188,363"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,378,99,411,94,411,94,378"/>
+<area shape="rect" id="Node000001" title="Represents a Flow with Exponential behavior." alt="" coords="15,981,179,1141"/>
+<area shape="rect" id="Node000002" href="$classFlowImpl.html" title="Represents a flow beetwen Systems." alt="" coords="9,448,185,933"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,948,99,981,94,981,94,948"/>
+<area shape="rect" id="Node000003" href="$classFlow.html" title="Flow interface, which will hide the implementation of methods." alt="" coords="5,5,188,400"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,415,99,448,94,448,94,415"/>
 </map>

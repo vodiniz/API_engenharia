@@ -31,67 +31,66 @@ int main(void){
     // ------------------------------------------------------------------
     // ------------------------------------------------------------------
 
-    void unit_Flow_constructor_default();
-    void unit_Flow_constructor_with_name();
-    void unit_Flow_constructor_with_name_source_target();
-    void unit_Flow_copy_constructor();
+    unit_Flow_constructor_default();
+    unit_Flow_constructor_with_name();
+    unit_Flow_constructor_with_name_source_target();
+    unit_Flow_copy_constructor();
 
-    void unit_Flow_destructor();
-
-
-    void unit_Flow_getName();
-    void unit_Flow_setName();
-
-    void unit_Flow_getSource();
-    void unit_Flow_setSource();
+    unit_Flow_destructor();
 
 
+    unit_Flow_getName();
+    unit_Flow_setName();
 
-    void unit_Flow_getTarget();
-    void unit_Flow_setTarget();
+    unit_Flow_getSource();
+    unit_Flow_setSource();
 
-    void unit_Flow_clearSource();
 
-    void unit_Flow_assignOverload();
+
+    unit_Flow_getTarget();
+    unit_Flow_setTarget();
+
+    unit_Flow_clearSource();
+
+    unit_Flow_assignOverload();
 
     cout << "------------------------------------------------------------------\n" <<
         "Passed Flow Unit tests.\n" << 
         "------------------------------------------------------------------\n";
+
+    // ------------------------------------------------------------------
+    // ------------------------------------------------------------------
         
-    void unit_Model_constructor_default();
-    void unit_Model_constructor_with_name();
-    void unit_Model_copy_constructor();
+    unit_Model_constructor_default();
+    unit_Model_constructor_with_name();
 
-    void unit_Model_destructor();
+    unit_Model_destructor();
 
-    void unit_Model_getName();
-    void unit_Model_setName();
+    unit_Model_getName();
+    unit_Model_setName();
 
-    void unit_Model_add_System();
-    void unit_Model_add_Flow();
+    unit_Model_add_System();
+    unit_Model_add_Flow();
 
-    void unit_Model_removeSystem_pointer();
-    void unit_Model_removeSystem_name();
+    unit_Model_removeSystem_pointer();
+    unit_Model_removeSystem_name();
 
-    void unit_Model_removeFlow_pointer();
-    void unit_Model_removeFlow_name();
+    unit_Model_removeFlow_pointer();
+    unit_Model_removeFlow_name();
 
-    void unit_Model_update_System();
-    void unit_Model_update_Flow();
+    unit_Model_update_System();
+    unit_Model_update_Flow();
 
-    void unit_Model_run();
+    unit_Model_run();
 
-    void unit_Model_systemsBegin();
-    void unit_Model_systemsEnd();
-    void unit_Model_systemsSize();
-
-
-    void unit_Model_flowsBegin();
-    void unit_Model_flowsEnd();
-    void unit_Model_flowsSize();
+    unit_Model_systemsBegin();
+    unit_Model_systemsEnd();
+    unit_Model_systemsSize();
 
 
-    void unit_Model_assignOverload();
+    unit_Model_flowsBegin();
+    unit_Model_flowsEnd();
+    unit_Model_flowsSize();
 
     cout << "------------------------------------------------------------------\n" <<
         "Passed Model Unit tests.\n" << 

@@ -155,7 +155,8 @@ class FlowImpl: public Flow{
          * 
          * @return return a Flow reference which is a copy to the assigned Flow.
         */
-        Flow& operator= (const Flow&);
+       
+        Flow& operator= (const Flow& flow) override;
         
         /**
          * @brief A pure virtual equation method which defines the flow behavior.

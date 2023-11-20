@@ -6,7 +6,10 @@ using namespace std;
 
 //Construtor e Destrutor
 FlowImpl::FlowImpl(string name):
-    name(name){}
+    name(name){
+        source = NULL;
+        target = NULL;
+    }
 
 FlowImpl::FlowImpl(string name, System* source, System* target):
     name(name), source(source), target(target){}
@@ -63,8 +66,6 @@ bool FlowImpl::clearSource(){
 }
 
 // --------------------------------------------------
-
-
 
 Flow& FlowImpl::operator= (const Flow& flow){
 

@@ -14,7 +14,7 @@
 <area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="208,131,274,150,273,155,206,136"/>
 <area shape="rect" id="Node000004" href="$classModelImpl.html#aa4e0c943fef808771f0800f03ae84386" title="Function for getting the size of the flows container." alt="" coords="470,56,616,83"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="393,104,471,84,472,90,394,109"/>
-<area shape="rect" id="Node000005" href="$classModelImpl.html#ad95b31c43021dec4c4b67cb74a2dc138" title="Function for getting the size of the systems container." alt="" coords="460,5,626,32"/>
+<area shape="rect" id="Node000005" href="$classModelImpl.html#ad95b31c43021dec4c4b67cb74a2dc138" title="Method for getting the size of the systems container." alt="" coords="460,5,626,32"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="389,104,411,92,425,80,434,68,443,55,459,42,469,36,471,41,462,46,447,58,438,71,429,84,414,97,391,108"/>
 <area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="389,154,411,143,425,131,434,118,443,105,459,92,469,87,471,92,462,97,447,109,438,121,429,134,414,148,391,159"/>
 <area shape="rect" id="Node000008" href="$classModelImpl.html#a4b4a1897ba511d1495f187915eaf36df" title="Return a iterator to the first Flow in the container." alt="" coords="466,107,620,133"/>

@@ -1,0 +1,16 @@
+<map id="Model::flowsSize" name="Model::flowsSize">
+<area shape="rect" id="Node000001" title="Function for getting the size of the flows container." alt="" coords="352,93,473,120"/>
+<area shape="rect" id="Node000002" href="$unit__Model_8cpp.html#aaa1eb9058b663d5d733960e91c080a5e" title="A unitary test for asserting the add method with the Flow* overload." alt="" coords="130,5,277,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="378,87,342,66,303,46,269,35,271,30,305,42,345,61,381,82"/>
+<area shape="rect" id="Node000004" href="$unit__Model_8cpp.html#aef9d3af61dfc50dcbd295ee49b77e704" title="A unitary test for asserting the default constructor of Model." alt="" coords="125,56,282,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="336,99,282,91,282,86,337,93"/>
+<area shape="rect" id="Node000005" href="$unit__Model_8cpp.html#aace5b91afc8f08d2907431dc90e47e27" title="A unitary test for asserting the removeFlow method with a name." alt="" coords="103,123,304,149"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="337,120,304,125,303,119,336,115"/>
+<area shape="rect" id="Node000006" href="$unit__Model_8cpp.html#a6fc800346eccb961fbafc900e541339a" title="A unitary test for asserting the removeFlow method with a Flow pointer." alt="" coords="122,173,285,216"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="375,130,305,164,275,175,273,170,303,159,372,125"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,93,55,120"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,40,104,46,71,70,45,95,41,91,67,66,101,42,115,35"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="110,96,56,105,55,100,109,91"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="105,122,55,113,56,108,106,117"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="113,169,101,164,70,143,44,122,48,118,73,139,104,159,115,164"/>
+</map>

@@ -1,5 +1,5 @@
 <map id="ModelImpl::systemsSize" name="ModelImpl::systemsSize">
-<area shape="rect" id="Node000001" title="Function for getting the size of the systems container." alt="" coords="458,107,624,133"/>
+<area shape="rect" id="Node000001" title="Method for getting the size of the systems container." alt="" coords="458,107,624,133"/>
 <area shape="rect" id="Node000002" href="$classModelImpl.html#aa01c228bf49f0b7f5d72e293ac18defb" title="Add a System pointer to the systems container." alt="" coords="300,107,410,133"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="443,123,411,123,411,117,443,117"/>
 <area shape="rect" id="Node000003" href="$functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="130,5,225,32"/>
@@ -8,7 +8,7 @@
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="291,104,226,86,228,81,292,99"/>
 <area shape="rect" id="Node000006" href="$functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="134,107,221,133"/>
 <area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="284,123,221,123,221,117,284,117"/>
-<area shape="rect" id="Node000007" href="$classModelImpl.html#a027c2618c0645601df6287193db1ae1c" title="Copy constructor." alt="" coords="103,157,252,184"/>
+<area shape="rect" id="Node000007" href="$classModelImpl.html#aaf4ff7c53b30834d30918681827a397a" title="Copy constructor." alt="" coords="103,157,252,184"/>
 <area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="292,141,228,159,226,154,291,136"/>
 <area shape="rect" id="Node000008" href="$classModelImpl.html#a8c3eca6b74ee4fef6c85f33237d7e7de" title="Overload for = operator." alt="" coords="105,208,250,235"/>
 <area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="329,146,294,173,253,198,227,210,225,205,251,194,291,168,325,142"/>

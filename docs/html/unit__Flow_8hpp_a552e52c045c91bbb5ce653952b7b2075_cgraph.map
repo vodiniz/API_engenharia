@@ -1,9 +1,9 @@
 <map id="unit_Flow_copy_constructor" name="unit_Flow_copy_constructor">
 <area shape="rect" id="Node000001" title="A unitary test for asserting the copy constructor of FlowImpl." alt="" coords="5,56,190,83"/>
-<area shape="rect" id="Node000002" href="$classFlow.html#a523026b5d1867a809aa167af000fac78" title=" " alt="" coords="241,5,351,32"/>
+<area shape="rect" id="Node000002" href="$classFlow.html#a523026b5d1867a809aa167af000fac78" title="Virtual method to get the Name field on Flow." alt="" coords="241,5,351,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,53,225,34,227,39,153,58"/>
-<area shape="rect" id="Node000003" href="$classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title=" " alt="" coords="238,56,354,83"/>
+<area shape="rect" id="Node000003" href="$classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title="Virtual method to get the source System." alt="" coords="238,56,354,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="190,67,222,67,222,72,190,72"/>
-<area shape="rect" id="Node000004" href="$classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787" title=" " alt="" coords="240,107,352,133"/>
+<area shape="rect" id="Node000004" href="$classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Virtual method to get the Target System." alt="" coords="240,107,352,133"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="153,81,227,100,225,105,152,86"/>
 </map>

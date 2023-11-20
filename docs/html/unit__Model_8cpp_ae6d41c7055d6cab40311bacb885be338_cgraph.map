@@ -1,0 +1,5 @@
+<map id="unit_Model_getClock" name="unit_Model_getClock">
+<area shape="rect" id="Node000001" title="A unitary test for asserting the getClock method." alt="" coords="5,5,149,32"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a2357590cca5cbc36029472fe74f70d2d" title="Virtual method to get the current clock." alt="" coords="197,5,313,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,16,181,16,181,21,149,21"/>
+</map>

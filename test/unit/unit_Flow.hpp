@@ -89,7 +89,7 @@ class FlowTest : public FlowImpl {
         FlowTest(string name, System *source, System *target): 
             FlowImpl(name, source, target){}
 
-        FlowTest(Flow& flow){}
+        FlowTest(Flow& flow): FlowImpl(flow){}
             
     protected:
         double equation(){

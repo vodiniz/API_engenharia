@@ -1,5 +1,5 @@
 <map id="Flow::clearTarget" name="Flow::clearTarget">
-<area shape="rect" id="Node000001" title=" " alt="" coords="202,5,323,32"/>
+<area shape="rect" id="Node000001" title="Virtual method to clear the Flow target." alt="" coords="202,5,323,32"/>
 <area shape="rect" id="Node000002" href="$unit__Flow_8cpp.html#adcd6d85344284a146ff77dd6140e94b6" title="A unitary test for asserting the clearTarget method." alt="" coords="5,5,154,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,21,154,21,154,16,186,16"/>
 </map>

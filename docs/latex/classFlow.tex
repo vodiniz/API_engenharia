@@ -2,6 +2,11 @@
 \hypertarget{classFlow}{}\label{classFlow}\index{Flow@{Flow}}
 
 
+\doxylink{classFlow}{Flow} interface, which will hide the implementation of methods.  
+
+
+
+
 {\ttfamily \#include $<$Flow.\+hpp$>$}
 
 
@@ -16,8 +21,7 @@ Inheritance diagram for Flow\+:
 \end{figure}
 
 
-Collaboration diagram for Flow\+:
-\nopagebreak
+Collaboration diagram for Flow\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -28,26 +32,33 @@ Collaboration diagram for Flow\+:
 \begin{DoxyCompactItemize}
 \item 
 virtual \mbox{\hyperlink{classFlow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
 virtual const string \mbox{\hyperlink{classFlow_a523026b5d1867a809aa167af000fac78}{get\+Name}} () const =0
-\item 
+\begin{DoxyCompactList}\small\item\em Virtual method to get the Name field on \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{classFlow_a3b1816775f7d2e9497236b38ab173d44}{set\+Name}} (string)=0
-\item 
+\begin{DoxyCompactList}\small\item\em Virtual method to set a new name for the \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_abf0f3dbb285fe82e5ba6449de06b97c8}{get\+Source}} () const =0
-\item 
+\begin{DoxyCompactList}\small\item\em Virtual method to get the source \doxylink{classSystem}{System}. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{classFlow_a303311b84fb748a4a7fb9a0312b4ff23}{set\+Source}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})=0
-\item 
+\begin{DoxyCompactList}\small\item\em Virtual method to set a new source for the \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_afb9b8d93ea0fc81868b8e02dd382a787}{get\+Target}} () const =0
-\item 
+\begin{DoxyCompactList}\small\item\em Virtual method to get the Target \doxylink{classSystem}{System}. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{classFlow_a738ba8d73ee3ec358d94f131e695fc97}{set\+Target}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})=0
-\item 
+\begin{DoxyCompactList}\small\item\em Virtual method to set a new target for the \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{classFlow_abe15474181d5a75f21f28146b30058ab}{clear\+Source}} ()=0
-\item 
+\begin{DoxyCompactList}\small\item\em Virtual method to clear the \doxylink{classFlow}{Flow} source. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{classFlow_a658b9d7a92f7771a050b826a141b46fd}{clear\+Target}} ()=0
-\item 
+\begin{DoxyCompactList}\small\item\em Virtual method to clear the \doxylink{classFlow}{Flow} target. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFlow}{Flow}} \& \mbox{\hyperlink{classFlow_a1fd4ebe3ee5eb7efb6cbe11c9ce419f6}{operator=}} (const \mbox{\hyperlink{classFlow}{Flow}} \&flow)=0
+\begin{DoxyCompactList}\small\item\em Overload for = operator. \end{DoxyCompactList}\item 
 virtual double \mbox{\hyperlink{classFlow_aa1ad5f820c1f10f9e19c555af8bf69f2}{equation}} ()=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A pure virtual equation method which defines the flow behavior. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+\doxylink{classFlow}{Flow} interface, which will hide the implementation of methods. 
+
+Creating this interface will enable us to hide the API implementation from another functions and will permit us to create a layered approach for the API. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{classFlow_a325d284a50ca3274b126b21f5c39b9af}\label{classFlow_a325d284a50ca3274b126b21f5c39b9af} 
@@ -58,6 +69,10 @@ virtual double \mbox{\hyperlink{classFlow_aa1ad5f820c1f10f9e19c555af8bf69f2}{equ
 
 
 
+Destructor. 
+
+A virtual destructor; 
+
 \doxysubsection{Member Function Documentation}
 \Hypertarget{classFlow_abe15474181d5a75f21f28146b30058ab}\label{classFlow_abe15474181d5a75f21f28146b30058ab} 
 \index{Flow@{Flow}!clearSource@{clearSource}}
@@ -67,10 +82,18 @@ virtual double \mbox{\hyperlink{classFlow_aa1ad5f820c1f10f9e19c555af8bf69f2}{equ
 
 
 
+Virtual method to clear the \doxylink{classFlow}{Flow} source. 
+
+Will set the source to NULL
+
+\begin{DoxyReturn}{Returns}
+return true if sucefully changed the source to NULL, and false if it failed. 
+\end{DoxyReturn}
+
+
 Implemented in \mbox{\hyperlink{classFlowImpl_a7c6439a664b5fbf00bba05eed441777b}{Flow\+Impl}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -85,10 +108,18 @@ Here is the caller graph for this function\+:
 
 
 
+Virtual method to clear the \doxylink{classFlow}{Flow} target. 
+
+Will set the target to NULL
+
+\begin{DoxyReturn}{Returns}
+return true if sucefully changed the target to NULL, and false if it failed. 
+\end{DoxyReturn}
+
+
 Implemented in \mbox{\hyperlink{classFlowImpl_ab792f8f5ee46682d1be266e25720c2f4}{Flow\+Impl}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -103,7 +134,16 @@ Here is the caller graph for this function\+:
 
 
 
-Implemented in \mbox{\hyperlink{classExponentialFlow_af755dadaf2fe73d8402958b2a2ee9ca3}{Exponential\+Flow}}, \mbox{\hyperlink{classlogisticFlow_ae380ca5d015a848848a468e749e70333}{logistic\+Flow}}, \mbox{\hyperlink{classFlowTest_af8567b29765904e63633959c90edbc70}{Flow\+Test}}, \mbox{\hyperlink{classmyFlow_a867e147716ba2bda3bb04380669e5fb1}{my\+Flow}}, and \mbox{\hyperlink{classFlowImpl_ac04e369c647b47849edc8f606561ca04}{Flow\+Impl}}.
+A pure virtual equation method which defines the flow behavior. 
+
+The equation method will define the mathematical relation beetwen the source and target Systems As we do not know the needed implementation we defined flow as an abstract class Whoever is using the API will need to implement this method with the behavior they want.
+
+\begin{DoxyReturn}{Returns}
+return a double value defined by the implemented equation. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classExponentialFlow_af755dadaf2fe73d8402958b2a2ee9ca3}{Exponential\+Flow}}, \mbox{\hyperlink{classlogisticFlow_ae380ca5d015a848848a468e749e70333}{logistic\+Flow}}, \mbox{\hyperlink{classFlowTest_af8567b29765904e63633959c90edbc70}{Flow\+Test}}, \mbox{\hyperlink{classMyFlow_a244fe13a3141ebd18ba70e55342d3c6a}{My\+Flow}}, and \mbox{\hyperlink{classFlowImpl_ac04e369c647b47849edc8f606561ca04}{Flow\+Impl}}.
 
 \Hypertarget{classFlow_a523026b5d1867a809aa167af000fac78}\label{classFlow_a523026b5d1867a809aa167af000fac78} 
 \index{Flow@{Flow}!getName@{getName}}
@@ -113,10 +153,16 @@ Implemented in \mbox{\hyperlink{classExponentialFlow_af755dadaf2fe73d8402958b2a2
 
 
 
+Virtual method to get the Name field on \doxylink{classFlow}{Flow}. 
+
+\begin{DoxyReturn}{Returns}
+return a const string containing the \doxylink{classFlow}{Flow} name. 
+\end{DoxyReturn}
+
+
 Implemented in \mbox{\hyperlink{classFlowImpl_a24faa1ee1359b914fec408a3ade54dd0}{Flow\+Impl}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -131,10 +177,16 @@ Here is the caller graph for this function\+:
 
 
 
+Virtual method to get the source \doxylink{classSystem}{System}. 
+
+\begin{DoxyReturn}{Returns}
+return a \doxylink{classSystem}{System} pointer containing the source. If the \doxylink{classFlow}{Flow} doesn\textquotesingle{}t have a source, a NULL value is returned. 
+\end{DoxyReturn}
+
+
 Implemented in \mbox{\hyperlink{classFlowImpl_a54940323059d2c4158f4146080841f32}{Flow\+Impl}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -149,16 +201,41 @@ Here is the caller graph for this function\+:
 
 
 
+Virtual method to get the Target \doxylink{classSystem}{System}. 
+
+\begin{DoxyReturn}{Returns}
+return a \doxylink{classSystem}{System} pointer containing the Target. If the \doxylink{classFlow}{Flow} doesn\textquotesingle{}t have a source, a NULL value is returned. 
+\end{DoxyReturn}
+
+
 Implemented in \mbox{\hyperlink{classFlowImpl_ab07923bc230308cd949f627a92901bca}{Flow\+Impl}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classFlow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph}
 \end{center}
 \end{figure}
+\Hypertarget{classFlow_a1fd4ebe3ee5eb7efb6cbe11c9ce419f6}\label{classFlow_a1fd4ebe3ee5eb7efb6cbe11c9ce419f6} 
+\index{Flow@{Flow}!operator=@{operator=}}
+\index{operator=@{operator=}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classFlow}{Flow}} \& Flow\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFlow}{Flow}} \&}]{flow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Overload for = operator. 
+
+This is an overload for = operator, in the format of a = b, in which a is being assigned as b.
+
+\begin{DoxyReturn}{Returns}
+return a \doxylink{classFlow}{Flow} reference which is a copy to the assigned \doxylink{classFlow}{Flow}. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classFlowImpl_a8cd91ac0d70cc7295952e0ca2ac0473c}{Flow\+Impl}}.
+
 \Hypertarget{classFlow_a3b1816775f7d2e9497236b38ab173d44}\label{classFlow_a3b1816775f7d2e9497236b38ab173d44} 
 \index{Flow@{Flow}!setName@{setName}}
 \index{setName@{setName}!Flow@{Flow}}
@@ -167,10 +244,21 @@ Here is the caller graph for this function\+:
 
 
 
+Virtual method to set a new name for the \doxylink{classFlow}{Flow}. 
+
+Will set a new name based on the string passed as a param. 
+\begin{DoxyParams}{Parameters}
+{\em name} & A string representing the name of the \doxylink{classFlow}{Flow}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if sucefully setted the new name, and false if it failed. 
+\end{DoxyReturn}
+
+
 Implemented in \mbox{\hyperlink{classFlowImpl_a03aa8b1df7c3c4e2c3db047a5cfcc7b3}{Flow\+Impl}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -185,10 +273,23 @@ Here is the caller graph for this function\+:
 
 
 
+Virtual method to set a new source for the \doxylink{classFlow}{Flow}. 
+
+Will set a new source based on the \doxylink{classSystem}{System} pointer passed as a param.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & A \doxylink{classSystem}{System} pointer for the new source. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if sucefully setted the new source, and false if it failed. 
+\end{DoxyReturn}
+
+
 Implemented in \mbox{\hyperlink{classFlowImpl_a552ebd8bb5bf4f8ec2a664311c94cebe}{Flow\+Impl}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -203,10 +304,23 @@ Here is the caller graph for this function\+:
 
 
 
+Virtual method to set a new target for the \doxylink{classFlow}{Flow}. 
+
+Will set a new target based on the \doxylink{classSystem}{System} pointer passed as a param.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & A \doxylink{classSystem}{System} pointer for the new target. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if sucefully setted the new target, and false if it failed. 
+\end{DoxyReturn}
+
+
 Implemented in \mbox{\hyperlink{classFlowImpl_ad7ef9c892519e5487767fc460fac7d17}{Flow\+Impl}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

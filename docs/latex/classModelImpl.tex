@@ -11,8 +11,7 @@ Represents the simulation model.
 
 
 
-Inheritance diagram for Model\+Impl\+:
-\nopagebreak
+Inheritance diagram for Model\+Impl\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Model\+Impl\+:
 \end{figure}
 
 
-Collaboration diagram for Model\+Impl\+:
-\nopagebreak
+Collaboration diagram for Model\+Impl\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -40,6 +38,8 @@ const string \mbox{\hyperlink{classModelImpl_a9055690bd312af7a25d18b6594de2bd0}{
 \begin{DoxyCompactList}\small\item\em Get the name field on \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classModelImpl_a8ef047a3087f3117ce41d1e5f419071f}{set\+Name}} (string)
 \begin{DoxyCompactList}\small\item\em Set a new \doxylink{classModelImpl_aa32e79af7c5dfa46a3ea476796a33fb4}{name} for the \doxylink{classModel}{Model}. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classModelImpl_a0f49863176940048cfbdc08674972067}{get\+Clock}} () const
+\begin{DoxyCompactList}\small\item\em Get the clock field on \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classModelImpl_aa01c228bf49f0b7f5d72e293ac18defb}{add}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
 \begin{DoxyCompactList}\small\item\em Add a \doxylink{classSystem}{System} pointer to the \doxylink{classModelImpl_a767e2054ecaaa8d1401ef2c962adc3e2}{systems} container. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classModelImpl_a33b51e276ed5f79ce97906a9abab85f7}{add}} (\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*})
@@ -63,7 +63,7 @@ bool \mbox{\hyperlink{classModelImpl_a8dea3d0d1fd298dd58927276670a9018}{run}} (i
 \mbox{\hyperlink{classModel_aa298940a05166ef87cb083e46b101019}{System\+Iterator}} \mbox{\hyperlink{classModelImpl_aa0089d4d9c62d21a5bf83c188b966441}{systems\+End}} ()
 \begin{DoxyCompactList}\small\item\em Returns an iterator referring to the past-\/the-\/end element in the systems container. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classModelImpl_ad95b31c43021dec4c4b67cb74a2dc138}{systems\+Size}} ()
-\begin{DoxyCompactList}\small\item\em Function for getting the size of the systems container. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Method for getting the size of the systems container. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classModel_aeca3f0e82057fa8315ce5990fb1edd4c}{Flow\+Iterator}} \mbox{\hyperlink{classModelImpl_a4b4a1897ba511d1495f187915eaf36df}{flows\+Begin}} ()
 \begin{DoxyCompactList}\small\item\em Return a iterator to the first \doxylink{classFlow}{Flow} in the container. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classModel_aeca3f0e82057fa8315ce5990fb1edd4c}{Flow\+Iterator}} \mbox{\hyperlink{classModelImpl_ad4842cee5355b77104ddf4663f427f21}{flows\+End}} ()
@@ -74,7 +74,7 @@ int \mbox{\hyperlink{classModelImpl_aa4e0c943fef808771f0800f03ae84386}{flows\+Si
 \begin{DoxyCompactItemize}
 \item 
 virtual \mbox{\hyperlink{classModel_af032d8433c87a0a3a431faf6563a1f03}{\texorpdfstring{$\sim$}{\string~}\+Model}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -89,7 +89,7 @@ vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ \mbo
 \doxysubsubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classModelImpl_a027c2618c0645601df6287193db1ae1c}{Model\+Impl}} (const \mbox{\hyperlink{classModelImpl}{Model\+Impl}} \&model)
+\mbox{\hyperlink{classModelImpl_aaf4ff7c53b30834d30918681827a397a}{Model\+Impl}} (const \mbox{\hyperlink{classModel}{Model}} \&model)
 \begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classModelImpl}{Model\+Impl}} \& \mbox{\hyperlink{classModelImpl_a8c3eca6b74ee4fef6c85f33237d7e7de}{operator=}} (const \mbox{\hyperlink{classModelImpl}{Model\+Impl}} \&)
 \begin{DoxyCompactList}\small\item\em Overload for = operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -138,11 +138,11 @@ When not passing the name, the default name string will be empty.
 
 Destructor. 
 
-A virtual destructor; \Hypertarget{classModelImpl_a027c2618c0645601df6287193db1ae1c}\label{classModelImpl_a027c2618c0645601df6287193db1ae1c} 
+A virtual destructor; \Hypertarget{classModelImpl_aaf4ff7c53b30834d30918681827a397a}\label{classModelImpl_aaf4ff7c53b30834d30918681827a397a} 
 \index{ModelImpl@{ModelImpl}!ModelImpl@{ModelImpl}}
 \index{ModelImpl@{ModelImpl}!ModelImpl@{ModelImpl}}
 \doxysubsubsection{\texorpdfstring{ModelImpl()}{ModelImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Model\+Impl\+::\+Model\+Impl (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classModelImpl}{Model\+Impl}} \&}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily Model\+Impl\+::\+Model\+Impl (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classModel}{Model}} \&}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -155,12 +155,11 @@ It is a private method because as we have a container with a pointer to Flows an
 {\em model\&} & The model reference which will be assigned to the \doxylink{classModel}{Model} being called. \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classModelImpl_a027c2618c0645601df6287193db1ae1c_cgraph}
+\includegraphics[width=350pt]{classModelImpl_aaf4ff7c53b30834d30918681827a397a_cgraph}
 \end{center}
 \end{figure}
 
@@ -183,8 +182,7 @@ return true if sucefully added the \doxylink{classSystem}{System}, and false if 
 
 Implements \mbox{\hyperlink{classModel_a5518050921f78abc062b9d861c15db11}{Model}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -208,16 +206,14 @@ return true if sucefully added the \doxylink{classSystem}{System}, and false if 
 
 Implements \mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{Model}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=323pt]{classModelImpl_aa01c228bf49f0b7f5d72e293ac18defb_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -241,8 +237,7 @@ return Flow\+Iterator type, which is defined as an iterator for the \doxylink{cl
 
 Implements \mbox{\hyperlink{classModel_a066401d879a81882b2af957c604e680f}{Model}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -266,8 +261,7 @@ return Flow\+Iterator type, which is defined as an iterator for the flows contai
 
 Implements \mbox{\hyperlink{classModel_a98e438459d7a43fa94f0e1d8d1354056}{Model}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -291,14 +285,30 @@ returns the number of elements in the \doxylink{classModelImpl_a9be1dcdb4753e5d7
 
 Implements \mbox{\hyperlink{classModel_a2bbba88aae97908b686af0724aeeb59a}{Model}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classModelImpl_aa4e0c943fef808771f0800f03ae84386_icgraph}
 \end{center}
 \end{figure}
+\Hypertarget{classModelImpl_a0f49863176940048cfbdc08674972067}\label{classModelImpl_a0f49863176940048cfbdc08674972067} 
+\index{ModelImpl@{ModelImpl}!getClock@{getClock}}
+\index{getClock@{getClock}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{getClock()}{getClock()}}
+{\footnotesize\ttfamily const int Model\+Impl\+::get\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the clock field on \doxylink{classFlow}{Flow}. 
+
+\begin{DoxyReturn}{Returns}
+return a integer with the clock value. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a2357590cca5cbc36029472fe74f70d2d}{Model}}.
+
 \Hypertarget{classModelImpl_a9055690bd312af7a25d18b6594de2bd0}\label{classModelImpl_a9055690bd312af7a25d18b6594de2bd0} 
 \index{ModelImpl@{ModelImpl}!getName@{getName}}
 \index{getName@{getName}!ModelImpl@{ModelImpl}}
@@ -316,12 +326,11 @@ return a const string containing the \doxylink{classModel}{Model} \doxylink{clas
 
 Implements \mbox{\hyperlink{classModel_a447cb8c73eb6377246147dc64eba63ce}{Model}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=335pt]{classModelImpl_a9055690bd312af7a25d18b6594de2bd0_icgraph}
+\includegraphics[width=331pt]{classModelImpl_a9055690bd312af7a25d18b6594de2bd0_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classModelImpl_a8c3eca6b74ee4fef6c85f33237d7e7de}\label{classModelImpl_a8c3eca6b74ee4fef6c85f33237d7e7de} 
@@ -341,8 +350,7 @@ It is a private method because as we have a container with a pointer to Flows an
 \begin{DoxyReturn}{Returns}
 return a \doxylink{classModel}{Model} reference which is a copy to the assigned \doxylink{classModel}{Model}. 
 \end{DoxyReturn}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -373,8 +381,7 @@ return true if sucefully removed the \doxylink{classFlow}{Flow}, and false if it
 
 Implements \mbox{\hyperlink{classModel_acccedabc203f0bbea0870b4968ca9910}{Model}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -405,8 +412,7 @@ return true if sucefully removed the \doxylink{classFlow}{Flow}, and false if it
 
 Implements \mbox{\hyperlink{classModel_a54ae6276f39a86cf6ef59fb4b2eb96b2}{Model}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -437,8 +443,7 @@ return true if sucefully removed the \doxylink{classSystem}{System}, and false i
 
 Implements \mbox{\hyperlink{classModel_a77684d912f4af7a793a8275e6a92c40a}{Model}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -469,8 +474,7 @@ return true if sucefully removed the \doxylink{classSystem}{System}, and false i
 
 Implements \mbox{\hyperlink{classModel_a8d3f7c6c1176d094c1e63fc6270d6edc}{Model}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -503,16 +507,14 @@ return true if sucefully ran the simulation, and false if it failed.
 
 Implements \mbox{\hyperlink{classModel_aa2c58d924e023fe497cefbc6547dbea6}{Model}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=312pt]{classModelImpl_a8dea3d0d1fd298dd58927276670a9018_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -555,8 +557,7 @@ return System\+Iterator type, which is defined as an iterator for the \doxylink{
 
 Implements \mbox{\hyperlink{classModel_a07fcdf49b02e037cfcf1036b47b9ac27}{Model}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -580,8 +581,7 @@ return System\+Iterator type, which is defined as an iterator for the \doxylink{
 
 Implements \mbox{\hyperlink{classModel_a278952b46d4b5185272b17016a61bc55}{Model}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -596,7 +596,7 @@ Here is the caller graph for this function\+:
 
 
 
-Function for getting the size of the systems container. 
+Method for getting the size of the systems container. 
 
 \begin{DoxyReturn}{Returns}
 returns the number of elements in the systems container. 
@@ -605,8 +605,7 @@ returns the number of elements in the systems container.
 
 Implements \mbox{\hyperlink{classModel_a0fbe0f40b959f8303d23a003d4a00257}{Model}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -639,8 +638,7 @@ return true if sucefully update the \doxylink{classFlow}{Flow}, and false if it 
 
 Implements \mbox{\hyperlink{classModel_ac5a16c78b518f1a3f789e5d6634935b7}{Model}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -673,8 +671,7 @@ return true if sucefully update the \doxylink{classSystem}{System}, and false if
 
 Implements \mbox{\hyperlink{classModel_ad9ab3dca392d43f115d62625e96da56d}{Model}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -690,7 +687,7 @@ Here is the call graph for this function\+:
 \doxysubsubsection{\texorpdfstring{clock}{clock}}
 {\footnotesize\ttfamily int Model\+Impl\+::clock = 0\hspace{0.3cm}{\ttfamily [protected]}}
 
-A integer for keepin track of elapsed time. \Hypertarget{classModelImpl_a9be1dcdb4753e5d78e0c817261297dcf}\label{classModelImpl_a9be1dcdb4753e5d78e0c817261297dcf} 
+A integer for keeping track of elapsed time. \Hypertarget{classModelImpl_a9be1dcdb4753e5d78e0c817261297dcf}\label{classModelImpl_a9be1dcdb4753e5d78e0c817261297dcf} 
 \index{ModelImpl@{ModelImpl}!flows@{flows}}
 \index{flows@{flows}!ModelImpl@{ModelImpl}}
 \doxysubsubsection{\texorpdfstring{flows}{flows}}

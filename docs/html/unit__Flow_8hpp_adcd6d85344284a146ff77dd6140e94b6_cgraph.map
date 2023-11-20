@@ -1,7 +1,7 @@
 <map id="unit_Flow_clearTarget" name="unit_Flow_clearTarget">
 <area shape="rect" id="Node000001" title="A unitary test for asserting the clearTarget method." alt="" coords="5,31,154,57"/>
-<area shape="rect" id="Node000002" href="$classFlow.html#a658b9d7a92f7771a050b826a141b46fd" title=" " alt="" coords="202,5,323,32"/>
+<area shape="rect" id="Node000002" href="$classFlow.html#a658b9d7a92f7771a050b826a141b46fd" title="Virtual method to clear the Flow target." alt="" coords="202,5,323,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,31,186,27,186,32,154,36"/>
-<area shape="rect" id="Node000003" href="$classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787" title=" " alt="" coords="207,56,318,83"/>
+<area shape="rect" id="Node000003" href="$classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Virtual method to get the Target System." alt="" coords="207,56,318,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,52,191,57,191,62,154,57"/>
 </map>

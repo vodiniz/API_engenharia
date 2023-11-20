@@ -4,11 +4,552 @@
 {\ttfamily \#include $<$math.\+h$>$}\newline
 {\ttfamily \#include $<$assert.\+h$>$}\newline
 {\ttfamily \#include "{}unit\+\_\+\+Model.\+hpp"{}}\newline
-Include dependency graph for unit\+\_\+\+Model.\+cpp\+:
-\nopagebreak
+{\ttfamily \#include "{}../../src/\+Model\+Impl.\+hpp"{}}\newline
+{\ttfamily \#include "{}../../src/\+System\+Impl.\+hpp"{}}\newline
+{\ttfamily \#include "{}../../src/\+Flow\+Impl.\+hpp"{}}\newline
+Include dependency graph for unit\+\_\+\+Model.\+cpp\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{unit__Model_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{unit__Model_8cpp_aef9d3af61dfc50dcbd295ee49b77e704}{unit\+\_\+\+Model\+\_\+constructor\+\_\+default}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the default constructor of \doxylink{classModel}{Model}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_ad48c8468bb5d2d84e4738063761d1828}{unit\+\_\+\+Model\+\_\+constructor\+\_\+with\+\_\+name}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the constructor of \doxylink{classModel}{Model} with the name parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_adc00b5a0ad5085f85564b39319ae6662}{unit\+\_\+\+Model\+\_\+destructor}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the destructor of \doxylink{classModel}{Model}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_ae4af6259f0c230666091589c7e5692a0}{unit\+\_\+\+Model\+\_\+get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the get\+Name method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_a3e18033ba5152db576eeccd0eebafd20}{unit\+\_\+\+Model\+\_\+set\+Name}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the set\+Name method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_ae6d41c7055d6cab40311bacb885be338}{unit\+\_\+\+Model\+\_\+get\+Clock}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the get\+Clock method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_a03cbd84ebb931c593c4d41c2ce90b02b}{unit\+\_\+\+Model\+\_\+add\+\_\+\+System}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the add method with the System\texorpdfstring{$\ast$}{*} overload. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_aaa1eb9058b663d5d733960e91c080a5e}{unit\+\_\+\+Model\+\_\+add\+\_\+\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the add method with the Flow\texorpdfstring{$\ast$}{*} overload. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_aaa652095d3099328e761b026d5850b72}{unit\+\_\+\+Model\+\_\+remove\+System\+\_\+pointer}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the remove\+System method with a \doxylink{classSystem}{System} pointer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_a587b64c37870f12522e1c139eadb7b76}{unit\+\_\+\+Model\+\_\+remove\+System\+\_\+name}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the remove\+System method with a name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_a6fc800346eccb961fbafc900e541339a}{unit\+\_\+\+Model\+\_\+remove\+Flow\+\_\+pointer}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the remove\+Flow method with a \doxylink{classFlow}{Flow} pointer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_aace5b91afc8f08d2907431dc90e47e27}{unit\+\_\+\+Model\+\_\+remove\+Flow\+\_\+name}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the remove\+Flow method with a name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_aa4add1b3d875d261b4b115d6ab9a414f}{unit\+\_\+\+Model\+\_\+update\+\_\+\+System}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the update method with the \doxylink{classSystem}{System} param overload. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_a57d32dd0f745e87855886fd2ed246ef5}{unit\+\_\+\+Model\+\_\+update\+\_\+\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the update method with the \doxylink{classFlow}{Flow} param overload. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_a37286918320acd70d56642498fa32c18}{unit\+\_\+\+Model\+\_\+run}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the run method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_a4f48fc2f942c015aa65674f3ae095a90}{unit\+\_\+\+Model\+\_\+systems\+Begin}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the systems\+Begin method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_a48cf040ec77c857814f535c4b9ba6764}{unit\+\_\+\+Model\+\_\+systems\+End}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the systems\+End method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_abd5bde99de08b7b414e09f40c9dea19c}{unit\+\_\+\+Model\+\_\+systems\+Size}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the systems\+Size method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_a70115dcd7577152e073793033f6426a1}{unit\+\_\+\+Model\+\_\+flows\+Begin}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the flows\+Begin method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_afc1883011bf49c69a5b0e14b2e64b1c7}{unit\+\_\+\+Model\+\_\+flows\+End}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the flows\+End method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_ae43b096254503bcf0321b700f09d1c7c}{unit\+\_\+\+Model\+\_\+flows\+Size}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the flows\+Size method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_afef1aefd31e8eb8207e3ebe6f0fd176a}{unit\+\_\+\+Model\+\_\+assign\+Overload}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{unit__Model_8cpp_aaa1eb9058b663d5d733960e91c080a5e}\label{unit__Model_8cpp_aaa1eb9058b663d5d733960e91c080a5e} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_add\_Flow@{unit\_Model\_add\_Flow}}
+\index{unit\_Model\_add\_Flow@{unit\_Model\_add\_Flow}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_add\_Flow()}{unit\_Model\_add\_Flow()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+add\+\_\+\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the add method with the Flow\texorpdfstring{$\ast$}{*} overload. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{unit__Model_8cpp_aaa1eb9058b663d5d733960e91c080a5e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{unit__Model_8cpp_aaa1eb9058b663d5d733960e91c080a5e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_a03cbd84ebb931c593c4d41c2ce90b02b}\label{unit__Model_8cpp_a03cbd84ebb931c593c4d41c2ce90b02b} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_add\_System@{unit\_Model\_add\_System}}
+\index{unit\_Model\_add\_System@{unit\_Model\_add\_System}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_add\_System()}{unit\_Model\_add\_System()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+add\+\_\+\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the add method with the System\texorpdfstring{$\ast$}{*} overload. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit__Model_8cpp_a03cbd84ebb931c593c4d41c2ce90b02b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{unit__Model_8cpp_a03cbd84ebb931c593c4d41c2ce90b02b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_afef1aefd31e8eb8207e3ebe6f0fd176a}\label{unit__Model_8cpp_afef1aefd31e8eb8207e3ebe6f0fd176a} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_assignOverload@{unit\_Model\_assignOverload}}
+\index{unit\_Model\_assignOverload@{unit\_Model\_assignOverload}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_assignOverload()}{unit\_Model\_assignOverload()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+assign\+Overload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{unit__Model_8cpp_aef9d3af61dfc50dcbd295ee49b77e704}\label{unit__Model_8cpp_aef9d3af61dfc50dcbd295ee49b77e704} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_constructor\_default@{unit\_Model\_constructor\_default}}
+\index{unit\_Model\_constructor\_default@{unit\_Model\_constructor\_default}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_constructor\_default()}{unit\_Model\_constructor\_default()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+constructor\+\_\+default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the default constructor of \doxylink{classModel}{Model}. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{unit__Model_8cpp_aef9d3af61dfc50dcbd295ee49b77e704_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{unit__Model_8cpp_aef9d3af61dfc50dcbd295ee49b77e704_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_ad48c8468bb5d2d84e4738063761d1828}\label{unit__Model_8cpp_ad48c8468bb5d2d84e4738063761d1828} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_constructor\_with\_name@{unit\_Model\_constructor\_with\_name}}
+\index{unit\_Model\_constructor\_with\_name@{unit\_Model\_constructor\_with\_name}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_constructor\_with\_name()}{unit\_Model\_constructor\_with\_name()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+constructor\+\_\+with\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the constructor of \doxylink{classModel}{Model} with the name parameter. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{unit__Model_8cpp_ad48c8468bb5d2d84e4738063761d1828_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{unit__Model_8cpp_ad48c8468bb5d2d84e4738063761d1828_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_adc00b5a0ad5085f85564b39319ae6662}\label{unit__Model_8cpp_adc00b5a0ad5085f85564b39319ae6662} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_destructor@{unit\_Model\_destructor}}
+\index{unit\_Model\_destructor@{unit\_Model\_destructor}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_destructor()}{unit\_Model\_destructor()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+destructor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the destructor of \doxylink{classModel}{Model}. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{unit__Model_8cpp_adc00b5a0ad5085f85564b39319ae6662_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_a70115dcd7577152e073793033f6426a1}\label{unit__Model_8cpp_a70115dcd7577152e073793033f6426a1} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_flowsBegin@{unit\_Model\_flowsBegin}}
+\index{unit\_Model\_flowsBegin@{unit\_Model\_flowsBegin}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_flowsBegin()}{unit\_Model\_flowsBegin()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+flows\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the flows\+Begin method. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{unit__Model_8cpp_a70115dcd7577152e073793033f6426a1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{unit__Model_8cpp_a70115dcd7577152e073793033f6426a1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_afc1883011bf49c69a5b0e14b2e64b1c7}\label{unit__Model_8cpp_afc1883011bf49c69a5b0e14b2e64b1c7} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_flowsEnd@{unit\_Model\_flowsEnd}}
+\index{unit\_Model\_flowsEnd@{unit\_Model\_flowsEnd}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_flowsEnd()}{unit\_Model\_flowsEnd()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+flows\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the flows\+End method. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{unit__Model_8cpp_afc1883011bf49c69a5b0e14b2e64b1c7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{unit__Model_8cpp_afc1883011bf49c69a5b0e14b2e64b1c7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_ae43b096254503bcf0321b700f09d1c7c}\label{unit__Model_8cpp_ae43b096254503bcf0321b700f09d1c7c} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_flowsSize@{unit\_Model\_flowsSize}}
+\index{unit\_Model\_flowsSize@{unit\_Model\_flowsSize}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_flowsSize()}{unit\_Model\_flowsSize()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+flows\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the flows\+Size method. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{unit__Model_8cpp_ae43b096254503bcf0321b700f09d1c7c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_ae6d41c7055d6cab40311bacb885be338}\label{unit__Model_8cpp_ae6d41c7055d6cab40311bacb885be338} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_getClock@{unit\_Model\_getClock}}
+\index{unit\_Model\_getClock@{unit\_Model\_getClock}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_getClock()}{unit\_Model\_getClock()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+get\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the get\+Clock method. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{unit__Model_8cpp_ae6d41c7055d6cab40311bacb885be338_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_ae4af6259f0c230666091589c7e5692a0}\label{unit__Model_8cpp_ae4af6259f0c230666091589c7e5692a0} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_getName@{unit\_Model\_getName}}
+\index{unit\_Model\_getName@{unit\_Model\_getName}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_getName()}{unit\_Model\_getName()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the get\+Name method. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{unit__Model_8cpp_ae4af6259f0c230666091589c7e5692a0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{unit__Model_8cpp_ae4af6259f0c230666091589c7e5692a0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_aace5b91afc8f08d2907431dc90e47e27}\label{unit__Model_8cpp_aace5b91afc8f08d2907431dc90e47e27} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_removeFlow\_name@{unit\_Model\_removeFlow\_name}}
+\index{unit\_Model\_removeFlow\_name@{unit\_Model\_removeFlow\_name}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_removeFlow\_name()}{unit\_Model\_removeFlow\_name()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+remove\+Flow\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the remove\+Flow method with a name. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit__Model_8cpp_aace5b91afc8f08d2907431dc90e47e27_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{unit__Model_8cpp_aace5b91afc8f08d2907431dc90e47e27_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_a6fc800346eccb961fbafc900e541339a}\label{unit__Model_8cpp_a6fc800346eccb961fbafc900e541339a} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_removeFlow\_pointer@{unit\_Model\_removeFlow\_pointer}}
+\index{unit\_Model\_removeFlow\_pointer@{unit\_Model\_removeFlow\_pointer}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_removeFlow\_pointer()}{unit\_Model\_removeFlow\_pointer()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+remove\+Flow\+\_\+pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the remove\+Flow method with a \doxylink{classFlow}{Flow} pointer. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{unit__Model_8cpp_a6fc800346eccb961fbafc900e541339a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{unit__Model_8cpp_a6fc800346eccb961fbafc900e541339a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_a587b64c37870f12522e1c139eadb7b76}\label{unit__Model_8cpp_a587b64c37870f12522e1c139eadb7b76} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_removeSystem\_name@{unit\_Model\_removeSystem\_name}}
+\index{unit\_Model\_removeSystem\_name@{unit\_Model\_removeSystem\_name}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_removeSystem\_name()}{unit\_Model\_removeSystem\_name()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+remove\+System\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the remove\+System method with a name. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit__Model_8cpp_a587b64c37870f12522e1c139eadb7b76_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{unit__Model_8cpp_a587b64c37870f12522e1c139eadb7b76_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_aaa652095d3099328e761b026d5850b72}\label{unit__Model_8cpp_aaa652095d3099328e761b026d5850b72} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_removeSystem\_pointer@{unit\_Model\_removeSystem\_pointer}}
+\index{unit\_Model\_removeSystem\_pointer@{unit\_Model\_removeSystem\_pointer}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_removeSystem\_pointer()}{unit\_Model\_removeSystem\_pointer()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+remove\+System\+\_\+pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the remove\+System method with a \doxylink{classSystem}{System} pointer. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit__Model_8cpp_aaa652095d3099328e761b026d5850b72_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{unit__Model_8cpp_aaa652095d3099328e761b026d5850b72_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_a37286918320acd70d56642498fa32c18}\label{unit__Model_8cpp_a37286918320acd70d56642498fa32c18} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_run@{unit\_Model\_run}}
+\index{unit\_Model\_run@{unit\_Model\_run}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_run()}{unit\_Model\_run()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the run method. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{unit__Model_8cpp_a37286918320acd70d56642498fa32c18_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{unit__Model_8cpp_a37286918320acd70d56642498fa32c18_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_a3e18033ba5152db576eeccd0eebafd20}\label{unit__Model_8cpp_a3e18033ba5152db576eeccd0eebafd20} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_setName@{unit\_Model\_setName}}
+\index{unit\_Model\_setName@{unit\_Model\_setName}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_setName()}{unit\_Model\_setName()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+set\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the set\+Name method. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{unit__Model_8cpp_a3e18033ba5152db576eeccd0eebafd20_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{unit__Model_8cpp_a3e18033ba5152db576eeccd0eebafd20_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_a4f48fc2f942c015aa65674f3ae095a90}\label{unit__Model_8cpp_a4f48fc2f942c015aa65674f3ae095a90} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_systemsBegin@{unit\_Model\_systemsBegin}}
+\index{unit\_Model\_systemsBegin@{unit\_Model\_systemsBegin}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_systemsBegin()}{unit\_Model\_systemsBegin()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+systems\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the systems\+Begin method. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit__Model_8cpp_a4f48fc2f942c015aa65674f3ae095a90_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{unit__Model_8cpp_a4f48fc2f942c015aa65674f3ae095a90_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_a48cf040ec77c857814f535c4b9ba6764}\label{unit__Model_8cpp_a48cf040ec77c857814f535c4b9ba6764} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_systemsEnd@{unit\_Model\_systemsEnd}}
+\index{unit\_Model\_systemsEnd@{unit\_Model\_systemsEnd}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_systemsEnd()}{unit\_Model\_systemsEnd()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+systems\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the systems\+End method. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{unit__Model_8cpp_a48cf040ec77c857814f535c4b9ba6764_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{unit__Model_8cpp_a48cf040ec77c857814f535c4b9ba6764_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_abd5bde99de08b7b414e09f40c9dea19c}\label{unit__Model_8cpp_abd5bde99de08b7b414e09f40c9dea19c} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_systemsSize@{unit\_Model\_systemsSize}}
+\index{unit\_Model\_systemsSize@{unit\_Model\_systemsSize}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_systemsSize()}{unit\_Model\_systemsSize()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+systems\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the systems\+Size method. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit__Model_8cpp_abd5bde99de08b7b414e09f40c9dea19c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{unit__Model_8cpp_abd5bde99de08b7b414e09f40c9dea19c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_a57d32dd0f745e87855886fd2ed246ef5}\label{unit__Model_8cpp_a57d32dd0f745e87855886fd2ed246ef5} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_update\_Flow@{unit\_Model\_update\_Flow}}
+\index{unit\_Model\_update\_Flow@{unit\_Model\_update\_Flow}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_update\_Flow()}{unit\_Model\_update\_Flow()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+update\+\_\+\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the update method with the \doxylink{classFlow}{Flow} param overload. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{unit__Model_8cpp_a57d32dd0f745e87855886fd2ed246ef5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{unit__Model_8cpp_a57d32dd0f745e87855886fd2ed246ef5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_aa4add1b3d875d261b4b115d6ab9a414f}\label{unit__Model_8cpp_aa4add1b3d875d261b4b115d6ab9a414f} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!unit\_Model\_update\_System@{unit\_Model\_update\_System}}
+\index{unit\_Model\_update\_System@{unit\_Model\_update\_System}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_update\_System()}{unit\_Model\_update\_System()}}
+{\footnotesize\ttfamily void unit\+\_\+\+Model\+\_\+update\+\_\+\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A unitary test for asserting the update method with the \doxylink{classSystem}{System} param overload. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit__Model_8cpp_aa4add1b3d875d261b4b115d6ab9a414f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{unit__Model_8cpp_aa4add1b3d875d261b4b115d6ab9a414f_icgraph}
 \end{center}
 \end{figure}

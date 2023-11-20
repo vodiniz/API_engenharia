@@ -1,6 +1,6 @@
 <map id="ModelImpl::flowsEnd" name="ModelImpl::flowsEnd">
 <area shape="rect" id="Node000001" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="471,132,615,159"/>
-<area shape="rect" id="Node000002" href="$classModelImpl.html#a027c2618c0645601df6287193db1ae1c" title="Copy constructor." alt="" coords="269,5,418,32"/>
+<area shape="rect" id="Node000002" href="$classModelImpl.html#aaf4ff7c53b30834d30918681827a397a" title="Copy constructor." alt="" coords="269,5,418,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="517,123,475,84,422,46,397,35,399,30,425,42,478,80,521,119"/>
 <area shape="rect" id="Node000003" href="$classModelImpl.html#a8c3eca6b74ee4fef6c85f33237d7e7de" title="Overload for = operator." alt="" coords="271,56,415,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="497,128,422,97,389,86,391,81,424,92,499,123"/>
