@@ -7,7 +7,6 @@ using namespace std;
 
 #include "System.hpp"
 
-/*! System class for representing stock, quantities, mass or even energy. */
 
 
 /**
@@ -46,7 +45,7 @@ class SystemImpl: public System{
          * 
          * @param system& A system reference which  will be used as the value for our system.
         */
-        SystemImpl(const SystemImpl& system);
+        SystemImpl(const System& system);
 
         //---------------------------------getters e setters---------------------------------
 
@@ -91,7 +90,7 @@ class SystemImpl: public System{
          * 
          * @return return a System reference which is a copy to the assigned System.
         */
-        SystemImpl &operator= (const SystemImpl&);
+        System& operator=(const System&);
 
 
 };

@@ -79,7 +79,6 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="functional__tests_8hpp_source.html">functional_tests.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Model_8hpp_source.html">../../src/Model.hpp</a>&quot;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -87,26 +86,37 @@ Include dependency graph for functional_tests.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="functional__tests_8cpp__incl.png" border="0" usemap="#atest_2func_2functional__tests_8cpp" alt=""/></div>
 <map name="atest_2func_2functional__tests_8cpp" id="atest_2func_2functional__tests_8cpp">
-<area shape="rect" title=" " alt="" coords="224,5,357,48"/>
-<area shape="rect" href="functional__tests_8hpp.html" title=" " alt="" coords="5,96,144,123"/>
-<area shape="poly" title=" " alt="" coords="236,51,123,93,121,88,234,46"/>
-<area shape="rect" href="Model_8hpp.html" title=" " alt="" coords="168,96,296,123"/>
-<area shape="poly" title=" " alt="" coords="278,50,252,85,248,82,273,47"/>
-<area shape="rect" title=" " alt="" coords="320,96,381,123"/>
-<area shape="poly" title=" " alt="" coords="308,47,334,82,330,85,304,50"/>
-<area shape="rect" title=" " alt="" coords="406,96,474,123"/>
-<area shape="poly" title=" " alt="" coords="330,46,405,86,402,91,328,51"/>
-<area shape="rect" href="Flow_8hpp.html" title=" " alt="" coords="24,171,144,197"/>
-<area shape="poly" title=" " alt="" coords="79,123,83,155,78,156,73,124"/>
-<area shape="rect" href="System_8hpp.html" title=" " alt="" coords="104,245,195,272"/>
-<area shape="poly" title=" " alt="" coords="97,196,130,232,126,236,93,200"/>
-<area shape="rect" title=" " alt="" coords="155,320,226,347"/>
-<area shape="poly" title=" " alt="" coords="159,271,178,305,174,308,154,274"/>
-<area shape="poly" title=" " alt="" coords="207,126,125,166,122,161,205,121"/>
-<area shape="poly" title=" " alt="" coords="227,124,166,233,161,230,222,122"/>
-<area shape="poly" title=" " alt="" coords="233,124,224,188,209,273,201,306,196,305,204,271,219,187,228,123"/>
-<area shape="rect" title=" " alt="" coords="270,171,327,197"/>
-<area shape="poly" title=" " alt="" coords="245,121,279,157,275,161,241,125"/>
+<area shape="rect" title=" " alt="" coords="308,5,441,48"/>
+<area shape="rect" href="functional__tests_8hpp.html" title=" " alt="" coords="181,96,320,123"/>
+<area shape="poly" title=" " alt="" coords="344,51,284,90,281,85,341,46"/>
+<area shape="rect" title=" " alt="" coords="344,96,405,123"/>
+<area shape="poly" title=" " alt="" coords="377,49,377,80,372,80,372,49"/>
+<area shape="rect" title=" " alt="" coords="430,96,498,123"/>
+<area shape="poly" title=" " alt="" coords="399,47,440,83,437,87,396,51"/>
+<area shape="rect" href="ModelImpl_8hpp.html" title=" " alt="" coords="174,171,327,197"/>
+<area shape="poly" title=" " alt="" coords="253,123,253,155,248,155,248,123"/>
+<area shape="rect" href="SystemImpl_8hpp.html" title=" " alt="" coords="5,245,168,272"/>
+<area shape="poly" title=" " alt="" coords="230,126,198,146,164,173,133,204,107,234,103,231,129,200,161,169,195,142,227,121"/>
+<area shape="rect" href="FlowImpl_8hpp.html" title=" " alt="" coords="351,171,497,197"/>
+<area shape="poly" title=" " alt="" coords="282,121,381,162,378,167,280,126"/>
+<area shape="rect" title=" " alt="" coords="159,320,230,347"/>
+<area shape="poly" title=" " alt="" coords="248,199,207,306,202,304,243,197"/>
+<area shape="rect" title=" " alt="" coords="306,320,363,347"/>
+<area shape="poly" title=" " alt="" coords="283,196,313,215,327,228,338,244,346,275,344,305,339,305,341,275,333,246,323,232,310,219,280,200"/>
+<area shape="rect" href="Model_8hpp.html" title=" " alt="" coords="243,245,325,272"/>
+<area shape="poly" title=" " alt="" coords="259,197,274,230,269,232,254,199"/>
+<area shape="poly" title=" " alt="" coords="270,275,223,312,220,308,267,270"/>
+<area shape="poly" title=" " alt="" coords="295,271,319,306,315,309,290,274"/>
+<area shape="rect" href="System_8hpp.html" title=" " alt="" coords="222,395,314,421"/>
+<area shape="poly" title=" " alt="" coords="285,273,273,379,268,379,280,272"/>
+<area shape="rect" href="Flow_8hpp.html" title=" " alt="" coords="387,320,461,347"/>
+<area shape="poly" title=" " alt="" coords="309,270,387,310,384,315,307,275"/>
+<area shape="rect" title=" " alt="" coords="241,469,295,496"/>
+<area shape="poly" title=" " alt="" coords="271,422,271,454,265,454,265,422"/>
+<area shape="poly" title=" " alt="" coords="398,350,310,390,308,385,396,345"/>
+<area shape="poly" title=" " alt="" coords="107,270,164,309,161,313,104,275"/>
+<area shape="poly" title=" " alt="" coords="95,271,116,306,148,345,182,368,218,386,216,391,180,373,145,349,111,310,90,273"/>
+<area shape="poly" title=" " alt="" coords="427,198,427,304,421,304,421,198"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -139,31 +149,32 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A test for verifying if the model running a <a class="el" href="classlogisticFlow.html" title="Represents a Flow with Exponential behavior.">logisticFlow</a> asserts. </p>
-<p>Given a Complex <a class="el" href="classModel.html" title="Represents the simulation model.">Model</a> with 6 <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a>, Q1, Q2, Q3, Q4, Q5 and Q6, with the values 100.0, 0.0, 100.0, 0.0, 0.0 and 6 ExponentialFlows. When the <a class="el" href="classModel.html" title="Represents the simulation model.">Model</a> will ran for 100 time units with one increments Them we will assert the resulting <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a> value with 31.8513, 18.4003, 77.1143, 56.1728, 16.4612 respectvely. </p>
+<p>Given a Complex <a class="el" href="classModel.html">Model</a> with 6 <a class="el" href="classSystem.html" title="System interface, which will hide the implementation of methods.">System</a>, Q1, Q2, Q3, Q4, Q5 and Q6, with the values 100.0, 0.0, 100.0, 0.0, 0.0 and 6 ExponentialFlows. When the <a class="el" href="classModel.html">Model</a> will ran for 100 time units with one increments Them we will assert the resulting <a class="el" href="classSystem.html" title="System interface, which will hide the implementation of methods.">System</a> value with 31.8513, 18.4003, 77.1143, 56.1728, 16.4612 respectvely. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="functional__tests_8cpp_a342098ba1b793b28d015331449d280d5_cgraph.png" border="0" usemap="#afunctional__tests_8cpp_a342098ba1b793b28d015331449d280d5_cgraph" alt=""/></div>
 <map name="afunctional__tests_8cpp_a342098ba1b793b28d015331449d280d5_cgraph" id="afunctional__tests_8cpp_a342098ba1b793b28d015331449d280d5_cgraph">
 <area shape="rect" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="5,107,101,133"/>
-<area shape="rect" href="classModel.html#ad4fcd314fc1c2f581e8469c8767587bc" title="Add a System pointer to the systems container." alt="" coords="149,56,234,83"/>
-<area shape="poly" title=" " alt="" coords="91,104,137,86,139,91,93,109"/>
-<area shape="rect" href="classSystem.html#a8459db57c2462ae8f71ef9ebc7347539" title="Get the value field on System." alt="" coords="290,107,414,133"/>
-<area shape="poly" title=" " alt="" coords="101,117,274,117,274,123,101,123"/>
-<area shape="rect" href="classModel.html#ad31ab57899deb9e33c9fd0312553383c" title="Run the simulation." alt="" coords="150,157,233,184"/>
-<area shape="poly" title=" " alt="" coords="93,131,139,149,137,154,91,136"/>
-<area shape="rect" href="classModel.html#a61db3ce77d42741a911a44aba7b320c7" title="Function for getting the size of the flows container." alt="" coords="292,56,413,83"/>
-<area shape="poly" title=" " alt="" coords="235,67,276,67,276,72,235,72"/>
-<area shape="rect" href="classModel.html#ac63ddb11d77ea78d5d427af1f8d154fc" title="Function for getting the size of the systems container." alt="" coords="282,5,422,32"/>
-<area shape="poly" title=" " alt="" coords="234,53,292,35,294,40,235,58"/>
-<area shape="poly" title=" " alt="" coords="204,155,237,124,281,92,290,87,293,92,283,97,240,128,207,159"/>
-<area shape="poly" title=" " alt="" coords="232,155,292,136,294,141,234,160"/>
-<area shape="rect" href="classModel.html#ab323d582a76cf60eb75b581f38551525" title="Return a iterator to the first Flow in the container." alt="" coords="288,157,416,184"/>
-<area shape="poly" title=" " alt="" coords="233,168,272,168,272,173,233,173"/>
-<area shape="rect" href="classModel.html#ab1d42dc05fe348f907372f3139b6c0f5" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="293,208,411,235"/>
-<area shape="poly" title=" " alt="" coords="234,181,294,200,292,205,232,186"/>
-<area shape="rect" href="classSystem.html#a477d387edd51ccf7a58c0d496de781e5" title="Set a new Value for the System." alt="" coords="290,259,414,285"/>
-<area shape="poly" title=" " alt="" coords="207,182,240,213,283,244,293,249,290,254,281,249,237,217,204,186"/>
+<area shape="rect" href="classModelImpl.html#aa01c228bf49f0b7f5d72e293ac18defb" title="Add a System pointer to the systems container." alt="" coords="168,56,279,83"/>
+<area shape="poly" title=" " alt="" coords="100,103,161,85,162,90,101,109"/>
+<area shape="rect" href="classSystemImpl.html#a6f96a5cef48562039aebb758acc462bf" title="Get the value field on System." alt="" coords="149,107,298,133"/>
+<area shape="poly" title=" " alt="" coords="101,117,133,117,133,123,101,123"/>
+<area shape="rect" href="classModelImpl.html#a8dea3d0d1fd298dd58927276670a9018" title="Run the simulation." alt="" coords="170,157,277,184"/>
+<area shape="poly" title=" " alt="" coords="101,131,162,150,161,155,100,137"/>
+<area shape="rect" href="classModelImpl.html#aa4e0c943fef808771f0800f03ae84386" title="Function for getting the size of the flows container." alt="" coords="356,56,502,83"/>
+<area shape="poly" title=" " alt="" coords="279,67,340,67,340,72,279,72"/>
+<area shape="rect" href="classModelImpl.html#ad95b31c43021dec4c4b67cb74a2dc138" title="Function for getting the size of the systems container." alt="" coords="346,5,511,32"/>
+<area shape="poly" title=" " alt="" coords="278,53,356,34,357,39,280,58"/>
+<area shape="poly" title=" " alt="" coords="274,154,297,143,311,131,320,118,329,105,344,92,354,87,357,92,348,97,333,109,324,121,315,134,299,148,277,159"/>
+<area shape="rect" href="classModelImpl.html#a4b4a1897ba511d1495f187915eaf36df" title="Return a iterator to the first Flow in the container." alt="" coords="352,107,505,133"/>
+<area shape="poly" title=" " alt="" coords="277,155,356,135,358,140,278,160"/>
+<area shape="rect" href="classModelImpl.html#ad4842cee5355b77104ddf4663f427f21" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="357,157,500,184"/>
+<area shape="poly" title=" " alt="" coords="277,168,342,168,342,173,277,173"/>
+<area shape="rect" href="classSystem.html#aab7b27ce6f7644395b8a47b5edfe37a3" title="Virtual method to get the value field on System." alt="" coords="367,208,491,235"/>
+<area shape="poly" title=" " alt="" coords="278,181,358,201,356,206,277,186"/>
+<area shape="rect" href="classSystem.html#ac314c15ac0dc13869278663e855fc672" title="Virtual method to set a new Value for the System." alt="" coords="367,259,491,285"/>
+<area shape="poly" title=" " alt="" coords="245,182,290,213,347,244,362,251,360,256,345,249,288,218,242,187"/>
 </map>
 </div>
 <div class="dynheader">
@@ -195,31 +206,31 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>A test for verifying if the model running a exponentialTest asserts. </p>
-<p>Given a <a class="el" href="classModel.html" title="Represents the simulation model.">Model</a> with two <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a>, pop1 and pop2 with value of 100.0 and 0.0 When the <a class="el" href="classModel.html" title="Represents the simulation model.">Model</a> will ran for 100 time units with one increments Them we will assert the resulting value with 36.6032 and 63.3968, respectvely. </p>
+<p>Given a <a class="el" href="classModel.html">Model</a> with two <a class="el" href="classSystem.html" title="System interface, which will hide the implementation of methods.">System</a>, pop1 and pop2 with value of 100.0 and 0.0 When the <a class="el" href="classModel.html">Model</a> will ran for 100 time units with one increments Them we will assert the resulting value with 36.6032 and 63.3968, respectvely. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="functional__tests_8cpp_afc8689ad075e91b2ee99dc91c0834cea_cgraph.png" border="0" usemap="#afunctional__tests_8cpp_afc8689ad075e91b2ee99dc91c0834cea_cgraph" alt=""/></div>
 <map name="afunctional__tests_8cpp_afc8689ad075e91b2ee99dc91c0834cea_cgraph" id="afunctional__tests_8cpp_afc8689ad075e91b2ee99dc91c0834cea_cgraph">
 <area shape="rect" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="5,107,118,133"/>
-<area shape="rect" href="classModel.html#ad4fcd314fc1c2f581e8469c8767587bc" title="Add a System pointer to the systems container." alt="" coords="166,56,251,83"/>
-<area shape="poly" title=" " alt="" coords="102,104,152,86,154,91,103,109"/>
-<area shape="rect" href="classSystem.html#a8459db57c2462ae8f71ef9ebc7347539" title="Get the value field on System." alt="" coords="307,107,431,133"/>
-<area shape="poly" title=" " alt="" coords="118,117,292,117,292,123,118,123"/>
-<area shape="rect" href="classModel.html#ad31ab57899deb9e33c9fd0312553383c" title="Run the simulation." alt="" coords="167,157,250,184"/>
-<area shape="poly" title=" " alt="" coords="103,131,154,149,152,154,102,136"/>
-<area shape="rect" href="classModel.html#a61db3ce77d42741a911a44aba7b320c7" title="Function for getting the size of the flows container." alt="" coords="309,56,430,83"/>
-<area shape="poly" title=" " alt="" coords="252,67,293,67,293,72,252,72"/>
-<area shape="rect" href="classModel.html#ac63ddb11d77ea78d5d427af1f8d154fc" title="Function for getting the size of the systems container." alt="" coords="299,5,439,32"/>
-<area shape="poly" title=" " alt="" coords="251,53,309,35,311,40,252,58"/>
-<area shape="poly" title=" " alt="" coords="221,155,254,124,298,92,307,87,310,92,300,97,257,128,224,159"/>
-<area shape="poly" title=" " alt="" coords="249,155,309,136,311,141,251,160"/>
-<area shape="rect" href="classModel.html#ab323d582a76cf60eb75b581f38551525" title="Return a iterator to the first Flow in the container." alt="" coords="305,157,433,184"/>
-<area shape="poly" title=" " alt="" coords="250,168,289,168,289,173,250,173"/>
-<area shape="rect" href="classModel.html#ab1d42dc05fe348f907372f3139b6c0f5" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="310,208,428,235"/>
-<area shape="poly" title=" " alt="" coords="251,181,311,200,309,205,249,186"/>
-<area shape="rect" href="classSystem.html#a477d387edd51ccf7a58c0d496de781e5" title="Set a new Value for the System." alt="" coords="307,259,431,285"/>
-<area shape="poly" title=" " alt="" coords="224,182,257,213,300,244,310,249,307,254,298,249,254,217,221,186"/>
+<area shape="rect" href="classModelImpl.html#aa01c228bf49f0b7f5d72e293ac18defb" title="Add a System pointer to the systems container." alt="" coords="166,56,276,83"/>
+<area shape="poly" title=" " alt="" coords="105,103,161,85,163,90,107,109"/>
+<area shape="rect" href="classSystem.html#aab7b27ce6f7644395b8a47b5edfe37a3" title="Virtual method to get the value field on System." alt="" coords="345,107,469,133"/>
+<area shape="poly" title=" " alt="" coords="118,117,329,117,329,123,118,123"/>
+<area shape="rect" href="classModelImpl.html#a8dea3d0d1fd298dd58927276670a9018" title="Run the simulation." alt="" coords="167,157,275,184"/>
+<area shape="poly" title=" " alt="" coords="107,131,163,150,161,155,105,137"/>
+<area shape="rect" href="classModelImpl.html#aa4e0c943fef808771f0800f03ae84386" title="Function for getting the size of the flows container." alt="" coords="334,56,480,83"/>
+<area shape="poly" title=" " alt="" coords="277,67,318,67,318,72,277,72"/>
+<area shape="rect" href="classModelImpl.html#ad95b31c43021dec4c4b67cb74a2dc138" title="Function for getting the size of the systems container." alt="" coords="324,5,489,32"/>
+<area shape="poly" title=" " alt="" coords="272,53,340,34,341,39,273,58"/>
+<area shape="poly" title=" " alt="" coords="235,155,273,124,323,92,336,86,338,91,325,97,276,128,239,159"/>
+<area shape="poly" title=" " alt="" coords="272,154,340,135,341,140,273,159"/>
+<area shape="rect" href="classModelImpl.html#a4b4a1897ba511d1495f187915eaf36df" title="Return a iterator to the first Flow in the container." alt="" coords="330,157,483,184"/>
+<area shape="poly" title=" " alt="" coords="275,168,314,168,314,173,275,173"/>
+<area shape="rect" href="classModelImpl.html#ad4842cee5355b77104ddf4663f427f21" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="335,208,478,235"/>
+<area shape="poly" title=" " alt="" coords="273,182,341,201,340,206,272,187"/>
+<area shape="rect" href="classSystem.html#ac314c15ac0dc13869278663e855fc672" title="Virtual method to set a new Value for the System." alt="" coords="345,259,469,285"/>
+<area shape="poly" title=" " alt="" coords="239,182,276,213,325,244,338,250,336,255,323,249,273,217,235,186"/>
 </map>
 </div>
 <div class="dynheader">
@@ -251,31 +262,31 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>A test for verifying if the model running a <a class="el" href="classlogisticFlow.html" title="Represents a Flow with Exponential behavior.">logisticFlow</a> asserts. </p>
-<p>Given a <a class="el" href="classModel.html" title="Represents the simulation model.">Model</a> with two <a class="el" href="classSystem.html" title="Class for representing stock, quantities, mass or even energy.">System</a>, p1 and p2 with value of 100.0 and 0.0 When the <a class="el" href="classModel.html" title="Represents the simulation model.">Model</a> will ran for 100 time units with one increments Them we will assert the resulting value with 88.2167 and 21.7833, respectvely. </p>
+<p>Given a <a class="el" href="classModel.html">Model</a> with two <a class="el" href="classSystem.html" title="System interface, which will hide the implementation of methods.">System</a>, p1 and p2 with value of 100.0 and 0.0 When the <a class="el" href="classModel.html">Model</a> will ran for 100 time units with one increments Them we will assert the resulting value with 88.2167 and 21.7833, respectvely. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="functional__tests_8cpp_a6c242456889f3f38d4f88e34922fada6_cgraph.png" border="0" usemap="#afunctional__tests_8cpp_a6c242456889f3f38d4f88e34922fada6_cgraph" alt=""/></div>
 <map name="afunctional__tests_8cpp_a6c242456889f3f38d4f88e34922fada6_cgraph" id="afunctional__tests_8cpp_a6c242456889f3f38d4f88e34922fada6_cgraph">
 <area shape="rect" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="5,107,93,133"/>
-<area shape="rect" href="classModel.html#ad4fcd314fc1c2f581e8469c8767587bc" title="Add a System pointer to the systems container." alt="" coords="141,56,226,83"/>
-<area shape="poly" title=" " alt="" coords="86,104,131,86,133,91,88,109"/>
-<area shape="rect" href="classSystem.html#a8459db57c2462ae8f71ef9ebc7347539" title="Get the value field on System." alt="" coords="282,107,406,133"/>
-<area shape="poly" title=" " alt="" coords="93,117,266,117,266,123,93,123"/>
-<area shape="rect" href="classModel.html#ad31ab57899deb9e33c9fd0312553383c" title="Run the simulation." alt="" coords="142,157,225,184"/>
-<area shape="poly" title=" " alt="" coords="88,131,133,149,131,154,86,136"/>
-<area shape="rect" href="classModel.html#a61db3ce77d42741a911a44aba7b320c7" title="Function for getting the size of the flows container." alt="" coords="284,56,405,83"/>
-<area shape="poly" title=" " alt="" coords="227,67,268,67,268,72,227,72"/>
-<area shape="rect" href="classModel.html#ac63ddb11d77ea78d5d427af1f8d154fc" title="Function for getting the size of the systems container." alt="" coords="274,5,414,32"/>
-<area shape="poly" title=" " alt="" coords="226,53,284,35,286,40,227,58"/>
-<area shape="poly" title=" " alt="" coords="196,155,229,124,273,92,282,87,285,92,275,97,232,128,199,159"/>
-<area shape="poly" title=" " alt="" coords="224,155,284,136,286,141,226,160"/>
-<area shape="rect" href="classModel.html#ab323d582a76cf60eb75b581f38551525" title="Return a iterator to the first Flow in the container." alt="" coords="280,157,408,184"/>
-<area shape="poly" title=" " alt="" coords="225,168,264,168,264,173,225,173"/>
-<area shape="rect" href="classModel.html#ab1d42dc05fe348f907372f3139b6c0f5" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="285,208,403,235"/>
-<area shape="poly" title=" " alt="" coords="226,181,286,200,284,205,224,186"/>
-<area shape="rect" href="classSystem.html#a477d387edd51ccf7a58c0d496de781e5" title="Set a new Value for the System." alt="" coords="282,259,406,285"/>
-<area shape="poly" title=" " alt="" coords="199,182,232,213,275,244,285,249,282,254,273,249,229,217,196,186"/>
+<area shape="rect" href="classModelImpl.html#aa01c228bf49f0b7f5d72e293ac18defb" title="Add a System pointer to the systems container." alt="" coords="141,56,251,83"/>
+<area shape="poly" title=" " alt="" coords="89,104,140,86,141,91,91,109"/>
+<area shape="rect" href="classSystem.html#aab7b27ce6f7644395b8a47b5edfe37a3" title="Virtual method to get the value field on System." alt="" coords="320,107,444,133"/>
+<area shape="poly" title=" " alt="" coords="93,117,304,117,304,123,93,123"/>
+<area shape="rect" href="classModelImpl.html#a8dea3d0d1fd298dd58927276670a9018" title="Run the simulation." alt="" coords="142,157,250,184"/>
+<area shape="poly" title=" " alt="" coords="91,131,141,149,140,154,89,136"/>
+<area shape="rect" href="classModelImpl.html#aa4e0c943fef808771f0800f03ae84386" title="Function for getting the size of the flows container." alt="" coords="309,56,455,83"/>
+<area shape="poly" title=" " alt="" coords="252,67,293,67,293,72,252,72"/>
+<area shape="rect" href="classModelImpl.html#ad95b31c43021dec4c4b67cb74a2dc138" title="Function for getting the size of the systems container." alt="" coords="299,5,464,32"/>
+<area shape="poly" title=" " alt="" coords="247,53,315,34,316,39,248,58"/>
+<area shape="poly" title=" " alt="" coords="210,155,248,124,298,92,311,86,313,91,300,97,251,128,214,159"/>
+<area shape="poly" title=" " alt="" coords="247,154,315,135,316,140,248,159"/>
+<area shape="rect" href="classModelImpl.html#a4b4a1897ba511d1495f187915eaf36df" title="Return a iterator to the first Flow in the container." alt="" coords="305,157,458,184"/>
+<area shape="poly" title=" " alt="" coords="250,168,289,168,289,173,250,173"/>
+<area shape="rect" href="classModelImpl.html#ad4842cee5355b77104ddf4663f427f21" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="310,208,453,235"/>
+<area shape="poly" title=" " alt="" coords="248,182,316,201,315,206,247,187"/>
+<area shape="rect" href="classSystem.html#ac314c15ac0dc13869278663e855fc672" title="Virtual method to set a new Value for the System." alt="" coords="320,259,444,285"/>
+<area shape="poly" title=" " alt="" coords="214,182,251,213,300,244,313,250,311,255,298,249,248,217,210,186"/>
 </map>
 </div>
 <div class="dynheader">

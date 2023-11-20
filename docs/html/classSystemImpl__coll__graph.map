@@ -1,0 +1,9 @@
+<map id="SystemImpl" name="SystemImpl">
+<area shape="rect" id="Node000001" title="Class for representing stock, quantities, mass or even energy." alt="" coords="155,325,333,624"/>
+<area shape="rect" id="Node000002" href="$classSystem.html" title="System interface, which will hide the implementation of methods." alt="" coords="5,5,197,261"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,274,184,325,179,327,158,276"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="221,99,267,168"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="247,168,247,308,241,308,241,168"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="292,99,343,168"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="315,168,291,302,289,309,284,308,285,301,310,167"/>
+</map>

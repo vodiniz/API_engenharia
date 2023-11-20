@@ -36,8 +36,6 @@ void exponentialTest(){
 
     cout << "Passed exponentialTest" << endl;
     cout << "-------------------------------\n";
-
-
 }
 
 

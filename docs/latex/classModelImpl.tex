@@ -1,0 +1,716 @@
+\doxysection{Model\+Impl Class Reference}
+\hypertarget{classModelImpl}{}\label{classModelImpl}\index{ModelImpl@{ModelImpl}}
+
+
+Represents the simulation model.  
+
+
+
+
+{\ttfamily \#include $<$Model\+Impl.\+hpp$>$}
+
+
+
+Inheritance diagram for Model\+Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classModelImpl__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Model\+Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classModelImpl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classModelImpl_a4decdcbc96afc7fb7a1a03315c69c262}{Model\+Impl}} (string="{}"{})
+\begin{DoxyCompactList}\small\item\em Creates a \doxylink{classModel}{Model}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classModelImpl_a427f422a6d356b94afbe3937d6452a2b}{\texorpdfstring{$\sim$}{\string~}\+Model\+Impl}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+const string \mbox{\hyperlink{classModelImpl_a9055690bd312af7a25d18b6594de2bd0}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the name field on \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModelImpl_a8ef047a3087f3117ce41d1e5f419071f}{set\+Name}} (string)
+\begin{DoxyCompactList}\small\item\em Set a new \doxylink{classModelImpl_aa32e79af7c5dfa46a3ea476796a33fb4}{name} for the \doxylink{classModel}{Model}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModelImpl_aa01c228bf49f0b7f5d72e293ac18defb}{add}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Add a \doxylink{classSystem}{System} pointer to the \doxylink{classModelImpl_a767e2054ecaaa8d1401ef2c962adc3e2}{systems} container. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModelImpl_a33b51e276ed5f79ce97906a9abab85f7}{add}} (\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Add a \doxylink{classFlow}{Flow} pointer to the \doxylink{classModelImpl_a9be1dcdb4753e5d78e0c817261297dcf}{flows} container. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModelImpl_ac045649b7f1d651b2358cf620474a7a5}{remove\+System}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}system)
+\begin{DoxyCompactList}\small\item\em Remove a \doxylink{classSystem}{System} pointer from the \doxylink{classModelImpl_a767e2054ecaaa8d1401ef2c962adc3e2}{systems} container. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModelImpl_ad8fc159623b1b441672161ecba59d820}{remove\+System}} (string \mbox{\hyperlink{classModelImpl_aa32e79af7c5dfa46a3ea476796a33fb4}{name}})
+\begin{DoxyCompactList}\small\item\em Remove a \doxylink{classSystem}{System} pointer from the \doxylink{classModelImpl_a767e2054ecaaa8d1401ef2c962adc3e2}{systems} container. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModelImpl_ae7b15f6c334ebf7f3cda2fbb880e7daf}{remove\+Flow}} (\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}flow)
+\begin{DoxyCompactList}\small\item\em Remove a \doxylink{classFlow}{Flow} pointer from the \doxylink{classModelImpl_a9be1dcdb4753e5d78e0c817261297dcf}{flows} container. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModelImpl_a76885c3e767374aa077f0a815b57fd75}{remove\+Flow}} (string \mbox{\hyperlink{classModelImpl_aa32e79af7c5dfa46a3ea476796a33fb4}{name}})
+\begin{DoxyCompactList}\small\item\em Remove a \doxylink{classFlow}{Flow} pointer from the \doxylink{classModelImpl_a9be1dcdb4753e5d78e0c817261297dcf}{flows} container. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModelImpl_ada61126e95c797e43608ac101fbd6dc6}{update}} (string \mbox{\hyperlink{classModelImpl_aa32e79af7c5dfa46a3ea476796a33fb4}{name}}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}system)
+\begin{DoxyCompactList}\small\item\em Update a \doxylink{classSystem}{System} pointer from the systems container. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModelImpl_abc1acc138c037cd13010b4b2c1ddf1ce}{update}} (string \mbox{\hyperlink{classModelImpl_aa32e79af7c5dfa46a3ea476796a33fb4}{name}}, \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}flow)
+\begin{DoxyCompactList}\small\item\em Update a \doxylink{classFlow}{Flow} pointer from the flows container. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModelImpl_a8dea3d0d1fd298dd58927276670a9018}{run}} (int start\+Time, int end\+Time)
+\begin{DoxyCompactList}\small\item\em Run the simulation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classModel_aa298940a05166ef87cb083e46b101019}{System\+Iterator}} \mbox{\hyperlink{classModelImpl_af675ac4142c19891ffbf46ed64e7fa77}{systems\+Begin}} ()
+\begin{DoxyCompactList}\small\item\em Return a iterator to the first \doxylink{classSystem}{System} in the container. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classModel_aa298940a05166ef87cb083e46b101019}{System\+Iterator}} \mbox{\hyperlink{classModelImpl_aa0089d4d9c62d21a5bf83c188b966441}{systems\+End}} ()
+\begin{DoxyCompactList}\small\item\em Returns an iterator referring to the past-\/the-\/end element in the systems container. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classModelImpl_ad95b31c43021dec4c4b67cb74a2dc138}{systems\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Function for getting the size of the systems container. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classModel_aeca3f0e82057fa8315ce5990fb1edd4c}{Flow\+Iterator}} \mbox{\hyperlink{classModelImpl_a4b4a1897ba511d1495f187915eaf36df}{flows\+Begin}} ()
+\begin{DoxyCompactList}\small\item\em Return a iterator to the first \doxylink{classFlow}{Flow} in the container. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classModel_aeca3f0e82057fa8315ce5990fb1edd4c}{Flow\+Iterator}} \mbox{\hyperlink{classModelImpl_ad4842cee5355b77104ddf4663f427f21}{flows\+End}} ()
+\begin{DoxyCompactList}\small\item\em Returns an iterator referring to the past-\/the-\/end element in the flows container. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classModelImpl_aa4e0c943fef808771f0800f03ae84386}{flows\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Function for getting the size of the flows container. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classModel}{Model}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classModel_af032d8433c87a0a3a431faf6563a1f03}{\texorpdfstring{$\sim$}{\string~}\+Model}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classModelImpl_aa32e79af7c5dfa46a3ea476796a33fb4}{name}}
+\item 
+int \mbox{\hyperlink{classModelImpl_a09a8e7b32d9d688d6f9046a50fbc9dfe}{clock}} = 0
+\item 
+vector$<$ \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classModelImpl_a767e2054ecaaa8d1401ef2c962adc3e2}{systems}}
+\item 
+vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classModelImpl_a9be1dcdb4753e5d78e0c817261297dcf}{flows}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classModelImpl_a027c2618c0645601df6287193db1ae1c}{Model\+Impl}} (const \mbox{\hyperlink{classModelImpl}{Model\+Impl}} \&model)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classModelImpl}{Model\+Impl}} \& \mbox{\hyperlink{classModelImpl_a8c3eca6b74ee4fef6c85f33237d7e7de}{operator=}} (const \mbox{\hyperlink{classModelImpl}{Model\+Impl}} \&)
+\begin{DoxyCompactList}\small\item\em Overload for = operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{classModel}{Model}}}
+\begin{DoxyCompactItemize}
+\item 
+typedef vector$<$ \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$\+::iterator \mbox{\hyperlink{classModel_aa298940a05166ef87cb083e46b101019}{System\+Iterator}}
+\begin{DoxyCompactList}\small\item\em New iterator type for the \doxylink{classSystem}{System} container. \end{DoxyCompactList}\item 
+typedef vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$\+::iterator \mbox{\hyperlink{classModel_aeca3f0e82057fa8315ce5990fb1edd4c}{Flow\+Iterator}}
+\begin{DoxyCompactList}\small\item\em New iterator type for the \doxylink{classFlow}{Flow} container. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the simulation model. 
+
+\doxylink{classModel}{Model} will keep track of all the Systems and Flows added to it. We can add, remove and update Systems and Flows. We also run simulations based on the start\+Time and end\+Time. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classModelImpl_a4decdcbc96afc7fb7a1a03315c69c262}\label{classModelImpl_a4decdcbc96afc7fb7a1a03315c69c262} 
+\index{ModelImpl@{ModelImpl}!ModelImpl@{ModelImpl}}
+\index{ModelImpl@{ModelImpl}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{ModelImpl()}{ModelImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Model\+Impl\+::\+Model\+Impl (\begin{DoxyParamCaption}\item[{string}]{name = {\ttfamily "{}"{}} }\end{DoxyParamCaption})}
+
+
+
+Creates a \doxylink{classModel}{Model}. 
+
+Creates a new \doxylink{classModel}{Model}. Is overloaded with a default value for name. Can also accept a string as a parameter.
+
+When not passing the name, the default name string will be empty.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & A string for naming the \doxylink{classModel}{Model}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classModelImpl_a427f422a6d356b94afbe3937d6452a2b}\label{classModelImpl_a427f422a6d356b94afbe3937d6452a2b} 
+\index{ModelImpl@{ModelImpl}!````~ModelImpl@{\texorpdfstring{$\sim$}{\string~}ModelImpl}}
+\index{````~ModelImpl@{\texorpdfstring{$\sim$}{\string~}ModelImpl}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ModelImpl()}{\string~ModelImpl()}}
+{\footnotesize\ttfamily Model\+Impl\+::\texorpdfstring{$\sim$}{\string~}\+Model\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+A virtual destructor; \Hypertarget{classModelImpl_a027c2618c0645601df6287193db1ae1c}\label{classModelImpl_a027c2618c0645601df6287193db1ae1c} 
+\index{ModelImpl@{ModelImpl}!ModelImpl@{ModelImpl}}
+\index{ModelImpl@{ModelImpl}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{ModelImpl()}{ModelImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Model\+Impl\+::\+Model\+Impl (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classModelImpl}{Model\+Impl}} \&}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Copy constructor. 
+
+Copy constructor takes a reference to \doxylink{classModel}{Model} as an argument.
+
+It is a private method because as we have a container with a pointer to Flows and Systems we can cause problems on the long run of the API because a copy of a model can interfere with another existing model. So to prevent the API user to make a copy we need to "{}hide"{} the method. 
+\begin{DoxyParams}{Parameters}
+{\em model\&} & The model reference which will be assigned to the \doxylink{classModel}{Model} being called. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModelImpl_a027c2618c0645601df6287193db1ae1c_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classModelImpl_a33b51e276ed5f79ce97906a9abab85f7}\label{classModelImpl_a33b51e276ed5f79ce97906a9abab85f7} 
+\index{ModelImpl@{ModelImpl}!add@{add}}
+\index{add@{add}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Model\+Impl\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}}]{flow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Add a \doxylink{classFlow}{Flow} pointer to the \doxylink{classModelImpl_a9be1dcdb4753e5d78e0c817261297dcf}{flows} container. 
+
+\begin{DoxyReturn}{Returns}
+return true if sucefully added the \doxylink{classSystem}{System}, and false if it failed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a5518050921f78abc062b9d861c15db11}{Model}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classModelImpl_a33b51e276ed5f79ce97906a9abab85f7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModelImpl_aa01c228bf49f0b7f5d72e293ac18defb}\label{classModelImpl_aa01c228bf49f0b7f5d72e293ac18defb} 
+\index{ModelImpl@{ModelImpl}!add@{add}}
+\index{add@{add}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Model\+Impl\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Add a \doxylink{classSystem}{System} pointer to the \doxylink{classModelImpl_a767e2054ecaaa8d1401ef2c962adc3e2}{systems} container. 
+
+\begin{DoxyReturn}{Returns}
+return true if sucefully added the \doxylink{classSystem}{System}, and false if it failed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_abc3f2e274a4ede4eac9f5e5ce38011df}{Model}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classModelImpl_aa01c228bf49f0b7f5d72e293ac18defb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModelImpl_aa01c228bf49f0b7f5d72e293ac18defb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModelImpl_a4b4a1897ba511d1495f187915eaf36df}\label{classModelImpl_a4b4a1897ba511d1495f187915eaf36df} 
+\index{ModelImpl@{ModelImpl}!flowsBegin@{flowsBegin}}
+\index{flowsBegin@{flowsBegin}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{flowsBegin()}{flowsBegin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classModel_aeca3f0e82057fa8315ce5990fb1edd4c}{Model\+Impl\+::\+Flow\+Iterator}} Model\+Impl\+::flows\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return a iterator to the first \doxylink{classFlow}{Flow} in the container. 
+
+\begin{DoxyReturn}{Returns}
+return Flow\+Iterator type, which is defined as an iterator for the \doxylink{classSystem}{System} container. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a066401d879a81882b2af957c604e680f}{Model}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModelImpl_a4b4a1897ba511d1495f187915eaf36df_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModelImpl_ad4842cee5355b77104ddf4663f427f21}\label{classModelImpl_ad4842cee5355b77104ddf4663f427f21} 
+\index{ModelImpl@{ModelImpl}!flowsEnd@{flowsEnd}}
+\index{flowsEnd@{flowsEnd}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{flowsEnd()}{flowsEnd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classModel_aeca3f0e82057fa8315ce5990fb1edd4c}{Model\+Impl\+::\+Flow\+Iterator}} Model\+Impl\+::flows\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns an iterator referring to the past-\/the-\/end element in the flows container. 
+
+\begin{DoxyReturn}{Returns}
+return Flow\+Iterator type, which is defined as an iterator for the flows container. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a98e438459d7a43fa94f0e1d8d1354056}{Model}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModelImpl_ad4842cee5355b77104ddf4663f427f21_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModelImpl_aa4e0c943fef808771f0800f03ae84386}\label{classModelImpl_aa4e0c943fef808771f0800f03ae84386} 
+\index{ModelImpl@{ModelImpl}!flowsSize@{flowsSize}}
+\index{flowsSize@{flowsSize}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{flowsSize()}{flowsSize()}}
+{\footnotesize\ttfamily int Model\+Impl\+::flows\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function for getting the size of the flows container. 
+
+\begin{DoxyReturn}{Returns}
+returns the number of elements in the \doxylink{classModelImpl_a9be1dcdb4753e5d78e0c817261297dcf}{flows} container. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a2bbba88aae97908b686af0724aeeb59a}{Model}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModelImpl_aa4e0c943fef808771f0800f03ae84386_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModelImpl_a9055690bd312af7a25d18b6594de2bd0}\label{classModelImpl_a9055690bd312af7a25d18b6594de2bd0} 
+\index{ModelImpl@{ModelImpl}!getName@{getName}}
+\index{getName@{getName}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const string Model\+Impl\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the name field on \doxylink{classFlow}{Flow}. 
+
+\begin{DoxyReturn}{Returns}
+return a const string containing the \doxylink{classModel}{Model} \doxylink{classModelImpl_aa32e79af7c5dfa46a3ea476796a33fb4}{name}. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a447cb8c73eb6377246147dc64eba63ce}{Model}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{classModelImpl_a9055690bd312af7a25d18b6594de2bd0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModelImpl_a8c3eca6b74ee4fef6c85f33237d7e7de}\label{classModelImpl_a8c3eca6b74ee4fef6c85f33237d7e7de} 
+\index{ModelImpl@{ModelImpl}!operator=@{operator=}}
+\index{operator=@{operator=}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classModelImpl}{Model\+Impl}} \& Model\+Impl\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classModelImpl}{Model\+Impl}} \&}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Overload for = operator. 
+
+This is an overload for = operator, in the format of a = b, in which a is being assigned as b. This will make a deep copy of both containers( \doxylink{classModelImpl_a9be1dcdb4753e5d78e0c817261297dcf}{flows} and \doxylink{classModelImpl_a767e2054ecaaa8d1401ef2c962adc3e2}{systems}) .
+
+It is a private method because as we have a container with a pointer to Flows and Systems we can cause problems on the long run of the API because a copy of a model can interfere with another existing model. So to prevent the API user to make a copy we need to "{}hide"{} the method.
+
+\begin{DoxyReturn}{Returns}
+return a \doxylink{classModel}{Model} reference which is a copy to the assigned \doxylink{classModel}{Model}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModelImpl_a8c3eca6b74ee4fef6c85f33237d7e7de_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModelImpl_ae7b15f6c334ebf7f3cda2fbb880e7daf}\label{classModelImpl_ae7b15f6c334ebf7f3cda2fbb880e7daf} 
+\index{ModelImpl@{ModelImpl}!removeFlow@{removeFlow}}
+\index{removeFlow@{removeFlow}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{removeFlow()}{removeFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Model\+Impl\+::remove\+Flow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}}]{flow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Remove a \doxylink{classFlow}{Flow} pointer from the \doxylink{classModelImpl_a9be1dcdb4753e5d78e0c817261297dcf}{flows} container. 
+
+Uses a \doxylink{classFlow}{Flow} pointer as a parameter for removing the \doxylink{classSystem}{System}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em flow\texorpdfstring{$\ast$}{*}} & The \doxylink{classFlow}{Flow} pointer which we will compare to our list element to remove.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if sucefully removed the \doxylink{classFlow}{Flow}, and false if it failed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_acccedabc203f0bbea0870b4968ca9910}{Model}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModelImpl_ae7b15f6c334ebf7f3cda2fbb880e7daf_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModelImpl_a76885c3e767374aa077f0a815b57fd75}\label{classModelImpl_a76885c3e767374aa077f0a815b57fd75} 
+\index{ModelImpl@{ModelImpl}!removeFlow@{removeFlow}}
+\index{removeFlow@{removeFlow}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{removeFlow()}{removeFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Model\+Impl\+::remove\+Flow (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Remove a \doxylink{classFlow}{Flow} pointer from the \doxylink{classModelImpl_a9be1dcdb4753e5d78e0c817261297dcf}{flows} container. 
+
+Uses a name as a parameter for removing the \doxylink{classSystem}{System}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & A string for naming the \doxylink{classModel}{Model}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if sucefully removed the \doxylink{classFlow}{Flow}, and false if it failed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a54ae6276f39a86cf6ef59fb4b2eb96b2}{Model}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModelImpl_a76885c3e767374aa077f0a815b57fd75_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModelImpl_ad8fc159623b1b441672161ecba59d820}\label{classModelImpl_ad8fc159623b1b441672161ecba59d820} 
+\index{ModelImpl@{ModelImpl}!removeSystem@{removeSystem}}
+\index{removeSystem@{removeSystem}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{removeSystem()}{removeSystem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Model\+Impl\+::remove\+System (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Remove a \doxylink{classSystem}{System} pointer from the \doxylink{classModelImpl_a767e2054ecaaa8d1401ef2c962adc3e2}{systems} container. 
+
+Uses a system name as a parameter for removing the \doxylink{classSystem}{System}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & A string for naming the \doxylink{classModel}{Model}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if sucefully removed the \doxylink{classSystem}{System}, and false if it failed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a77684d912f4af7a793a8275e6a92c40a}{Model}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModelImpl_ad8fc159623b1b441672161ecba59d820_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModelImpl_ac045649b7f1d651b2358cf620474a7a5}\label{classModelImpl_ac045649b7f1d651b2358cf620474a7a5} 
+\index{ModelImpl@{ModelImpl}!removeSystem@{removeSystem}}
+\index{removeSystem@{removeSystem}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{removeSystem()}{removeSystem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Model\+Impl\+::remove\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Remove a \doxylink{classSystem}{System} pointer from the \doxylink{classModelImpl_a767e2054ecaaa8d1401ef2c962adc3e2}{systems} container. 
+
+Uses a system pointer as a parameter for removing the \doxylink{classSystem}{System}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em system\texorpdfstring{$\ast$}{*}} & The \doxylink{classSystem}{System} pointer which we will compare to our list element to remove.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if sucefully removed the \doxylink{classSystem}{System}, and false if it failed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a8d3f7c6c1176d094c1e63fc6270d6edc}{Model}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModelImpl_ac045649b7f1d651b2358cf620474a7a5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModelImpl_a8dea3d0d1fd298dd58927276670a9018}\label{classModelImpl_a8dea3d0d1fd298dd58927276670a9018} 
+\index{ModelImpl@{ModelImpl}!run@{run}}
+\index{run@{run}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily bool Model\+Impl\+::run (\begin{DoxyParamCaption}\item[{int}]{start\+Time,  }\item[{int}]{end\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Run the simulation. 
+
+Will run the simulation based on the start\+Time and end\+Time
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Time} & start time of the simulation, based on seconds. \\
+\hline
+{\em end\+Time} & end time of the simulation, based on seconds.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if sucefully ran the simulation, and false if it failed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_aa2c58d924e023fe497cefbc6547dbea6}{Model}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classModelImpl_a8dea3d0d1fd298dd58927276670a9018_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModelImpl_a8dea3d0d1fd298dd58927276670a9018_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModelImpl_a8ef047a3087f3117ce41d1e5f419071f}\label{classModelImpl_a8ef047a3087f3117ce41d1e5f419071f} 
+\index{ModelImpl@{ModelImpl}!setName@{setName}}
+\index{setName@{setName}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily bool Model\+Impl\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set a new \doxylink{classModelImpl_aa32e79af7c5dfa46a3ea476796a33fb4}{name} for the \doxylink{classModel}{Model}. 
+
+Will set a new name based on the string passed as a param.
+
+\begin{DoxyReturn}{Returns}
+return true if sucefully setted the new name, and false if it failed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a12f7dc1bf60351497ca4b4960d92a528}{Model}}.
+
+\Hypertarget{classModelImpl_af675ac4142c19891ffbf46ed64e7fa77}\label{classModelImpl_af675ac4142c19891ffbf46ed64e7fa77} 
+\index{ModelImpl@{ModelImpl}!systemsBegin@{systemsBegin}}
+\index{systemsBegin@{systemsBegin}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{systemsBegin()}{systemsBegin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classModel_aa298940a05166ef87cb083e46b101019}{Model\+Impl\+::\+System\+Iterator}} Model\+Impl\+::systems\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return a iterator to the first \doxylink{classSystem}{System} in the container. 
+
+\begin{DoxyReturn}{Returns}
+return System\+Iterator type, which is defined as an iterator for the \doxylink{classSystem}{System} container. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a07fcdf49b02e037cfcf1036b47b9ac27}{Model}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModelImpl_af675ac4142c19891ffbf46ed64e7fa77_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModelImpl_aa0089d4d9c62d21a5bf83c188b966441}\label{classModelImpl_aa0089d4d9c62d21a5bf83c188b966441} 
+\index{ModelImpl@{ModelImpl}!systemsEnd@{systemsEnd}}
+\index{systemsEnd@{systemsEnd}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{systemsEnd()}{systemsEnd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classModel_aa298940a05166ef87cb083e46b101019}{Model\+Impl\+::\+System\+Iterator}} Model\+Impl\+::systems\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns an iterator referring to the past-\/the-\/end element in the systems container. 
+
+\begin{DoxyReturn}{Returns}
+return System\+Iterator type, which is defined as an iterator for the \doxylink{classSystem}{System} container. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a278952b46d4b5185272b17016a61bc55}{Model}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModelImpl_aa0089d4d9c62d21a5bf83c188b966441_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModelImpl_ad95b31c43021dec4c4b67cb74a2dc138}\label{classModelImpl_ad95b31c43021dec4c4b67cb74a2dc138} 
+\index{ModelImpl@{ModelImpl}!systemsSize@{systemsSize}}
+\index{systemsSize@{systemsSize}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{systemsSize()}{systemsSize()}}
+{\footnotesize\ttfamily int Model\+Impl\+::systems\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function for getting the size of the systems container. 
+
+\begin{DoxyReturn}{Returns}
+returns the number of elements in the systems container. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a0fbe0f40b959f8303d23a003d4a00257}{Model}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classModelImpl_ad95b31c43021dec4c4b67cb74a2dc138_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModelImpl_abc1acc138c037cd13010b4b2c1ddf1ce}\label{classModelImpl_abc1acc138c037cd13010b4b2c1ddf1ce} 
+\index{ModelImpl@{ModelImpl}!update@{update}}
+\index{update@{update}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Model\+Impl\+::update (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}}]{flow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update a \doxylink{classFlow}{Flow} pointer from the flows container. 
+
+Uses a name as a parameter for identifying the \doxylink{classFlow}{Flow} which will be updated on the container. Also receives a \doxylink{classFlow}{Flow} pointer as a param which will substitute the \doxylink{classFlow}{Flow} identified with the name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & A string for naming the \doxylink{classModel}{Model}. \\
+\hline
+{\em flow\texorpdfstring{$\ast$}{*}} & The \doxylink{classFlow}{Flow} pointer which we will compare to our list element to remove.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if sucefully update the \doxylink{classFlow}{Flow}, and false if it failed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_ac5a16c78b518f1a3f789e5d6634935b7}{Model}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classModelImpl_abc1acc138c037cd13010b4b2c1ddf1ce_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classModelImpl_ada61126e95c797e43608ac101fbd6dc6}\label{classModelImpl_ada61126e95c797e43608ac101fbd6dc6} 
+\index{ModelImpl@{ModelImpl}!update@{update}}
+\index{update@{update}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Model\+Impl\+::update (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update a \doxylink{classSystem}{System} pointer from the systems container. 
+
+Uses a name as a parameter for identifying the \doxylink{classSystem}{System} which will be updated on the container. Also receives a \doxylink{classSystem}{System} pointer as a param which will substitute the \doxylink{classSystem}{System} identified with the name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & A string for naming the \doxylink{classModel}{Model}. \\
+\hline
+{\em system} & The system which we will update the element on our list.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if sucefully update the \doxylink{classSystem}{System}, and false if it failed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_ad9ab3dca392d43f115d62625e96da56d}{Model}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classModelImpl_ada61126e95c797e43608ac101fbd6dc6_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classModelImpl_a09a8e7b32d9d688d6f9046a50fbc9dfe}\label{classModelImpl_a09a8e7b32d9d688d6f9046a50fbc9dfe} 
+\index{ModelImpl@{ModelImpl}!clock@{clock}}
+\index{clock@{clock}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{clock}{clock}}
+{\footnotesize\ttfamily int Model\+Impl\+::clock = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+A integer for keepin track of elapsed time. \Hypertarget{classModelImpl_a9be1dcdb4753e5d78e0c817261297dcf}\label{classModelImpl_a9be1dcdb4753e5d78e0c817261297dcf} 
+\index{ModelImpl@{ModelImpl}!flows@{flows}}
+\index{flows@{flows}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{flows}{flows}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classFlow}{Flow}}\texorpdfstring{$\ast$}{*}$>$ Model\+Impl\+::flows\hspace{0.3cm}{\ttfamily [protected]}}
+
+A container for manteining the Flows references. \Hypertarget{classModelImpl_aa32e79af7c5dfa46a3ea476796a33fb4}\label{classModelImpl_aa32e79af7c5dfa46a3ea476796a33fb4} 
+\index{ModelImpl@{ModelImpl}!name@{name}}
+\index{name@{name}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string Model\+Impl\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+A string for naming the \doxylink{classModel}{Model}. \Hypertarget{classModelImpl_a767e2054ecaaa8d1401ef2c962adc3e2}\label{classModelImpl_a767e2054ecaaa8d1401ef2c962adc3e2} 
+\index{ModelImpl@{ModelImpl}!systems@{systems}}
+\index{systems@{systems}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{systems}{systems}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classSystem}{System}}\texorpdfstring{$\ast$}{*}$>$ Model\+Impl\+::systems\hspace{0.3cm}{\ttfamily [protected]}}
+
+A container for manteining the Systems references. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{ModelImpl_8hpp}{Model\+Impl.\+hpp}}\item 
+src/\mbox{\hyperlink{ModelImpl_8cpp}{Model\+Impl.\+cpp}}\end{DoxyCompactItemize}

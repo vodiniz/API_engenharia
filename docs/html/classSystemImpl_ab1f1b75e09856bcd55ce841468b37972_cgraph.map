@@ -1,0 +1,7 @@
+<map id="SystemImpl::operator=" name="SystemImpl::operator=">
+<area shape="rect" id="Node000001" title="Overload for = operator." alt="" coords="5,31,160,57"/>
+<area shape="rect" id="Node000002" href="$classSystem.html#a25dff87b3fd15b008622ef9bd10ca1c0" title="Virtual method to get the Name field on System." alt="" coords="208,5,335,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,31,192,27,192,32,160,36"/>
+<area shape="rect" id="Node000003" href="$classSystem.html#aab7b27ce6f7644395b8a47b5edfe37a3" title="Virtual method to get the value field on System." alt="" coords="209,56,334,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,52,194,56,194,62,160,57"/>
+</map>

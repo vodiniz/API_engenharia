@@ -1,17 +1,16 @@
 var searchData=
 [
-  ['flow_0',['flow',['../classFlow.html',1,'Flow'],['../classFlow.html#afa21deac890ed1257e44482da5d752fc',1,'Flow::Flow(string=&quot;&quot;)'],['../classFlow.html#a9cc3c3c518ad54411595b50592077aee',1,'Flow::Flow(string, System *, System *)'],['../classFlow.html#a27af85e46a53aa5ff8c8016f012b0c24',1,'Flow::Flow(const Flow &amp;flow)']]],
-  ['flow_2ecpp_1',['Flow.cpp',['../Flow_8cpp.html',1,'']]],
-  ['flow_2ehpp_2',['Flow.hpp',['../Flow_8hpp.html',1,'']]],
-  ['flowiterator_3',['FlowIterator',['../classModel.html#aeca3f0e82057fa8315ce5990fb1edd4c',1,'Model']]],
-  ['flows_4',['flows',['../classModel.html#aa76c9411f1cf6da6f4c696b2feadcb1a',1,'Model']]],
-  ['flowsbegin_5',['flowsBegin',['../classModel.html#ab323d582a76cf60eb75b581f38551525',1,'Model']]],
-  ['flowsend_6',['flowsEnd',['../classModel.html#ab1d42dc05fe348f907372f3139b6c0f5',1,'Model']]],
-  ['flowssize_7',['flowsSize',['../classModel.html#a61db3ce77d42741a911a44aba7b320c7',1,'Model']]],
-  ['flowtestclear_8',['flowtestclear',['../testFlow_8cpp.html#af26d25bb7188b044713ef82b964f420d',1,'flowTestClear():&#160;testFlow.cpp'],['../testFlow_8hpp.html#af26d25bb7188b044713ef82b964f420d',1,'flowTestClear():&#160;testFlow.cpp']]],
-  ['flowtestcopyoverload_9',['flowtestcopyoverload',['../testFlow_8cpp.html#a0e166fed5514983896faa6cce93c1de0',1,'flowTestCopyOverload():&#160;testFlow.cpp'],['../testFlow_8hpp.html#a0e166fed5514983896faa6cce93c1de0',1,'flowTestCopyOverload():&#160;testFlow.cpp']]],
-  ['flowtestequation_10',['flowTestEquation',['../testFlow_8hpp.html#a86f6ab3f51f0b001111ea151cbcac7aa',1,'testFlow.hpp']]],
-  ['flowtestsettergetter_11',['flowtestsettergetter',['../testFlow_8cpp.html#a8412dfebe7ee0fb54e21a9ff601a1013',1,'flowTestSetterGetter():&#160;testFlow.cpp'],['../testFlow_8hpp.html#a8412dfebe7ee0fb54e21a9ff601a1013',1,'flowTestSetterGetter():&#160;testFlow.cpp']]],
-  ['functional_5ftests_2ecpp_12',['functional_tests.cpp',['../functional__tests_8cpp.html',1,'']]],
-  ['functional_5ftests_2ehpp_13',['functional_tests.hpp',['../functional__tests_8hpp.html',1,'']]]
+  ['flow_0',['Flow',['../classFlow.html',1,'']]],
+  ['flow_2ehpp_1',['Flow.hpp',['../Flow_8hpp.html',1,'']]],
+  ['flowimpl_2',['flowimpl',['../classFlowImpl.html',1,'FlowImpl'],['../classFlowImpl.html#ab6633e6def4d5b66b3d7fc84004be98e',1,'FlowImpl::FlowImpl(const Flow &amp;flow)'],['../classFlowImpl.html#aa05092d6162f824689e3a46483ac6868',1,'FlowImpl::FlowImpl(string, System *, System *)'],['../classFlowImpl.html#a867f1a9c9c21945a84bb49f63366344d',1,'FlowImpl::FlowImpl(string=&quot;&quot;)']]],
+  ['flowimpl_2ecpp_3',['FlowImpl.cpp',['../FlowImpl_8cpp.html',1,'']]],
+  ['flowimpl_2ehpp_4',['FlowImpl.hpp',['../FlowImpl_8hpp.html',1,'']]],
+  ['flowiterator_5',['FlowIterator',['../classModel.html#aeca3f0e82057fa8315ce5990fb1edd4c',1,'Model']]],
+  ['flows_6',['flows',['../classModelImpl.html#a9be1dcdb4753e5d78e0c817261297dcf',1,'ModelImpl']]],
+  ['flowsbegin_7',['flowsbegin',['../classModel.html#a066401d879a81882b2af957c604e680f',1,'Model::flowsBegin()'],['../classModelImpl.html#a4b4a1897ba511d1495f187915eaf36df',1,'ModelImpl::flowsBegin()']]],
+  ['flowsend_8',['flowsend',['../classModel.html#a98e438459d7a43fa94f0e1d8d1354056',1,'Model::flowsEnd()'],['../classModelImpl.html#ad4842cee5355b77104ddf4663f427f21',1,'ModelImpl::flowsEnd()']]],
+  ['flowssize_9',['flowssize',['../classModel.html#a2bbba88aae97908b686af0724aeeb59a',1,'Model::flowsSize()'],['../classModelImpl.html#aa4e0c943fef808771f0800f03ae84386',1,'ModelImpl::flowsSize()']]],
+  ['flowtest_10',['flowtest',['../classFlowTest.html',1,'FlowTest'],['../classFlowTest.html#a4ef4f89a3955d303fc7e44889ba1ab38',1,'FlowTest::FlowTest(string name=&quot;&quot;)'],['../classFlowTest.html#a7719084a1c0784f9793c35136625f3e7',1,'FlowTest::FlowTest(string name, System *source, System *target)'],['../classFlowTest.html#a2abade4a84abd077ef54ca8e003e9c39',1,'FlowTest::FlowTest(Flow &amp;flow)']]],
+  ['functional_5ftests_2ecpp_11',['functional_tests.cpp',['../functional__tests_8cpp.html',1,'']]],
+  ['functional_5ftests_2ehpp_12',['functional_tests.hpp',['../functional__tests_8hpp.html',1,'']]]
 ];

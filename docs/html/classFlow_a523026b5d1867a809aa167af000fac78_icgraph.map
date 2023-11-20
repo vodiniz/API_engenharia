@@ -1,0 +1,26 @@
+<map id="Flow::getName" name="Flow::getName">
+<area shape="rect" id="Node000001" title=" " alt="" coords="335,199,445,225"/>
+<area shape="rect" id="Node000002" href="$classFlowImpl.html#ab6633e6def4d5b66b3d7fc84004be98e" title="Copy constructor." alt="" coords="127,5,263,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="377,185,363,153,344,115,318,78,285,46,262,33,264,29,289,42,322,74,348,112,368,150,382,183"/>
+<area shape="rect" id="Node000003" href="$classFlowImpl.html#aa7a27cf4139541f530831db95bfdc534" title="Overload for = operator." alt="" coords="126,56,264,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="370,187,335,141,312,117,286,97,262,86,265,81,288,92,315,113,339,137,375,184"/>
+<area shape="rect" id="Node000004" href="$unit__Flow_8cpp.html#a2e82a59b324cb964c490e446e8378540" title="A unitary test for asserting the overload of the assignment(=) operator." alt="" coords="108,107,282,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="358,192,324,169,286,148,255,136,257,131,288,143,327,164,361,187"/>
+<area shape="rect" id="Node000006" href="$unit__Flow_8cpp.html#ab32833442c11555f0c9fa1d7c1741c64" title="A unitary test for asserting the default constructor of FlowImpl." alt="" coords="120,157,270,200"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="319,203,270,194,271,189,320,197"/>
+<area shape="rect" id="Node000007" href="$unit__Flow_8cpp.html#adf0c070fb11219f7f6368e1976a5c7ca" title="A unitary test for asserting the constructor of FlowImpl with name param." alt="" coords="120,224,270,267"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="320,227,271,235,270,230,319,221"/>
+<area shape="rect" id="Node000008" href="$unit__Flow_8cpp.html#a552e52c045c91bbb5ce653952b7b2075" title="A unitary test for asserting the copy constructor of FlowImpl." alt="" coords="103,291,287,317"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="361,237,327,260,288,281,257,293,255,288,286,276,324,255,358,232"/>
+<area shape="rect" id="Node000009" href="$unit__Flow_8cpp.html#a7dcad29026912f67d033a190e6e35ca6" title="A unitary test for asserting the getName method." alt="" coords="126,341,264,368"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="375,240,339,287,315,311,288,332,265,343,262,338,286,327,312,307,335,283,370,237"/>
+<area shape="rect" id="Node000010" href="$unit__Flow_8cpp.html#aadf402251a021acf6fda7327b7a52320" title="A unitary test for asserting the setName method." alt="" coords="126,392,264,419"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="382,241,368,274,348,312,322,350,289,382,265,395,263,390,285,378,318,346,344,309,363,271,377,239"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,261,55,288"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="110,143,104,147,79,174,60,206,37,262,33,260,55,204,75,171,101,143,107,139"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="113,209,104,214,71,238,46,263,42,259,68,234,101,210,110,205"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="105,264,56,273,55,268,104,259"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="101,290,55,282,56,276,102,285"/>
+<area shape="poly" id="edge12_Node000009_Node000005" title=" " alt="" coords="116,338,101,332,69,311,44,290,47,286,73,307,104,327,118,333"/>
+<area shape="poly" id="edge14_Node000010_Node000005" title=" " alt="" coords="110,388,101,382,78,361,59,335,35,290,39,287,63,332,82,357,104,378,113,384"/>
+</map>

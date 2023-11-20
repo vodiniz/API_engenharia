@@ -13,9 +13,7 @@ FlowImpl::FlowImpl(string name, System* source, System* target):
 
 FlowImpl::~FlowImpl(){}
 
-FlowImpl::FlowImpl(const FlowImpl& flow){
-    if(this == &flow)
-        return;
+FlowImpl::FlowImpl(const Flow& flow){
 
     name = flow.getName();
     source = flow.getSource();
@@ -68,7 +66,7 @@ bool FlowImpl::clearSource(){
 
 
 
-FlowImpl& FlowImpl::operator= (const FlowImpl& flow){
+Flow& FlowImpl::operator= (const Flow& flow){
 
     if(this == &flow)
         return *this;

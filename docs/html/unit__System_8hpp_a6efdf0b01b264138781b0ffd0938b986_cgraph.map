@@ -1,0 +1,7 @@
+<map id="unit_System_assignOverload" name="unit_System_assignOverload">
+<area shape="rect" id="Node000001" title="A unitary test for asserting the overload of the assignment(=) operator." alt="" coords="5,31,197,57"/>
+<area shape="rect" id="Node000002" href="$classSystem.html#a25dff87b3fd15b008622ef9bd10ca1c0" title="Virtual method to get the Name field on System." alt="" coords="245,5,372,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,30,229,26,230,31,197,35"/>
+<area shape="rect" id="Node000003" href="$classSystem.html#aab7b27ce6f7644395b8a47b5edfe37a3" title="Virtual method to get the value field on System." alt="" coords="246,56,371,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,53,231,57,230,63,197,58"/>
+</map>

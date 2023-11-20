@@ -1,0 +1,9 @@
+<map id="unit_Flow_assignOverload" name="unit_Flow_assignOverload">
+<area shape="rect" id="Node000001" title="A unitary test for asserting the overload of the assignment(=) operator." alt="" coords="5,56,180,83"/>
+<area shape="rect" id="Node000002" href="$classFlow.html#a523026b5d1867a809aa167af000fac78" title=" " alt="" coords="231,5,341,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,53,217,34,219,39,147,58"/>
+<area shape="rect" id="Node000003" href="$classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title=" " alt="" coords="228,56,344,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,67,212,67,212,72,180,72"/>
+<area shape="rect" id="Node000004" href="$classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787" title=" " alt="" coords="230,107,342,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="147,81,219,100,217,105,146,86"/>
+</map>

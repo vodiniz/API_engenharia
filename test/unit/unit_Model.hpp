@@ -3,51 +3,128 @@
 
 #include "../../src/FlowImpl.hpp"
 
-void unit_Model_constructor_default();
-void unit_Model_constructor_with_name();
-void unit_Model_copy_constructor();
 
+
+/**
+ * @brief A unitary test for asserting the default constructor of Model.
+*/
+void unit_Model_constructor_default();
+
+/**
+ * @brief A unitary test for asserting the constructor of Model with the name parameter.
+*/
+void unit_Model_constructor_with_name();
+
+/**
+ * @brief A unitary test for asserting the destructor of Model.
+*/
 void unit_Model_destructor();
 
+/**
+ * @brief A unitary test for asserting the getName method.
+*/
 void unit_Model_getName();
+
+/**
+ * @brief A unitary test for asserting the setName method.
+*/
 void unit_Model_setName();
 
+/**
+ * @brief A unitary test for asserting the getClock method.
+*/
+void unit_Model_getClock();
+
+/**
+ * @brief A unitary test for asserting the add method with the System* overload.
+*/
 void unit_Model_add_System();
+
+/**
+ * @brief A unitary test for asserting the add method with the Flow* overload.
+*/
 void unit_Model_add_Flow();
 
+/**
+ * @brief A unitary test for asserting the removeSystem method with a System pointer.
+*/
 void unit_Model_removeSystem_pointer();
+
+/**
+ * @brief A unitary test for asserting the removeSystem method with a name.
+*/
 void unit_Model_removeSystem_name();
 
+/**
+ * @brief A unitary test for asserting the removeFlow method with a Flow pointer.
+*/
 void unit_Model_removeFlow_pointer();
+
+/**
+ * @brief A unitary test for asserting the removeFlow method with a name.
+*/
 void unit_Model_removeFlow_name();
 
+/**
+ * @brief A unitary test for asserting the update method with the System param overload.
+*/
 void unit_Model_update_System();
+
+/**
+ * @brief A unitary test for asserting the update method with the Flow param overload.
+*/
 void unit_Model_update_Flow();
 
+/**
+ * @brief A unitary test for asserting the run method.
+*/
 void unit_Model_run();
 
+/**
+ * @brief A unitary test for asserting the systemsBegin method.
+*/
 void unit_Model_systemsBegin();
+
+/**
+ * @brief A unitary test for asserting the systemsEnd method.
+*/
 void unit_Model_systemsEnd();
+
+/**
+ * @brief A unitary test for asserting the systemsSize method.
+*/
 void unit_Model_systemsSize();
 
-
+/**
+ * @brief A unitary test for asserting the flowsBegin method.
+*/
 void unit_Model_flowsBegin();
+
+/**
+ * @brief A unitary test for asserting the flowsEnd method.
+*/
 void unit_Model_flowsEnd();
+
+/**
+ * @brief A unitary test for asserting the flowsSize method.
+*/
 void unit_Model_flowsSize();
 
-
+/**
+ * @brief A unitary test for asserting the overload of the assignment(=) operator.
+*/
 void unit_Model_assignOverload();
 
 
 
-class myFlow : public FlowImpl {
+class MyFlow : public FlowImpl {
     //Construtor e Destrutor
     public:
 
-        myFlow(string name=""):
+        MyFlow(string name=""):
             FlowImpl(name){}
             
-        myFlow(string name, System *source, System *target): 
+        MyFlow(string name, System *source, System *target): 
             FlowImpl(name, source, target){}
             
     protected:

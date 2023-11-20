@@ -88,79 +88,42 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using namespace </span>std;</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classFlow.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="classFlow.html">Flow</a>{</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classFlow.html#a8801d2ed91a9d96003d4bc8024451551">   17</a></span>        <span class="keywordtype">string</span> <a class="code hl_variable" href="classFlow.html#a8801d2ed91a9d96003d4bc8024451551">name</a>; </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classFlow.html#a963ca162995d112f0f30322e2bb9de63">   18</a></span>        <a class="code hl_class" href="classSystem.html">System</a> *<a class="code hl_variable" href="classFlow.html#a963ca162995d112f0f30322e2bb9de63">source</a>; </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classFlow.html#a87be88d9bae4e927b29205faabeaf387">   19</a></span>        <a class="code hl_class" href="classSystem.html">System</a> *<a class="code hl_variable" href="classFlow.html#a87be88d9bae4e927b29205faabeaf387">target</a>; </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="comment">//???? Apenas um construtor, inicializando System como NULL pode ser interessante.</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_class" href="classFlow.html">Flow</a>(<span class="keywordtype">string</span>=<span class="stringliteral">&quot;&quot;</span>); </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_class" href="classFlow.html">Flow</a>(<span class="keywordtype">string</span>, <a class="code hl_class" href="classSystem.html">System</a>*, <a class="code hl_class" href="classSystem.html">System</a>*);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classFlow.html#a5991efa6e8cf88c4ef2125cc727db333">~Flow</a>();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <a class="code hl_class" href="classFlow.html">Flow</a>(<span class="keyword">const</span> <a class="code hl_class" href="classFlow.html">Flow</a>&amp; flow);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">//---------------------------------getters e setters---------------------------------</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_function" href="classFlow.html#a34d6b868ba50fc09c72548121f363b10">getName</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classFlow.html#a31247277f56c4ca861583770fee2497b">setName</a>(<span class="keywordtype">string</span>);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <a class="code hl_class" href="classSystem.html">System</a>* <a class="code hl_function" href="classFlow.html#a1f3858f90d141807377c2640fb5dd0fc">getSource</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classFlow.html#ae15d33c652e4f82f56b90cc557e46e7c">setSource</a>(<a class="code hl_class" href="classSystem.html">System</a>*);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <a class="code hl_class" href="classSystem.html">System</a>* <a class="code hl_function" href="classFlow.html#aff8a0f8ca8dc50d37c92ab7556e172b5">getTarget</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classFlow.html#a6090fbf67c2da00de779bd14db835c66">setTarget</a>(<a class="code hl_class" href="classSystem.html">System</a>*);</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classFlow.html#a0a6b4175fc5d597f550bccde9312e648">clearSource</a>();</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classFlow.html#aabda5e8d035210c368e7edc26c6e2a2a">clearTarget</a>();</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="comment">// ????será se é legal com as referências?</span></div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <a class="code hl_class" href="classFlow.html">Flow</a>&amp; <a class="code hl_function" href="classFlow.html#ae153a1f37345b026a1e4f5ee88d0d40f">operator= </a>(<span class="keyword">const</span> <a class="code hl_class" href="classFlow.html">Flow</a>&amp;);</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="classFlow.html#aa1ad5f820c1f10f9e19c555af8bf69f2">  169</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code hl_function" href="classFlow.html#aa1ad5f820c1f10f9e19c555af8bf69f2">equation</a>() = 0;</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>};</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classFlow.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="classFlow.html">Flow</a>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classFlow.html#a325d284a50ca3274b126b21f5c39b9af">   11</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classFlow.html#a325d284a50ca3274b126b21f5c39b9af">~Flow</a>() {};</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classFlow.html#a523026b5d1867a809aa167af000fac78">   12</a></span>        <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">string</span> <a class="code hl_function" href="classFlow.html#a523026b5d1867a809aa167af000fac78">getName</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classFlow.html#a3b1816775f7d2e9497236b38ab173d44">   13</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classFlow.html#a3b1816775f7d2e9497236b38ab173d44">setName</a>(<span class="keywordtype">string</span>) = 0;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8">   15</a></span>        <span class="keyword">virtual</span> <a class="code hl_class" href="classSystem.html">System</a>* <a class="code hl_function" href="classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8">getSource</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classFlow.html#a303311b84fb748a4a7fb9a0312b4ff23">   16</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classFlow.html#a303311b84fb748a4a7fb9a0312b4ff23">setSource</a>(<a class="code hl_class" href="classSystem.html">System</a>*) = 0;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787">   18</a></span>        <span class="keyword">virtual</span> <a class="code hl_class" href="classSystem.html">System</a>* <a class="code hl_function" href="classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787">getTarget</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classFlow.html#a738ba8d73ee3ec358d94f131e695fc97">   19</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classFlow.html#a738ba8d73ee3ec358d94f131e695fc97">setTarget</a>(<a class="code hl_class" href="classSystem.html">System</a>*) = 0;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classFlow.html#abe15474181d5a75f21f28146b30058ab">   21</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classFlow.html#abe15474181d5a75f21f28146b30058ab">clearSource</a>() = 0;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classFlow.html#a658b9d7a92f7771a050b826a141b46fd">   22</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classFlow.html#a658b9d7a92f7771a050b826a141b46fd">clearTarget</a>() = 0;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classFlow.html#aa1ad5f820c1f10f9e19c555af8bf69f2">   24</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code hl_function" href="classFlow.html#aa1ad5f820c1f10f9e19c555af8bf69f2">equation</a>() = 0;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
 </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aSystem_8hpp_html"><div class="ttname"><a href="System_8hpp.html">System.hpp</a></div></div>
-<div class="ttc" id="aclassFlow_html"><div class="ttname"><a href="classFlow.html">Flow</a></div><div class="ttdoc">Represents a flow beetwen Systems.</div><div class="ttdef"><b>Definition</b> Flow.hpp:14</div></div>
-<div class="ttc" id="aclassFlow_html_a0a6b4175fc5d597f550bccde9312e648"><div class="ttname"><a href="classFlow.html#a0a6b4175fc5d597f550bccde9312e648">Flow::clearSource</a></div><div class="ttdeci">bool clearSource()</div><div class="ttdoc">Clear the pointer to the source System.</div><div class="ttdef"><b>Definition</b> Flow.cpp:62</div></div>
-<div class="ttc" id="aclassFlow_html_a1f3858f90d141807377c2640fb5dd0fc"><div class="ttname"><a href="classFlow.html#a1f3858f90d141807377c2640fb5dd0fc">Flow::getSource</a></div><div class="ttdeci">System * getSource() const</div><div class="ttdoc">Get the source field on Flow.</div><div class="ttdef"><b>Definition</b> Flow.cpp:37</div></div>
-<div class="ttc" id="aclassFlow_html_a31247277f56c4ca861583770fee2497b"><div class="ttname"><a href="classFlow.html#a31247277f56c4ca861583770fee2497b">Flow::setName</a></div><div class="ttdeci">bool setName(string)</div><div class="ttdoc">Set a new name for the Flow.</div><div class="ttdef"><b>Definition</b> Flow.cpp:32</div></div>
-<div class="ttc" id="aclassFlow_html_a34d6b868ba50fc09c72548121f363b10"><div class="ttname"><a href="classFlow.html#a34d6b868ba50fc09c72548121f363b10">Flow::getName</a></div><div class="ttdeci">const string getName() const</div><div class="ttdoc">Get the name field on Flow.</div><div class="ttdef"><b>Definition</b> Flow.cpp:28</div></div>
-<div class="ttc" id="aclassFlow_html_a5991efa6e8cf88c4ef2125cc727db333"><div class="ttname"><a href="classFlow.html#a5991efa6e8cf88c4ef2125cc727db333">Flow::~Flow</a></div><div class="ttdeci">virtual ~Flow()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition</b> Flow.cpp:14</div></div>
-<div class="ttc" id="aclassFlow_html_a6090fbf67c2da00de779bd14db835c66"><div class="ttname"><a href="classFlow.html#a6090fbf67c2da00de779bd14db835c66">Flow::setTarget</a></div><div class="ttdeci">bool setTarget(System *)</div><div class="ttdoc">Set a new target for the Flow.</div><div class="ttdef"><b>Definition</b> Flow.cpp:50</div></div>
-<div class="ttc" id="aclassFlow_html_a87be88d9bae4e927b29205faabeaf387"><div class="ttname"><a href="classFlow.html#a87be88d9bae4e927b29205faabeaf387">Flow::target</a></div><div class="ttdeci">System * target</div><div class="ttdef"><b>Definition</b> Flow.hpp:19</div></div>
-<div class="ttc" id="aclassFlow_html_a8801d2ed91a9d96003d4bc8024451551"><div class="ttname"><a href="classFlow.html#a8801d2ed91a9d96003d4bc8024451551">Flow::name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition</b> Flow.hpp:17</div></div>
-<div class="ttc" id="aclassFlow_html_a963ca162995d112f0f30322e2bb9de63"><div class="ttname"><a href="classFlow.html#a963ca162995d112f0f30322e2bb9de63">Flow::source</a></div><div class="ttdeci">System * source</div><div class="ttdef"><b>Definition</b> Flow.hpp:18</div></div>
-<div class="ttc" id="aclassFlow_html_aa1ad5f820c1f10f9e19c555af8bf69f2"><div class="ttname"><a href="classFlow.html#aa1ad5f820c1f10f9e19c555af8bf69f2">Flow::equation</a></div><div class="ttdeci">virtual double equation()=0</div><div class="ttdoc">A pure virtual equation method which defines the flow behavior.</div></div>
-<div class="ttc" id="aclassFlow_html_aabda5e8d035210c368e7edc26c6e2a2a"><div class="ttname"><a href="classFlow.html#aabda5e8d035210c368e7edc26c6e2a2a">Flow::clearTarget</a></div><div class="ttdeci">bool clearTarget()</div><div class="ttdoc">Clear the pointer to the target System.</div><div class="ttdef"><b>Definition</b> Flow.cpp:58</div></div>
-<div class="ttc" id="aclassFlow_html_ae153a1f37345b026a1e4f5ee88d0d40f"><div class="ttname"><a href="classFlow.html#ae153a1f37345b026a1e4f5ee88d0d40f">Flow::operator=</a></div><div class="ttdeci">Flow &amp; operator=(const Flow &amp;)</div><div class="ttdoc">Overload for = operator.</div><div class="ttdef"><b>Definition</b> Flow.cpp:71</div></div>
-<div class="ttc" id="aclassFlow_html_ae15d33c652e4f82f56b90cc557e46e7c"><div class="ttname"><a href="classFlow.html#ae15d33c652e4f82f56b90cc557e46e7c">Flow::setSource</a></div><div class="ttdeci">bool setSource(System *)</div><div class="ttdoc">Set a new source for the Flow.</div><div class="ttdef"><b>Definition</b> Flow.cpp:41</div></div>
-<div class="ttc" id="aclassFlow_html_aff8a0f8ca8dc50d37c92ab7556e172b5"><div class="ttname"><a href="classFlow.html#aff8a0f8ca8dc50d37c92ab7556e172b5">Flow::getTarget</a></div><div class="ttdeci">System * getTarget() const</div><div class="ttdoc">Get the target field on Flow.</div><div class="ttdef"><b>Definition</b> Flow.cpp:46</div></div>
-<div class="ttc" id="aclassSystem_html"><div class="ttname"><a href="classSystem.html">System</a></div><div class="ttdoc">Class for representing stock, quantities, mass or even energy.</div><div class="ttdef"><b>Definition</b> System.hpp:14</div></div>
+<div class="ttc" id="aclassFlow_html"><div class="ttname"><a href="classFlow.html">Flow</a></div><div class="ttdef"><b>Definition</b> Flow.hpp:8</div></div>
+<div class="ttc" id="aclassFlow_html_a303311b84fb748a4a7fb9a0312b4ff23"><div class="ttname"><a href="classFlow.html#a303311b84fb748a4a7fb9a0312b4ff23">Flow::setSource</a></div><div class="ttdeci">virtual bool setSource(System *)=0</div></div>
+<div class="ttc" id="aclassFlow_html_a325d284a50ca3274b126b21f5c39b9af"><div class="ttname"><a href="classFlow.html#a325d284a50ca3274b126b21f5c39b9af">Flow::~Flow</a></div><div class="ttdeci">virtual ~Flow()</div><div class="ttdef"><b>Definition</b> Flow.hpp:11</div></div>
+<div class="ttc" id="aclassFlow_html_a3b1816775f7d2e9497236b38ab173d44"><div class="ttname"><a href="classFlow.html#a3b1816775f7d2e9497236b38ab173d44">Flow::setName</a></div><div class="ttdeci">virtual bool setName(string)=0</div></div>
+<div class="ttc" id="aclassFlow_html_a523026b5d1867a809aa167af000fac78"><div class="ttname"><a href="classFlow.html#a523026b5d1867a809aa167af000fac78">Flow::getName</a></div><div class="ttdeci">virtual const string getName() const =0</div></div>
+<div class="ttc" id="aclassFlow_html_a658b9d7a92f7771a050b826a141b46fd"><div class="ttname"><a href="classFlow.html#a658b9d7a92f7771a050b826a141b46fd">Flow::clearTarget</a></div><div class="ttdeci">virtual bool clearTarget()=0</div></div>
+<div class="ttc" id="aclassFlow_html_a738ba8d73ee3ec358d94f131e695fc97"><div class="ttname"><a href="classFlow.html#a738ba8d73ee3ec358d94f131e695fc97">Flow::setTarget</a></div><div class="ttdeci">virtual bool setTarget(System *)=0</div></div>
+<div class="ttc" id="aclassFlow_html_aa1ad5f820c1f10f9e19c555af8bf69f2"><div class="ttname"><a href="classFlow.html#aa1ad5f820c1f10f9e19c555af8bf69f2">Flow::equation</a></div><div class="ttdeci">virtual double equation()=0</div></div>
+<div class="ttc" id="aclassFlow_html_abe15474181d5a75f21f28146b30058ab"><div class="ttname"><a href="classFlow.html#abe15474181d5a75f21f28146b30058ab">Flow::clearSource</a></div><div class="ttdeci">virtual bool clearSource()=0</div></div>
+<div class="ttc" id="aclassFlow_html_abf0f3dbb285fe82e5ba6449de06b97c8"><div class="ttname"><a href="classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8">Flow::getSource</a></div><div class="ttdeci">virtual System * getSource() const =0</div></div>
+<div class="ttc" id="aclassFlow_html_afb9b8d93ea0fc81868b8e02dd382a787"><div class="ttname"><a href="classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787">Flow::getTarget</a></div><div class="ttdeci">virtual System * getTarget() const =0</div></div>
+<div class="ttc" id="aclassSystem_html"><div class="ttname"><a href="classSystem.html">System</a></div><div class="ttdoc">System interface, which will hide the implementation of methods.</div><div class="ttdef"><b>Definition</b> System.hpp:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

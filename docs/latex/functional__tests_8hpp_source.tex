@@ -5,58 +5,61 @@
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_FUNCTIONAL\_TESTS\_H\_}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_FUNCTIONAL\_TESTS\_H\_}}
 \DoxyCodeLine{00003\ }
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}../../src/Flow.hpp"{}}}
-\DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ }
-\DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}../../src/ModelImpl.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}../../src/SystemImpl.hpp"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}../../src/FlowImpl.hpp"{}}}
+\DoxyCodeLine{00007\ }
 \DoxyCodeLine{00008\ }
-\DoxyCodeLine{00009\ \textcolor{comment}{//????\ Não\ precisa\ do\ construtor\ se\ parar\ pra\ pensar...}}
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classExponentialFlow}{ExponentialFlow}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlow}{Flow}}\ \{}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//Construtor\ e\ Destrutor}}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00021\ }
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classExponentialFlow_ac0599b955afd5d4c4fc4dc7ef4b29c7f}{ExponentialFlow}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classFlow_a8801d2ed91a9d96003d4bc8024451551}{name}}=\textcolor{stringliteral}{"{}"{}}):}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}(\mbox{\hyperlink{classFlow_a8801d2ed91a9d96003d4bc8024451551}{name}})\{\}}
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classExponentialFlow_a7127ccaf8348a81f8b9a669afa06e1dd}{ExponentialFlow}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classFlow_a8801d2ed91a9d96003d4bc8024451551}{name}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}}):\ }
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}(\mbox{\hyperlink{classFlow_a8801d2ed91a9d96003d4bc8024451551}{name}},\ \mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}},\ \mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}})\{\}}
-\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00047\ }
-\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classExponentialFlow_af755dadaf2fe73d8402958b2a2ee9ca3}{equation}}()\{}
-\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ \mbox{\hyperlink{classFlow_a1f3858f90d141807377c2640fb5dd0fc}{getSource}}()-\/>\mbox{\hyperlink{classSystem_a8459db57c2462ae8f71ef9ebc7347539}{getValue}}();}
-\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00060\ \};}
-\DoxyCodeLine{00061\ }
-\DoxyCodeLine{00062\ }
-\DoxyCodeLine{00063\ }
-\DoxyCodeLine{00071\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classlogisticFlow}{logisticFlow}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlow}{Flow}}\ \{}
-\DoxyCodeLine{00072\ \ \ \ \ \textcolor{comment}{//Construtor\ e\ Destrutor}}
-\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00074\ }
-\DoxyCodeLine{00075\ }
-\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classlogisticFlow_a7583827c2810e2dfee63d4906bfe659c}{logisticFlow}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classFlow_a8801d2ed91a9d96003d4bc8024451551}{name}}=\textcolor{stringliteral}{"{}"{}}):}
-\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}(\mbox{\hyperlink{classFlow_a8801d2ed91a9d96003d4bc8024451551}{name}})\{\}}
-\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00089\ }
-\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classlogisticFlow_aafc42a5526999f8fc7413734ef71151d}{logisticFlow}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classFlow_a8801d2ed91a9d96003d4bc8024451551}{name}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}}):\ }
-\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}(\mbox{\hyperlink{classFlow_a8801d2ed91a9d96003d4bc8024451551}{name}},\ \mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}},\ \mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}})\{\}}
-\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00102\ }
-\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classlogisticFlow_ae380ca5d015a848848a468e749e70333}{equation}}()\{}
-\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ \mbox{\hyperlink{classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5}{getTarget}}()-\/>\mbox{\hyperlink{classSystem_a8459db57c2462ae8f71ef9ebc7347539}{getValue}}()\ *\ (1\ -\/\ (\mbox{\hyperlink{classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5}{getTarget}}()-\/>\mbox{\hyperlink{classSystem_a8459db57c2462ae8f71ef9ebc7347539}{getValue}}()/70.0));}
-\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00115\ \};}
-\DoxyCodeLine{00116\ }
-\DoxyCodeLine{00117\ }
-\DoxyCodeLine{00118\ }
-\DoxyCodeLine{00127\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{functional__tests_8hpp_afc8689ad075e91b2ee99dc91c0834cea}{exponentialTest}}();}
-\DoxyCodeLine{00128\ }
-\DoxyCodeLine{00137\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{functional__tests_8hpp_a6c242456889f3f38d4f88e34922fada6}{logisticTest}}();}
-\DoxyCodeLine{00138\ }
-\DoxyCodeLine{00139\ }
-\DoxyCodeLine{00148\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{functional__tests_8hpp_a342098ba1b793b28d015331449d280d5}{complexTest}}();}
-\DoxyCodeLine{00149\ }
-\DoxyCodeLine{00150\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//????\ Não\ precisa\ do\ construtor\ se\ parar\ pra\ pensar...}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classExponentialFlow}{ExponentialFlow}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlowImpl}{FlowImpl}}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//Construtor\ e\ Destrutor}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classExponentialFlow_ac0599b955afd5d4c4fc4dc7ef4b29c7f}{ExponentialFlow}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classFlowImpl_a4f3915297f6ef9d76acc5f9fef67342c}{name}}=\textcolor{stringliteral}{"{}"{}}):}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlowImpl}{FlowImpl}}(\mbox{\hyperlink{classFlowImpl_a4f3915297f6ef9d76acc5f9fef67342c}{name}})\{\}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classExponentialFlow_a7127ccaf8348a81f8b9a669afa06e1dd}{ExponentialFlow}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classFlowImpl_a4f3915297f6ef9d76acc5f9fef67342c}{name}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowImpl_a950987351656a518a1057b64c5f85af8}{source}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowImpl_af97039b649da65573e5582edbeb287b5}{target}}):\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlowImpl}{FlowImpl}}(\mbox{\hyperlink{classFlowImpl_a4f3915297f6ef9d76acc5f9fef67342c}{name}},\ \mbox{\hyperlink{classFlowImpl_a950987351656a518a1057b64c5f85af8}{source}},\ \mbox{\hyperlink{classFlowImpl_af97039b649da65573e5582edbeb287b5}{target}})\{\}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classExponentialFlow_af755dadaf2fe73d8402958b2a2ee9ca3}{equation}}()\{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ \mbox{\hyperlink{classFlowImpl_a54940323059d2c4158f4146080841f32}{getSource}}()-\/>\mbox{\hyperlink{classSystem_aab7b27ce6f7644395b8a47b5edfe37a3}{getValue}}();}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classlogisticFlow}{logisticFlow}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlowImpl}{FlowImpl}}\ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{comment}{//Construtor\ e\ Destrutor}}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classlogisticFlow_a7583827c2810e2dfee63d4906bfe659c}{logisticFlow}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classFlowImpl_a4f3915297f6ef9d76acc5f9fef67342c}{name}}=\textcolor{stringliteral}{"{}"{}}):}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlowImpl}{FlowImpl}}(\mbox{\hyperlink{classFlowImpl_a4f3915297f6ef9d76acc5f9fef67342c}{name}})\{\}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classlogisticFlow_aafc42a5526999f8fc7413734ef71151d}{logisticFlow}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classFlowImpl_a4f3915297f6ef9d76acc5f9fef67342c}{name}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowImpl_a950987351656a518a1057b64c5f85af8}{source}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowImpl_af97039b649da65573e5582edbeb287b5}{target}}):\ }
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlowImpl}{FlowImpl}}(\mbox{\hyperlink{classFlowImpl_a4f3915297f6ef9d76acc5f9fef67342c}{name}},\ \mbox{\hyperlink{classFlowImpl_a950987351656a518a1057b64c5f85af8}{source}},\ \mbox{\hyperlink{classFlowImpl_af97039b649da65573e5582edbeb287b5}{target}})\{\}}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classlogisticFlow_ae380ca5d015a848848a468e749e70333}{equation}}()\{}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ \mbox{\hyperlink{classFlowImpl_ab07923bc230308cd949f627a92901bca}{getTarget}}()-\/>\mbox{\hyperlink{classSystem_aab7b27ce6f7644395b8a47b5edfe37a3}{getValue}}()\ *\ (1\ -\/\ (\mbox{\hyperlink{classFlowImpl_ab07923bc230308cd949f627a92901bca}{getTarget}}()-\/>\mbox{\hyperlink{classSystem_aab7b27ce6f7644395b8a47b5edfe37a3}{getValue}}()/70.0));}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00118\ \};}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00130\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{functional__tests_8hpp_afc8689ad075e91b2ee99dc91c0834cea}{exponentialTest}}();}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00140\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{functional__tests_8hpp_a6c242456889f3f38d4f88e34922fada6}{logisticTest}}();}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00151\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{functional__tests_8hpp_a342098ba1b793b28d015331449d280d5}{complexTest}}();}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

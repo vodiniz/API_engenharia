@@ -10,7 +10,7 @@ ModelImpl::ModelImpl(string name):
 
 ModelImpl::~ModelImpl(){}
 
-ModelImpl::ModelImpl(const ModelImpl& model){
+ModelImpl::ModelImpl(const Model& model){
 
     // if(this == &model)
     //     return;
@@ -38,6 +38,10 @@ bool ModelImpl::setName(string name){
 
 const string ModelImpl::getName() const{
     return name;
+}
+
+const int ModelImpl::getClock() const{
+    return clock;
 }
 
 // ---------------------------------
@@ -232,8 +236,7 @@ bool ModelImpl::run(int startTime, int endTime){
 
 
 
-    for(int i = startTime; i < endTime; i++){
-
+    for(int i = startTime; i < endTime; i++, clock++){
         int flowsSize = ModelImpl::flowsSize();
 
         int counter = 0;

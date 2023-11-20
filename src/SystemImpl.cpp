@@ -11,7 +11,7 @@ SystemImpl::SystemImpl(string name, double value):
 
 SystemImpl::~SystemImpl(){}
 
-SystemImpl::SystemImpl(const SystemImpl& system){
+SystemImpl::SystemImpl(const System& system){
 
     
     if(this == &system)
@@ -46,7 +46,7 @@ const double SystemImpl::getValue() const{
 
 // --------------------------------------------------
 
-SystemImpl& SystemImpl::operator= (const SystemImpl &system){
+System& SystemImpl::operator= (const System &system){
 
     if(this == &system)
         return *this;

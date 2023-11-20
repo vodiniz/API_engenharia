@@ -1,0 +1,7 @@
+<map id="unit_system_copy_constructor" name="unit_system_copy_constructor">
+<area shape="rect" id="Node000001" title="A unitary test for asserting the copy constructor of SystemImpl." alt="" coords="5,31,205,57"/>
+<area shape="rect" id="Node000002" href="$classSystem.html#a25dff87b3fd15b008622ef9bd10ca1c0" title="Virtual method to get the Name field on System." alt="" coords="253,5,380,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,29,237,25,238,31,205,35"/>
+<area shape="rect" id="Node000003" href="$classSystem.html#aab7b27ce6f7644395b8a47b5edfe37a3" title="Virtual method to get the value field on System." alt="" coords="254,56,379,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,53,239,57,239,63,205,59"/>
+</map>

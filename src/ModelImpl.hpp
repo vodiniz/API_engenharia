@@ -19,7 +19,7 @@ class ModelImpl: public Model{
 
     protected:
         string name; /*!< A string for naming the Model. */
-        int clock = 0; /*!< A integer for keepin track of elapsed time. */
+        int clock = 0; /*!< A integer for keeping track of elapsed time. */
         vector<System*> systems; /*!< A container for manteining the Systems references. */
         vector<Flow*> flows; /*!< A container for manteining the Flows references. */
 
@@ -54,8 +54,6 @@ class ModelImpl: public Model{
         /**
          * @brief Get the name field on Flow.
          * 
-         * 
-         * 
          * @return return a const string containing the Model @ref #name.
         */
 
@@ -69,9 +67,16 @@ class ModelImpl: public Model{
         */
         bool setName(string);
 
+
+        /**
+         * @brief Get the clock field on Flow.
+         * 
+         * @return return a integer with the clock value.
+        */
+
+        const int getClock() const;
+
 //---------------------------------CRUD METHODS---------------------------------
-
-
 
         /**
          * @brief Add a System pointer to the @ref #systems container.
@@ -246,7 +251,7 @@ class ModelImpl: public Model{
          * another existing model. So to prevent the API user to make a copy we need to "hide" the method.
          * @param model& The model reference which will be assigned to the Model being called.
         */
-        ModelImpl(const ModelImpl& model);
+        ModelImpl(const Model& model);
     
         /**
          * @brief Overload for = operator.

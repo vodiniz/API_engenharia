@@ -65,7 +65,7 @@ class FlowImpl: public Flow{
          * Copy constructor takes a reference to Flow as an argument.
          * @param flow& The base Flow which the copy will be based.
         */
-        FlowImpl(const FlowImpl& flow);
+        FlowImpl(const Flow &flow);
 
 //---------------------------------getters e setters---------------------------------
 
@@ -155,7 +155,7 @@ class FlowImpl: public Flow{
          * 
          * @return return a Flow reference which is a copy to the assigned Flow.
         */
-        FlowImpl& operator= (const FlowImpl&);
+        Flow& operator= (const Flow&);
         
         /**
          * @brief A pure virtual equation method which defines the flow behavior.

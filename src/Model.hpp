@@ -13,6 +13,7 @@ class Model{
 
         virtual bool setName(string) = 0;
         virtual const string getName() const = 0;
+        virtual const int getClock() const = 0;
 
         virtual bool add(System*) = 0;
         virtual bool removeSystem(System* system) = 0;
@@ -29,7 +30,7 @@ class Model{
 
 
 
-               /**
+        /**
          * @brief New iterator type for the System container.
          * 
          * A new iterator type for our System container, which will be used

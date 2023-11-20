@@ -1,0 +1,7 @@
+<map id="ModelImpl::update" name="ModelImpl::update">
+<area shape="rect" id="Node000001" title="Update a Flow pointer from the flows container." alt="" coords="5,31,134,57"/>
+<area shape="rect" id="Node000002" href="$classModelImpl.html#a4b4a1897ba511d1495f187915eaf36df" title="Return a iterator to the first Flow in the container." alt="" coords="182,5,335,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,33,166,28,167,34,134,38"/>
+<area shape="rect" id="Node000003" href="$classModelImpl.html#ad4842cee5355b77104ddf4663f427f21" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="187,56,330,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,50,172,55,171,60,134,55"/>
+</map>
