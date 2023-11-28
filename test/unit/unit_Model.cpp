@@ -13,7 +13,7 @@ using namespace std;
 void unit_Model_constructor_default(){
 
 
-    Model *model = new ModelImpl();
+    Model *model = Model::createModel();
 
     assert(sizeof(*model) > 0);
     assert(model->getName() == "");
@@ -25,12 +25,12 @@ void unit_Model_constructor_default(){
 }
 
 void unit_Model_constructor_with_name(){
-    Model *model = new ModelImpl("Model");
+
+    Model *model = Model::createModel("Model");
     
     assert(sizeof(*model) > 0);
     assert(model->getName() == "Model");
     assert(model->getClock() == 0);
-
 
     delete model;
 }
@@ -40,13 +40,16 @@ void unit_Model_destructor(){}
 
 void unit_Model_getName(){
 
-    Model *model = new ModelImpl("Model");
+    Model *model = Model::createModel("Model");
+
     assert(model->getName() == "Model");
 
     delete model;
 }
 void unit_Model_setName(){
-    Model *model = new ModelImpl("Model");
+
+    Model *model = Model::createModel();
+
     
     model->setName("NewName");
     assert(model->getName() != "Model");
@@ -57,141 +60,138 @@ void unit_Model_setName(){
 }
 
 void unit_Model_getClock(){
-    Model *model = new ModelImpl("Model");
+    Model *model = Model::createModel();
+
     assert(model->getClock() == 0);
-}
 
-void unit_Model_add_System(){
-    Model *model = new ModelImpl("Model");
-
-    System *system = new SystemImpl("System");
-    model->add(system);
-
-    assert(model->systemsSize() > 0);
-    assert(*(model->systemsBegin()) == system); 
-
-    delete system;
     delete model;
 }
 
-void unit_Model_add_Flow(){
+// void unit_Model_add_System(){
+//     Model *model = new ModelImpl("Model");
 
-    Model *model = new ModelImpl("Model");
+//     System *system = new SystemImpl("System");
+//     model->add(system);
 
-    Flow *flow = new MyFlow("Flow");
-    model->add(flow);
+//     assert(model->systemsSize() > 0);
+//     assert(*(model->systemsBegin()) == system); 
 
-    assert(model->flowsSize() > 0);
-    assert(*(model->flowsBegin()) == flow); 
+//     delete system;
+//     delete model;
+// }
 
-    delete flow;
-    delete model;
-}
+// void unit_Model_add_Flow(){
+
+//     Model *model = new ModelImpl("Model");
+
+//     Flow *flow = new MyFlow("Flow");
+//     model->add(flow);
+
+//     assert(model->flowsSize() > 0);
+//     assert(*(model->flowsBegin()) == flow); 
+
+//     delete flow;
+//     delete model;
+// }
 
 void unit_Model_removeSystem_pointer(){
 
-    Model *model = new ModelImpl("Model");
-    System *system = new SystemImpl("System");
-    model->add(system);
+    Model* model = Model::createModel("Model");
 
-    assert(model->systemsSize() > 0);
+    System *system = model->createSystem("System");
+
+    assert(model->systemsSize() == 1);
     assert(*(model->systemsBegin()) == system); 
 
     model->removeSystem(system);
     assert(model->systemsSize() == 0);
 
-    delete system;
     delete model;
 }
 void unit_Model_removeSystem_name(){
 
-    Model *model = new ModelImpl("Model");
-    System *system = new SystemImpl("System");
-    model->add(system);
+    Model* model = Model::createModel("Model");
+    System *system = model->createSystem("System");
 
-    assert(model->systemsSize() > 0);
+    assert(model->systemsSize() == 1);
     assert(*(model->systemsBegin()) == system); 
 
     model->removeSystem("System");
     assert(model->systemsSize() == 0);
 
-    delete system;
     delete model;
 }
 
 void unit_Model_removeFlow_pointer(){
 
-    Model *model = new ModelImpl("Model");
+    Model* model = Model::createModel("Model");
 
-    Flow *flow = new MyFlow("Flow");
-    model->add(flow);
+    Flow *flow = model->createFlow<MyFlow>("Flow");
 
-    assert(model->flowsSize() > 0);
+    assert(model->flowsSize() == 1);
     assert(*(model->flowsBegin()) == flow);
 
     model->removeFlow(flow);
     assert(model->flowsSize() == 0);
 
-    delete flow;
     delete model;
 
 }
 void unit_Model_removeFlow_name(){
     
-    Model *model = new ModelImpl("Model");
+    Model* model = Model::createModel("Model");
 
-    Flow *flow = new MyFlow("Flow");
-    model->add(flow);
+    Flow *flow = model->createFlow<MyFlow>("Flow");
 
-    assert(model->flowsSize() > 0);
+    assert(model->flowsSize() == 1);
     assert(*(model->flowsBegin()) == flow);
 
     model->removeFlow("Flow");
     assert(model->flowsSize() == 0);
 
-    delete flow;
     delete model;
 }
 
-void unit_Model_update_System(){
-    
-    Model *model = new ModelImpl("Model");
+void unit_Model_updateSystem(){
 
-    System *system = new SystemImpl("System");
-    model->add(system);
+    Model* model = Model::createModel("Model");
 
-    System *system2 = new SystemImpl("System2");
+    System *system = model->createSystem("System");
 
-    model->update("System", system2);
 
-    assert(*(model->systemsBegin()) != system);
-    assert(*(model->systemsBegin()) == system2);
+    model->updateSystem("System", 30., "System2");
 
-    delete system;
+    assert(round(fabs(system->getValue() - 30.0)* 10000) < 1);
+    assert(system->getName() == "System2");
+
+
     delete model;
 }
-void unit_Model_update_Flow(){
 
-    Model *model = new ModelImpl("Model");
+void unit_Model_updateFlow(){
 
-    Flow *flow = new MyFlow("Flow");
-    model->add(flow);
+    Model* model = Model::createModel("Model");
 
-    Flow *flow2 = new MyFlow("Flow2");
+    Flow *flow = model->createFlow<MyFlow>("Flow");
+
+    System* system1 = model->createSystem();
+    System* system2 = model->createSystem();
 
 
-    model->update("Flow", flow2);
 
-    assert(*(model->flowsBegin()) != flow);
-    assert(*(model->flowsBegin()) == flow2);
+    model->updateFlow("Flow",system1, system2, "Flow2");
 
-    delete flow;
+    assert(flow->getName() == "Flow2");
+    assert(flow->getSource() == system1);
+    assert(flow->getTarget() == system2);
+
+
     delete model;
 }
 
 void unit_Model_run(){
 
-    Model *model = new ModelImpl("Model");
+    Model* model = Model::createModel("Model");
 
     int startTime = 0;
     int endTime = 100;
@@ -205,30 +205,22 @@ void unit_Model_run(){
 
 void unit_Model_systemsBegin(){
 
-    Model *model = new ModelImpl("Model");
+    Model* model = Model::createModel("Model");
 
-    System *system = new SystemImpl("System");
-    System *system2 = new SystemImpl("System2");
-
-    model->add(system);
-    model->add(system2);
+    System *system = model->createSystem("System");
+    System *system2 = model->createSystem("System2");
 
     assert(*(model->systemsBegin()) != system2); 
     assert(*(model->systemsBegin()) == system); 
 
-    delete system;
-    delete system2;
     delete model;
 }
 void unit_Model_systemsEnd(){
 
-    Model *model = new ModelImpl("Model");
+    Model* model = Model::createModel("Model");
 
-    System *system = new SystemImpl("System");
-    System *system2 = new SystemImpl("System2");
-
-    model->add(system);
-    model->add(system2);
+    System *system = model->createSystem("System");
+    System *system2 = model->createSystem("System2");
 
     Model::SystemIterator it = model->systemsEnd();
 
@@ -237,23 +229,17 @@ void unit_Model_systemsEnd(){
     assert(*it == system2); 
     assert(*it != system); 
 
-    delete system;
-    delete system2;
     delete model;
 }
 void unit_Model_systemsSize(){
 
-    Model *model = new ModelImpl("Model");
+    Model* model = Model::createModel("Model");
 
     for(int i = 0; i < 10; i++){
-        model->add(new SystemImpl());
+        model->createSystem();
     }
 
     assert(model->systemsSize() == 10);
-
-    for(Model::SystemIterator it = model->systemsBegin(); it < model->systemsEnd(); it++){
-        delete (*it);
-    }
 
     delete model;
 
@@ -262,30 +248,22 @@ void unit_Model_systemsSize(){
 
 void unit_Model_flowsBegin(){
 
-    Model *model = new ModelImpl("Model");
+    Model* model = Model::createModel("Model");
 
-    Flow *flow = new MyFlow("Flow");
-    Flow *flow2 = new MyFlow("Flow2");
-
-    model->add(flow);
-    model->add(flow2);
+    Flow *flow = model->createFlow<MyFlow>("Flow");
+    Flow *flow2 = model->createFlow<MyFlow>("Flow2");
 
     assert(*(model->flowsBegin()) != flow2); 
     assert(*(model->flowsBegin()) == flow); 
 
-    delete flow;
-    delete flow2;
     delete model;
 }
 void unit_Model_flowsEnd(){
 
-    Model *model = new ModelImpl("Model");
+    Model* model = Model::createModel("Model");
 
-    Flow *flow = new MyFlow("Flow");
-    Flow *flow2 = new MyFlow("Flow2");
-
-    model->add(flow);
-    model->add(flow2);
+    Flow *flow = model->createFlow<MyFlow>("Flow");
+    Flow *flow2 = model->createFlow<MyFlow>("Flow2");
 
     Model::FlowIterator it = model->flowsEnd();
 
@@ -293,14 +271,54 @@ void unit_Model_flowsEnd(){
     assert(*it == flow2); 
     assert(*it != flow);
 
-    delete flow;
-    delete flow2;
     delete model;
 }
 void unit_Model_flowsSize(){
 
 }
 
+void unit_Model_createModel(){
+    assert(Model::modelsSize() == 0);
 
-void unit_Model_assignOverload();
+    Model* model = Model::createModel();
 
+    assert(model->modelsSize() == 1);
+
+    delete model;
+
+    assert(Model::modelsSize() == 0);
+
+
+}
+
+void unit_Model_createSystem(){
+
+    Model* model = Model::createModel();
+
+    assert(model->systemsSize() == 0);
+
+    System* system1 = model->createSystem("System1");
+    assert(model->systemsSize() == 1);
+
+    System* system2 = model->createSystem("System2");
+    assert(model->systemsSize() == 2);
+
+
+    delete model;
+
+}
+
+void unit_Model_createFlow(){
+    Model* model = Model::createModel();
+
+    assert(model->flowsSize() == 0);
+
+    Flow* flow1 = model->createFlow<MyFlow>("Flow1");
+    assert(model->flowsSize() == 1);
+
+    Flow* flow2 = model->createFlow<MyFlow>("Flow2");
+    assert(model->flowsSize() == 2);
+
+    delete model;
+
+}

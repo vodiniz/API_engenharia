@@ -15,6 +15,31 @@
  * and will permit us to create a layered approach for the API. 
 */
 class Model{
+
+    protected:
+        /**
+         * @brief Virtual method to add a Flow pointer to the @ref #flows container.
+         * 
+         * @return return true if sucefully added the System, and false if it failed.
+        */
+        virtual bool add(Flow*) = 0;
+
+        /**
+         * @brief Virtual method to add a System pointer to the @ref #systems container.
+         * 
+         * @return return true if sucefully added the System, and false if it failed.
+        */
+        virtual bool add(System*) = 0;
+
+        /**
+         * @brief Virtual method to add a model pointer to the @ref #models container.
+         * 
+         * @return return true if sucefully added the System, and false if it failed.
+        */
+        static bool add(Model* model);
+
+
+
     public: 
 
         /**
@@ -48,12 +73,6 @@ class Model{
         */
         virtual const int getClock() const = 0;
         
-        /**
-         * @brief Virtual method to add a System pointer to the @ref #systems container.
-         * 
-         * @return return true if sucefully added the System, and false if it failed.
-        */
-        virtual bool add(System*) = 0;
 
         /**
          * @brief Virtual method to remove a System pointer from the @ref #systems container.
@@ -85,20 +104,16 @@ class Model{
          * Uses a name as a parameter for identifying the System which will be updated on the container.
          * Also receives a System pointer as a param which will substitute the System identified with the name. 
          * 
-         * @param name A string for naming the Model.
-         * @param system The system which we will update the element on our list.
+         * @param currrentName A string for identifying the System.
+         * @param value The new value for the system which we will update.
+         * @param newName The new Name for the system which we will update.
+         * 
          * 
          * @return return true if sucefully update the System, and false if it failed.
         */
-        virtual bool update(string name, System* system) = 0;
+        virtual bool updateSystem(string currentName, double value, string newName = "") = 0;
 
 
-        /**
-         * @brief Virtual method to add a Flow pointer to the @ref #flows container.
-         * 
-         * @return return true if sucefully added the System, and false if it failed.
-        */
-        virtual bool add(Flow*) = 0;
 
         /**
          * @brief Virtual method to remove a Flow pointer from the @ref #flows container.
@@ -128,12 +143,14 @@ class Model{
          * Uses a name as a parameter for identifying the Flow which will be updated on the container.
          * Also receives a Flow pointer as a param which will substitute the Flow identified with the name. 
          * 
-         * @param name A string for naming the Model.
-         * @param flow* The Flow pointer which we will compare to our list element to remove.
+         * @param currrentName A string for identifying the Flow.
+         * @param source Pointer the new source for the flow.
+         * @param target Pointer the new target for the flow.
+         * @param newName The new Name for the flow which we will update.
          * 
          * @return return true if sucefully update the Flow, and false if it failed.
         */
-        virtual bool update(string name, Flow* flow) = 0;
+        virtual bool updateFlow(string currentName,System* source, System* target, string newName = "") = 0;
 
 
         /**
@@ -213,6 +230,83 @@ class Model{
          * @return returns the number of elements in the @ref #flows container.
         */
         virtual int flowsSize() = 0;
+
+
+        /**
+         * @brief New iterator type for the Model container.
+         * 
+         * A new iterator type for our Model container, which will be used
+         * for iterating over our container while encapsulating its implementation.
+         * 
+        */
+        typedef vector<Model*>::iterator ModelIterator;
+
+      /**
+         * @brief Virtual method which return a iterator to the first Model in the container.
+         * 
+         * @return return ModelIterator type, which is defined as an iterator for the Model container.
+        */
+        virtual ModelIterator modelsBegin() = 0;
+
+        /**
+         * @brief Virtual method which returns an iterator referring to the past-the-end element in the Model container.
+         * 
+         * @return return ModelIterator type, which is defined as an iterator for the Model container.
+        */
+        virtual ModelIterator modelsEnd() = 0;
+
+        /**
+         * @brief Virtual method for getting the size of the models container.
+         * 
+         * @return returns the number of elements in the models container.
+        */
+        static int modelsSize();
+
+
+
+
+        /**
+         * @brief Method for Creating a Model object.
+         * 
+         * @param name Name for the Model object.
+         * 
+         * @return Pointer to the created Model.
+        */
+        static Model* createModel(string name = "");
+    
+
+        /**
+         * @brief Method for creating a System.
+         * 
+         * This method will create a system and add it to the @ref #systems container.
+         * 
+         * @param name Name for a System
+         * @param value Value for the system
+         * 
+         * @return returns a pointer to the created System.
+        */
+        virtual System* createSystem(string = "", double = 0.) = 0;
+
+        /**
+         * @brief Method for creating a Flow with template.
+         * 
+         * This method will create a Flow provided a template and add it to the @ref #flows container.
+         * 
+         * @param name Name for a Flow.
+         * @param source Pointer to the source system.
+         * @param target Pointer to the target system.
+         * 
+         * 
+         * @return returns a pointer to the created Flow.
+        */
+
+        template <typename T>
+        Flow* createFlow(string name = "", System * source = NULL, System * target = NULL){
+            Flow* flow = new T(name, source, target);
+            add(flow);
+            return flow;
+        }
+
 
 };
 #endif

@@ -69,8 +69,9 @@ int main(void){
     unit_Model_getName();
     unit_Model_setName();
 
-    unit_Model_add_System();
-    unit_Model_add_Flow();
+    unit_Model_createModel();
+    unit_Model_createSystem();
+    unit_Model_createFlow();
 
     unit_Model_removeSystem_pointer();
     unit_Model_removeSystem_name();
@@ -78,8 +79,8 @@ int main(void){
     unit_Model_removeFlow_pointer();
     unit_Model_removeFlow_name();
 
-    unit_Model_update_System();
-    unit_Model_update_Flow();
+    unit_Model_updateSystem();
+    unit_Model_updateFlow();
 
     unit_Model_run();
 

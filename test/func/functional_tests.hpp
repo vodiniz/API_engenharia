@@ -1,10 +1,8 @@
 #ifndef _FUNCTIONAL_TESTS_H_
 #define _FUNCTIONAL_TESTS_H_
 
-#include "../../src/ModelImpl.hpp"
-#include "../../src/SystemImpl.hpp"
+#include "../../src/Model.hpp"
 #include "../../src/FlowImpl.hpp"
-
 
 
 using namespace std;

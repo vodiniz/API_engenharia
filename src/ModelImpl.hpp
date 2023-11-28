@@ -22,6 +22,7 @@ class ModelImpl: public Model{
         int clock = 0; /*!< A integer for keeping track of elapsed time. */
         vector<System*> systems; /*!< A container for manteining the Systems references. */
         vector<Flow*> flows; /*!< A container for manteining the Flows references. */
+        static vector<Model*> models; /*!< A container for keeping a static model. */
 
     public:
          /**
@@ -151,12 +152,14 @@ class ModelImpl: public Model{
          * Uses a name as a parameter for identifying the System which will be updated on the container.
          * Also receives a System pointer as a param which will substitute the System identified with the name. 
          * 
-         * @param name A string for naming the Model.
-         * @param system The system which we will update the element on our list.
+         * @param currrentName A string for identifying the System.
+         * @param value The new value for the system which we will update.
+         * @param newName The new Name for the system which we will update.
+         * 
          * 
          * @return return true if sucefully update the System, and false if it failed.
         */
-        bool update(string name, System* system);
+        bool updateSystem(string currentName, double value, string newName = "");
 
         /**
          * @brief Update a Flow pointer from the flows container.
@@ -164,13 +167,21 @@ class ModelImpl: public Model{
          * Uses a name as a parameter for identifying the Flow which will be updated on the container.
          * Also receives a Flow pointer as a param which will substitute the Flow identified with the name. 
          * 
-         * @param name A string for naming the Model.
-         * @param flow* The Flow pointer which we will compare to our list element to remove.
+         * @param currrentName A string for identifying the Flow.
+         * @param newName The new Name for the flow which we will update.
+         * @param source Pointer the new source for the flow.
+         * @param target Pointer the new target for the flow.
          * 
          * @return return true if sucefully update the Flow, and false if it failed.
         */
-        bool update(string name, Flow* flow);
+        bool updateFlow(string currentName, System* source, System* target, string newName = "");
 
+        /**
+         * @brief Virtual method to add a model pointer to the @ref #models container.
+         * 
+         * @return return true if sucefully added the System, and false if it failed.
+        */
+        static bool add(Model*);
 
         /**
          * @brief Run the simulation.
@@ -234,6 +245,50 @@ class ModelImpl: public Model{
         */
         int flowsSize();
 
+
+        /**
+         * @brief Virtual method which return a iterator to the first Model in the container.
+         * 
+         * @return return ModelIterator type, which is defined as an iterator for the Model container.
+        */
+        virtual ModelIterator modelsBegin();
+
+        /**
+         * @brief Virtual method which returns an iterator referring to the past-the-end element in the Model container.
+         * 
+         * @return return ModelIterator type, which is defined as an iterator for the Model container.
+        */
+        virtual ModelIterator modelsEnd();
+
+        /**
+         * @brief Virtual method for getting the size of the models container.
+         * 
+         * @return returns the number of elements in the models container.
+        */
+        static int modelsSize();
+
+
+        /**
+         * @brief Method for Creating a Model object.
+         * 
+         * @param name Name for the Model object.
+         * 
+         * @return Pointer to the created Model.
+        */
+        static Model* createModel(string name = "");
+
+
+        /**
+         * @brief Method for creating a System.
+         * 
+         * This method will create a system and add it to the @ref #systems container.
+         * 
+         * @param name Name for a System
+         * @param value Value for the system
+         * 
+         * @return returns a pointer to the created System.
+        */
+        System* createSystem(string name = "", double value = 0.);
 
     private:
         /**

@@ -68,12 +68,12 @@ void unit_Model_removeFlow_name();
 /**
  * @brief A unitary test for asserting the update method with the System param overload.
 */
-void unit_Model_update_System();
+void unit_Model_updateSystem();
 
 /**
  * @brief A unitary test for asserting the update method with the Flow param overload.
 */
-void unit_Model_update_Flow();
+void unit_Model_updateFlow();
 
 /**
  * @brief A unitary test for asserting the run method.
@@ -111,9 +111,20 @@ void unit_Model_flowsEnd();
 void unit_Model_flowsSize();
 
 /**
- * @brief A unitary test for asserting the overload of the assignment(=) operator.
+ * @brief A unitary test for asserting the createModel method.
 */
-void unit_Model_assignOverload();
+void unit_Model_createModel();
+
+/**
+ * @brief A unitary test for asserting the createSystem method.
+*/
+void unit_Model_createSystem();
+
+/**
+ * @brief A unitary test for asserting the createFlow method.
+*/
+void unit_Model_createFlow();
+
 
 
 
@@ -133,5 +144,6 @@ class MyFlow : public FlowImpl {
         }
     
 };
+
 
 #endif

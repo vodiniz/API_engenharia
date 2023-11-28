@@ -13,20 +13,15 @@ void exponentialTest(){
 
     cout << "-------------------------------\n";
 
-    ModelImpl model("Exponential");
+    Model* model = Model::createModel("Exponential");
 
-    System *pop1 = new SystemImpl("pop1", 100.);
-    System *pop2 = new SystemImpl("pop2", 0.);
+    System *pop1 = model->createSystem("pop1", 100.);
+    System *pop2 = model->createSystem("pop2", 0.);
 
-    Flow* flow = new ExponentialFlow("exponencial", pop1, pop2);
-
-    model.add(pop1);
-    model.add(pop2);
-    model.add(flow);
+    Flow* flow = model->createFlow<ExponentialFlow>("exponencial", pop1, pop2);
 
 
-
-    model.run(0, 100);
+    model->run(0, 100);
     assert(fabs(pop1->getValue() - 36.6032) < 0.0001);
     assert(fabs(pop2->getValue() - 63.3968) < 0.0001);
 
@@ -43,18 +38,14 @@ void exponentialTest(){
 
 void logisticTest(){
     cout << "-------------------------------\n";
-    ModelImpl model("Logistic");
+    Model *model = Model::createModel("Logistic");
 
-    System *p1 = new SystemImpl("p1", 100.);
-    System *p2 = new SystemImpl("p2", 10.);
+    System *p1 = model->createSystem("p1", 100.);
+    System *p2 = model->createSystem("p2", 10.);
 
-    logisticFlow flow("logistica", p1, p2);
+    Flow* flow = model->createFlow<logisticFlow>("logistica", p1, p2);
 
-    model.add(p1);
-    model.add(p2);
-    model.add(&flow);
-
-    model.run(0, 100);
+    model->run(0, 100);
     assert(fabs(p1->getValue() - 88.2167) < 0.0001);
     assert(fabs(p2->getValue() - 21.7833) < 0.0001);
 
@@ -70,38 +61,28 @@ void logisticTest(){
 void complexTest(){
     cout << "-------------------------------\n";
 
-    ModelImpl model("complexModel");
+    Model *model = Model::createModel("complexModel");
 
-    SystemImpl Q1("Q1", 100.), Q2("Q2", 0.), Q3("Q3", 100.),
-        Q4("Q4", 0.), Q5("Q5", 0.);
+    System* Q1 = model->createSystem("Q1", 100.);
+    System* Q2 = model->createSystem("Q2", 0.);
+    System* Q3 = model->createSystem("Q3", 100.);
+    System* Q4 = model->createSystem("Q4", 0.);
+    System* Q5 = model->createSystem("Q5", 0.);
 
-    ExponentialFlow f("f", &Q1, &Q2);
-    ExponentialFlow g("g", &Q1, &Q3);
-    ExponentialFlow r("r", &Q2, &Q5);
-    ExponentialFlow t("t", &Q2, &Q3);
-    ExponentialFlow u("u", &Q3, &Q4);
-    ExponentialFlow v("v", &Q4, &Q1);
+    Flow* f = model->createFlow<ExponentialFlow>("f", Q1, Q2);
+    Flow* g = model->createFlow<ExponentialFlow>("g", Q1, Q3);
+    Flow* r = model->createFlow<ExponentialFlow>("r", Q2, Q5);
+    Flow* t = model->createFlow<ExponentialFlow>("t", Q2, Q3);
+    Flow* u = model->createFlow<ExponentialFlow>("u", Q3, Q4);
+    Flow* v = model->createFlow<ExponentialFlow>("v", Q4, Q1);
 
-    model.add(&Q1);
-    model.add(&Q2);
-    model.add(&Q3);
-    model.add(&Q4);
-    model.add(&Q5);
-    model.add(&f);
-    model.add(&g);
-    model.add(&r);
-    model.add(&t);
-    model.add(&u);
-    model.add(&v);
+    model->run(0, 100); 
 
-
-    model.run(0, 100); 
-
-    assert(fabs(Q1.getValue() - 31.8513) < 0.0001);
-    assert(fabs(Q2.getValue() - 18.4003) < 0.0001);
-    assert(fabs(Q3.getValue() - 77.1143) < 0.0001);
-    assert(fabs(Q4.getValue() - 56.1728) < 0.0001);
-    assert(fabs(Q5.getValue() - 16.4612) < 0.0001);
+    assert(fabs(Q1->getValue() - 31.8513) < 0.0001);
+    assert(fabs(Q2->getValue() - 18.4003) < 0.0001);
+    assert(fabs(Q3->getValue() - 77.1143) < 0.0001);
+    assert(fabs(Q4->getValue() - 56.1728) < 0.0001);
+    assert(fabs(Q5->getValue() - 16.4612) < 0.0001);
 
 
 

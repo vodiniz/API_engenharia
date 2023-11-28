@@ -1,6 +1,9 @@
+#include "Model.hpp"
 #include "ModelImpl.hpp"
-#include "System.hpp"
-#include "Flow.hpp"
+#include "SystemImpl.hpp"
+#include "FlowImpl.hpp"
+
+vector<Model*> ModelImpl::models;
 
 using namespace std;
 
@@ -8,7 +11,21 @@ using namespace std;
 ModelImpl::ModelImpl(string name):
     name(name){}
 
-ModelImpl::~ModelImpl(){}
+ModelImpl::~ModelImpl(){
+
+    for(SystemIterator it = systemsBegin(); it < systemsEnd(); it++){
+        delete *it;
+    }
+    for(FlowIterator it = flowsBegin(); it < flowsEnd(); it++)
+        delete *it;
+
+    for(ModelIterator it = modelsBegin(); it < modelsEnd(); it++){
+        if(*it == this){
+            models.erase(it);
+            break;
+        }
+    }
+}
 
 ModelImpl::ModelImpl(const Model& model){
 
@@ -63,6 +80,15 @@ ModelImpl::FlowIterator ModelImpl::flowsEnd(){
     return flows.end();
 }
 
+ModelImpl::ModelIterator ModelImpl::modelsBegin(){
+    return models.begin();
+}
+
+
+ModelImpl::ModelIterator ModelImpl::modelsEnd(){
+    return models.end();
+}
+
 
 //Vector size
 int ModelImpl::flowsSize(){
@@ -71,7 +97,13 @@ int ModelImpl::flowsSize(){
 int ModelImpl::systemsSize(){
     return systems.size();
 }
+int ModelImpl::modelsSize(){
+    return models.size();
+}
 
+int Model::modelsSize(){
+    return ModelImpl::modelsSize();
+}
 
 
 // ---------------------------------
@@ -123,17 +155,18 @@ bool ModelImpl::removeSystem(string name){
     return false;
 }
 
-bool ModelImpl::update(string name, System *system){
+bool ModelImpl::updateSystem(string currentName, double value, string newName){
 
-    SystemIterator systemIterator = systemsBegin();
+    
 
-    while(systemIterator < systemsEnd()){
+    newName = (newName == "")? currentName : newName;
 
-        if((*systemIterator)->getName() == name){
-            (*systemIterator) = system;
+    for(SystemIterator systemIterator = systemsBegin(); systemIterator < systemsEnd(); systemIterator++){
+        if((*systemIterator)->getName() == currentName){
+            (*systemIterator)->setName(newName);
+            (*systemIterator)->setValue(value);
             return true;
         }
-        systemIterator++;
     }
 
     return false;
@@ -186,14 +219,18 @@ bool ModelImpl::removeFlow(string name){
     return false;
 }
 
-bool ModelImpl::update(string name, Flow *flow){
+bool ModelImpl::updateFlow(string currentName, System* source, System* target, string newName){
+
+    newName = (newName == "")? currentName : newName;
 
     FlowIterator flowIterator = flowsBegin();
 
     while(flowIterator < flowsEnd()){
 
-        if((*flowIterator)->getName() == name){
-            (*flowIterator) = flow;
+        if((*flowIterator)->getName() == currentName){
+            (*flowIterator)->setName(newName);
+            (*flowIterator)->setSource(source);
+            (*flowIterator)->setTarget(target);
             return true;
         }
         flowIterator++;
@@ -201,6 +238,22 @@ bool ModelImpl::update(string name, Flow *flow){
 
     return false;
 }
+
+bool ModelImpl::add(Model* model){
+    
+    size_t size = models.size();
+
+    models.push_back(model);
+
+    return(models.size() > size);
+}
+
+bool Model::add(Model* model){
+    return ModelImpl::add(model);
+}
+
+
+
 
 // ---------------------------------
 //Operator Overload
@@ -262,4 +315,20 @@ bool ModelImpl::run(int startTime, int endTime){
     return true;
 }
 
+Model* ModelImpl::createModel(string name){
+    Model* model = new ModelImpl(name);
+    add(model);
 
+    return model;
+}
+
+Model* Model::createModel(string name){
+    return ModelImpl::createModel(name);
+}
+
+
+System* ModelImpl::createSystem(string name, double value){
+    System* system = new SystemImpl(name, value);
+    add(system);
+    return system;
+}
