@@ -1,5 +1,4 @@
 #include "FlowImpl.hpp"
-#include "SystemImpl.hpp"
 
 using namespace std;
 
@@ -67,14 +66,14 @@ bool FlowImpl::clearSource(){
 
 // --------------------------------------------------
 
-Flow& FlowImpl::operator= (const Flow& flow){
+Flow& FlowImpl::operator= (const Flow& flow) {
 
     if(this == &flow)
         return *this;
 
-    name = flow.getName();
-    source = flow.getSource();
-    target = flow.getTarget();
+    this->name = flow.getName();
+    this->source = flow.getSource();
+    this->target = flow.getTarget();
 
     return *this;
 }

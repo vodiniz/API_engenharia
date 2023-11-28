@@ -1,7 +1,7 @@
 <map id="MyFlow" name="MyFlow">
-<area shape="rect" id="Node000001" title=" " alt="" coords="149,972,322,1116"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="149,972,322,1153"/>
 <area shape="rect" id="Node000002" href="$classFlowImpl.html" title="Represents a flow beetwen Systems." alt="" coords="147,480,323,923"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,937,238,972,233,972,233,937"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,938,238,972,233,972,233,938"/>
 <area shape="rect" id="Node000003" href="$classFlow.html" title="Flow interface, which will hide the implementation of methods." alt="" coords="5,5,188,400"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="158,413,176,479,171,481,153,415"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="213,168,258,237"/>

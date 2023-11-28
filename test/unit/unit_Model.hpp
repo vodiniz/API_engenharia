@@ -120,7 +120,7 @@ void unit_Model_assignOverload();
 class MyFlow : public FlowImpl {
     //Construtor e Destrutor
     public:
-
+        using FlowImpl::operator=;
         MyFlow(string name=""):
             FlowImpl(name){}
             

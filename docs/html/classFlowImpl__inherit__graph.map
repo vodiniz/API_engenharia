@@ -1,13 +1,13 @@
 <map id="FlowImpl" name="FlowImpl">
 <area shape="rect" id="Node000001" title="Represents a flow beetwen Systems." alt="" coords="291,448,467,933"/>
-<area shape="rect" id="Node000003" href="$classExponentialFlow.html" title="Represents a Flow with Exponential behavior." alt="" coords="5,984,169,1144"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="285,817,151,986,147,983,280,813"/>
-<area shape="rect" id="Node000004" href="$classFlowTest.html" title=" " alt="" coords="194,981,367,1147"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="314,948,305,982,300,981,309,947"/>
-<area shape="rect" id="Node000005" href="$classMyFlow.html" title=" " alt="" coords="391,992,565,1136"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="450,947,462,991,457,993,445,948"/>
-<area shape="rect" id="Node000006" href="$classlogisticFlow.html" title="Represents a Flow with Exponential behavior." alt="" coords="589,984,753,1144"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="478,813,612,983,608,986,474,817"/>
+<area shape="rect" id="Node000003" href="$classExponentialFlow.html" title="Represents a Flow with Exponential behavior." alt="" coords="5,984,169,1181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="285,822,162,986,158,983,281,819"/>
+<area shape="rect" id="Node000004" href="$classFlowTest.html" title=" " alt="" coords="194,981,367,1184"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="317,949,309,982,303,981,312,947"/>
+<area shape="rect" id="Node000005" href="$classMyFlow.html" title=" " alt="" coords="391,992,565,1173"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="447,947,458,992,453,993,442,948"/>
+<area shape="rect" id="Node000006" href="$classlogisticFlow.html" title="Represents a Flow with Exponential behavior." alt="" coords="589,984,753,1181"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="478,819,601,983,596,986,474,822"/>
 <area shape="rect" id="Node000002" href="$classFlow.html" title="Flow interface, which will hide the implementation of methods." alt="" coords="288,5,471,400"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="382,415,382,448,377,448,377,415"/>
 </map>

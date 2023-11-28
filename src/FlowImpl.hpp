@@ -19,7 +19,7 @@ class FlowImpl: public Flow{
         System *target; /*!< A System pointer for the target. */
 
     public:
-
+        
         //???? Apenas um construtor, inicializando System como NULL pode ser interessante.
 
 
@@ -156,7 +156,7 @@ class FlowImpl: public Flow{
          * @return return a Flow reference which is a copy to the assigned Flow.
         */
        
-        Flow& operator= (const Flow& flow) override;
+        Flow& operator= (const Flow& flow);
         
         /**
          * @brief A pure virtual equation method which defines the flow behavior.

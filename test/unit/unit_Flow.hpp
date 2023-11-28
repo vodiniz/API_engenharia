@@ -83,6 +83,8 @@ class FlowTest : public FlowImpl {
     //Construtor e Destrutor
     public:
 
+        using FlowImpl::operator=;
+        
         FlowTest(string name=""):
             FlowImpl(name){}
             

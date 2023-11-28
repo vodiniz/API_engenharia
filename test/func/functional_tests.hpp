@@ -21,7 +21,7 @@ using namespace std;
 class ExponentialFlow : public FlowImpl {
     //Construtor e Destrutor
     public:
-
+        using FlowImpl::operator=;
         /**
          * \brief Creates a ExponentialFlow.
          *
@@ -74,6 +74,7 @@ class ExponentialFlow : public FlowImpl {
 class logisticFlow : public FlowImpl {
     //Construtor e Destrutor
     public:
+        using FlowImpl::operator=;
 
 
         /**
