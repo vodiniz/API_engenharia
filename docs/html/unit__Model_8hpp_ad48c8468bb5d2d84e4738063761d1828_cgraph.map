@@ -1,7 +1,17 @@
 <map id="unit_Model_constructor_with_name" name="unit_Model_constructor_with_name">
-<area shape="rect" id="Node000001" title="A unitary test for asserting the constructor of Model with the name parameter." alt="" coords="5,23,162,65"/>
-<area shape="rect" id="Node000002" href="$classModel.html#a2357590cca5cbc36029472fe74f70d2d" title="Virtual method to get the current clock." alt="" coords="210,5,327,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,31,194,26,195,31,162,36"/>
-<area shape="rect" id="Node000003" href="$classModel.html#a447cb8c73eb6377246147dc64eba63ce" title="Virtual method to get the Name field on Model." alt="" coords="210,56,327,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,52,195,57,194,62,162,57"/>
+<area shape="rect" id="Node000001" title="A unitary test for asserting the constructor of Model with the name parameter." alt="" coords="5,73,162,116"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a97f352b56351b15cea6d989f82ebd19a" title="Method for Creating a Model object." alt="" coords="210,31,345,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,72,208,59,210,64,163,77"/>
+<area shape="rect" id="Node000007" href="$classModel.html#a2357590cca5cbc36029472fe74f70d2d" title="Virtual method to get the current clock." alt="" coords="219,81,336,108"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="162,92,204,92,204,97,162,97"/>
+<area shape="rect" id="Node000008" href="$classModel.html#a447cb8c73eb6377246147dc64eba63ce" title="Virtual method to get the Name field on Model." alt="" coords="219,132,336,159"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="163,113,210,125,208,130,161,118"/>
+<area shape="rect" id="Node000003" href="$classModelImpl.html#a4b8c8df9ccdc2fc1365ab520689d4763" title="Method for Creating a Model object." alt="" coords="393,31,553,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="345,41,377,41,377,47,345,47"/>
+<area shape="rect" id="Node000004" href="$classModelImpl.html#aa01c228bf49f0b7f5d72e293ac18defb" title="Add a System pointer to the systems container." alt="" coords="601,31,712,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="554,41,586,41,586,47,554,47"/>
+<area shape="rect" id="Node000005" href="$classModelImpl.html#aa4e0c943fef808771f0800f03ae84386" title="Function for getting the size of the flows container." alt="" coords="769,5,916,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="712,34,753,28,754,33,713,39"/>
+<area shape="rect" id="Node000006" href="$classModelImpl.html#ad95b31c43021dec4c4b67cb74a2dc138" title="Method for getting the size of the systems container." alt="" coords="760,56,925,83"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="713,49,745,53,744,59,712,54"/>
 </map>

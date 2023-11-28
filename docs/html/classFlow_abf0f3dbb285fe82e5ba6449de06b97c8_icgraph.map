@@ -1,32 +1,35 @@
 <map id="Flow::getSource" name="Flow::getSource">
-<area shape="rect" id="Node000001" title="Virtual method to get the source System." alt="" coords="335,249,451,276"/>
+<area shape="rect" id="Node000001" title="Virtual method to get the source System." alt="" coords="335,283,451,309"/>
 <area shape="rect" id="Node000002" href="$classFlowImpl.html#ab6633e6def4d5b66b3d7fc84004be98e" title="Copy constructor." alt="" coords="127,5,263,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="384,235,372,193,353,142,324,90,306,67,285,46,262,32,264,28,289,42,310,63,329,87,358,140,377,191,389,234"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="385,268,376,219,357,159,328,98,308,70,285,46,261,32,264,27,289,42,313,67,333,95,362,157,381,218,391,266"/>
 <area shape="rect" id="Node000003" href="$classFlowImpl.html#a8cd91ac0d70cc7295952e0ca2ac0473c" title="Overload for = operator." alt="" coords="126,56,264,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="379,236,365,203,345,166,318,128,285,97,263,84,265,80,289,93,322,125,349,163,370,201,384,234"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="382,269,370,230,350,183,322,136,285,97,262,84,265,79,289,93,326,133,355,181,375,228,387,267"/>
 <area shape="rect" id="Node000004" href="$unit__Flow_8cpp.html#a2e82a59b324cb964c490e446e8378540" title="A unitary test for asserting the overload of the assignment(=) operator." alt="" coords="108,107,282,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="373,238,336,191,312,168,286,148,262,136,264,131,288,143,316,164,340,188,377,235"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="378,270,342,208,316,175,285,148,265,136,267,132,289,143,320,171,346,205,382,267"/>
 <area shape="rect" id="Node000006" href="$unit__Flow_8cpp.html#a91e2ffdd821e194708355a4802d9a838" title="A unitary test for asserting the clearSource method." alt="" coords="118,157,272,184"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="360,242,325,219,286,198,255,187,257,182,288,194,328,215,363,238"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="370,273,333,234,286,198,260,187,262,182,288,194,337,230,374,269"/>
 <area shape="rect" id="Node000007" href="$unit__Flow_8cpp.html#ab32833442c11555f0c9fa1d7c1741c64" title="A unitary test for asserting the default constructor of FlowImpl." alt="" coords="120,208,270,251"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="319,253,270,245,271,239,320,248"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="335,280,260,254,261,249,337,275"/>
 <area shape="rect" id="Node000008" href="$unit__Flow_8cpp.html#adf0c070fb11219f7f6368e1976a5c7ca" title="A unitary test for asserting the constructor of FlowImpl with name param." alt="" coords="120,275,270,317"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="320,278,271,286,270,281,319,272"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="320,299,270,299,270,293,320,293"/>
 <area shape="rect" id="Node000009" href="$unit__Flow_8cpp.html#a96867eac39dbb89af8b3cc722cfdcb6b" title="A unitary test for asserting the constructor of FlowImpl with name, source and target params." alt="" coords="106,341,284,384"/>
-<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="362,287,288,332,262,343,260,338,286,327,359,283"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="337,317,261,343,260,338,335,312"/>
 <area shape="rect" id="Node000010" href="$unit__Flow_8cpp.html#a552e52c045c91bbb5ce653952b7b2075" title="A unitary test for asserting the copy constructor of FlowImpl." alt="" coords="103,408,287,435"/>
-<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="380,291,343,346,318,374,288,398,266,410,264,405,286,394,314,370,339,342,375,288"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="374,323,337,362,288,398,262,410,260,405,286,394,333,358,370,319"/>
 <area shape="rect" id="Node000011" href="$unit__Flow_8cpp.html#a0dc76658e06597697628386d69327367" title="A unitary test for asserting the getSource method." alt="" coords="123,459,267,485"/>
-<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="386,292,372,328,352,370,324,413,289,449,268,461,265,456,285,445,320,409,347,367,368,326,381,290"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="382,325,346,387,320,421,289,449,267,460,265,456,285,444,316,417,342,384,378,322"/>
 <area shape="rect" id="Node000012" href="$unit__Flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="A unitary test for asserting the setSource method." alt="" coords="123,509,267,536"/>
-<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="390,291,379,337,360,393,331,450,311,476,289,499,268,512,265,508,285,495,307,473,326,447,355,391,374,335,385,290"/>
-<area shape="rect" id="Node000005" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,316,55,343"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="109,144,105,147,87,166,73,188,52,236,40,282,35,316,30,315,35,281,47,234,68,186,83,163,101,143,105,140"/>
-<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="110,194,104,198,78,226,59,259,37,317,32,315,54,257,74,223,101,194,107,189"/>
-<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="112,260,104,265,71,291,45,317,41,313,67,287,101,260,110,256"/>
-<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="105,317,56,327,55,322,104,312"/>
-<area shape="poly" id="edge12_Node000009_Node000005" title=" " alt="" coords="90,344,54,337,55,332,92,339"/>
-<area shape="poly" id="edge14_Node000010_Node000005" title=" " alt="" coords="114,404,101,398,66,372,41,345,44,341,70,368,104,394,116,400"/>
-<area shape="poly" id="edge16_Node000011_Node000005" title=" " alt="" coords="108,453,101,449,76,424,57,395,33,344,38,342,61,393,80,421,104,445,111,449"/>
-<area shape="poly" id="edge18_Node000012_Node000005" title=" " alt="" coords="108,505,101,499,70,461,49,417,37,375,30,343,36,342,42,374,54,415,74,458,105,495,111,501"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="387,325,375,364,355,411,326,459,289,499,268,512,266,507,285,495,322,456,350,409,370,362,382,323"/>
+<area shape="rect" id="Node000013" href="$unit__Model_8cpp.html#a3f6ec6c3866f3844a18d93f740c009dc" title="A unitary test for asserting the update method with the Flow param overload." alt="" coords="116,560,274,587"/>
+<area shape="poly" id="edge19_Node000001_Node000013" title=" " alt="" coords="391,326,381,374,362,435,333,497,313,525,289,550,271,562,268,557,285,546,308,522,328,494,357,433,376,373,385,324"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,349,55,376"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="108,144,105,147,85,171,69,197,48,255,38,310,34,349,29,349,32,309,43,254,64,195,80,167,101,143,105,140"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="109,194,105,198,75,235,54,277,42,318,36,350,31,349,37,317,49,275,70,232,101,194,106,190"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="110,261,104,265,83,285,65,308,40,350,36,347,60,305,79,281,101,261,107,257"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="118,326,104,332,56,353,54,349,102,327,116,321"/>
+<area shape="poly" id="edge12_Node000009_Node000005" title=" " alt="" coords="91,365,55,365,55,360,91,360"/>
+<area shape="poly" id="edge14_Node000010_Node000005" title=" " alt="" coords="123,406,102,398,54,377,56,372,104,394,124,401"/>
+<area shape="poly" id="edge16_Node000011_Node000005" title=" " alt="" coords="111,454,101,449,80,432,62,413,37,378,41,375,67,410,84,429,104,444,113,450"/>
+<area shape="poly" id="edge18_Node000012_Node000005" title=" " alt="" coords="108,505,101,499,74,470,54,436,32,377,37,376,59,434,78,467,104,495,111,500"/>
+<area shape="poly" id="edge20_Node000013_Node000005" title=" " alt="" coords="105,554,101,550,83,530,68,507,47,458,35,412,30,377,35,376,40,411,52,457,73,505,87,527,105,546,109,550"/>
 </map>

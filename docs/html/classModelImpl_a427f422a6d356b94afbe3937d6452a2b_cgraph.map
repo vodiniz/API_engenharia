@@ -1,0 +1,15 @@
+<map id="ModelImpl::~ModelImpl" name="ModelImpl::~ModelImpl">
+<area shape="rect" id="Node000001" title="Destructor." alt="" coords="5,132,163,159"/>
+<area shape="rect" id="Node000002" href="$classModelImpl.html#a4b4a1897ba511d1495f187915eaf36df" title="Return a iterator to the first Flow in the container." alt="" coords="220,5,374,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,130,144,87,175,63,209,42,222,36,225,40,212,46,179,67,147,91,100,133"/>
+<area shape="rect" id="Node000003" href="$classModelImpl.html#ad4842cee5355b77104ddf4663f427f21" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="225,56,369,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="116,129,210,92,231,85,232,90,212,97,118,134"/>
+<area shape="rect" id="Node000004" href="$classModelImpl.html#a071f8fe25e79589ee0e07f6519c01c98" title="Virtual method which return a iterator to the first Model in the container." alt="" coords="215,107,379,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="163,133,199,129,199,134,163,139"/>
+<area shape="rect" id="Node000005" href="$classModelImpl.html#a95efd42560618bc2c4055ff02dffb5c9" title="Virtual method which returns an iterator referring to the past&#45;the&#45;end element in the Model container..." alt="" coords="220,157,374,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="163,152,205,157,204,162,163,157"/>
+<area shape="rect" id="Node000006" href="$classModelImpl.html#af675ac4142c19891ffbf46ed64e7fa77" title="Return a iterator to the first System in the container." alt="" coords="211,208,383,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="118,157,212,193,232,200,231,205,210,199,116,162"/>
+<area shape="rect" id="Node000007" href="$classModelImpl.html#aa0089d4d9c62d21a5bf83c188b966441" title="Returns an iterator referring to the past&#45;the&#45;end element in the systems container." alt="" coords="216,259,378,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="100,157,147,200,179,224,212,244,225,250,222,255,209,249,175,228,144,204,97,161"/>
+</map>

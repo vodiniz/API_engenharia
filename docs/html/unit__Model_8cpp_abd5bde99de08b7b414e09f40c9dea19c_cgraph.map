@@ -1,11 +1,17 @@
 <map id="unit_Model_systemsSize" name="unit_Model_systemsSize">
 <area shape="rect" id="Node000001" title="A unitary test for asserting the systemsSize method." alt="" coords="5,81,173,108"/>
-<area shape="rect" id="Node000002" href="$classModel.html#abc3f2e274a4ede4eac9f5e5ce38011df" title="Virtual method to add a System pointer to the #systems container." alt="" coords="252,5,337,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,78,220,42,237,35,239,40,222,46,126,83"/>
-<area shape="rect" id="Node000003" href="$classModel.html#a07fcdf49b02e037cfcf1036b47b9ac27" title="Virtual method which return a iterator to the first System in the container." alt="" coords="221,56,368,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,82,205,78,206,83,173,87"/>
-<area shape="rect" id="Node000004" href="$classModel.html#a278952b46d4b5185272b17016a61bc55" title="Virtual method which returns an iterator referring to the past&#45;the&#45;end element in the systems contain..." alt="" coords="226,107,363,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="173,102,211,107,210,112,172,108"/>
-<area shape="rect" id="Node000005" href="$classModel.html#a0fbe0f40b959f8303d23a003d4a00257" title="Virtual method for getting the size of the systems container." alt="" coords="224,157,365,184"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="126,106,222,143,239,149,237,154,220,148,124,111"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a97f352b56351b15cea6d989f82ebd19a" title="Method for Creating a Model object." alt="" coords="226,31,361,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,78,221,59,223,64,147,83"/>
+<area shape="rect" id="Node000007" href="$classModel.html#a7b9f1b0741088f4cf0874a477fb663b5" title="Method for creating a System." alt="" coords="221,81,366,108"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="173,92,205,92,205,97,173,97"/>
+<area shape="rect" id="Node000008" href="$classModel.html#a0fbe0f40b959f8303d23a003d4a00257" title="Virtual method for getting the size of the systems container." alt="" coords="223,132,364,159"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="147,106,223,125,221,130,145,111"/>
+<area shape="rect" id="Node000003" href="$classModelImpl.html#a4b8c8df9ccdc2fc1365ab520689d4763" title="Method for Creating a Model object." alt="" coords="414,31,574,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,41,398,41,398,47,361,47"/>
+<area shape="rect" id="Node000004" href="$classModelImpl.html#aa01c228bf49f0b7f5d72e293ac18defb" title="Add a System pointer to the systems container." alt="" coords="622,31,733,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="575,41,607,41,607,47,575,47"/>
+<area shape="rect" id="Node000005" href="$classModelImpl.html#aa4e0c943fef808771f0800f03ae84386" title="Function for getting the size of the flows container." alt="" coords="790,5,937,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="733,34,774,28,775,33,734,39"/>
+<area shape="rect" id="Node000006" href="$classModelImpl.html#ad95b31c43021dec4c4b67cb74a2dc138" title="Method for getting the size of the systems container." alt="" coords="781,56,946,83"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="734,49,766,53,765,59,733,54"/>
 </map>

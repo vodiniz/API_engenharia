@@ -71,7 +71,9 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classModelImpl-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ModelImpl Class Reference</div></div>
@@ -87,9 +89,9 @@ Inheritance diagram for ModelImpl:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModelImpl__inherit__graph.png" border="0" usemap="#aModelImpl_inherit__map" alt="Inheritance graph"/></div>
 <map name="aModelImpl_inherit__map" id="aModelImpl_inherit__map">
-<area shape="rect" title="Represents the simulation model." alt="" coords="5,747,209,1520"/>
-<area shape="rect" href="classModel.html" title="Model interface, which will hide the implementation of methods." alt="" coords="13,5,201,699"/>
-<area shape="poly" title=" " alt="" coords="110,713,110,747,105,747,105,713"/>
+<area shape="rect" title="Represents the simulation model." alt="" coords="5,1040,245,2091"/>
+<area shape="rect" href="classModel.html" title="Model interface, which will hide the implementation of methods." alt="" coords="22,5,229,992"/>
+<area shape="poly" title=" " alt="" coords="128,1007,128,1040,123,1040,123,1007"/>
 </map>
 </div>
 <div class="dynheader">
@@ -97,17 +99,19 @@ Collaboration diagram for ModelImpl:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModelImpl__coll__graph.png" border="0" usemap="#aModelImpl_coll__map" alt="Collaboration graph"/></div>
 <map name="aModelImpl_coll__map" id="aModelImpl_coll__map">
-<area shape="rect" title="Represents the simulation model." alt="" coords="212,763,416,1456"/>
-<area shape="rect" href="classModel.html" title="Model interface, which will hide the implementation of methods." alt="" coords="5,5,193,699"/>
-<area shape="poly" title=" " alt="" coords="200,698,218,762,213,763,195,699"/>
-<area shape="rect" title=" " alt="" coords="218,317,263,387"/>
-<area shape="poly" title=" " alt="" coords="244,386,250,539,264,738,265,746,260,746,259,739,245,539,239,387"/>
-<area shape="rect" title=" " alt="" coords="294,317,321,387"/>
-<area shape="poly" title=" " alt="" coords="310,386,313,745,308,746,305,386"/>
-<area shape="rect" title=" " alt="" coords="345,317,472,387"/>
-<area shape="poly" title=" " alt="" coords="407,387,362,746,357,746,402,386"/>
-<area shape="rect" title=" " alt="" coords="497,317,606,387"/>
-<area shape="poly" title=" " alt="" coords="550,387,528,524,510,612,487,699,458,786,425,872,420,870,453,784,482,698,505,611,523,523,545,386"/>
+<area shape="rect" title="Represents the simulation model." alt="" coords="257,1056,497,1989"/>
+<area shape="rect" href="classModel.html" title="Model interface, which will hide the implementation of methods." alt="" coords="5,5,212,992"/>
+<area shape="poly" title=" " alt="" coords="218,956,227,991,259,1110,254,1111,222,993,213,957"/>
+<area shape="rect" title=" " alt="" coords="237,464,282,533"/>
+<area shape="poly" title=" " alt="" coords="264,533,275,727,297,992,302,1039,296,1039,291,992,270,728,258,533"/>
+<area shape="rect" title=" " alt="" coords="306,464,333,533"/>
+<area shape="poly" title=" " alt="" coords="324,533,347,992,350,1039,345,1039,342,992,318,533"/>
+<area shape="rect" title=" " alt="" coords="357,464,484,533"/>
+<area shape="poly" title=" " alt="" coords="422,533,400,1039,395,1039,417,533"/>
+<area shape="rect" title=" " alt="" coords="509,464,618,533"/>
+<area shape="poly" title=" " alt="" coords="563,533,539,728,499,992,490,1040,485,1039,494,992,534,727,557,533"/>
+<area shape="rect" title=" " alt="" coords="643,464,796,533"/>
+<area shape="poly" title=" " alt="" coords="719,533,710,615,693,730,668,861,633,993,605,1069,574,1146,507,1291,502,1288,569,1144,600,1067,627,991,663,860,688,729,705,615,714,533"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -146,12 +150,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a76885c3e767374aa077f0a815b57fd75" id="r_a76885c3e767374aa077f0a815b57fd75"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a76885c3e767374aa077f0a815b57fd75">removeFlow</a> (string <a class="el" href="classModelImpl.html#aa32e79af7c5dfa46a3ea476796a33fb4">name</a>)</td></tr>
 <tr class="memdesc:a76885c3e767374aa077f0a815b57fd75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a <a class="el" href="classFlow.html" title="Flow interface, which will hide the implementation of methods.">Flow</a> pointer from the <a class="el" href="classModelImpl.html#a9be1dcdb4753e5d78e0c817261297dcf">flows</a> container.  <br /></td></tr>
 <tr class="separator:a76885c3e767374aa077f0a815b57fd75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada61126e95c797e43608ac101fbd6dc6" id="r_ada61126e95c797e43608ac101fbd6dc6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#ada61126e95c797e43608ac101fbd6dc6">update</a> (string <a class="el" href="classModelImpl.html#aa32e79af7c5dfa46a3ea476796a33fb4">name</a>, <a class="el" href="classSystem.html">System</a> *system)</td></tr>
-<tr class="memdesc:ada61126e95c797e43608ac101fbd6dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a <a class="el" href="classSystem.html" title="System interface, which will hide the implementation of methods.">System</a> pointer from the systems container.  <br /></td></tr>
-<tr class="separator:ada61126e95c797e43608ac101fbd6dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc1acc138c037cd13010b4b2c1ddf1ce" id="r_abc1acc138c037cd13010b4b2c1ddf1ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#abc1acc138c037cd13010b4b2c1ddf1ce">update</a> (string <a class="el" href="classModelImpl.html#aa32e79af7c5dfa46a3ea476796a33fb4">name</a>, <a class="el" href="classFlow.html">Flow</a> *flow)</td></tr>
-<tr class="memdesc:abc1acc138c037cd13010b4b2c1ddf1ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a <a class="el" href="classFlow.html" title="Flow interface, which will hide the implementation of methods.">Flow</a> pointer from the flows container.  <br /></td></tr>
-<tr class="separator:abc1acc138c037cd13010b4b2c1ddf1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a035d9c8c0bb93f65e3582e39f049942f" id="r_a035d9c8c0bb93f65e3582e39f049942f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a035d9c8c0bb93f65e3582e39f049942f">updateSystem</a> (string currentName, double value, string newName=&quot;&quot;)</td></tr>
+<tr class="memdesc:a035d9c8c0bb93f65e3582e39f049942f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a <a class="el" href="classSystem.html" title="System interface, which will hide the implementation of methods.">System</a> pointer from the systems container.  <br /></td></tr>
+<tr class="separator:a035d9c8c0bb93f65e3582e39f049942f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e1770f5f80003053c697f06f159353" id="r_aa5e1770f5f80003053c697f06f159353"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#aa5e1770f5f80003053c697f06f159353">updateFlow</a> (string currentName, <a class="el" href="classSystem.html">System</a> *source, <a class="el" href="classSystem.html">System</a> *target, string newName=&quot;&quot;)</td></tr>
+<tr class="memdesc:aa5e1770f5f80003053c697f06f159353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a <a class="el" href="classFlow.html" title="Flow interface, which will hide the implementation of methods.">Flow</a> pointer from the flows container.  <br /></td></tr>
+<tr class="separator:aa5e1770f5f80003053c697f06f159353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dea3d0d1fd298dd58927276670a9018" id="r_a8dea3d0d1fd298dd58927276670a9018"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a8dea3d0d1fd298dd58927276670a9018">run</a> (int startTime, int endTime)</td></tr>
 <tr class="memdesc:a8dea3d0d1fd298dd58927276670a9018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the simulation.  <br /></td></tr>
 <tr class="separator:a8dea3d0d1fd298dd58927276670a9018"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,10 +177,42 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa4e0c943fef808771f0800f03ae84386" id="r_aa4e0c943fef808771f0800f03ae84386"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#aa4e0c943fef808771f0800f03ae84386">flowsSize</a> ()</td></tr>
 <tr class="memdesc:aa4e0c943fef808771f0800f03ae84386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for getting the size of the flows container.  <br /></td></tr>
 <tr class="separator:aa4e0c943fef808771f0800f03ae84386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a071f8fe25e79589ee0e07f6519c01c98" id="r_a071f8fe25e79589ee0e07f6519c01c98"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModel.html#afb7b8ca83bf470533ee539e0576beb7c">ModelIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a071f8fe25e79589ee0e07f6519c01c98">modelsBegin</a> ()</td></tr>
+<tr class="memdesc:a071f8fe25e79589ee0e07f6519c01c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method which return a iterator to the first <a class="el" href="classModel.html" title="Model interface, which will hide the implementation of methods.">Model</a> in the container.  <br /></td></tr>
+<tr class="separator:a071f8fe25e79589ee0e07f6519c01c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95efd42560618bc2c4055ff02dffb5c9" id="r_a95efd42560618bc2c4055ff02dffb5c9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModel.html#afb7b8ca83bf470533ee539e0576beb7c">ModelIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a95efd42560618bc2c4055ff02dffb5c9">modelsEnd</a> ()</td></tr>
+<tr class="memdesc:a95efd42560618bc2c4055ff02dffb5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method which returns an iterator referring to the past-the-end element in the <a class="el" href="classModel.html" title="Model interface, which will hide the implementation of methods.">Model</a> container.  <br /></td></tr>
+<tr class="separator:a95efd42560618bc2c4055ff02dffb5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5c7347fcd2a71a8cc7967b56e3f7206" id="r_ab5c7347fcd2a71a8cc7967b56e3f7206"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#ab5c7347fcd2a71a8cc7967b56e3f7206">createSystem</a> (string <a class="el" href="classModelImpl.html#aa32e79af7c5dfa46a3ea476796a33fb4">name</a>=&quot;&quot;, double value=0.)</td></tr>
+<tr class="memdesc:ab5c7347fcd2a71a8cc7967b56e3f7206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for creating a <a class="el" href="classSystem.html" title="System interface, which will hide the implementation of methods.">System</a>.  <br /></td></tr>
+<tr class="separator:ab5c7347fcd2a71a8cc7967b56e3f7206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classModel"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classModel')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classModel.html">Model</a></td></tr>
 <tr class="memitem:af032d8433c87a0a3a431faf6563a1f03 inherit pub_methods_classModel" id="r_af032d8433c87a0a3a431faf6563a1f03"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#af032d8433c87a0a3a431faf6563a1f03">~Model</a> ()</td></tr>
 <tr class="memdesc:af032d8433c87a0a3a431faf6563a1f03 inherit pub_methods_classModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
 <tr class="separator:af032d8433c87a0a3a431faf6563a1f03 inherit pub_methods_classModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aada2bc25c07fec056a11cec64ab38194 inherit pub_methods_classModel" id="r_aada2bc25c07fec056a11cec64ab38194"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aada2bc25c07fec056a11cec64ab38194 inherit pub_methods_classModel"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classFlow.html">Flow</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classModel.html#aada2bc25c07fec056a11cec64ab38194">createFlow</a> (string name=&quot;&quot;, <a class="el" href="classSystem.html">System</a> *source=NULL, <a class="el" href="classSystem.html">System</a> *target=NULL)</td></tr>
+<tr class="memdesc:aada2bc25c07fec056a11cec64ab38194 inherit pub_methods_classModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for creating a <a class="el" href="classFlow.html" title="Flow interface, which will hide the implementation of methods.">Flow</a> with template.  <br /></td></tr>
+<tr class="separator:aada2bc25c07fec056a11cec64ab38194 inherit pub_methods_classModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a6230c100c06004691bcbf34dd297ffdb" id="r_a6230c100c06004691bcbf34dd297ffdb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a6230c100c06004691bcbf34dd297ffdb">add</a> (<a class="el" href="classModel.html">Model</a> *)</td></tr>
+<tr class="memdesc:a6230c100c06004691bcbf34dd297ffdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method to add a model pointer to the <a class="el" href="classModelImpl.html#a9c39b73552a3d681f5148d40e1746b8e">models</a> container.  <br /></td></tr>
+<tr class="separator:a6230c100c06004691bcbf34dd297ffdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf1b89a2852f366c5dd6a07506b8067" id="r_abdf1b89a2852f366c5dd6a07506b8067"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#abdf1b89a2852f366c5dd6a07506b8067">modelsSize</a> ()</td></tr>
+<tr class="memdesc:abdf1b89a2852f366c5dd6a07506b8067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method for getting the size of the models container.  <br /></td></tr>
+<tr class="separator:abdf1b89a2852f366c5dd6a07506b8067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8c8df9ccdc2fc1365ab520689d4763" id="r_a4b8c8df9ccdc2fc1365ab520689d4763"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classModel.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a4b8c8df9ccdc2fc1365ab520689d4763">createModel</a> (string <a class="el" href="classModelImpl.html#aa32e79af7c5dfa46a3ea476796a33fb4">name</a>=&quot;&quot;)</td></tr>
+<tr class="memdesc:a4b8c8df9ccdc2fc1365ab520689d4763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for Creating a <a class="el" href="classModel.html" title="Model interface, which will hide the implementation of methods.">Model</a> object.  <br /></td></tr>
+<tr class="separator:a4b8c8df9ccdc2fc1365ab520689d4763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classModel"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classModel')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classModel.html">Model</a></td></tr>
+<tr class="memitem:a0a50b4f964386d6ce3b5cb462be066a2 inherit pub_static_methods_classModel" id="r_a0a50b4f964386d6ce3b5cb462be066a2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a0a50b4f964386d6ce3b5cb462be066a2">modelsSize</a> ()</td></tr>
+<tr class="memdesc:a0a50b4f964386d6ce3b5cb462be066a2 inherit pub_static_methods_classModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method for getting the size of the models container.  <br /></td></tr>
+<tr class="separator:a0a50b4f964386d6ce3b5cb462be066a2 inherit pub_static_methods_classModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f352b56351b15cea6d989f82ebd19a inherit pub_static_methods_classModel" id="r_a97f352b56351b15cea6d989f82ebd19a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classModel.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a97f352b56351b15cea6d989f82ebd19a">createModel</a> (string name=&quot;&quot;)</td></tr>
+<tr class="memdesc:a97f352b56351b15cea6d989f82ebd19a inherit pub_static_methods_classModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for Creating a <a class="el" href="classModel.html" title="Model interface, which will hide the implementation of methods.">Model</a> object.  <br /></td></tr>
+<tr class="separator:a97f352b56351b15cea6d989f82ebd19a inherit pub_static_methods_classModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -188,6 +224,11 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a767e2054ecaaa8d1401ef2c962adc3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9be1dcdb4753e5d78e0c817261297dcf" id="r_a9be1dcdb4753e5d78e0c817261297dcf"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classFlow.html">Flow</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a9be1dcdb4753e5d78e0c817261297dcf">flows</a></td></tr>
 <tr class="separator:a9be1dcdb4753e5d78e0c817261297dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a9c39b73552a3d681f5148d40e1746b8e" id="r_a9c39b73552a3d681f5148d40e1746b8e"><td class="memItemLeft" align="right" valign="top">static vector&lt; <a class="el" href="classModel.html">Model</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a9c39b73552a3d681f5148d40e1746b8e">models</a></td></tr>
+<tr class="separator:a9c39b73552a3d681f5148d40e1746b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -207,6 +248,13 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:aeca3f0e82057fa8315ce5990fb1edd4c inherit pub_types_classModel" id="r_aeca3f0e82057fa8315ce5990fb1edd4c"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="classFlow.html">Flow</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#aeca3f0e82057fa8315ce5990fb1edd4c">FlowIterator</a></td></tr>
 <tr class="memdesc:aeca3f0e82057fa8315ce5990fb1edd4c inherit pub_types_classModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">New iterator type for the <a class="el" href="classFlow.html" title="Flow interface, which will hide the implementation of methods.">Flow</a> container.  <br /></td></tr>
 <tr class="separator:aeca3f0e82057fa8315ce5990fb1edd4c inherit pub_types_classModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb7b8ca83bf470533ee539e0576beb7c inherit pub_types_classModel" id="r_afb7b8ca83bf470533ee539e0576beb7c"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="classModel.html">Model</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#afb7b8ca83bf470533ee539e0576beb7c">ModelIterator</a></td></tr>
+<tr class="memdesc:afb7b8ca83bf470533ee539e0576beb7c inherit pub_types_classModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">New iterator type for the <a class="el" href="classModel.html" title="Model interface, which will hide the implementation of methods.">Model</a> container.  <br /></td></tr>
+<tr class="separator:afb7b8ca83bf470533ee539e0576beb7c inherit pub_types_classModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classModel"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classModel')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classModel.html">Model</a></td></tr>
+<tr class="memitem:a1c5a3a7b40625912449979bd8c00159f inherit pro_static_methods_classModel" id="r_a1c5a3a7b40625912449979bd8c00159f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a1c5a3a7b40625912449979bd8c00159f">add</a> (<a class="el" href="classModel.html">Model</a> *model)</td></tr>
+<tr class="memdesc:a1c5a3a7b40625912449979bd8c00159f inherit pro_static_methods_classModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method to add a model pointer to the #models container.  <br /></td></tr>
+<tr class="separator:a1c5a3a7b40625912449979bd8c00159f inherit pro_static_methods_classModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents the simulation model. </p>
@@ -265,6 +313,26 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Destructor. </p>
 <p>A virtual destructor; </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModelImpl_a427f422a6d356b94afbe3937d6452a2b_cgraph.png" border="0" usemap="#aclassModelImpl_a427f422a6d356b94afbe3937d6452a2b_cgraph" alt=""/></div>
+<map name="aclassModelImpl_a427f422a6d356b94afbe3937d6452a2b_cgraph" id="aclassModelImpl_a427f422a6d356b94afbe3937d6452a2b_cgraph">
+<area shape="rect" title="Destructor." alt="" coords="5,132,163,159"/>
+<area shape="rect" href="classModelImpl.html#a4b4a1897ba511d1495f187915eaf36df" title="Return a iterator to the first Flow in the container." alt="" coords="220,5,374,32"/>
+<area shape="poly" title=" " alt="" coords="97,130,144,87,175,63,209,42,222,36,225,40,212,46,179,67,147,91,100,133"/>
+<area shape="rect" href="classModelImpl.html#ad4842cee5355b77104ddf4663f427f21" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="225,56,369,83"/>
+<area shape="poly" title=" " alt="" coords="116,129,210,92,231,85,232,90,212,97,118,134"/>
+<area shape="rect" href="classModelImpl.html#a071f8fe25e79589ee0e07f6519c01c98" title="Virtual method which return a iterator to the first Model in the container." alt="" coords="215,107,379,133"/>
+<area shape="poly" title=" " alt="" coords="163,133,199,129,199,134,163,139"/>
+<area shape="rect" href="classModelImpl.html#a95efd42560618bc2c4055ff02dffb5c9" title="Virtual method which returns an iterator referring to the past&#45;the&#45;end element in the Model container..." alt="" coords="220,157,374,184"/>
+<area shape="poly" title=" " alt="" coords="163,152,205,157,204,162,163,157"/>
+<area shape="rect" href="classModelImpl.html#af675ac4142c19891ffbf46ed64e7fa77" title="Return a iterator to the first System in the container." alt="" coords="211,208,383,235"/>
+<area shape="poly" title=" " alt="" coords="118,157,212,193,232,200,231,205,210,199,116,162"/>
+<area shape="rect" href="classModelImpl.html#aa0089d4d9c62d21a5bf83c188b966441" title="Returns an iterator referring to the past&#45;the&#45;end element in the systems container." alt="" coords="216,259,378,285"/>
+<area shape="poly" title=" " alt="" coords="100,157,147,200,179,224,212,244,225,250,222,255,209,249,175,228,144,204,97,161"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -329,7 +397,7 @@ Here is the call graph for this function:</div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a33b51e276ed5f79ce97906a9abab85f7" name="a33b51e276ed5f79ce97906a9abab85f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33b51e276ed5f79ce97906a9abab85f7">&#9670;&#160;</a></span>add() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a33b51e276ed5f79ce97906a9abab85f7">&#9670;&#160;</a></span>add() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,8 +437,37 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a6230c100c06004691bcbf34dd297ffdb" name="a6230c100c06004691bcbf34dd297ffdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6230c100c06004691bcbf34dd297ffdb">&#9670;&#160;</a></span>add() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ModelImpl::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classModel.html">Model</a> *&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual method to add a model pointer to the <a class="el" href="classModelImpl.html#a9c39b73552a3d681f5148d40e1746b8e">models</a> container. </p>
+<dl class="section return"><dt>Returns</dt><dd>return true if sucefully added the <a class="el" href="classSystem.html" title="System interface, which will hide the implementation of methods.">System</a>, and false if it failed. </dd></dl>
+
+</div>
+</div>
 <a id="aa01c228bf49f0b7f5d72e293ac18defb" name="aa01c228bf49f0b7f5d72e293ac18defb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa01c228bf49f0b7f5d72e293ac18defb">&#9670;&#160;</a></span>add() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa01c228bf49f0b7f5d72e293ac18defb">&#9670;&#160;</a></span>add() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -414,21 +511,281 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModelImpl_aa01c228bf49f0b7f5d72e293ac18defb_icgraph.png" border="0" usemap="#aclassModelImpl_aa01c228bf49f0b7f5d72e293ac18defb_icgraph" alt=""/></div>
 <map name="aclassModelImpl_aa01c228bf49f0b7f5d72e293ac18defb_icgraph" id="aclassModelImpl_aa01c228bf49f0b7f5d72e293ac18defb_icgraph">
-<area shape="rect" title="Add a System pointer to the systems container." alt="" coords="300,107,410,133"/>
-<area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="130,5,225,32"/>
-<area shape="poly" title=" " alt="" coords="325,98,291,72,251,46,224,35,226,30,253,42,294,67,329,94"/>
-<area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="121,56,234,83"/>
-<area shape="poly" title=" " alt="" coords="291,104,226,86,228,81,292,99"/>
-<area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="134,107,221,133"/>
-<area shape="poly" title=" " alt="" coords="284,123,221,123,221,117,284,117"/>
-<area shape="rect" href="classModelImpl.html#aaf4ff7c53b30834d30918681827a397a" title="Copy constructor." alt="" coords="103,157,252,184"/>
-<area shape="poly" title=" " alt="" coords="292,141,228,159,226,154,291,136"/>
-<area shape="rect" href="classModelImpl.html#a8c3eca6b74ee4fef6c85f33237d7e7de" title="Overload for = operator." alt="" coords="105,208,250,235"/>
-<area shape="poly" title=" " alt="" coords="329,146,294,173,253,198,227,210,225,205,251,194,291,168,325,142"/>
+<area shape="rect" title="Add a System pointer to the systems container." alt="" coords="771,645,881,672"/>
+<area shape="rect" href="classModel.html#a1c5a3a7b40625912449979bd8c00159f" title="Virtual method to add a model pointer to the #models container." alt="" coords="595,544,680,571"/>
+<area shape="poly" title=" " alt="" coords="797,637,762,610,721,585,680,569,681,564,724,580,765,606,800,633"/>
+<area shape="rect" href="classModelImpl.html#a4b8c8df9ccdc2fc1365ab520689d4763" title="Method for Creating a Model object." alt="" coords="557,595,718,621"/>
+<area shape="poly" title=" " alt="" coords="758,643,689,625,691,619,760,638"/>
+<area shape="rect" href="classModelImpl.html#ab5c7347fcd2a71a8cc7967b56e3f7206" title="Method for creating a System." alt="" coords="552,645,723,672"/>
+<area shape="poly" title=" " alt="" coords="755,661,723,661,723,656,755,656"/>
+<area shape="rect" href="classModelImpl.html#aaf4ff7c53b30834d30918681827a397a" title="Copy constructor." alt="" coords="563,696,712,723"/>
+<area shape="poly" title=" " alt="" coords="760,679,691,698,689,693,758,674"/>
+<area shape="rect" href="classModelImpl.html#a8c3eca6b74ee4fef6c85f33237d7e7de" title="Overload for = operator." alt="" coords="565,747,710,773"/>
+<area shape="poly" title=" " alt="" coords="800,684,765,712,724,737,696,748,694,744,721,732,762,707,797,680"/>
+<area shape="rect" href="classModel.html#a97f352b56351b15cea6d989f82ebd19a" title="Method for Creating a Model object." alt="" coords="369,595,504,621"/>
+<area shape="poly" title=" " alt="" coords="542,611,505,611,505,605,542,605"/>
+<area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="164,5,260,32"/>
+<area shape="poly" title=" " alt="" coords="431,580,421,463,400,303,385,221,367,147,345,86,332,63,319,46,306,36,292,29,260,21,261,16,294,24,309,31,323,42,337,60,350,84,372,145,391,220,406,302,426,463,436,579"/>
+<area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="156,56,268,83"/>
+<area shape="poly" title=" " alt="" coords="430,579,419,472,397,327,382,253,364,187,343,133,319,97,295,81,268,73,269,68,298,76,323,93,348,130,369,185,387,252,402,326,424,471,436,579"/>
+<area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="168,107,256,133"/>
+<area shape="poly" title=" " alt="" coords="430,580,416,482,394,352,378,287,361,227,341,179,319,147,305,137,290,130,256,122,257,117,291,125,308,132,323,143,346,177,366,226,384,285,399,351,422,481,435,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#aef9d3af61dfc50dcbd295ee49b77e704" title="A unitary test for asserting the default constructor of Model." alt="" coords="134,157,290,200"/>
+<area shape="poly" title=" " alt="" coords="433,579,429,506,414,408,400,356,380,304,353,256,319,214,289,194,292,190,323,210,358,253,385,302,405,354,419,407,435,506,438,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad48c8468bb5d2d84e4738063761d1828" title="A unitary test for asserting the constructor of Model with the name parameter." alt="" coords="134,224,290,267"/>
+<area shape="poly" title=" " alt="" coords="431,579,424,517,405,437,391,395,372,353,348,315,319,281,289,262,292,257,323,277,353,311,377,351,396,393,411,436,429,517,436,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="A unitary test for asserting the createFlow method." alt="" coords="134,291,290,317"/>
+<area shape="poly" title=" " alt="" coords="430,580,420,526,400,459,386,424,368,390,346,358,319,331,289,315,291,310,323,327,350,355,372,387,391,422,405,457,425,525,435,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#abb49fbd77462625039c6d5ec4a8c7667" title="A unitary test for asserting the createModel method." alt="" coords="131,341,293,368"/>
+<area shape="poly" title=" " alt="" coords="427,580,414,536,393,482,362,428,342,403,319,382,292,367,295,363,323,378,346,400,366,425,398,480,419,534,432,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="A unitary test for asserting the createSystem method." alt="" coords="126,392,298,419"/>
+<area shape="poly" title=" " alt="" coords="423,582,408,547,385,506,356,466,319,433,297,421,300,416,323,428,360,463,390,504,412,545,428,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#a70115dcd7577152e073793033f6426a1" title="A unitary test for asserting the flowsBegin method." alt="" coords="134,443,290,469"/>
+<area shape="poly" title=" " alt="" coords="416,583,376,532,350,505,320,484,289,470,291,465,322,479,353,501,380,528,421,580"/>
+<area shape="rect" href="unit__Model_8cpp.html#afc1883011bf49c69a5b0e14b2e64b1c7" title="A unitary test for asserting the flowsEnd method." alt="" coords="139,493,285,520"/>
+<area shape="poly" title=" " alt="" coords="405,587,366,559,320,534,284,522,286,517,322,530,369,555,408,583"/>
+<area shape="rect" href="unit__Model_8cpp.html#ae6d41c7055d6cab40311bacb885be338" title="A unitary test for asserting the getClock method." alt="" coords="140,544,284,571"/>
+<area shape="poly" title=" " alt="" coords="359,593,274,574,275,569,360,588"/>
+<area shape="rect" href="unit__Model_8cpp.html#ae4af6259f0c230666091589c7e5692a0" title="A unitary test for asserting the getName method." alt="" coords="140,595,284,621"/>
+<area shape="poly" title=" " alt="" coords="353,611,284,611,284,605,353,605"/>
+<area shape="rect" href="unit__Model_8cpp.html#aace5b91afc8f08d2907431dc90e47e27" title="A unitary test for asserting the removeFlow method with a name." alt="" coords="111,645,313,672"/>
+<area shape="poly" title=" " alt="" coords="360,628,275,647,274,642,359,623"/>
+<area shape="rect" href="unit__Model_8cpp.html#a6fc800346eccb961fbafc900e541339a" title="A unitary test for asserting the removeFlow method with a Flow pointer." alt="" coords="131,696,293,739"/>
+<area shape="poly" title=" " alt="" coords="408,633,368,660,322,686,294,698,292,693,320,682,365,656,405,629"/>
+<area shape="rect" href="unit__Model_8cpp.html#a587b64c37870f12522e1c139eadb7b76" title="A unitary test for asserting the removeSystem method with a name." alt="" coords="103,763,321,789"/>
+<area shape="poly" title=" " alt="" coords="423,637,383,696,355,727,322,753,298,765,296,760,320,748,352,723,379,693,419,634"/>
+<area shape="rect" href="unit__Model_8cpp.html#aaa652095d3099328e761b026d5850b72" title="A unitary test for asserting the removeSystem method with a System pointer." alt="" coords="122,813,302,856"/>
+<area shape="poly" title=" " alt="" coords="429,637,414,674,391,719,361,764,323,803,303,816,300,811,319,799,357,761,387,716,409,672,424,635"/>
+<area shape="rect" href="unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title="A unitary test for asserting the run method." alt="" coords="157,880,267,907"/>
+<area shape="poly" title=" " alt="" coords="434,637,423,688,402,751,370,815,348,845,323,870,296,885,268,893,266,888,294,880,319,866,344,841,365,812,398,749,418,686,429,636"/>
+<area shape="rect" href="unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="A unitary test for asserting the setName method." alt="" coords="140,931,284,957"/>
+<area shape="poly" title=" " alt="" coords="436,637,428,697,410,773,395,813,376,853,352,889,323,921,305,933,285,940,283,935,302,928,319,917,348,886,372,850,390,811,405,772,423,696,431,636"/>
+<area shape="rect" href="unit__Model_8cpp.html#a4f48fc2f942c015aa65674f3ae095a90" title="A unitary test for asserting the systemsBegin method." alt="" coords="125,981,299,1008"/>
+<area shape="poly" title=" " alt="" coords="438,637,433,706,417,796,402,843,382,890,356,933,323,971,301,986,298,981,319,967,352,930,377,888,397,842,411,794,428,705,433,637"/>
+<area shape="rect" href="unit__Model_8cpp.html#a48cf040ec77c857814f535c4b9ba6764" title="A unitary test for asserting the systemsEnd method." alt="" coords="130,1032,294,1059"/>
+<area shape="poly" title=" " alt="" coords="434,637,419,725,395,840,363,950,344,993,323,1022,296,1039,293,1034,319,1018,339,990,358,948,390,839,414,724,429,636"/>
+<area shape="rect" href="unit__Model_8cpp.html#abd5bde99de08b7b414e09f40c9dea19c" title="A unitary test for asserting the systemsSize method." alt="" coords="128,1083,296,1109"/>
+<area shape="poly" title=" " alt="" coords="435,637,422,735,399,865,384,931,366,990,346,1039,323,1073,297,1089,294,1085,319,1069,341,1037,361,989,378,929,394,864,416,734,430,636"/>
+<area shape="rect" href="unit__Model_8cpp.html#a3f6ec6c3866f3844a18d93f740c009dc" title="A unitary test for asserting the update method with the Flow param overload." alt="" coords="133,1133,291,1160"/>
+<area shape="poly" title=" " alt="" coords="436,637,424,745,402,890,387,964,369,1031,348,1086,323,1123,309,1134,292,1142,290,1137,306,1130,319,1120,343,1083,364,1029,382,963,397,889,419,744,430,637"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2df8cfaa0b0b5a56ecd4a316b8aba627" title="A unitary test for asserting the update method with the System param overload." alt="" coords="124,1184,300,1211"/>
+<area shape="poly" title=" " alt="" coords="436,637,426,753,406,914,391,996,372,1071,350,1132,337,1156,323,1174,301,1189,298,1185,319,1170,332,1153,345,1130,367,1069,385,995,400,913,421,753,431,636"/>
 <area shape="rect" href="mainFunctional_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,55,83"/>
-<area shape="poly" title=" " alt="" coords="122,40,104,47,56,63,54,58,102,41,120,35"/>
-<area shape="poly" title=" " alt="" coords="106,72,55,72,55,67,106,67"/>
-<area shape="poly" title=" " alt="" coords="120,104,102,97,54,80,56,75,104,92,122,99"/>
+<area shape="poly" title=" " alt="" coords="150,34,103,47,56,63,54,58,102,41,148,29"/>
+<area shape="poly" title=" " alt="" coords="140,72,55,72,55,67,140,67"/>
+<area shape="poly" title=" " alt="" coords="152,110,102,97,54,81,56,76,103,92,154,105"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,704,55,731"/>
+<area shape="poly" title=" " alt="" coords="121,200,105,214,83,253,66,312,54,383,45,460,36,607,34,704,29,704,31,607,40,459,49,382,61,311,78,251,101,210,118,196"/>
+<area shape="poly" title=" " alt="" coords="122,266,105,280,86,314,70,364,58,425,49,491,38,618,34,704,29,703,33,618,44,490,53,424,65,363,81,312,101,277,119,262"/>
+<area shape="poly" title=" " alt="" coords="122,318,105,331,87,360,72,403,51,514,39,627,35,704,29,704,34,627,46,514,67,402,82,358,101,328,118,314"/>
+<area shape="poly" title=" " alt="" coords="118,371,105,382,89,406,75,443,54,539,41,636,35,704,30,703,36,635,49,538,70,442,84,404,101,378,115,367"/>
+<area shape="poly" title=" " alt="" coords="113,425,105,432,91,453,78,484,58,563,43,645,36,704,30,703,38,644,52,562,73,482,86,450,101,429,110,421"/>
+<area shape="poly" title=" " alt="" coords="121,472,104,483,83,509,66,538,54,569,45,601,36,661,34,704,28,704,30,660,40,600,49,567,61,535,79,505,101,479,118,467"/>
+<area shape="poly" title=" " alt="" coords="126,521,104,534,87,553,72,575,51,623,40,669,35,704,30,703,35,668,46,622,67,572,82,550,101,530,123,516"/>
+<area shape="poly" title=" " alt="" coords="126,625,104,636,84,651,66,670,41,705,37,702,62,666,80,647,101,631,124,620"/>
+<area shape="poly" title=" " alt="" coords="127,679,104,686,56,707,54,702,102,682,126,674"/>
+<area shape="poly" title=" " alt="" coords="116,720,55,720,55,715,116,715"/>
+<area shape="poly" title=" " alt="" coords="126,761,102,753,54,732,56,728,104,748,127,756"/>
+<area shape="poly" title=" " alt="" coords="109,808,101,804,81,787,63,768,37,732,41,729,67,764,84,783,104,799,112,804"/>
+<area shape="poly" title=" " alt="" coords="141,889,120,882,101,870,72,837,51,798,38,761,31,732,36,730,43,759,56,796,76,834,104,866,123,877,143,884"/>
+<area shape="poly" title=" " alt="" coords="124,935,101,921,81,899,65,874,44,820,33,769,29,731,35,731,38,768,49,819,70,872,85,896,104,917,127,931"/>
+<area shape="poly" title=" " alt="" coords="110,979,101,971,77,943,59,911,46,877,38,842,29,777,28,731,33,731,34,777,43,841,52,875,64,909,82,940,105,967,113,974"/>
+<area shape="poly" title=" " alt="" coords="114,1032,101,1022,85,999,72,965,51,880,37,793,30,731,35,731,43,793,57,879,77,964,90,996,105,1018,118,1028"/>
+<area shape="poly" title=" " alt="" coords="113,1082,101,1072,83,1045,69,1006,48,905,35,803,30,732,35,731,41,802,53,904,74,1004,88,1043,105,1069,116,1078"/>
+<area shape="poly" title=" " alt="" coords="117,1136,101,1123,81,1092,66,1046,54,990,45,929,33,811,29,731,34,731,39,811,50,928,59,989,71,1044,86,1089,105,1120,120,1132"/>
+<area shape="poly" title=" " alt="" coords="109,1182,101,1174,80,1138,63,1085,51,1022,42,952,32,820,29,731,34,731,37,819,47,952,56,1021,68,1084,84,1136,105,1170,113,1178"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4b8c8df9ccdc2fc1365ab520689d4763" name="a4b8c8df9ccdc2fc1365ab520689d4763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b8c8df9ccdc2fc1365ab520689d4763">&#9670;&#160;</a></span>createModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classModel.html">Model</a> * ModelImpl::createModel </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method for Creating a <a class="el" href="classModel.html" title="Model interface, which will hide the implementation of methods.">Model</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name for the <a class="el" href="classModel.html" title="Model interface, which will hide the implementation of methods.">Model</a> object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the created <a class="el" href="classModel.html" title="Model interface, which will hide the implementation of methods.">Model</a>. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModelImpl_a4b8c8df9ccdc2fc1365ab520689d4763_cgraph.png" border="0" usemap="#aclassModelImpl_a4b8c8df9ccdc2fc1365ab520689d4763_cgraph" alt=""/></div>
+<map name="aclassModelImpl_a4b8c8df9ccdc2fc1365ab520689d4763_cgraph" id="aclassModelImpl_a4b8c8df9ccdc2fc1365ab520689d4763_cgraph">
+<area shape="rect" title="Method for Creating a Model object." alt="" coords="5,31,166,57"/>
+<area shape="rect" href="classModelImpl.html#aa01c228bf49f0b7f5d72e293ac18defb" title="Add a System pointer to the systems container." alt="" coords="214,31,324,57"/>
+<area shape="poly" title=" " alt="" coords="166,41,198,41,198,47,166,47"/>
+<area shape="rect" href="classModelImpl.html#aa4e0c943fef808771f0800f03ae84386" title="Function for getting the size of the flows container." alt="" coords="382,5,528,32"/>
+<area shape="poly" title=" " alt="" coords="324,34,366,28,366,33,325,39"/>
+<area shape="rect" href="classModelImpl.html#ad95b31c43021dec4c4b67cb74a2dc138" title="Method for getting the size of the systems container." alt="" coords="372,56,537,83"/>
+<area shape="poly" title=" " alt="" coords="325,49,357,53,356,59,324,54"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModelImpl_a4b8c8df9ccdc2fc1365ab520689d4763_icgraph.png" border="0" usemap="#aclassModelImpl_a4b8c8df9ccdc2fc1365ab520689d4763_icgraph" alt=""/></div>
+<map name="aclassModelImpl_a4b8c8df9ccdc2fc1365ab520689d4763_icgraph" id="aclassModelImpl_a4b8c8df9ccdc2fc1365ab520689d4763_icgraph">
+<area shape="rect" title="Method for Creating a Model object." alt="" coords="552,595,713,621"/>
+<area shape="rect" href="classModel.html#a97f352b56351b15cea6d989f82ebd19a" title="Method for Creating a Model object." alt="" coords="369,595,504,621"/>
+<area shape="poly" title=" " alt="" coords="537,611,505,611,505,605,537,605"/>
+<area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="164,5,260,32"/>
+<area shape="poly" title=" " alt="" coords="431,580,421,463,400,303,385,221,367,147,345,86,332,63,319,46,306,36,292,29,260,21,261,16,294,24,309,31,323,42,337,60,350,84,372,145,391,220,406,302,426,463,436,579"/>
+<area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="156,56,268,83"/>
+<area shape="poly" title=" " alt="" coords="430,579,419,472,397,327,382,253,364,187,343,133,319,97,295,81,268,73,269,68,298,76,323,93,348,130,369,185,387,252,402,326,424,471,436,579"/>
+<area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="168,107,256,133"/>
+<area shape="poly" title=" " alt="" coords="430,580,416,482,394,352,378,287,361,227,341,179,319,147,305,137,290,130,256,122,257,117,291,125,308,132,323,143,346,177,366,226,384,285,399,351,422,481,435,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#aef9d3af61dfc50dcbd295ee49b77e704" title="A unitary test for asserting the default constructor of Model." alt="" coords="134,157,290,200"/>
+<area shape="poly" title=" " alt="" coords="433,579,429,506,414,408,400,356,380,304,353,256,319,214,289,194,292,190,323,210,358,253,385,302,405,354,419,407,435,506,438,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad48c8468bb5d2d84e4738063761d1828" title="A unitary test for asserting the constructor of Model with the name parameter." alt="" coords="134,224,290,267"/>
+<area shape="poly" title=" " alt="" coords="431,579,424,517,405,437,391,395,372,353,348,315,319,281,289,262,292,257,323,277,353,311,377,351,396,393,411,436,429,517,436,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="A unitary test for asserting the createFlow method." alt="" coords="134,291,290,317"/>
+<area shape="poly" title=" " alt="" coords="430,580,420,526,400,459,386,424,368,390,346,358,319,331,289,315,291,310,323,327,350,355,372,387,391,422,405,457,425,525,435,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#abb49fbd77462625039c6d5ec4a8c7667" title="A unitary test for asserting the createModel method." alt="" coords="131,341,293,368"/>
+<area shape="poly" title=" " alt="" coords="427,580,414,536,393,482,362,428,342,403,319,382,292,367,295,363,323,378,346,400,366,425,398,480,419,534,432,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="A unitary test for asserting the createSystem method." alt="" coords="126,392,298,419"/>
+<area shape="poly" title=" " alt="" coords="423,582,408,547,385,506,356,466,319,433,297,421,300,416,323,428,360,463,390,504,412,545,428,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#a70115dcd7577152e073793033f6426a1" title="A unitary test for asserting the flowsBegin method." alt="" coords="134,443,290,469"/>
+<area shape="poly" title=" " alt="" coords="416,583,376,532,350,505,320,484,289,470,291,465,322,479,353,501,380,528,421,580"/>
+<area shape="rect" href="unit__Model_8cpp.html#afc1883011bf49c69a5b0e14b2e64b1c7" title="A unitary test for asserting the flowsEnd method." alt="" coords="139,493,285,520"/>
+<area shape="poly" title=" " alt="" coords="405,587,366,559,320,534,284,522,286,517,322,530,369,555,408,583"/>
+<area shape="rect" href="unit__Model_8cpp.html#ae6d41c7055d6cab40311bacb885be338" title="A unitary test for asserting the getClock method." alt="" coords="140,544,284,571"/>
+<area shape="poly" title=" " alt="" coords="359,593,274,574,275,569,360,588"/>
+<area shape="rect" href="unit__Model_8cpp.html#ae4af6259f0c230666091589c7e5692a0" title="A unitary test for asserting the getName method." alt="" coords="140,595,284,621"/>
+<area shape="poly" title=" " alt="" coords="353,611,284,611,284,605,353,605"/>
+<area shape="rect" href="unit__Model_8cpp.html#aace5b91afc8f08d2907431dc90e47e27" title="A unitary test for asserting the removeFlow method with a name." alt="" coords="111,645,313,672"/>
+<area shape="poly" title=" " alt="" coords="360,628,275,647,274,642,359,623"/>
+<area shape="rect" href="unit__Model_8cpp.html#a6fc800346eccb961fbafc900e541339a" title="A unitary test for asserting the removeFlow method with a Flow pointer." alt="" coords="131,696,293,739"/>
+<area shape="poly" title=" " alt="" coords="408,633,368,660,322,686,294,698,292,693,320,682,365,656,405,629"/>
+<area shape="rect" href="unit__Model_8cpp.html#a587b64c37870f12522e1c139eadb7b76" title="A unitary test for asserting the removeSystem method with a name." alt="" coords="103,763,321,789"/>
+<area shape="poly" title=" " alt="" coords="423,637,383,696,355,727,322,753,298,765,296,760,320,748,352,723,379,693,419,634"/>
+<area shape="rect" href="unit__Model_8cpp.html#aaa652095d3099328e761b026d5850b72" title="A unitary test for asserting the removeSystem method with a System pointer." alt="" coords="122,813,302,856"/>
+<area shape="poly" title=" " alt="" coords="429,637,414,674,391,719,361,764,323,803,303,816,300,811,319,799,357,761,387,716,409,672,424,635"/>
+<area shape="rect" href="unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title="A unitary test for asserting the run method." alt="" coords="157,880,267,907"/>
+<area shape="poly" title=" " alt="" coords="434,637,423,688,402,751,370,815,348,845,323,870,296,885,268,893,266,888,294,880,319,866,344,841,365,812,398,749,418,686,429,636"/>
+<area shape="rect" href="unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="A unitary test for asserting the setName method." alt="" coords="140,931,284,957"/>
+<area shape="poly" title=" " alt="" coords="436,637,428,697,410,773,395,813,376,853,352,889,323,921,305,933,285,940,283,935,302,928,319,917,348,886,372,850,390,811,405,772,423,696,431,636"/>
+<area shape="rect" href="unit__Model_8cpp.html#a4f48fc2f942c015aa65674f3ae095a90" title="A unitary test for asserting the systemsBegin method." alt="" coords="125,981,299,1008"/>
+<area shape="poly" title=" " alt="" coords="438,637,433,706,417,796,402,843,382,890,356,933,323,971,301,986,298,981,319,967,352,930,377,888,397,842,411,794,428,705,433,637"/>
+<area shape="rect" href="unit__Model_8cpp.html#a48cf040ec77c857814f535c4b9ba6764" title="A unitary test for asserting the systemsEnd method." alt="" coords="130,1032,294,1059"/>
+<area shape="poly" title=" " alt="" coords="434,637,419,725,395,840,363,950,344,993,323,1022,296,1039,293,1034,319,1018,339,990,358,948,390,839,414,724,429,636"/>
+<area shape="rect" href="unit__Model_8cpp.html#abd5bde99de08b7b414e09f40c9dea19c" title="A unitary test for asserting the systemsSize method." alt="" coords="128,1083,296,1109"/>
+<area shape="poly" title=" " alt="" coords="435,637,422,735,399,865,384,931,366,990,346,1039,323,1073,297,1089,294,1085,319,1069,341,1037,361,989,378,929,394,864,416,734,430,636"/>
+<area shape="rect" href="unit__Model_8cpp.html#a3f6ec6c3866f3844a18d93f740c009dc" title="A unitary test for asserting the update method with the Flow param overload." alt="" coords="133,1133,291,1160"/>
+<area shape="poly" title=" " alt="" coords="436,637,424,745,402,890,387,964,369,1031,348,1086,323,1123,309,1134,292,1142,290,1137,306,1130,319,1120,343,1083,364,1029,382,963,397,889,419,744,430,637"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2df8cfaa0b0b5a56ecd4a316b8aba627" title="A unitary test for asserting the update method with the System param overload." alt="" coords="124,1184,300,1211"/>
+<area shape="poly" title=" " alt="" coords="436,637,426,753,406,914,391,996,372,1071,350,1132,337,1156,323,1174,301,1189,298,1185,319,1170,332,1153,345,1130,367,1069,385,995,400,913,421,753,431,636"/>
+<area shape="rect" href="mainFunctional_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" title=" " alt="" coords="150,34,103,47,56,63,54,58,102,41,148,29"/>
+<area shape="poly" title=" " alt="" coords="140,72,55,72,55,67,140,67"/>
+<area shape="poly" title=" " alt="" coords="152,110,102,97,54,81,56,76,103,92,154,105"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,704,55,731"/>
+<area shape="poly" title=" " alt="" coords="121,200,105,214,83,253,66,312,54,383,45,460,36,607,34,704,29,704,31,607,40,459,49,382,61,311,78,251,101,210,118,196"/>
+<area shape="poly" title=" " alt="" coords="122,266,105,280,86,314,70,364,58,425,49,491,38,618,34,704,29,703,33,618,44,490,53,424,65,363,81,312,101,277,119,262"/>
+<area shape="poly" title=" " alt="" coords="122,318,105,331,87,360,72,403,51,514,39,627,35,704,29,704,34,627,46,514,67,402,82,358,101,328,118,314"/>
+<area shape="poly" title=" " alt="" coords="118,371,105,382,89,406,75,443,54,539,41,636,35,704,30,703,36,635,49,538,70,442,84,404,101,378,115,367"/>
+<area shape="poly" title=" " alt="" coords="113,425,105,432,91,453,78,484,58,563,43,645,36,704,30,703,38,644,52,562,73,482,86,450,101,429,110,421"/>
+<area shape="poly" title=" " alt="" coords="121,472,104,483,83,509,66,538,54,569,45,601,36,661,34,704,28,704,30,660,40,600,49,567,61,535,79,505,101,479,118,467"/>
+<area shape="poly" title=" " alt="" coords="126,521,104,534,87,553,72,575,51,623,40,669,35,704,30,703,35,668,46,622,67,572,82,550,101,530,123,516"/>
+<area shape="poly" title=" " alt="" coords="126,625,104,636,84,651,66,670,41,705,37,702,62,666,80,647,101,631,124,620"/>
+<area shape="poly" title=" " alt="" coords="127,679,104,686,56,707,54,702,102,682,126,674"/>
+<area shape="poly" title=" " alt="" coords="116,720,55,720,55,715,116,715"/>
+<area shape="poly" title=" " alt="" coords="126,761,102,753,54,732,56,728,104,748,127,756"/>
+<area shape="poly" title=" " alt="" coords="109,808,101,804,81,787,63,768,37,732,41,729,67,764,84,783,104,799,112,804"/>
+<area shape="poly" title=" " alt="" coords="141,889,120,882,101,870,72,837,51,798,38,761,31,732,36,730,43,759,56,796,76,834,104,866,123,877,143,884"/>
+<area shape="poly" title=" " alt="" coords="124,935,101,921,81,899,65,874,44,820,33,769,29,731,35,731,38,768,49,819,70,872,85,896,104,917,127,931"/>
+<area shape="poly" title=" " alt="" coords="110,979,101,971,77,943,59,911,46,877,38,842,29,777,28,731,33,731,34,777,43,841,52,875,64,909,82,940,105,967,113,974"/>
+<area shape="poly" title=" " alt="" coords="114,1032,101,1022,85,999,72,965,51,880,37,793,30,731,35,731,43,793,57,879,77,964,90,996,105,1018,118,1028"/>
+<area shape="poly" title=" " alt="" coords="113,1082,101,1072,83,1045,69,1006,48,905,35,803,30,732,35,731,41,802,53,904,74,1004,88,1043,105,1069,116,1078"/>
+<area shape="poly" title=" " alt="" coords="117,1136,101,1123,81,1092,66,1046,54,990,45,929,33,811,29,731,34,731,39,811,50,928,59,989,71,1044,86,1089,105,1120,120,1132"/>
+<area shape="poly" title=" " alt="" coords="109,1182,101,1174,80,1138,63,1085,51,1022,42,952,32,820,29,731,34,731,37,819,47,952,56,1021,68,1084,84,1136,105,1170,113,1178"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab5c7347fcd2a71a8cc7967b56e3f7206" name="ab5c7347fcd2a71a8cc7967b56e3f7206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5c7347fcd2a71a8cc7967b56e3f7206">&#9670;&#160;</a></span>createSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSystem.html">System</a> * ModelImpl::createSystem </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em> = <code>0.</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method for creating a <a class="el" href="classSystem.html" title="System interface, which will hide the implementation of methods.">System</a>. </p>
+<p>This method will create a system and add it to the <a class="el" href="classModelImpl.html#a767e2054ecaaa8d1401ef2c962adc3e2">systems</a> container.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name for a <a class="el" href="classSystem.html" title="System interface, which will hide the implementation of methods.">System</a> </td></tr>
+    <tr><td class="paramname">value</td><td>Value for the system</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>returns a pointer to the created <a class="el" href="classSystem.html" title="System interface, which will hide the implementation of methods.">System</a>. </dd></dl>
+
+<p>Implements <a class="el" href="classModel.html#a7b9f1b0741088f4cf0874a477fb663b5">Model</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModelImpl_ab5c7347fcd2a71a8cc7967b56e3f7206_cgraph.png" border="0" usemap="#aclassModelImpl_ab5c7347fcd2a71a8cc7967b56e3f7206_cgraph" alt=""/></div>
+<map name="aclassModelImpl_ab5c7347fcd2a71a8cc7967b56e3f7206_cgraph" id="aclassModelImpl_ab5c7347fcd2a71a8cc7967b56e3f7206_cgraph">
+<area shape="rect" title="Method for creating a System." alt="" coords="5,31,176,57"/>
+<area shape="rect" href="classModelImpl.html#aa01c228bf49f0b7f5d72e293ac18defb" title="Add a System pointer to the systems container." alt="" coords="224,31,334,57"/>
+<area shape="poly" title=" " alt="" coords="176,41,208,41,208,47,176,47"/>
+<area shape="rect" href="classModelImpl.html#aa4e0c943fef808771f0800f03ae84386" title="Function for getting the size of the flows container." alt="" coords="392,5,538,32"/>
+<area shape="poly" title=" " alt="" coords="334,34,376,28,376,33,335,39"/>
+<area shape="rect" href="classModelImpl.html#ad95b31c43021dec4c4b67cb74a2dc138" title="Method for getting the size of the systems container." alt="" coords="382,56,547,83"/>
+<area shape="poly" title=" " alt="" coords="335,49,367,53,366,59,334,54"/>
 </map>
 </div>
 
@@ -466,29 +823,21 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModelImpl_a4b4a1897ba511d1495f187915eaf36df_icgraph.png" border="0" usemap="#aclassModelImpl_a4b4a1897ba511d1495f187915eaf36df_icgraph" alt=""/></div>
 <map name="aclassModelImpl_a4b4a1897ba511d1495f187915eaf36df_icgraph" id="aclassModelImpl_a4b4a1897ba511d1495f187915eaf36df_icgraph">
-<area shape="rect" title="Return a iterator to the first Flow in the container." alt="" coords="471,132,625,159"/>
-<area shape="rect" href="classModelImpl.html#aaf4ff7c53b30834d30918681827a397a" title="Copy constructor." alt="" coords="269,5,418,32"/>
-<area shape="poly" title=" " alt="" coords="521,123,477,84,422,46,396,35,398,30,425,42,480,80,524,119"/>
-<area shape="rect" href="classModelImpl.html#a8c3eca6b74ee4fef6c85f33237d7e7de" title="Overload for = operator." alt="" coords="271,56,415,83"/>
-<area shape="poly" title=" " alt="" coords="500,128,422,97,389,86,391,81,424,92,502,123"/>
-<area shape="rect" href="classModelImpl.html#ae7b15f6c334ebf7f3cda2fbb880e7daf" title="Remove a Flow pointer from the flows container." alt="" coords="263,107,423,133"/>
-<area shape="poly" title=" " alt="" coords="456,137,423,133,424,127,456,131"/>
-<area shape="rect" href="classModelImpl.html#a76885c3e767374aa077f0a815b57fd75" title="Remove a Flow pointer from the flows container." alt="" coords="263,157,423,184"/>
-<area shape="poly" title=" " alt="" coords="456,159,424,163,423,158,456,154"/>
-<area shape="rect" href="classModelImpl.html#a8dea3d0d1fd298dd58927276670a9018" title="Run the simulation." alt="" coords="290,208,397,235"/>
-<area shape="poly" title=" " alt="" coords="502,167,424,199,391,210,389,205,422,193,500,162"/>
-<area shape="rect" href="classModelImpl.html#abc1acc138c037cd13010b4b2c1ddf1ce" title="Update a Flow pointer from the flows container." alt="" coords="279,259,407,285"/>
-<area shape="poly" title=" " alt="" coords="524,172,480,211,425,249,398,261,396,256,422,244,477,207,521,168"/>
-<area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="111,157,207,184"/>
-<area shape="poly" title=" " alt="" coords="276,206,206,186,208,181,278,201"/>
-<area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="103,208,215,235"/>
-<area shape="poly" title=" " alt="" coords="274,224,215,224,215,219,274,219"/>
-<area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="115,259,203,285"/>
-<area shape="poly" title=" " alt="" coords="278,242,203,263,202,258,276,237"/>
-<area shape="rect" href="mainFunctional_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,208,55,235"/>
-<area shape="poly" title=" " alt="" coords="110,193,56,214,54,209,108,188"/>
-<area shape="poly" title=" " alt="" coords="87,224,55,224,55,219,87,219"/>
-<area shape="poly" title=" " alt="" coords="108,255,54,233,56,228,110,250"/>
+<area shape="rect" title="Return a iterator to the first Flow in the container." alt="" coords="214,157,367,184"/>
+<area shape="rect" href="classModelImpl.html#aaf4ff7c53b30834d30918681827a397a" title="Copy constructor." alt="" coords="11,5,160,32"/>
+<area shape="poly" title=" " alt="" coords="268,146,224,95,195,69,164,46,141,35,143,30,167,42,199,65,228,92,272,143"/>
+<area shape="rect" href="classModelImpl.html#a8c3eca6b74ee4fef6c85f33237d7e7de" title="Overload for = operator." alt="" coords="13,56,158,83"/>
+<area shape="poly" title=" " alt="" coords="256,151,213,123,165,97,135,86,137,81,167,92,216,119,259,146"/>
+<area shape="rect" href="classModelImpl.html#ae7b15f6c334ebf7f3cda2fbb880e7daf" title="Remove a Flow pointer from the flows container." alt="" coords="5,107,166,133"/>
+<area shape="poly" title=" " alt="" coords="218,156,142,137,143,131,219,150"/>
+<area shape="rect" href="classModelImpl.html#a76885c3e767374aa077f0a815b57fd75" title="Remove a Flow pointer from the flows container." alt="" coords="5,157,166,184"/>
+<area shape="poly" title=" " alt="" coords="198,173,166,173,166,168,198,168"/>
+<area shape="rect" href="classModelImpl.html#a8dea3d0d1fd298dd58927276670a9018" title="Run the simulation." alt="" coords="32,208,139,235"/>
+<area shape="poly" title=" " alt="" coords="219,191,140,211,139,206,218,186"/>
+<area shape="rect" href="classModelImpl.html#aa5e1770f5f80003053c697f06f159353" title="Update a Flow pointer from the flows container." alt="" coords="7,259,164,285"/>
+<area shape="poly" title=" " alt="" coords="259,195,216,223,167,249,137,261,135,256,165,244,213,218,256,191"/>
+<area shape="rect" href="classModelImpl.html#a427f422a6d356b94afbe3937d6452a2b" title="Destructor." alt="" coords="7,309,164,336"/>
+<area shape="poly" title=" " alt="" coords="272,199,228,250,199,276,167,300,143,311,141,306,164,295,195,272,224,246,268,195"/>
 </map>
 </div>
 
@@ -526,29 +875,21 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModelImpl_ad4842cee5355b77104ddf4663f427f21_icgraph.png" border="0" usemap="#aclassModelImpl_ad4842cee5355b77104ddf4663f427f21_icgraph" alt=""/></div>
 <map name="aclassModelImpl_ad4842cee5355b77104ddf4663f427f21_icgraph" id="aclassModelImpl_ad4842cee5355b77104ddf4663f427f21_icgraph">
-<area shape="rect" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="471,132,615,159"/>
-<area shape="rect" href="classModelImpl.html#aaf4ff7c53b30834d30918681827a397a" title="Copy constructor." alt="" coords="269,5,418,32"/>
-<area shape="poly" title=" " alt="" coords="517,123,475,84,422,46,397,35,399,30,425,42,478,80,521,119"/>
-<area shape="rect" href="classModelImpl.html#a8c3eca6b74ee4fef6c85f33237d7e7de" title="Overload for = operator." alt="" coords="271,56,415,83"/>
-<area shape="poly" title=" " alt="" coords="497,128,422,97,389,86,391,81,424,92,499,123"/>
-<area shape="rect" href="classModelImpl.html#ae7b15f6c334ebf7f3cda2fbb880e7daf" title="Remove a Flow pointer from the flows container." alt="" coords="263,107,423,133"/>
-<area shape="poly" title=" " alt="" coords="456,137,423,133,424,128,456,132"/>
-<area shape="rect" href="classModelImpl.html#a76885c3e767374aa077f0a815b57fd75" title="Remove a Flow pointer from the flows container." alt="" coords="263,157,423,184"/>
-<area shape="poly" title=" " alt="" coords="456,159,424,163,423,158,456,154"/>
-<area shape="rect" href="classModelImpl.html#a8dea3d0d1fd298dd58927276670a9018" title="Run the simulation." alt="" coords="290,208,397,235"/>
-<area shape="poly" title=" " alt="" coords="499,168,424,198,391,210,389,205,422,194,497,163"/>
-<area shape="rect" href="classModelImpl.html#abc1acc138c037cd13010b4b2c1ddf1ce" title="Update a Flow pointer from the flows container." alt="" coords="279,259,407,285"/>
-<area shape="poly" title=" " alt="" coords="521,172,478,211,425,249,399,260,397,256,422,244,475,207,517,168"/>
-<area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="111,157,207,184"/>
-<area shape="poly" title=" " alt="" coords="276,206,206,186,208,181,278,201"/>
-<area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="103,208,215,235"/>
-<area shape="poly" title=" " alt="" coords="274,224,215,224,215,219,274,219"/>
-<area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="115,259,203,285"/>
-<area shape="poly" title=" " alt="" coords="278,242,203,263,202,258,276,237"/>
-<area shape="rect" href="mainFunctional_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,208,55,235"/>
-<area shape="poly" title=" " alt="" coords="110,193,56,214,54,209,108,188"/>
-<area shape="poly" title=" " alt="" coords="87,224,55,224,55,219,87,219"/>
-<area shape="poly" title=" " alt="" coords="108,255,54,233,56,228,110,250"/>
+<area shape="rect" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="214,157,357,184"/>
+<area shape="rect" href="classModelImpl.html#aaf4ff7c53b30834d30918681827a397a" title="Copy constructor." alt="" coords="11,5,160,32"/>
+<area shape="poly" title=" " alt="" coords="264,146,222,95,194,69,164,46,141,35,143,30,167,42,198,65,226,92,268,143"/>
+<area shape="rect" href="classModelImpl.html#a8c3eca6b74ee4fef6c85f33237d7e7de" title="Overload for = operator." alt="" coords="13,56,158,83"/>
+<area shape="poly" title=" " alt="" coords="252,150,211,123,165,97,136,86,138,81,167,92,214,118,255,145"/>
+<area shape="rect" href="classModelImpl.html#ae7b15f6c334ebf7f3cda2fbb880e7daf" title="Remove a Flow pointer from the flows container." alt="" coords="5,107,166,133"/>
+<area shape="poly" title=" " alt="" coords="214,155,140,137,142,131,216,150"/>
+<area shape="rect" href="classModelImpl.html#a76885c3e767374aa077f0a815b57fd75" title="Remove a Flow pointer from the flows container." alt="" coords="5,157,166,184"/>
+<area shape="poly" title=" " alt="" coords="198,173,166,173,166,168,198,168"/>
+<area shape="rect" href="classModelImpl.html#a8dea3d0d1fd298dd58927276670a9018" title="Run the simulation." alt="" coords="32,208,139,235"/>
+<area shape="poly" title=" " alt="" coords="216,191,140,210,139,205,214,186"/>
+<area shape="rect" href="classModelImpl.html#aa5e1770f5f80003053c697f06f159353" title="Update a Flow pointer from the flows container." alt="" coords="7,259,164,285"/>
+<area shape="poly" title=" " alt="" coords="255,196,214,223,167,249,138,261,136,256,165,244,211,218,252,191"/>
+<area shape="rect" href="classModelImpl.html#a427f422a6d356b94afbe3937d6452a2b" title="Destructor." alt="" coords="7,309,164,336"/>
+<area shape="poly" title=" " alt="" coords="268,199,226,250,198,276,167,300,143,311,141,306,164,295,194,272,222,246,264,195"/>
 </map>
 </div>
 
@@ -586,30 +927,95 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModelImpl_aa4e0c943fef808771f0800f03ae84386_icgraph.png" border="0" usemap="#aclassModelImpl_aa4e0c943fef808771f0800f03ae84386_icgraph" alt=""/></div>
 <map name="aclassModelImpl_aa4e0c943fef808771f0800f03ae84386_icgraph" id="aclassModelImpl_aa4e0c943fef808771f0800f03ae84386_icgraph">
-<area shape="rect" title="Function for getting the size of the flows container." alt="" coords="458,56,605,83"/>
-<area shape="rect" href="classModelImpl.html#a33b51e276ed5f79ce97906a9abab85f7" title="Add a Flow pointer to the flows container." alt="" coords="300,5,410,32"/>
-<area shape="poly" title=" " alt="" coords="467,54,404,35,405,30,469,49"/>
-<area shape="rect" href="classModelImpl.html#aa01c228bf49f0b7f5d72e293ac18defb" title="Add a System pointer to the systems container." alt="" coords="300,107,410,133"/>
-<area shape="poly" title=" " alt="" coords="469,90,405,109,404,104,467,85"/>
-<area shape="rect" href="classModelImpl.html#a8dea3d0d1fd298dd58927276670a9018" title="Run the simulation." alt="" coords="302,56,409,83"/>
-<area shape="poly" title=" " alt="" coords="443,72,409,72,409,67,443,67"/>
-<area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="130,5,225,32"/>
-<area shape="poly" title=" " alt="" coords="305,101,298,97,284,83,274,70,265,58,251,46,224,34,227,29,253,42,269,55,278,67,288,80,302,93,308,97"/>
-<area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="121,56,234,83"/>
-<area shape="poly" title=" " alt="" coords="291,104,226,86,228,81,292,99"/>
-<area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="134,107,221,133"/>
-<area shape="poly" title=" " alt="" coords="284,123,221,123,221,117,284,117"/>
-<area shape="rect" href="classModelImpl.html#aaf4ff7c53b30834d30918681827a397a" title="Copy constructor." alt="" coords="103,208,252,235"/>
-<area shape="poly" title=" " alt="" coords="329,146,294,173,253,198,227,210,225,205,251,194,291,168,325,142"/>
-<area shape="rect" href="classModelImpl.html#a8c3eca6b74ee4fef6c85f33237d7e7de" title="Overload for = operator." alt="" coords="105,157,250,184"/>
-<area shape="poly" title=" " alt="" coords="292,141,228,159,226,154,291,136"/>
+<area shape="rect" title="Function for getting the size of the flows container." alt="" coords="929,645,1075,672"/>
+<area shape="rect" href="classModelImpl.html#a33b51e276ed5f79ce97906a9abab85f7" title="Add a Flow pointer to the flows container." alt="" coords="771,595,881,621"/>
+<area shape="poly" title=" " alt="" coords="938,643,874,624,876,619,940,638"/>
+<area shape="rect" href="classModelImpl.html#aa01c228bf49f0b7f5d72e293ac18defb" title="Add a System pointer to the systems container." alt="" coords="771,645,881,672"/>
+<area shape="poly" title=" " alt="" coords="914,661,881,661,881,656,914,656"/>
+<area shape="rect" href="classModelImpl.html#a8dea3d0d1fd298dd58927276670a9018" title="Run the simulation." alt="" coords="772,696,880,723"/>
+<area shape="poly" title=" " alt="" coords="940,679,876,698,874,693,938,674"/>
+<area shape="rect" href="classModel.html#a1c5a3a7b40625912449979bd8c00159f" title="Virtual method to add a model pointer to the #models container." alt="" coords="595,544,680,571"/>
+<area shape="poly" title=" " alt="" coords="775,640,769,635,754,622,745,609,736,597,721,585,680,568,682,563,724,580,740,593,749,606,758,618,772,631,778,635"/>
+<area shape="rect" href="classModelImpl.html#a4b8c8df9ccdc2fc1365ab520689d4763" title="Method for Creating a Model object." alt="" coords="557,595,718,621"/>
+<area shape="poly" title=" " alt="" coords="758,643,689,625,691,619,760,638"/>
+<area shape="rect" href="classModelImpl.html#ab5c7347fcd2a71a8cc7967b56e3f7206" title="Method for creating a System." alt="" coords="552,645,723,672"/>
+<area shape="poly" title=" " alt="" coords="755,661,723,661,723,656,755,656"/>
+<area shape="rect" href="classModelImpl.html#aaf4ff7c53b30834d30918681827a397a" title="Copy constructor." alt="" coords="563,696,712,723"/>
+<area shape="poly" title=" " alt="" coords="760,679,691,698,689,693,758,674"/>
+<area shape="rect" href="classModelImpl.html#a8c3eca6b74ee4fef6c85f33237d7e7de" title="Overload for = operator." alt="" coords="565,747,710,773"/>
+<area shape="poly" title=" " alt="" coords="778,682,772,686,758,699,749,712,740,724,724,737,700,749,698,744,721,732,736,721,745,708,754,696,769,682,775,678"/>
+<area shape="rect" href="classModel.html#a97f352b56351b15cea6d989f82ebd19a" title="Method for Creating a Model object." alt="" coords="369,595,504,621"/>
+<area shape="poly" title=" " alt="" coords="542,611,505,611,505,605,542,605"/>
+<area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="164,5,260,32"/>
+<area shape="poly" title=" " alt="" coords="431,580,421,463,400,303,385,221,367,147,345,86,332,63,319,46,306,36,292,29,260,21,261,16,294,24,309,31,323,42,337,60,350,84,372,145,391,220,406,302,426,463,436,579"/>
+<area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="156,56,268,83"/>
+<area shape="poly" title=" " alt="" coords="430,579,419,472,397,327,382,253,364,187,343,133,319,97,295,81,268,73,269,68,298,76,323,93,348,130,369,185,387,252,402,326,424,471,436,579"/>
+<area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="168,107,256,133"/>
+<area shape="poly" title=" " alt="" coords="430,580,416,482,394,352,378,287,361,227,341,179,319,147,305,137,290,130,256,122,257,117,291,125,308,132,323,143,346,177,366,226,384,285,399,351,422,481,435,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#aef9d3af61dfc50dcbd295ee49b77e704" title="A unitary test for asserting the default constructor of Model." alt="" coords="134,157,290,200"/>
+<area shape="poly" title=" " alt="" coords="433,579,429,506,414,408,400,356,380,304,353,256,319,214,289,194,292,190,323,210,358,253,385,302,405,354,419,407,435,506,438,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad48c8468bb5d2d84e4738063761d1828" title="A unitary test for asserting the constructor of Model with the name parameter." alt="" coords="134,224,290,267"/>
+<area shape="poly" title=" " alt="" coords="431,579,424,517,405,437,391,395,372,353,348,315,319,281,289,262,292,257,323,277,353,311,377,351,396,393,411,436,429,517,436,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="A unitary test for asserting the createFlow method." alt="" coords="134,291,290,317"/>
+<area shape="poly" title=" " alt="" coords="430,580,420,526,400,459,386,424,368,390,346,358,319,331,289,315,291,310,323,327,350,355,372,387,391,422,405,457,425,525,435,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#abb49fbd77462625039c6d5ec4a8c7667" title="A unitary test for asserting the createModel method." alt="" coords="131,341,293,368"/>
+<area shape="poly" title=" " alt="" coords="427,580,414,536,393,482,362,428,342,403,319,382,292,367,295,363,323,378,346,400,366,425,398,480,419,534,432,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="A unitary test for asserting the createSystem method." alt="" coords="126,392,298,419"/>
+<area shape="poly" title=" " alt="" coords="423,582,408,547,385,506,356,466,319,433,297,421,300,416,323,428,360,463,390,504,412,545,428,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#a70115dcd7577152e073793033f6426a1" title="A unitary test for asserting the flowsBegin method." alt="" coords="134,443,290,469"/>
+<area shape="poly" title=" " alt="" coords="416,583,376,532,350,505,320,484,289,470,291,465,322,479,353,501,380,528,421,580"/>
+<area shape="rect" href="unit__Model_8cpp.html#afc1883011bf49c69a5b0e14b2e64b1c7" title="A unitary test for asserting the flowsEnd method." alt="" coords="139,493,285,520"/>
+<area shape="poly" title=" " alt="" coords="405,587,366,559,320,534,284,522,286,517,322,530,369,555,408,583"/>
+<area shape="rect" href="unit__Model_8cpp.html#ae6d41c7055d6cab40311bacb885be338" title="A unitary test for asserting the getClock method." alt="" coords="140,544,284,571"/>
+<area shape="poly" title=" " alt="" coords="359,593,274,574,275,569,360,588"/>
+<area shape="rect" href="unit__Model_8cpp.html#ae4af6259f0c230666091589c7e5692a0" title="A unitary test for asserting the getName method." alt="" coords="140,595,284,621"/>
+<area shape="poly" title=" " alt="" coords="353,611,284,611,284,605,353,605"/>
+<area shape="rect" href="unit__Model_8cpp.html#aace5b91afc8f08d2907431dc90e47e27" title="A unitary test for asserting the removeFlow method with a name." alt="" coords="111,645,313,672"/>
+<area shape="poly" title=" " alt="" coords="360,628,275,647,274,642,359,623"/>
+<area shape="rect" href="unit__Model_8cpp.html#a6fc800346eccb961fbafc900e541339a" title="A unitary test for asserting the removeFlow method with a Flow pointer." alt="" coords="131,696,293,739"/>
+<area shape="poly" title=" " alt="" coords="408,633,368,660,322,686,294,698,292,693,320,682,365,656,405,629"/>
+<area shape="rect" href="unit__Model_8cpp.html#a587b64c37870f12522e1c139eadb7b76" title="A unitary test for asserting the removeSystem method with a name." alt="" coords="103,763,321,789"/>
+<area shape="poly" title=" " alt="" coords="423,637,383,696,355,727,322,753,298,765,296,760,320,748,352,723,379,693,419,634"/>
+<area shape="rect" href="unit__Model_8cpp.html#aaa652095d3099328e761b026d5850b72" title="A unitary test for asserting the removeSystem method with a System pointer." alt="" coords="122,813,302,856"/>
+<area shape="poly" title=" " alt="" coords="429,637,414,674,391,719,361,764,323,803,303,816,300,811,319,799,357,761,387,716,409,672,424,635"/>
+<area shape="rect" href="unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title="A unitary test for asserting the run method." alt="" coords="157,880,267,907"/>
+<area shape="poly" title=" " alt="" coords="434,637,423,688,402,751,370,815,348,845,323,870,296,885,268,893,266,888,294,880,319,866,344,841,365,812,398,749,418,686,429,636"/>
+<area shape="rect" href="unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="A unitary test for asserting the setName method." alt="" coords="140,931,284,957"/>
+<area shape="poly" title=" " alt="" coords="436,637,428,697,410,773,395,813,376,853,352,889,323,921,305,933,285,940,283,935,302,928,319,917,348,886,372,850,390,811,405,772,423,696,431,636"/>
+<area shape="rect" href="unit__Model_8cpp.html#a4f48fc2f942c015aa65674f3ae095a90" title="A unitary test for asserting the systemsBegin method." alt="" coords="125,981,299,1008"/>
+<area shape="poly" title=" " alt="" coords="438,637,433,706,417,796,402,843,382,890,356,933,323,971,301,986,298,981,319,967,352,930,377,888,397,842,411,794,428,705,433,637"/>
+<area shape="rect" href="unit__Model_8cpp.html#a48cf040ec77c857814f535c4b9ba6764" title="A unitary test for asserting the systemsEnd method." alt="" coords="130,1032,294,1059"/>
+<area shape="poly" title=" " alt="" coords="434,637,419,725,395,840,363,950,344,993,323,1022,296,1039,293,1034,319,1018,339,990,358,948,390,839,414,724,429,636"/>
+<area shape="rect" href="unit__Model_8cpp.html#abd5bde99de08b7b414e09f40c9dea19c" title="A unitary test for asserting the systemsSize method." alt="" coords="128,1083,296,1109"/>
+<area shape="poly" title=" " alt="" coords="435,637,422,735,399,865,384,931,366,990,346,1039,323,1073,297,1089,294,1085,319,1069,341,1037,361,989,378,929,394,864,416,734,430,636"/>
+<area shape="rect" href="unit__Model_8cpp.html#a3f6ec6c3866f3844a18d93f740c009dc" title="A unitary test for asserting the update method with the Flow param overload." alt="" coords="133,1133,291,1160"/>
+<area shape="poly" title=" " alt="" coords="436,637,424,745,402,890,387,964,369,1031,348,1086,323,1123,309,1134,292,1142,290,1137,306,1130,319,1120,343,1083,364,1029,382,963,397,889,419,744,430,637"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2df8cfaa0b0b5a56ecd4a316b8aba627" title="A unitary test for asserting the update method with the System param overload." alt="" coords="124,1184,300,1211"/>
+<area shape="poly" title=" " alt="" coords="436,637,426,753,406,914,391,996,372,1071,350,1132,337,1156,323,1174,301,1189,298,1185,319,1170,332,1153,345,1130,367,1069,385,995,400,913,421,753,431,636"/>
 <area shape="rect" href="mainFunctional_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,55,83"/>
-<area shape="poly" title=" " alt="" coords="122,40,104,47,56,63,54,58,102,41,120,35"/>
-<area shape="poly" title=" " alt="" coords="106,72,55,72,55,67,106,67"/>
-<area shape="poly" title=" " alt="" coords="120,104,102,97,54,80,56,75,104,92,122,99"/>
-<area shape="poly" title=" " alt="" coords="290,54,225,35,226,30,292,49"/>
-<area shape="poly" title=" " alt="" coords="286,72,234,72,234,67,286,67"/>
-<area shape="poly" title=" " alt="" coords="292,90,222,110,221,105,290,85"/>
+<area shape="poly" title=" " alt="" coords="150,34,103,47,56,63,54,58,102,41,148,29"/>
+<area shape="poly" title=" " alt="" coords="140,72,55,72,55,67,140,67"/>
+<area shape="poly" title=" " alt="" coords="152,110,102,97,54,81,56,76,103,92,154,105"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,704,55,731"/>
+<area shape="poly" title=" " alt="" coords="121,200,105,214,83,253,66,312,54,383,45,460,36,607,34,704,29,704,31,607,40,459,49,382,61,311,78,251,101,210,118,196"/>
+<area shape="poly" title=" " alt="" coords="122,266,105,280,86,314,70,364,58,425,49,491,38,618,34,704,29,703,33,618,44,490,53,424,65,363,81,312,101,277,119,262"/>
+<area shape="poly" title=" " alt="" coords="122,318,105,331,87,360,72,403,51,514,39,627,35,704,29,704,34,627,46,514,67,402,82,358,101,328,118,314"/>
+<area shape="poly" title=" " alt="" coords="118,371,105,382,89,406,75,443,54,539,41,636,35,704,30,703,36,635,49,538,70,442,84,404,101,378,115,367"/>
+<area shape="poly" title=" " alt="" coords="113,425,105,432,91,453,78,484,58,563,43,645,36,704,30,703,38,644,52,562,73,482,86,450,101,429,110,421"/>
+<area shape="poly" title=" " alt="" coords="121,472,104,483,83,509,66,538,54,569,45,601,36,661,34,704,28,704,30,660,40,600,49,567,61,535,79,505,101,479,118,467"/>
+<area shape="poly" title=" " alt="" coords="126,521,104,534,87,553,72,575,51,623,40,669,35,704,30,703,35,668,46,622,67,572,82,550,101,530,123,516"/>
+<area shape="poly" title=" " alt="" coords="126,625,104,636,84,651,66,670,41,705,37,702,62,666,80,647,101,631,124,620"/>
+<area shape="poly" title=" " alt="" coords="127,679,104,686,56,707,54,702,102,682,126,674"/>
+<area shape="poly" title=" " alt="" coords="116,720,55,720,55,715,116,715"/>
+<area shape="poly" title=" " alt="" coords="126,761,102,753,54,732,56,728,104,748,127,756"/>
+<area shape="poly" title=" " alt="" coords="109,808,101,804,81,787,63,768,37,732,41,729,67,764,84,783,104,799,112,804"/>
+<area shape="poly" title=" " alt="" coords="141,889,120,882,101,870,72,837,51,798,38,761,31,732,36,730,43,759,56,796,76,834,104,866,123,877,143,884"/>
+<area shape="poly" title=" " alt="" coords="124,935,101,921,81,899,65,874,44,820,33,769,29,731,35,731,38,768,49,819,70,872,85,896,104,917,127,931"/>
+<area shape="poly" title=" " alt="" coords="110,979,101,971,77,943,59,911,46,877,38,842,29,777,28,731,33,731,34,777,43,841,52,875,64,909,82,940,105,967,113,974"/>
+<area shape="poly" title=" " alt="" coords="114,1032,101,1022,85,999,72,965,51,880,37,793,30,731,35,731,43,793,57,879,77,964,90,996,105,1018,118,1028"/>
+<area shape="poly" title=" " alt="" coords="113,1082,101,1072,83,1045,69,1006,48,905,35,803,30,732,35,731,41,802,53,904,74,1004,88,1043,105,1069,116,1078"/>
+<area shape="poly" title=" " alt="" coords="117,1136,101,1123,81,1092,66,1046,54,990,45,929,33,811,29,731,34,731,39,811,50,928,59,989,71,1044,86,1089,105,1120,120,1132"/>
+<area shape="poly" title=" " alt="" coords="109,1182,101,1174,80,1138,63,1085,51,1022,42,952,32,820,29,731,34,731,37,819,47,952,56,1021,68,1084,84,1136,105,1170,113,1178"/>
 </map>
 </div>
 
@@ -680,6 +1086,128 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Get the name field on Flow." alt="" coords="198,5,340,32"/>
 <area shape="rect" href="classModelImpl.html#a8c3eca6b74ee4fef6c85f33237d7e7de" title="Overload for = operator." alt="" coords="5,5,150,32"/>
 <area shape="poly" title=" " alt="" coords="182,21,150,21,150,16,182,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a071f8fe25e79589ee0e07f6519c01c98" name="a071f8fe25e79589ee0e07f6519c01c98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a071f8fe25e79589ee0e07f6519c01c98">&#9670;&#160;</a></span>modelsBegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classModel.html#afb7b8ca83bf470533ee539e0576beb7c">ModelImpl::ModelIterator</a> ModelImpl::modelsBegin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual method which return a iterator to the first <a class="el" href="classModel.html" title="Model interface, which will hide the implementation of methods.">Model</a> in the container. </p>
+<dl class="section return"><dt>Returns</dt><dd>return ModelIterator type, which is defined as an iterator for the <a class="el" href="classModel.html" title="Model interface, which will hide the implementation of methods.">Model</a> container. </dd></dl>
+
+<p>Implements <a class="el" href="classModel.html#a18663a9ed1a80581d7ee05a264f2c571">Model</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModelImpl_a071f8fe25e79589ee0e07f6519c01c98_icgraph.png" border="0" usemap="#aclassModelImpl_a071f8fe25e79589ee0e07f6519c01c98_icgraph" alt=""/></div>
+<map name="aclassModelImpl_a071f8fe25e79589ee0e07f6519c01c98_icgraph" id="aclassModelImpl_a071f8fe25e79589ee0e07f6519c01c98_icgraph">
+<area shape="rect" title="Virtual method which return a iterator to the first Model in the container." alt="" coords="211,5,375,32"/>
+<area shape="rect" href="classModelImpl.html#a427f422a6d356b94afbe3937d6452a2b" title="Destructor." alt="" coords="5,5,163,32"/>
+<area shape="poly" title=" " alt="" coords="195,21,163,21,163,16,195,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a95efd42560618bc2c4055ff02dffb5c9" name="a95efd42560618bc2c4055ff02dffb5c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95efd42560618bc2c4055ff02dffb5c9">&#9670;&#160;</a></span>modelsEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classModel.html#afb7b8ca83bf470533ee539e0576beb7c">ModelImpl::ModelIterator</a> ModelImpl::modelsEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual method which returns an iterator referring to the past-the-end element in the <a class="el" href="classModel.html" title="Model interface, which will hide the implementation of methods.">Model</a> container. </p>
+<dl class="section return"><dt>Returns</dt><dd>return ModelIterator type, which is defined as an iterator for the <a class="el" href="classModel.html" title="Model interface, which will hide the implementation of methods.">Model</a> container. </dd></dl>
+
+<p>Implements <a class="el" href="classModel.html#a355d21d92efafb05c22a8651e606dfd0">Model</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModelImpl_a95efd42560618bc2c4055ff02dffb5c9_icgraph.png" border="0" usemap="#aclassModelImpl_a95efd42560618bc2c4055ff02dffb5c9_icgraph" alt=""/></div>
+<map name="aclassModelImpl_a95efd42560618bc2c4055ff02dffb5c9_icgraph" id="aclassModelImpl_a95efd42560618bc2c4055ff02dffb5c9_icgraph">
+<area shape="rect" title="Virtual method which returns an iterator referring to the past&#45;the&#45;end element in the Model container..." alt="" coords="211,5,365,32"/>
+<area shape="rect" href="classModelImpl.html#a427f422a6d356b94afbe3937d6452a2b" title="Destructor." alt="" coords="5,5,163,32"/>
+<area shape="poly" title=" " alt="" coords="195,21,163,21,163,16,195,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abdf1b89a2852f366c5dd6a07506b8067" name="abdf1b89a2852f366c5dd6a07506b8067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdf1b89a2852f366c5dd6a07506b8067">&#9670;&#160;</a></span>modelsSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ModelImpl::modelsSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual method for getting the size of the models container. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns the number of elements in the models container. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModelImpl_abdf1b89a2852f366c5dd6a07506b8067_icgraph.png" border="0" usemap="#aclassModelImpl_abdf1b89a2852f366c5dd6a07506b8067_icgraph" alt=""/></div>
+<map name="aclassModelImpl_abdf1b89a2852f366c5dd6a07506b8067_icgraph" id="aclassModelImpl_abdf1b89a2852f366c5dd6a07506b8067_icgraph">
+<area shape="rect" title="Virtual method for getting the size of the models container." alt="" coords="493,5,651,32"/>
+<area shape="rect" href="classModel.html#a0a50b4f964386d6ce3b5cb462be066a2" title="Virtual method for getting the size of the models container." alt="" coords="313,5,445,32"/>
+<area shape="poly" title=" " alt="" coords="478,21,446,21,446,16,478,16"/>
+<area shape="rect" href="unit__Model_8cpp.html#abb49fbd77462625039c6d5ec4a8c7667" title="A unitary test for asserting the createModel method." alt="" coords="103,5,265,32"/>
+<area shape="poly" title=" " alt="" coords="297,21,265,21,265,16,297,16"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>
 </div>
 
@@ -1004,24 +1532,6 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="77,131,114,162,162,194,174,199,171,204,159,198,111,167,73,136"/>
 </map>
 </div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classModelImpl_a8dea3d0d1fd298dd58927276670a9018_icgraph.png" border="0" usemap="#aclassModelImpl_a8dea3d0d1fd298dd58927276670a9018_icgraph" alt=""/></div>
-<map name="aclassModelImpl_a8dea3d0d1fd298dd58927276670a9018_icgraph" id="aclassModelImpl_a8dea3d0d1fd298dd58927276670a9018_icgraph">
-<area shape="rect" title="Run the simulation." alt="" coords="263,56,370,83"/>
-<area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="111,5,207,32"/>
-<area shape="poly" title=" " alt="" coords="257,53,202,35,204,30,259,48"/>
-<area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="103,56,215,83"/>
-<area shape="poly" title=" " alt="" coords="247,72,216,72,216,67,247,67"/>
-<area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="115,107,203,133"/>
-<area shape="poly" title=" " alt="" coords="259,91,204,109,202,104,257,85"/>
-<area shape="rect" href="mainFunctional_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,55,83"/>
-<area shape="poly" title=" " alt="" coords="110,41,56,62,54,57,108,36"/>
-<area shape="poly" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
-<area shape="poly" title=" " alt="" coords="108,103,54,81,56,76,110,98"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1089,17 +1599,19 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModelImpl_af675ac4142c19891ffbf46ed64e7fa77_icgraph.png" border="0" usemap="#aclassModelImpl_af675ac4142c19891ffbf46ed64e7fa77_icgraph" alt=""/></div>
 <map name="aclassModelImpl_af675ac4142c19891ffbf46ed64e7fa77_icgraph" id="aclassModelImpl_af675ac4142c19891ffbf46ed64e7fa77_icgraph">
-<area shape="rect" title="Return a iterator to the first System in the container." alt="" coords="231,107,403,133"/>
+<area shape="rect" title="Return a iterator to the first System in the container." alt="" coords="231,132,403,159"/>
 <area shape="rect" href="classModelImpl.html#aaf4ff7c53b30834d30918681827a397a" title="Copy constructor." alt="" coords="19,5,169,32"/>
-<area shape="poly" title=" " alt="" coords="281,100,235,73,182,46,150,35,152,30,184,42,237,68,283,96"/>
+<area shape="poly" title=" " alt="" coords="288,123,241,84,181,46,153,35,155,30,184,42,244,80,292,119"/>
 <area shape="rect" href="classModelImpl.html#a8c3eca6b74ee4fef6c85f33237d7e7de" title="Overload for = operator." alt="" coords="22,56,166,83"/>
-<area shape="poly" title=" " alt="" coords="239,105,155,86,156,81,240,100"/>
+<area shape="poly" title=" " alt="" coords="266,128,182,97,145,86,147,81,184,92,268,123"/>
 <area shape="rect" href="classModelImpl.html#ad8fc159623b1b441672161ecba59d820" title="Remove a System pointer from the systems container." alt="" coords="5,107,183,133"/>
-<area shape="poly" title=" " alt="" coords="215,123,183,123,183,117,215,117"/>
+<area shape="poly" title=" " alt="" coords="215,136,183,133,183,127,216,131"/>
 <area shape="rect" href="classModelImpl.html#ac045649b7f1d651b2358cf620474a7a5" title="Remove a System pointer from the systems container." alt="" coords="5,157,183,184"/>
-<area shape="poly" title=" " alt="" coords="240,140,156,159,155,154,239,135"/>
-<area shape="rect" href="classModelImpl.html#ada61126e95c797e43608ac101fbd6dc6" title="Update a System pointer from the systems container." alt="" coords="30,208,158,235"/>
-<area shape="poly" title=" " alt="" coords="283,144,237,172,184,198,152,210,150,205,182,194,235,167,281,140"/>
+<area shape="poly" title=" " alt="" coords="216,160,183,163,183,158,215,154"/>
+<area shape="rect" href="classModelImpl.html#a035d9c8c0bb93f65e3582e39f049942f" title="Update a System pointer from the systems container." alt="" coords="7,208,181,235"/>
+<area shape="poly" title=" " alt="" coords="268,167,184,199,147,210,145,205,182,193,266,162"/>
+<area shape="rect" href="classModelImpl.html#a427f422a6d356b94afbe3937d6452a2b" title="Destructor." alt="" coords="15,259,173,285"/>
+<area shape="poly" title=" " alt="" coords="292,171,244,211,184,249,155,261,153,256,181,244,241,207,288,167"/>
 </map>
 </div>
 
@@ -1137,17 +1649,19 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModelImpl_aa0089d4d9c62d21a5bf83c188b966441_icgraph.png" border="0" usemap="#aclassModelImpl_aa0089d4d9c62d21a5bf83c188b966441_icgraph" alt=""/></div>
 <map name="aclassModelImpl_aa0089d4d9c62d21a5bf83c188b966441_icgraph" id="aclassModelImpl_aa0089d4d9c62d21a5bf83c188b966441_icgraph">
-<area shape="rect" title="Returns an iterator referring to the past&#45;the&#45;end element in the systems container." alt="" coords="231,107,393,133"/>
+<area shape="rect" title="Returns an iterator referring to the past&#45;the&#45;end element in the systems container." alt="" coords="231,132,393,159"/>
 <area shape="rect" href="classModelImpl.html#aaf4ff7c53b30834d30918681827a397a" title="Copy constructor." alt="" coords="19,5,169,32"/>
-<area shape="poly" title=" " alt="" coords="277,100,233,72,182,46,150,35,152,30,184,42,235,68,280,95"/>
+<area shape="poly" title=" " alt="" coords="284,123,238,84,181,46,154,35,156,30,184,42,242,79,288,119"/>
 <area shape="rect" href="classModelImpl.html#a8c3eca6b74ee4fef6c85f33237d7e7de" title="Overload for = operator." alt="" coords="22,56,166,83"/>
-<area shape="poly" title=" " alt="" coords="236,105,154,86,155,81,237,100"/>
+<area shape="poly" title=" " alt="" coords="263,128,182,97,146,86,147,81,184,92,265,123"/>
 <area shape="rect" href="classModelImpl.html#ad8fc159623b1b441672161ecba59d820" title="Remove a System pointer from the systems container." alt="" coords="5,107,183,133"/>
-<area shape="poly" title=" " alt="" coords="215,123,183,123,183,117,215,117"/>
+<area shape="poly" title=" " alt="" coords="215,137,183,133,183,128,216,131"/>
 <area shape="rect" href="classModelImpl.html#ac045649b7f1d651b2358cf620474a7a5" title="Remove a System pointer from the systems container." alt="" coords="5,157,183,184"/>
-<area shape="poly" title=" " alt="" coords="237,140,155,159,154,154,236,135"/>
-<area shape="rect" href="classModelImpl.html#ada61126e95c797e43608ac101fbd6dc6" title="Update a System pointer from the systems container." alt="" coords="30,208,158,235"/>
-<area shape="poly" title=" " alt="" coords="280,145,235,172,184,198,152,210,150,205,182,194,233,168,277,140"/>
+<area shape="poly" title=" " alt="" coords="216,159,183,163,183,158,215,154"/>
+<area shape="rect" href="classModelImpl.html#a035d9c8c0bb93f65e3582e39f049942f" title="Update a System pointer from the systems container." alt="" coords="7,208,181,235"/>
+<area shape="poly" title=" " alt="" coords="265,168,184,199,147,210,146,205,182,193,263,163"/>
+<area shape="rect" href="classModelImpl.html#a427f422a6d356b94afbe3937d6452a2b" title="Destructor." alt="" coords="15,259,173,285"/>
+<area shape="poly" title=" " alt="" coords="288,172,242,211,184,249,156,261,154,256,181,244,238,207,284,168"/>
 </map>
 </div>
 
@@ -1185,30 +1699,98 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModelImpl_ad95b31c43021dec4c4b67cb74a2dc138_icgraph.png" border="0" usemap="#aclassModelImpl_ad95b31c43021dec4c4b67cb74a2dc138_icgraph" alt=""/></div>
 <map name="aclassModelImpl_ad95b31c43021dec4c4b67cb74a2dc138_icgraph" id="aclassModelImpl_ad95b31c43021dec4c4b67cb74a2dc138_icgraph">
-<area shape="rect" title="Method for getting the size of the systems container." alt="" coords="458,107,624,133"/>
-<area shape="rect" href="classModelImpl.html#aa01c228bf49f0b7f5d72e293ac18defb" title="Add a System pointer to the systems container." alt="" coords="300,107,410,133"/>
-<area shape="poly" title=" " alt="" coords="443,123,411,123,411,117,443,117"/>
-<area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="130,5,225,32"/>
-<area shape="poly" title=" " alt="" coords="325,98,291,72,251,46,224,35,226,30,253,42,294,67,329,94"/>
-<area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="121,56,234,83"/>
-<area shape="poly" title=" " alt="" coords="291,104,226,86,228,81,292,99"/>
-<area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="134,107,221,133"/>
-<area shape="poly" title=" " alt="" coords="284,123,221,123,221,117,284,117"/>
-<area shape="rect" href="classModelImpl.html#aaf4ff7c53b30834d30918681827a397a" title="Copy constructor." alt="" coords="103,157,252,184"/>
-<area shape="poly" title=" " alt="" coords="292,141,228,159,226,154,291,136"/>
-<area shape="rect" href="classModelImpl.html#a8c3eca6b74ee4fef6c85f33237d7e7de" title="Overload for = operator." alt="" coords="105,208,250,235"/>
-<area shape="poly" title=" " alt="" coords="329,146,294,173,253,198,227,210,225,205,251,194,291,168,325,142"/>
+<area shape="rect" title="Method for getting the size of the systems container." alt="" coords="929,645,1094,672"/>
+<area shape="rect" href="classModelImpl.html#aa01c228bf49f0b7f5d72e293ac18defb" title="Add a System pointer to the systems container." alt="" coords="771,645,881,672"/>
+<area shape="poly" title=" " alt="" coords="913,661,881,661,881,656,913,656"/>
+<area shape="rect" href="classModel.html#a1c5a3a7b40625912449979bd8c00159f" title="Virtual method to add a model pointer to the #models container." alt="" coords="595,544,680,571"/>
+<area shape="poly" title=" " alt="" coords="797,637,762,610,721,585,680,569,681,564,724,580,765,606,800,633"/>
+<area shape="rect" href="classModelImpl.html#a4b8c8df9ccdc2fc1365ab520689d4763" title="Method for Creating a Model object." alt="" coords="557,595,718,621"/>
+<area shape="poly" title=" " alt="" coords="758,643,689,625,691,619,760,638"/>
+<area shape="rect" href="classModelImpl.html#ab5c7347fcd2a71a8cc7967b56e3f7206" title="Method for creating a System." alt="" coords="552,645,723,672"/>
+<area shape="poly" title=" " alt="" coords="755,661,723,661,723,656,755,656"/>
+<area shape="rect" href="classModelImpl.html#aaf4ff7c53b30834d30918681827a397a" title="Copy constructor." alt="" coords="563,696,712,723"/>
+<area shape="poly" title=" " alt="" coords="760,679,691,698,689,693,758,674"/>
+<area shape="rect" href="classModelImpl.html#a8c3eca6b74ee4fef6c85f33237d7e7de" title="Overload for = operator." alt="" coords="565,747,710,773"/>
+<area shape="poly" title=" " alt="" coords="800,684,765,712,724,737,696,748,694,744,721,732,762,707,797,680"/>
+<area shape="rect" href="classModel.html#a97f352b56351b15cea6d989f82ebd19a" title="Method for Creating a Model object." alt="" coords="369,595,504,621"/>
+<area shape="poly" title=" " alt="" coords="542,611,505,611,505,605,542,605"/>
+<area shape="rect" href="functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="164,5,260,32"/>
+<area shape="poly" title=" " alt="" coords="431,580,421,463,400,303,385,221,367,147,345,86,332,63,319,46,306,36,292,29,260,21,261,16,294,24,309,31,323,42,337,60,350,84,372,145,391,220,406,302,426,463,436,579"/>
+<area shape="rect" href="functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="156,56,268,83"/>
+<area shape="poly" title=" " alt="" coords="430,579,419,472,397,327,382,253,364,187,343,133,319,97,295,81,268,73,269,68,298,76,323,93,348,130,369,185,387,252,402,326,424,471,436,579"/>
+<area shape="rect" href="functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="168,107,256,133"/>
+<area shape="poly" title=" " alt="" coords="430,580,416,482,394,352,378,287,361,227,341,179,319,147,305,137,290,130,256,122,257,117,291,125,308,132,323,143,346,177,366,226,384,285,399,351,422,481,435,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#aef9d3af61dfc50dcbd295ee49b77e704" title="A unitary test for asserting the default constructor of Model." alt="" coords="134,157,290,200"/>
+<area shape="poly" title=" " alt="" coords="433,579,429,506,414,408,400,356,380,304,353,256,319,214,289,194,292,190,323,210,358,253,385,302,405,354,419,407,435,506,438,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad48c8468bb5d2d84e4738063761d1828" title="A unitary test for asserting the constructor of Model with the name parameter." alt="" coords="134,224,290,267"/>
+<area shape="poly" title=" " alt="" coords="431,579,424,517,405,437,391,395,372,353,348,315,319,281,289,262,292,257,323,277,353,311,377,351,396,393,411,436,429,517,436,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#ac044ab223c8b3b6df04969f1f254ae01" title="A unitary test for asserting the createFlow method." alt="" coords="134,291,290,317"/>
+<area shape="poly" title=" " alt="" coords="430,580,420,526,400,459,386,424,368,390,346,358,319,331,289,315,291,310,323,327,350,355,372,387,391,422,405,457,425,525,435,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#abb49fbd77462625039c6d5ec4a8c7667" title="A unitary test for asserting the createModel method." alt="" coords="131,341,293,368"/>
+<area shape="poly" title=" " alt="" coords="427,580,414,536,393,482,362,428,342,403,319,382,292,367,295,363,323,378,346,400,366,425,398,480,419,534,432,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="A unitary test for asserting the createSystem method." alt="" coords="126,392,298,419"/>
+<area shape="poly" title=" " alt="" coords="423,582,408,547,385,506,356,466,319,433,297,421,300,416,323,428,360,463,390,504,412,545,428,579"/>
+<area shape="rect" href="unit__Model_8cpp.html#a70115dcd7577152e073793033f6426a1" title="A unitary test for asserting the flowsBegin method." alt="" coords="134,443,290,469"/>
+<area shape="poly" title=" " alt="" coords="416,583,376,532,350,505,320,484,289,470,291,465,322,479,353,501,380,528,421,580"/>
+<area shape="rect" href="unit__Model_8cpp.html#afc1883011bf49c69a5b0e14b2e64b1c7" title="A unitary test for asserting the flowsEnd method." alt="" coords="139,493,285,520"/>
+<area shape="poly" title=" " alt="" coords="405,587,366,559,320,534,284,522,286,517,322,530,369,555,408,583"/>
+<area shape="rect" href="unit__Model_8cpp.html#ae6d41c7055d6cab40311bacb885be338" title="A unitary test for asserting the getClock method." alt="" coords="140,544,284,571"/>
+<area shape="poly" title=" " alt="" coords="359,593,274,574,275,569,360,588"/>
+<area shape="rect" href="unit__Model_8cpp.html#ae4af6259f0c230666091589c7e5692a0" title="A unitary test for asserting the getName method." alt="" coords="140,595,284,621"/>
+<area shape="poly" title=" " alt="" coords="353,611,284,611,284,605,353,605"/>
+<area shape="rect" href="unit__Model_8cpp.html#aace5b91afc8f08d2907431dc90e47e27" title="A unitary test for asserting the removeFlow method with a name." alt="" coords="111,645,313,672"/>
+<area shape="poly" title=" " alt="" coords="360,628,275,647,274,642,359,623"/>
+<area shape="rect" href="unit__Model_8cpp.html#a6fc800346eccb961fbafc900e541339a" title="A unitary test for asserting the removeFlow method with a Flow pointer." alt="" coords="131,696,293,739"/>
+<area shape="poly" title=" " alt="" coords="408,633,368,660,322,686,294,698,292,693,320,682,365,656,405,629"/>
+<area shape="rect" href="unit__Model_8cpp.html#a587b64c37870f12522e1c139eadb7b76" title="A unitary test for asserting the removeSystem method with a name." alt="" coords="103,763,321,789"/>
+<area shape="poly" title=" " alt="" coords="423,637,383,696,355,727,322,753,298,765,296,760,320,748,352,723,379,693,419,634"/>
+<area shape="rect" href="unit__Model_8cpp.html#aaa652095d3099328e761b026d5850b72" title="A unitary test for asserting the removeSystem method with a System pointer." alt="" coords="122,813,302,856"/>
+<area shape="poly" title=" " alt="" coords="429,637,414,674,391,719,361,764,323,803,303,816,300,811,319,799,357,761,387,716,409,672,424,635"/>
+<area shape="rect" href="unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title="A unitary test for asserting the run method." alt="" coords="157,880,267,907"/>
+<area shape="poly" title=" " alt="" coords="434,637,423,688,402,751,370,815,348,845,323,870,296,885,268,893,266,888,294,880,319,866,344,841,365,812,398,749,418,686,429,636"/>
+<area shape="rect" href="unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="A unitary test for asserting the setName method." alt="" coords="140,931,284,957"/>
+<area shape="poly" title=" " alt="" coords="436,637,428,697,410,773,395,813,376,853,352,889,323,921,305,933,285,940,283,935,302,928,319,917,348,886,372,850,390,811,405,772,423,696,431,636"/>
+<area shape="rect" href="unit__Model_8cpp.html#a4f48fc2f942c015aa65674f3ae095a90" title="A unitary test for asserting the systemsBegin method." alt="" coords="125,981,299,1008"/>
+<area shape="poly" title=" " alt="" coords="438,637,433,706,417,796,402,843,382,890,356,933,323,971,301,986,298,981,319,967,352,930,377,888,397,842,411,794,428,705,433,637"/>
+<area shape="rect" href="unit__Model_8cpp.html#a48cf040ec77c857814f535c4b9ba6764" title="A unitary test for asserting the systemsEnd method." alt="" coords="130,1032,294,1059"/>
+<area shape="poly" title=" " alt="" coords="434,637,419,725,395,840,363,950,344,993,323,1022,296,1039,293,1034,319,1018,339,990,358,948,390,839,414,724,429,636"/>
+<area shape="rect" href="unit__Model_8cpp.html#abd5bde99de08b7b414e09f40c9dea19c" title="A unitary test for asserting the systemsSize method." alt="" coords="128,1083,296,1109"/>
+<area shape="poly" title=" " alt="" coords="435,637,422,735,399,865,384,931,366,990,346,1039,323,1073,297,1089,294,1085,319,1069,341,1037,361,989,378,929,394,864,416,734,430,636"/>
+<area shape="rect" href="unit__Model_8cpp.html#a3f6ec6c3866f3844a18d93f740c009dc" title="A unitary test for asserting the update method with the Flow param overload." alt="" coords="133,1133,291,1160"/>
+<area shape="poly" title=" " alt="" coords="436,637,424,745,402,890,387,964,369,1031,348,1086,323,1123,309,1134,292,1142,290,1137,306,1130,319,1120,343,1083,364,1029,382,963,397,889,419,744,430,637"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2df8cfaa0b0b5a56ecd4a316b8aba627" title="A unitary test for asserting the update method with the System param overload." alt="" coords="124,1184,300,1211"/>
+<area shape="poly" title=" " alt="" coords="436,637,426,753,406,914,391,996,372,1071,350,1132,337,1156,323,1174,301,1189,298,1185,319,1170,332,1153,345,1130,367,1069,385,995,400,913,421,753,431,636"/>
 <area shape="rect" href="mainFunctional_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,55,83"/>
-<area shape="poly" title=" " alt="" coords="122,40,104,47,56,63,54,58,102,41,120,35"/>
-<area shape="poly" title=" " alt="" coords="106,72,55,72,55,67,106,67"/>
-<area shape="poly" title=" " alt="" coords="120,104,102,97,54,80,56,75,104,92,122,99"/>
+<area shape="poly" title=" " alt="" coords="150,34,103,47,56,63,54,58,102,41,148,29"/>
+<area shape="poly" title=" " alt="" coords="140,72,55,72,55,67,140,67"/>
+<area shape="poly" title=" " alt="" coords="152,110,102,97,54,81,56,76,103,92,154,105"/>
+<area shape="rect" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,704,55,731"/>
+<area shape="poly" title=" " alt="" coords="121,200,105,214,83,253,66,312,54,383,45,460,36,607,34,704,29,704,31,607,40,459,49,382,61,311,78,251,101,210,118,196"/>
+<area shape="poly" title=" " alt="" coords="122,266,105,280,86,314,70,364,58,425,49,491,38,618,34,704,29,703,33,618,44,490,53,424,65,363,81,312,101,277,119,262"/>
+<area shape="poly" title=" " alt="" coords="122,318,105,331,87,360,72,403,51,514,39,627,35,704,29,704,34,627,46,514,67,402,82,358,101,328,118,314"/>
+<area shape="poly" title=" " alt="" coords="118,371,105,382,89,406,75,443,54,539,41,636,35,704,30,703,36,635,49,538,70,442,84,404,101,378,115,367"/>
+<area shape="poly" title=" " alt="" coords="113,425,105,432,91,453,78,484,58,563,43,645,36,704,30,703,38,644,52,562,73,482,86,450,101,429,110,421"/>
+<area shape="poly" title=" " alt="" coords="121,472,104,483,83,509,66,538,54,569,45,601,36,661,34,704,28,704,30,660,40,600,49,567,61,535,79,505,101,479,118,467"/>
+<area shape="poly" title=" " alt="" coords="126,521,104,534,87,553,72,575,51,623,40,669,35,704,30,703,35,668,46,622,67,572,82,550,101,530,123,516"/>
+<area shape="poly" title=" " alt="" coords="126,625,104,636,84,651,66,670,41,705,37,702,62,666,80,647,101,631,124,620"/>
+<area shape="poly" title=" " alt="" coords="127,679,104,686,56,707,54,702,102,682,126,674"/>
+<area shape="poly" title=" " alt="" coords="116,720,55,720,55,715,116,715"/>
+<area shape="poly" title=" " alt="" coords="126,761,102,753,54,732,56,728,104,748,127,756"/>
+<area shape="poly" title=" " alt="" coords="109,808,101,804,81,787,63,768,37,732,41,729,67,764,84,783,104,799,112,804"/>
+<area shape="poly" title=" " alt="" coords="141,889,120,882,101,870,72,837,51,798,38,761,31,732,36,730,43,759,56,796,76,834,104,866,123,877,143,884"/>
+<area shape="poly" title=" " alt="" coords="124,935,101,921,81,899,65,874,44,820,33,769,29,731,35,731,38,768,49,819,70,872,85,896,104,917,127,931"/>
+<area shape="poly" title=" " alt="" coords="110,979,101,971,77,943,59,911,46,877,38,842,29,777,28,731,33,731,34,777,43,841,52,875,64,909,82,940,105,967,113,974"/>
+<area shape="poly" title=" " alt="" coords="114,1032,101,1022,85,999,72,965,51,880,37,793,30,731,35,731,43,793,57,879,77,964,90,996,105,1018,118,1028"/>
+<area shape="poly" title=" " alt="" coords="113,1082,101,1072,83,1045,69,1006,48,905,35,803,30,732,35,731,41,802,53,904,74,1004,88,1043,105,1069,116,1078"/>
+<area shape="poly" title=" " alt="" coords="117,1136,101,1123,81,1092,66,1046,54,990,45,929,33,811,29,731,34,731,39,811,50,928,59,989,71,1044,86,1089,105,1120,120,1132"/>
+<area shape="poly" title=" " alt="" coords="109,1182,101,1174,80,1138,63,1085,51,1022,42,952,32,820,29,731,34,731,37,819,47,952,56,1021,68,1084,84,1136,105,1170,113,1178"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="abc1acc138c037cd13010b4b2c1ddf1ce" name="abc1acc138c037cd13010b4b2c1ddf1ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc1acc138c037cd13010b4b2c1ddf1ce">&#9670;&#160;</a></span>update() <span class="overload">[1/2]</span></h2>
+<a id="aa5e1770f5f80003053c697f06f159353" name="aa5e1770f5f80003053c697f06f159353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5e1770f5f80003053c697f06f159353">&#9670;&#160;</a></span>updateFlow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1217,16 +1799,28 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool ModelImpl::update </td>
+          <td class="memname">bool ModelImpl::updateFlow </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
+          <td class="paramname"><em>currentName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classFlow.html">Flow</a> *&#160;</td>
-          <td class="paramname"><em>flow</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>newName</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1245,31 +1839,33 @@ Here is the caller graph for this function:</div>
 <p>Uses a name as a parameter for identifying the <a class="el" href="classFlow.html" title="Flow interface, which will hide the implementation of methods.">Flow</a> which will be updated on the container. Also receives a <a class="el" href="classFlow.html" title="Flow interface, which will hide the implementation of methods.">Flow</a> pointer as a param which will substitute the <a class="el" href="classFlow.html" title="Flow interface, which will hide the implementation of methods.">Flow</a> identified with the name.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>A string for naming the <a class="el" href="classModel.html" title="Model interface, which will hide the implementation of methods.">Model</a>. </td></tr>
-    <tr><td class="paramname">flow*</td><td>The <a class="el" href="classFlow.html" title="Flow interface, which will hide the implementation of methods.">Flow</a> pointer which we will compare to our list element to remove.</td></tr>
+    <tr><td class="paramname">currrentName</td><td>A string for identifying the <a class="el" href="classFlow.html" title="Flow interface, which will hide the implementation of methods.">Flow</a>. </td></tr>
+    <tr><td class="paramname">newName</td><td>The new Name for the flow which we will update. </td></tr>
+    <tr><td class="paramname">source</td><td>Pointer the new source for the flow. </td></tr>
+    <tr><td class="paramname">target</td><td>Pointer the new target for the flow.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>return true if sucefully update the <a class="el" href="classFlow.html" title="Flow interface, which will hide the implementation of methods.">Flow</a>, and false if it failed. </dd></dl>
 
-<p>Implements <a class="el" href="classModel.html#ac5a16c78b518f1a3f789e5d6634935b7">Model</a>.</p>
+<p>Implements <a class="el" href="classModel.html#a6e5cbdfd8479f95d82995769eece5233">Model</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classModelImpl_abc1acc138c037cd13010b4b2c1ddf1ce_cgraph.png" border="0" usemap="#aclassModelImpl_abc1acc138c037cd13010b4b2c1ddf1ce_cgraph" alt=""/></div>
-<map name="aclassModelImpl_abc1acc138c037cd13010b4b2c1ddf1ce_cgraph" id="aclassModelImpl_abc1acc138c037cd13010b4b2c1ddf1ce_cgraph">
-<area shape="rect" title="Update a Flow pointer from the flows container." alt="" coords="5,31,134,57"/>
-<area shape="rect" href="classModelImpl.html#a4b4a1897ba511d1495f187915eaf36df" title="Return a iterator to the first Flow in the container." alt="" coords="182,5,335,32"/>
-<area shape="poly" title=" " alt="" coords="134,33,166,28,167,34,134,38"/>
-<area shape="rect" href="classModelImpl.html#ad4842cee5355b77104ddf4663f427f21" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="187,56,330,83"/>
-<area shape="poly" title=" " alt="" coords="134,50,172,55,171,60,134,55"/>
+<div class="center"><img src="classModelImpl_aa5e1770f5f80003053c697f06f159353_cgraph.png" border="0" usemap="#aclassModelImpl_aa5e1770f5f80003053c697f06f159353_cgraph" alt=""/></div>
+<map name="aclassModelImpl_aa5e1770f5f80003053c697f06f159353_cgraph" id="aclassModelImpl_aa5e1770f5f80003053c697f06f159353_cgraph">
+<area shape="rect" title="Update a Flow pointer from the flows container." alt="" coords="5,31,162,57"/>
+<area shape="rect" href="classModelImpl.html#a4b4a1897ba511d1495f187915eaf36df" title="Return a iterator to the first Flow in the container." alt="" coords="210,5,363,32"/>
+<area shape="poly" title=" " alt="" coords="162,32,194,28,195,33,163,37"/>
+<area shape="rect" href="classModelImpl.html#ad4842cee5355b77104ddf4663f427f21" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="215,56,358,83"/>
+<area shape="poly" title=" " alt="" coords="163,51,200,56,199,61,162,56"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ada61126e95c797e43608ac101fbd6dc6" name="ada61126e95c797e43608ac101fbd6dc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada61126e95c797e43608ac101fbd6dc6">&#9670;&#160;</a></span>update() <span class="overload">[2/2]</span></h2>
+<a id="a035d9c8c0bb93f65e3582e39f049942f" name="a035d9c8c0bb93f65e3582e39f049942f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a035d9c8c0bb93f65e3582e39f049942f">&#9670;&#160;</a></span>updateSystem()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1278,16 +1874,22 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool ModelImpl::update </td>
+          <td class="memname">bool ModelImpl::updateSystem </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
+          <td class="paramname"><em>currentName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *&#160;</td>
-          <td class="paramname"><em>system</em>&#160;</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>newName</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1306,24 +1908,25 @@ Here is the call graph for this function:</div>
 <p>Uses a name as a parameter for identifying the <a class="el" href="classSystem.html" title="System interface, which will hide the implementation of methods.">System</a> which will be updated on the container. Also receives a <a class="el" href="classSystem.html" title="System interface, which will hide the implementation of methods.">System</a> pointer as a param which will substitute the <a class="el" href="classSystem.html" title="System interface, which will hide the implementation of methods.">System</a> identified with the name.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>A string for naming the <a class="el" href="classModel.html" title="Model interface, which will hide the implementation of methods.">Model</a>. </td></tr>
-    <tr><td class="paramname">system</td><td>The system which we will update the element on our list.</td></tr>
+    <tr><td class="paramname">currrentName</td><td>A string for identifying the <a class="el" href="classSystem.html" title="System interface, which will hide the implementation of methods.">System</a>. </td></tr>
+    <tr><td class="paramname">value</td><td>The new value for the system which we will update. </td></tr>
+    <tr><td class="paramname">newName</td><td>The new Name for the system which we will update.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>return true if sucefully update the <a class="el" href="classSystem.html" title="System interface, which will hide the implementation of methods.">System</a>, and false if it failed. </dd></dl>
 
-<p>Implements <a class="el" href="classModel.html#ad9ab3dca392d43f115d62625e96da56d">Model</a>.</p>
+<p>Implements <a class="el" href="classModel.html#a062ec8d6e3701681ecf8196a7ac8fb14">Model</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classModelImpl_ada61126e95c797e43608ac101fbd6dc6_cgraph.png" border="0" usemap="#aclassModelImpl_ada61126e95c797e43608ac101fbd6dc6_cgraph" alt=""/></div>
-<map name="aclassModelImpl_ada61126e95c797e43608ac101fbd6dc6_cgraph" id="aclassModelImpl_ada61126e95c797e43608ac101fbd6dc6_cgraph">
-<area shape="rect" title="Update a System pointer from the systems container." alt="" coords="5,31,134,57"/>
-<area shape="rect" href="classModelImpl.html#af675ac4142c19891ffbf46ed64e7fa77" title="Return a iterator to the first System in the container." alt="" coords="182,5,354,32"/>
-<area shape="poly" title=" " alt="" coords="133,33,166,29,167,34,134,38"/>
-<area shape="rect" href="classModelImpl.html#aa0089d4d9c62d21a5bf83c188b966441" title="Returns an iterator referring to the past&#45;the&#45;end element in the systems container." alt="" coords="187,56,349,83"/>
-<area shape="poly" title=" " alt="" coords="134,50,172,54,171,60,133,55"/>
+<div class="center"><img src="classModelImpl_a035d9c8c0bb93f65e3582e39f049942f_cgraph.png" border="0" usemap="#aclassModelImpl_a035d9c8c0bb93f65e3582e39f049942f_cgraph" alt=""/></div>
+<map name="aclassModelImpl_a035d9c8c0bb93f65e3582e39f049942f_cgraph" id="aclassModelImpl_a035d9c8c0bb93f65e3582e39f049942f_cgraph">
+<area shape="rect" title="Update a System pointer from the systems container." alt="" coords="5,31,179,57"/>
+<area shape="rect" href="classModelImpl.html#af675ac4142c19891ffbf46ed64e7fa77" title="Return a iterator to the first System in the container." alt="" coords="227,5,399,32"/>
+<area shape="poly" title=" " alt="" coords="179,31,211,28,211,33,179,37"/>
+<area shape="rect" href="classModelImpl.html#aa0089d4d9c62d21a5bf83c188b966441" title="Returns an iterator referring to the past&#45;the&#45;end element in the systems container." alt="" coords="232,56,394,83"/>
+<area shape="poly" title=" " alt="" coords="179,51,216,56,216,61,179,57"/>
 </map>
 </div>
 
@@ -1373,6 +1976,29 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>A container for manteining the Flows references. </p>
+
+</div>
+</div>
+<a id="a9c39b73552a3d681f5148d40e1746b8e" name="a9c39b73552a3d681f5148d40e1746b8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c39b73552a3d681f5148d40e1746b8e">&#9670;&#160;</a></span>models</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; <a class="el" href="classModel.html">Model</a> * &gt; ModelImpl::models</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A container for keeping a static model. </p>
 
 </div>
 </div>

@@ -1,22 +1,13 @@
 <map id="Model::systemsBegin" name="Model::systemsBegin">
-<area shape="rect" id="Node000001" title="Virtual method which return a iterator to the first System in the container." alt="" coords="369,144,516,171"/>
-<area shape="rect" id="Node000002" href="$unit__Model_8cpp.html#a03cbd84ebb931c593c4d41c2ce90b02b" title="A unitary test for asserting the add method with the System* overload." alt="" coords="130,5,294,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="419,134,377,88,349,66,320,46,293,35,295,30,322,42,353,61,380,84,423,130"/>
-<area shape="rect" id="Node000004" href="$unit__Model_8cpp.html#a587b64c37870f12522e1c139eadb7b76" title="A unitary test for asserting the removeSystem method with a name." alt="" coords="103,56,321,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="405,138,365,117,320,97,283,86,285,81,322,92,367,112,408,134"/>
-<area shape="rect" id="Node000005" href="$unit__Model_8cpp.html#aaa652095d3099328e761b026d5850b72" title="A unitary test for asserting the removeSystem method with a System pointer." alt="" coords="122,107,302,149"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="353,149,302,142,302,137,354,143"/>
-<area shape="rect" id="Node000006" href="$unit__Model_8cpp.html#a4f48fc2f942c015aa65674f3ae095a90" title="A unitary test for asserting the systemsBegin method." alt="" coords="125,173,299,200"/>
-<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="354,171,300,178,299,173,353,166"/>
-<area shape="rect" id="Node000007" href="$unit__Model_8cpp.html#abd5bde99de08b7b414e09f40c9dea19c" title="A unitary test for asserting the systemsSize method." alt="" coords="128,224,296,251"/>
-<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="402,180,322,215,282,226,281,221,320,209,400,175"/>
-<area shape="rect" id="Node000008" href="$unit__Model_8cpp.html#aa4add1b3d875d261b4b115d6ab9a414f" title="A unitary test for asserting the update method with the System param overload." alt="" coords="121,275,303,301"/>
-<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="422,184,379,226,352,247,322,265,294,277,292,272,320,260,349,243,375,222,418,180"/>
-<area shape="rect" id="Node000003" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,144,55,171"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,39,104,46,80,69,62,96,38,144,34,142,57,93,76,65,101,42,114,34"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="118,91,104,97,70,120,45,146,41,142,67,116,101,92,116,86"/>
-<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="107,148,56,156,55,151,107,142"/>
-<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="110,173,55,164,55,159,110,168"/>
-<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="118,221,101,214,69,194,44,173,47,169,72,190,104,210,120,216"/>
-<area shape="poly" id="edge12_Node000008_Node000003" title=" " alt="" coords="109,270,101,265,77,243,58,218,34,172,39,170,63,215,81,240,104,261,112,265"/>
+<area shape="rect" id="Node000001" title="Virtual method which return a iterator to the first System in the container." alt="" coords="369,64,516,91"/>
+<area shape="rect" id="Node000002" href="$unit__Model_8cpp.html#a587b64c37870f12522e1c139eadb7b76" title="A unitary test for asserting the removeSystem method with a name." alt="" coords="103,5,321,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="378,62,320,47,274,35,275,30,322,41,379,57"/>
+<area shape="rect" id="Node000004" href="$unit__Model_8cpp.html#aaa652095d3099328e761b026d5850b72" title="A unitary test for asserting the removeSystem method with a System pointer." alt="" coords="122,56,302,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="353,80,302,80,302,75,353,75"/>
+<area shape="rect" id="Node000005" href="$unit__Model_8cpp.html#a4f48fc2f942c015aa65674f3ae095a90" title="A unitary test for asserting the systemsBegin method." alt="" coords="125,123,299,149"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="379,98,322,113,275,125,274,119,320,108,378,93"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,64,55,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="127,39,104,46,56,67,54,62,102,42,126,34"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="107,80,55,80,55,75,107,75"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="126,121,102,113,54,92,56,88,104,108,127,116"/>
 </map>

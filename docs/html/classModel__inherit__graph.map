@@ -1,5 +1,5 @@
 <map id="Model" name="Model">
-<area shape="rect" id="Node000001" title="Model interface, which will hide the implementation of methods." alt="" coords="13,5,201,699"/>
-<area shape="rect" id="Node000002" href="$classModelImpl.html" title="Represents the simulation model." alt="" coords="5,747,209,1520"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,713,110,747,105,747,105,713"/>
+<area shape="rect" id="Node000001" title="Model interface, which will hide the implementation of methods." alt="" coords="22,5,229,992"/>
+<area shape="rect" id="Node000002" href="$classModelImpl.html" title="Represents the simulation model." alt="" coords="5,1040,245,2091"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,1007,128,1040,123,1040,123,1007"/>
 </map>

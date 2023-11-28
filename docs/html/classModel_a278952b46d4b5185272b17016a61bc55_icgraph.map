@@ -1,10 +1,7 @@
 <map id="Model::systemsEnd" name="Model::systemsEnd">
-<area shape="rect" id="Node000001" title="Virtual method which returns an iterator referring to the past&#45;the&#45;end element in the systems contain..." alt="" coords="318,31,455,57"/>
-<area shape="rect" id="Node000002" href="$unit__Model_8cpp.html#a48cf040ec77c857814f535c4b9ba6764" title="A unitary test for asserting the systemsEnd method." alt="" coords="104,5,269,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="302,36,268,32,269,26,303,31"/>
-<area shape="rect" id="Node000004" href="$unit__Model_8cpp.html#abd5bde99de08b7b414e09f40c9dea19c" title="A unitary test for asserting the systemsSize method." alt="" coords="103,56,270,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="303,57,271,61,270,56,303,52"/>
-<area shape="rect" id="Node000003" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,31,55,57"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="89,37,55,43,55,37,88,32"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="87,56,55,51,56,45,88,51"/>
+<area shape="rect" id="Node000001" title="Virtual method which returns an iterator referring to the past&#45;the&#45;end element in the systems contain..." alt="" coords="315,5,452,32"/>
+<area shape="rect" id="Node000002" href="$unit__Model_8cpp.html#a48cf040ec77c857814f535c4b9ba6764" title="A unitary test for asserting the systemsEnd method." alt="" coords="103,5,267,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="299,21,267,21,267,16,299,16"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>

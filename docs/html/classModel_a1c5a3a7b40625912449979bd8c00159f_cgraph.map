@@ -1,0 +1,9 @@
+<map id="Model::add" name="Model::add">
+<area shape="rect" id="Node000001" title="Virtual method to add a model pointer to the #models container." alt="" coords="5,31,91,57"/>
+<area shape="rect" id="Node000002" href="$classModelImpl.html#aa01c228bf49f0b7f5d72e293ac18defb" title="Add a System pointer to the systems container." alt="" coords="139,31,249,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,41,123,41,123,47,91,47"/>
+<area shape="rect" id="Node000003" href="$classModelImpl.html#aa4e0c943fef808771f0800f03ae84386" title="Function for getting the size of the flows container." alt="" coords="307,5,453,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="249,34,291,28,291,33,250,39"/>
+<area shape="rect" id="Node000004" href="$classModelImpl.html#ad95b31c43021dec4c4b67cb74a2dc138" title="Method for getting the size of the systems container." alt="" coords="297,56,462,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="250,49,282,53,281,59,249,54"/>
+</map>

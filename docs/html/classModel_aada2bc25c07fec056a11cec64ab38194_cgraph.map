@@ -1,0 +1,5 @@
+<map id="Model::createFlow" name="Model::createFlow">
+<area shape="rect" id="Node000001" title="Method for creating a Flow with template." alt="" coords="5,5,134,32"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a5518050921f78abc062b9d861c15db11" title="Virtual method to add a Flow pointer to the #flows container." alt="" coords="182,5,267,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,16,166,16,166,21,134,21"/>
+</map>
