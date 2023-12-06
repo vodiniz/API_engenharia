@@ -36,16 +36,6 @@ void unit_Model_setName();
 void unit_Model_getClock();
 
 /**
- * @brief A unitary test for asserting the add method with the System* overload.
-*/
-void unit_Model_add_System();
-
-/**
- * @brief A unitary test for asserting the add method with the Flow* overload.
-*/
-void unit_Model_add_Flow();
-
-/**
  * @brief A unitary test for asserting the removeSystem method with a System pointer.
 */
 void unit_Model_removeSystem_pointer();
@@ -111,6 +101,21 @@ void unit_Model_flowsEnd();
 void unit_Model_flowsSize();
 
 /**
+ * @brief A unitary test for asserting the modelsBegin method.
+*/
+void unit_Model_modelsBegin();
+
+/**
+ * @brief A unitary test for asserting the modelsEnd method.
+*/
+void unit_Model_modelsEnd();
+
+/**
+ * @brief A unitary test for asserting the modelsSize method.
+*/
+void unit_Model_modelsSize();
+
+/**
  * @brief A unitary test for asserting the createModel method.
 */
 void unit_Model_createModel();
@@ -126,7 +131,7 @@ void unit_Model_createSystem();
 void unit_Model_createFlow();
 
 
-
+void run_unit_test_Model();
 
 class MyFlow : public FlowImpl {
     //Construtor e Destrutor

@@ -78,6 +78,8 @@ void unit_Flow_clearTarget();
 */
 void unit_Flow_assignOverload();
 
+void run_unit_test_Flow();
+
 
 class FlowTest : public FlowImpl {
     //Construtor e Destrutor

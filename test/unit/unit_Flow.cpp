@@ -188,6 +188,7 @@ void unit_Flow_clearTarget(){
 }
 
 
+
 void unit_Flow_assignOverload(){
 
     System *system1 = new SystemImpl("System1");
@@ -211,3 +212,32 @@ void unit_Flow_assignOverload(){
     delete flow2;
 }
 
+void run_unit_test_Flow(){
+    
+    unit_Flow_constructor_default();
+    unit_Flow_constructor_with_name();
+    unit_Flow_constructor_with_name_source_target();
+    unit_Flow_copy_constructor();
+
+    unit_Flow_destructor();
+
+
+    unit_Flow_getName();
+    unit_Flow_setName();
+
+    unit_Flow_getSource();
+    unit_Flow_setSource();
+
+
+
+    unit_Flow_getTarget();
+    unit_Flow_setTarget();
+
+    unit_Flow_clearSource();
+
+    unit_Flow_assignOverload();
+
+    cout << "------------------------------------------------------------------\n" <<
+        "Passed Flow Unit tests.\n" << 
+        "------------------------------------------------------------------\n";
+}

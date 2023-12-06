@@ -3,9 +3,9 @@
 #include <assert.h>
 
 #include "unit_Model.hpp"
-#include "../../src/ModelImpl.hpp"
-#include "../../src/SystemImpl.hpp"
-#include "../../src/FlowImpl.hpp"
+#include "../../src/Model.hpp"
+#include "../../src/System.hpp"
+
 
 
 using namespace std;
@@ -66,33 +66,6 @@ void unit_Model_getClock(){
 
     delete model;
 }
-
-// void unit_Model_add_System(){
-//     Model *model = new ModelImpl("Model");
-
-//     System *system = new SystemImpl("System");
-//     model->add(system);
-
-//     assert(model->systemsSize() > 0);
-//     assert(*(model->systemsBegin()) == system); 
-
-//     delete system;
-//     delete model;
-// }
-
-// void unit_Model_add_Flow(){
-
-//     Model *model = new ModelImpl("Model");
-
-//     Flow *flow = new MyFlow("Flow");
-//     model->add(flow);
-
-//     assert(model->flowsSize() > 0);
-//     assert(*(model->flowsBegin()) == flow); 
-
-//     delete flow;
-//     delete model;
-// }
 
 void unit_Model_removeSystem_pointer(){
 
@@ -320,5 +293,46 @@ void unit_Model_createFlow(){
     assert(model->flowsSize() == 2);
 
     delete model;
+
+}
+
+void run_unit_test_Model(){
+    
+    unit_Model_constructor_default();
+    unit_Model_constructor_with_name();
+
+    unit_Model_destructor();
+
+    unit_Model_getName();
+    unit_Model_setName();
+
+    unit_Model_createModel();
+    unit_Model_createSystem();
+    unit_Model_createFlow();
+
+    unit_Model_removeSystem_pointer();
+    unit_Model_removeSystem_name();
+
+    unit_Model_removeFlow_pointer();
+    unit_Model_removeFlow_name();
+
+    unit_Model_updateSystem();
+    unit_Model_updateFlow();
+
+    unit_Model_run();
+
+    unit_Model_systemsBegin();
+    unit_Model_systemsEnd();
+    unit_Model_systemsSize();
+
+
+    unit_Model_flowsBegin();
+    unit_Model_flowsEnd();
+    unit_Model_flowsSize();
+
+    cout << "------------------------------------------------------------------\n" <<
+        "Passed Model Unit tests.\n" << 
+        "------------------------------------------------------------------\n";
+        
 
 }

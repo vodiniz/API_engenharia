@@ -3,10 +3,8 @@ all: bin/functional_test bin/unit_test bin/lib_vensim
 # ---------------------------------------------------------------
 # ---------------------------------------------------------------
 
-
 bin/lib_vensim: bin/Flow.o bin/System.o bin/Model.o
 	@g++ -shared -o bin/lib_vensim.so bin/Flow.o bin/System.o bin/Model.o
-
 
 # ---------------------------------------------------------------
 # ---------------------------------------------------------------

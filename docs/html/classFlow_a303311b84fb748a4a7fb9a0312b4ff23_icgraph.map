@@ -1,7 +1,9 @@
 <map id="Flow::setSource" name="Flow::setSource">
-<area shape="rect" id="Node000001" title="Virtual method to set a new source for the Flow." alt="" coords="294,5,410,32"/>
-<area shape="rect" id="Node000002" href="$unit__Flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="A unitary test for asserting the setSource method." alt="" coords="103,5,246,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="278,21,247,21,247,16,278,16"/>
-<area shape="rect" id="Node000003" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+<area shape="rect" id="Node000001" title="Virtual method to set a new source for the Flow." alt="" coords="473,5,590,32"/>
+<area shape="rect" id="Node000002" href="$unit__Flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="A unitary test for asserting the setSource method." alt="" coords="282,5,425,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="458,21,426,21,426,16,458,16"/>
+<area shape="rect" id="Node000003" href="$unit__Flow_8cpp.html#a6683c1fa1a8445fa330116af20af24dc" title=" " alt="" coords="103,5,234,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="266,21,234,21,234,16,266,16"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>

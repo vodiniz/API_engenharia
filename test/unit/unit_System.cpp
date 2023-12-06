@@ -103,3 +103,25 @@ void unit_System_assignOverload(){
     
 }
 
+
+void run_unit_test_System(){
+    unit_System_constructor_default();
+    unit_System_constructor_with_name();
+    unit_System_constructor_with_name_value();
+    unit_system_copy_constructor();
+
+    unit_System_destructor();
+
+    unit_System_getName();
+    unit_System_setName();
+
+    unit_System_getValue();
+    unit_System_setValue();
+
+    unit_System_assignOverload();
+
+    cout << "------------------------------------------------------------------\n" <<
+        "Passed System Unit tests.\n" << 
+        "------------------------------------------------------------------\n";
+        
+}

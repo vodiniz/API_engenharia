@@ -1,10 +1,12 @@
 <map id="Model::removeSystem" name="Model::removeSystem">
-<area shape="rect" id="Node000001" title="Virtual method to remove a System pointer from the #systems container." alt="" coords="369,35,521,61"/>
-<area shape="rect" id="Node000002" href="$unit__Model_8cpp.html#a587b64c37870f12522e1c139eadb7b76" title="A unitary test for asserting the removeSystem method with a name." alt="" coords="103,5,321,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="353,39,321,35,322,30,354,34"/>
-<area shape="rect" id="Node000004" href="$unit__Model_8cpp.html#aaa652095d3099328e761b026d5850b72" title="A unitary test for asserting the removeSystem method with a System pointer." alt="" coords="122,56,302,99"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="355,62,302,69,302,63,354,57"/>
-<area shape="rect" id="Node000003" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,35,55,61"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,38,55,47,55,42,110,32"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="107,63,55,55,56,49,107,58"/>
+<area shape="rect" id="Node000001" title="Virtual method to remove a System pointer from the #systems container." alt="" coords="555,35,708,61"/>
+<area shape="rect" id="Node000002" href="$unit__Model_8cpp.html#a587b64c37870f12522e1c139eadb7b76" title="A unitary test for asserting the removeSystem method with a name." alt="" coords="289,5,507,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="540,39,508,35,508,30,540,34"/>
+<area shape="rect" id="Node000005" href="$unit__Model_8cpp.html#aaa652095d3099328e761b026d5850b72" title="A unitary test for asserting the removeSystem method with a System pointer." alt="" coords="309,56,488,99"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="541,62,489,69,488,63,540,57"/>
+<area shape="rect" id="Node000003" href="$unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title=" " alt="" coords="103,35,241,61"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="276,37,242,42,241,36,275,32"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,35,55,61"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,51,55,51,55,45,87,45"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="293,66,241,60,242,54,294,61"/>
 </map>

@@ -1,5 +1,7 @@
 <map id="unit_System_getName" name="unit_System_getName">
-<area shape="rect" id="Node000001" title="A unitary test for asserting the getName method." alt="" coords="103,5,257,32"/>
-<area shape="rect" id="Node000002" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+<area shape="rect" id="Node000001" title="A unitary test for asserting the getName method." alt="" coords="299,5,453,32"/>
+<area shape="rect" id="Node000002" href="$unit__System_8cpp.html#a508d8501edd77719732fca2f7985d316" title=" " alt="" coords="103,5,251,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="284,21,251,21,251,16,284,16"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>

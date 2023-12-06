@@ -55,5 +55,6 @@ void unit_System_setValue();
 */
 void unit_System_assignOverload();
 
+void run_unit_test_System();
 
 #endif
