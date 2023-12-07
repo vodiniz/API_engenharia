@@ -1,5 +1,5 @@
-#ifndef MODELIMPL_H_
-#define MODELIMPL_H_
+#ifndef MODEL_BODY_H_
+#define MODEL_BODY_H_
 
 #include <iostream>
 #include <vector>
@@ -14,7 +14,7 @@ using namespace std;
  * We can add, remove and update Systems and Flows.
  * We also run simulations based on the startTime and endTime.
 */
-class ModelImpl: public Model{
+class ModelBody: public Model{
 
 
     protected:
@@ -36,7 +36,7 @@ class ModelImpl: public Model{
          *
          * @param name A string for naming the Model.
         */
-        ModelImpl(string="");
+        ModelBody(string="");
 
 
         /**
@@ -45,7 +45,7 @@ class ModelImpl: public Model{
          * 
          * A virtual destructor;
         */
-        virtual ~ModelImpl();
+        virtual ~ModelBody();
 
 
 
@@ -302,7 +302,7 @@ class ModelImpl: public Model{
          * another existing model. So to prevent the API user to make a copy we need to "hide" the method.
          * @param model& The model reference which will be assigned to the Model being called.
         */
-        ModelImpl(const Model& model);
+        ModelBody(const Model& model);
     
         /**
          * @brief Overload for = operator.
@@ -316,7 +316,7 @@ class ModelImpl: public Model{
          * 
          * @return return a Model reference which is a copy to the assigned Model.
         */
-        ModelImpl& operator= (const ModelImpl&);
+        ModelBody& operator= (const ModelBody&);
 
 
 

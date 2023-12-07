@@ -1,17 +1,17 @@
-#include "SystemImpl.hpp"
+#include "SystemBody.hpp"
 
 using namespace std;
 
 
 //Construtor e Destrutor
-SystemImpl::SystemImpl(string name, double value):
+SystemBody::SystemBody(string name, double value):
     name(name), value(value){}
 
 
 
-SystemImpl::~SystemImpl(){}
+SystemBody::~SystemBody(){}
 
-SystemImpl::SystemImpl(const System& system){
+SystemBody::SystemBody(const System& system){
 
     
     if(this == &system)
@@ -25,28 +25,28 @@ SystemImpl::SystemImpl(const System& system){
 // --------------------------------------------------
 //Getters e Setters
 
-const string SystemImpl::getName() const{
+const string SystemBody::getName() const{
     return name;
 }
 
-bool SystemImpl::setName(string name){
+bool SystemBody::setName(string name){
     this->name = name;
     return true;
 }
 
-bool SystemImpl::setValue(double value){
+bool SystemBody::setValue(double value){
     this->value = value;
     return true;
 }
 
-const double SystemImpl::getValue() const{
+const double SystemBody::getValue() const{
     return value;
 }
 
 
 // --------------------------------------------------
 
-System& SystemImpl::operator= (const System &system){
+System& SystemBody::operator= (const System &system){
 
     if(this == &system)
         return *this;

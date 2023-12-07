@@ -1,5 +1,5 @@
-#ifndef FLOWIMPL_H_
-#define FLOWIMPL_H_
+#ifndef FLOW_BODY_H_
+#define FLOW_BODY_H_
 
 #include "Flow.hpp"
 
@@ -11,7 +11,7 @@ using namespace std;
  * Flow will keep track of it source and target, and keeps track of the mathematical equation
  * which will define the flow from one System to another.
  */
-class FlowImpl: public Flow{
+class FlowBody: public Flow{
 
     protected:
         string name; /*!< A string for naming the Flow. */
@@ -35,7 +35,7 @@ class FlowImpl: public Flow{
          * @param name A string for naming the Flow.
 
         */
-        FlowImpl(string=""); 
+        FlowBody(string=""); 
 
 
         /**
@@ -47,7 +47,7 @@ class FlowImpl: public Flow{
          * @param source A System pointer for the source*
          * @param target A System pointer for the source*
         */
-        FlowImpl(string, System*, System*);
+        FlowBody(string, System*, System*);
 
 
         /**
@@ -56,7 +56,7 @@ class FlowImpl: public Flow{
          * 
          * A virtual destructor;
         */
-        virtual ~FlowImpl();
+        virtual ~FlowBody();
 
         /**
          * @brief Copy constructor
@@ -65,7 +65,7 @@ class FlowImpl: public Flow{
          * Copy constructor takes a reference to Flow as an argument.
          * @param flow& The base Flow which the copy will be based.
         */
-        FlowImpl(const Flow &flow);
+        FlowBody(const Flow &flow);
 
 //---------------------------------getters e setters---------------------------------
 

@@ -1,16 +1,16 @@
-#include "ModelImpl.hpp"
+#include "ModelBody.hpp"
 #include "SystemImpl.hpp"
-#include "FlowImpl.hpp"
+#include "FlowBody.hpp"
 
-vector<Model*> ModelImpl::models;
+vector<Model*> ModelBody::models;
 
 using namespace std;
 
 //Construtor e Destrutor
-ModelImpl::ModelImpl(string name):
+ModelBody::ModelBody(string name):
     name(name){}
 
-ModelImpl::~ModelImpl(){
+ModelBody::~ModelBody(){
 
     for(SystemIterator it = systemsBegin(); it < systemsEnd(); it++){
         delete *it;
@@ -26,7 +26,7 @@ ModelImpl::~ModelImpl(){
     }
 }
 
-ModelImpl::ModelImpl(const Model& model){
+ModelBody::ModelBody(const Model& model){
 
     // if(this == &model)
     //     return;
@@ -47,61 +47,61 @@ ModelImpl::ModelImpl(const Model& model){
 
 // ---------------------------------
 //Getters e Setters
-bool ModelImpl::setName(string name){
+bool ModelBody::setName(string name){
     this->name = name;
     return true;
 }
 
-const string ModelImpl::getName() const{
+const string ModelBody::getName() const{
     return name;
 }
 
-const int ModelImpl::getClock() const{
+const int ModelBody::getClock() const{
     return clock;
 }
 
 // ---------------------------------
 //Iterator
-ModelImpl::SystemIterator ModelImpl::systemsBegin(){
+ModelBody::SystemIterator ModelBody::systemsBegin(){
     return systems.begin();
 }
 
 
-ModelImpl::SystemIterator ModelImpl::systemsEnd(){
+ModelBody::SystemIterator ModelBody::systemsEnd(){
     return systems.end();
 }
 
-ModelImpl::FlowIterator ModelImpl::flowsBegin(){
+ModelBody::FlowIterator ModelBody::flowsBegin(){
     return flows.begin();
 }
 
-ModelImpl::FlowIterator ModelImpl::flowsEnd(){
+ModelBody::FlowIterator ModelBody::flowsEnd(){
     return flows.end();
 }
 
-ModelImpl::ModelIterator ModelImpl::modelsBegin(){
+ModelBody::ModelIterator ModelBody::modelsBegin(){
     return models.begin();
 }
 
 
-ModelImpl::ModelIterator ModelImpl::modelsEnd(){
+ModelBody::ModelIterator ModelBody::modelsEnd(){
     return models.end();
 }
 
 
 //Vector size
-int ModelImpl::flowsSize(){
+int ModelBody::flowsSize(){
     return flows.size();
 }
-int ModelImpl::systemsSize(){
+int ModelBody::systemsSize(){
     return systems.size();
 }
-int ModelImpl::modelsSize(){
+int ModelBody::modelsSize(){
     return models.size();
 }
 
-int Model::modelsSize(){
-    return ModelImpl::modelsSize();
+int ModelBody::modelsSize(){
+    return ModelBody::modelsSize();
 }
 
 
@@ -111,7 +111,7 @@ int Model::modelsSize(){
 
 //SYSTEM
 
-bool ModelImpl::add(System *system){
+bool ModelBody::add(System *system){
     int vectorSize = flowsSize();
     systems.push_back(system);
 
@@ -122,7 +122,7 @@ bool ModelImpl::add(System *system){
 }
 
 //???? Pode remover o While e usar um for, ficaria bem mais legível
-bool ModelImpl::removeSystem(System *system){
+bool ModelBody::removeSystem(System *system){
 
     SystemIterator systemIterator = systemsBegin();
 
@@ -138,7 +138,7 @@ bool ModelImpl::removeSystem(System *system){
     return false;
 }
 
-bool ModelImpl::removeSystem(string name){
+bool ModelBody::removeSystem(string name){
 
     SystemIterator systemIterator = systemsBegin();
 
@@ -154,7 +154,7 @@ bool ModelImpl::removeSystem(string name){
     return false;
 }
 
-bool ModelImpl::updateSystem(string currentName, double value, string newName){
+bool ModelBody::updateSystem(string currentName, double value, string newName){
 
     
 
@@ -176,7 +176,7 @@ bool ModelImpl::updateSystem(string currentName, double value, string newName){
 //FLOW
 // ???? Checar com vector.back é mais esperto que conferir o tamanho.
 
-bool ModelImpl::add(Flow *flow){
+bool ModelBody::add(Flow *flow){
     int vectorSize = flowsSize();
     flows.push_back(flow);
 
@@ -186,7 +186,7 @@ bool ModelImpl::add(Flow *flow){
     return false;
 }
 
-bool ModelImpl::removeFlow(Flow *flow){
+bool ModelBody::removeFlow(Flow *flow){
 
     FlowIterator flowIterator = flowsBegin();
 
@@ -202,7 +202,7 @@ bool ModelImpl::removeFlow(Flow *flow){
     return false;
 }
 
-bool ModelImpl::removeFlow(string name){
+bool ModelBody::removeFlow(string name){
 
     FlowIterator flowIterator = flowsBegin();
 
@@ -218,7 +218,7 @@ bool ModelImpl::removeFlow(string name){
     return false;
 }
 
-bool ModelImpl::updateFlow(string currentName, System* source, System* target, string newName){
+bool ModelBody::updateFlow(string currentName, System* source, System* target, string newName){
 
     newName = (newName == "")? currentName : newName;
 
@@ -238,7 +238,7 @@ bool ModelImpl::updateFlow(string currentName, System* source, System* target, s
     return false;
 }
 
-bool ModelImpl::add(Model* model){
+bool ModelBody::add(Model* model){
     
     size_t size = models.size();
 
@@ -248,7 +248,7 @@ bool ModelImpl::add(Model* model){
 }
 
 bool Model::add(Model* model){
-    return ModelImpl::add(model);
+    return ModelBody::add(model);
 }
 
 
@@ -257,7 +257,7 @@ bool Model::add(Model* model){
 // ---------------------------------
 //Operator Overload
 
-ModelImpl& ModelImpl::operator= (const ModelImpl& model){
+ModelBody& ModelBody::operator= (const ModelBody& model){
 
     // if(this == &model)
     //     return *this;
@@ -284,12 +284,12 @@ ModelImpl& ModelImpl::operator= (const ModelImpl& model){
 //Run
 
 
-bool ModelImpl::run(int startTime, int endTime){
+bool ModelBody::run(int startTime, int endTime){
 
 
 
     for(int i = startTime; i < endTime; i++, clock++){
-        int flowsSize = ModelImpl::flowsSize();
+        int flowsSize = ModelBody::flowsSize();
 
         int counter = 0;
         double *equationArray = new double[flowsSize];
@@ -314,19 +314,19 @@ bool ModelImpl::run(int startTime, int endTime){
     return true;
 }
 
-Model* ModelImpl::createModel(string name){
-    Model* model = new ModelImpl(name);
+Model* ModelBody::createModel(string name){
+    Model* model = new ModelBody(name);
     add(model);
 
     return model;
 }
 
 Model* Model::createModel(string name){
-    return ModelImpl::createModel(name);
+    return ModelBody::createModel(name);
 }
 
 
-System* ModelImpl::createSystem(string name, double value){
+System* ModelBody::createSystem(string name, double value){
     System* system = new SystemImpl(name, value);
     add(system);
     return system;

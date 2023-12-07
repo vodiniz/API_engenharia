@@ -40,7 +40,7 @@ class System{
          * 
          * @return return true if sucefully setted the new name, and false if it failed.
         */
-        virtual bool setName(string) = 0;
+        virtual bool setName(const string) = 0;
 
         /**
          * @brief Virtual method to get the value field on System.
@@ -56,7 +56,7 @@ class System{
          * 
          * @return return true if sucefully setted the new Value, and false if it failed.
         */
-        virtual bool setValue(double) = 0;
+        virtual bool setValue(const double) = 0;
 
         /**
          * @brief Virtual Overload for = operator.

@@ -1,18 +1,19 @@
-#ifndef SYSTEMIMPL_H_
-#define SYSTEMIMPL_H_
+#ifndef SYSTEM_BODY_H_
+#define SYSTEM_BODY_H_
 
 #include <iostream>
 
 using namespace std;
 
 #include "System.hpp"
+#include "HandleBodySemDebug.h"
 
 
 
 /**
  * \brief Class for representing stock, quantities, mass or even energy.
 */
-class SystemImpl: public System{
+class SystemBody: public Body{
 
     protected:
         string name;  /*!< A string for naming the systems. */
@@ -28,7 +29,7 @@ class SystemImpl: public System{
          * @param name A string for naming the systems.
          * @param value A double value for representing mass, quantities or energy
         */
-        SystemImpl(string = "", double = 0.);
+        SystemBody(string = "", double = 0.);
 
         /**
          * @brief Destructor
@@ -36,16 +37,8 @@ class SystemImpl: public System{
          * 
          * A virtual destructor;
         */
-        virtual ~SystemImpl();
+        virtual ~SystemBody();
 
-        /**
-         * @brief Copy constructor
-         * 
-         * Copy constructor takes a reference to system as an argument.
-         * 
-         * @param system& A system reference which  will be used as the value for our system.
-        */
-        SystemImpl(const System& system);
 
         //---------------------------------getters e setters---------------------------------
 
@@ -83,6 +76,18 @@ class SystemImpl: public System{
         */
         bool setValue(double);
 
+    private:
+
+        /**
+         * @brief Copy constructor
+         * 
+         * Copy constructor takes a reference to system as an argument.
+         * 
+         * @param system& A system reference which  will be used as the value for our system.
+        */
+        SystemBody(const System& system);
+
+
         /**
          * @brief Overload for = operator.
          * 
@@ -91,6 +96,7 @@ class SystemImpl: public System{
          * @return return a System reference which is a copy to the assigned System.
         */
         System& operator=(const System&);
+
 
 
 };
