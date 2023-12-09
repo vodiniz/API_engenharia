@@ -84,7 +84,7 @@ void run_unit_test_Flow();
 class FlowTest : public FlowBody {
     //Construtor e Destrutor
     public:
-
+        using FlowBody::setName;
         using FlowBody::operator=;
         
         FlowTest(string name=""):

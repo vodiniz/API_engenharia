@@ -7,79 +7,79 @@
 using namespace std;
 
 template <typename T>
-class FlowHandle : public Flow, Handle<T>{
+class FlowHandle : public Flow,public Handle<T>{
 
-    public:
-        FlowHandle(){
-            this->pImpl_->setName("");
-            this->pImpl_->setSource(NULL);
-            this->pImpl_->setTarget(NULL);
-        }
+public:
+    FlowHandle(){
+        Handle<T>::pImpl_->setName("");
+        Handle<T>::pImpl_->setSource(NULL);
+        Handle<T>::pImpl_->setTarget(NULL);
+    }
 
-        FlowHandle(string name){
-            this->pImpl_->setName(name);
-            this->pImpl_->setSource(NULL);
-            this->pImpl_->setTarget(NULL);
-        }
+    FlowHandle(string name){
+        Handle<T>::pImpl_->setName(name);
+        Handle<T>::pImpl_->setSource(NULL);
+        Handle<T>::pImpl_->setTarget(NULL);
+    }
 
-        FlowHandle(string name, System *source, System *target){
-            this->pImpl_->setName(name);
-            this->pImpl_->setSource(source);
-            this->pImpl_->setTarget(target);   
-        }
+    FlowHandle(string name, System *source, System *target){
+        Handle<T>::pImpl_->setName(name);
+        Handle<T>::pImpl_->setSource(source);
+        Handle<T>::pImpl_->setTarget(target);   
+    }
 
-        virtual ~FlowHandle(){}
+    virtual ~FlowHandle(){}
 
 
-        FlowHandle(const Flow &flow){
-            this->pImpl_->setName(flow.getName());
-            this->pImpl_->setSource(flow.getSource());
-            this->pImpl_->setTarget(flow.getTarget());      
-        }
+    FlowHandle(const Flow &flow){
+        Handle<T>::pImpl_->setName(flow.getName());
+        Handle<T>::pImpl_->setSource(flow.getSource());
+        Handle<T>::pImpl_->setTarget(flow.getTarget());      
+    }
 
-        const string getName() const{
-            return this->pImpl_->getName();
-        }
+    const string getName() const{
+        return  Handle<T>::pImpl_->getName();
+    }
 
-        bool setName(string){
-            return this->pImpl_->setName();
-        }
+    bool setName(string){
+        return  Handle<T>::pImpl_->setName();
+    }
 
-        System* getSource() const{
-            return this->pImpl_->getSource();
-        }
+    System* getSource() const{
+        return  Handle<T>::pImpl_->getSource();
+    }
 
-        bool setSource(System*){
-            return this->pImpl_->getSource();
-        }
+    bool setSource(System*){
+        return  Handle<T>::pImpl_->getSource();
+    }
 
-        System* getTarget() const{
-            return this->pImpl_->getTarget();
-        }
+    System* getTarget() const{
+        return  Handle<T>::pImpl_->getTarget();
+    }
 
-        bool setTarget(System*){
-            return this->pImpl_->setTarget();
-        }
+    bool setTarget(System*){
+        return  Handle<T>::pImpl_->setTarget();
+    }
 
-        bool clearSource(){
-            return this->pImpl_->clearSource();
-        }
+    bool clearSource(){
+        return  Handle<T>::pImpl_->clearSource();
+    }
 
-        bool clearTarget(){
-            return this->pImpl_->clearTarget();
-        }
+    bool clearTarget(){
+        return  Handle<T>::pImpl_->clearTarget();
+    }
 
-        Flow& operator= (const Flow& flow){
-            this->pImpl_->setName(flow.getName());
-            this->pImpl_->setSource(flow.getSource());
-            this->pImpl_->setTarget(flow.getTarget());
+    Flow& operator= (const Flow& flow){
+            Handle<T>::pImpl_->setName(flow.getName());
+            Handle<T>::pImpl_->setSource(flow.getSource());
+            Handle<T>::pImpl_->setTarget(flow.getTarget());
 
-            return this;
-        }
+        return this;
+    }
 
-        double equation(){
-            return this->pImpl_->equation();
-        }
+    double equation(){
+        return  Handle<T>::pImpl_->equation();
+    }
 };
 
 #endif
