@@ -3,7 +3,12 @@
 #include <math.h>
 
 #include "unit_Flow.hpp"
-#include "../../src/SystemImpl.hpp"
+#include "../../src/FlowHandle.hpp"
+#include "../../src/FlowBody.hpp"
+
+#include "../../src/SystemHandle.hpp"
+#include "../../src/SystemBody.hpp"
+
 
 using namespace std;
 
@@ -11,7 +16,7 @@ using namespace std;
 
 void unit_Flow_constructor_default(){
 
-    Flow *flow = new FlowTest();
+    Flow *flow = new FlowHandle<FlowTest>();
 
     assert(sizeof(*flow) > 0);
     assert(flow->getTarget() == NULL);
@@ -21,7 +26,7 @@ void unit_Flow_constructor_default(){
     delete flow;   
 }
 void unit_Flow_constructor_with_name(){
-    Flow *flow = new FlowTest("MyFlow");
+    Flow *flow = new FlowHandle<FlowTest>("MyFlow");
 
     assert(flow->getName() == "MyFlow");
     assert(flow->getTarget() == NULL);
@@ -32,10 +37,10 @@ void unit_Flow_constructor_with_name(){
 
 void unit_Flow_constructor_with_name_source_target(){
 
-    System *system1 = new SystemImpl("System1");
-    System *system2 = new SystemImpl("System2");
+    System *system1 = new SystemHandle("System1");
+    System *system2 = new SystemHandle("System2");
 
-    Flow *flow = new FlowTest("MyFlow", system1, system2);
+    Flow *flow =  new FlowHandle<FlowTest>("MyFlow", system1, system2);
 
     assert(flow->getSource() == system1);
     assert(flow->getTarget() == system2);
@@ -48,11 +53,11 @@ void unit_Flow_constructor_with_name_source_target(){
 
 
 void unit_Flow_copy_constructor(){
-    System *system1 = new SystemImpl("System1");
-    System *system2 = new SystemImpl("System2");
+    System *system1 = new SystemHandle("System1");
+    System *system2 = new SystemHandle("System2");
 
-    Flow *flow1 = new FlowTest("MyFlow", system1, system2);
-    Flow *flow2 = new FlowTest(*flow1);
+    Flow *flow1 = new FlowHandle<FlowTest>("MyFlow", system1, system2);
+    Flow *flow2 = new FlowHandle<FlowTest>(*flow1);
 
     assert(flow1->getName() == flow2->getName());
     assert(flow1->getSource() == flow2->getSource());
@@ -71,7 +76,7 @@ void unit_Flow_destructor(){}
 
 void unit_Flow_getName(){
 
-    Flow *flow = new FlowTest("MyFlow");
+    Flow *flow = new FlowHandle<FlowTest>("MyFlow");
     assert(flow->getName() == "MyFlow");
 
     delete flow;
@@ -80,7 +85,7 @@ void unit_Flow_getName(){
 
 void unit_Flow_setName(){
 
-    Flow *flow = new FlowTest("MyFlow");
+    Flow *flow = new FlowHandle<FlowTest>("MyFlow");
     
     flow->setName("NewName");
 
@@ -93,10 +98,10 @@ void unit_Flow_setName(){
 
 void unit_Flow_getSource(){
 
-    System *system1 = new SystemImpl("System1");
-    System *system2 = new SystemImpl("System2");
+    System *system1 = new SystemHandle("System1");
+    System *system2 = new SystemHandle("System2");
 
-    Flow *flow = new FlowTest("MyFlow", system1, system2);
+    Flow *flow = new FlowHandle<FlowTest>("MyFlow", system1, system2);
 
     assert(flow->getSource() == system1);
     assert(flow->getSource()->getName() == "System1");
@@ -110,9 +115,9 @@ void unit_Flow_getSource(){
 
 void unit_Flow_setSource(){
 
-    System *system1 = new SystemImpl("System1");
+    System *system1 = new SystemHandle("System1");
 
-    Flow *flow = new FlowTest();
+    Flow *flow = new FlowHandle<FlowTest>();
     flow->setSource(system1);
 
     assert(flow->getSource() == system1);
@@ -126,10 +131,10 @@ void unit_Flow_setSource(){
 
 void unit_Flow_getTarget(){
 
-    System *system1 = new SystemImpl("System1");
-    System *system2 = new SystemImpl("System2");
+    System *system1 = new SystemHandle("System1");
+    System *system2 = new SystemHandle("System2");
 
-    Flow *flow = new FlowTest("MyFlow", system1, system2);
+    Flow *flow = new FlowHandle<FlowTest>("MyFlow", system1, system2);
 
     assert(flow->getTarget() == system2);
     assert(flow->getTarget()->getName() == "System2");
@@ -141,9 +146,9 @@ void unit_Flow_getTarget(){
 
 
 void unit_Flow_setTarget(){
-    System *system1 = new SystemImpl("System1");
+    System *system1 = new SystemHandle("System1");
 
-    Flow *flow = new FlowTest();
+    Flow *flow = new FlowHandle<FlowTest>();
     flow->setTarget(system1);
 
     assert(flow->getTarget() == system1);
@@ -156,10 +161,10 @@ void unit_Flow_setTarget(){
 
 
 void unit_Flow_clearSource(){
-    System *system1 = new SystemImpl("System1");
-    System *system2 = new SystemImpl("System2");
+    System *system1 = new SystemHandle("System1");
+    System *system2 = new SystemHandle("System2");
 
-    Flow *flow = new FlowTest("MyFlow", system1, system2);
+    Flow *flow = new FlowHandle<FlowTest>("MyFlow", system1, system2);
 
     flow->clearSource();
 
@@ -173,10 +178,10 @@ void unit_Flow_clearSource(){
 }
 
 void unit_Flow_clearTarget(){
-    System *system1 = new SystemImpl("System1");
-    System *system2 = new SystemImpl("System2");
+    System *system1 = new SystemHandle("System1");
+    System *system2 = new SystemHandle("System2");
 
-    Flow *flow = new FlowTest("MyFlow", system1, system2);
+    Flow *flow = new FlowHandle<FlowTest>("MyFlow", system1, system2);
 
     flow->clearTarget();
 
@@ -191,11 +196,11 @@ void unit_Flow_clearTarget(){
 
 void unit_Flow_assignOverload(){
 
-    System *system1 = new SystemImpl("System1");
-    System *system2 = new SystemImpl("System2");
+    System *system1 = new SystemHandle("System1");
+    System *system2 = new SystemHandle("System2");
 
-    Flow *flow = new FlowTest("MyFlow", system1, system2);
-    Flow *flow2 = new FlowTest();
+    Flow *flow = new FlowHandle<FlowTest>("MyFlow", system1, system2);
+    Flow *flow2 = new FlowHandle<FlowTest>();
 
     *flow2 = *flow;
 

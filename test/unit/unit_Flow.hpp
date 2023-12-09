@@ -1,7 +1,7 @@
 #ifndef _UNIT_FLOW_H_
 #define _UNIT_FLOW_H_
 
-#include "../../src/FlowImpl.hpp"
+#include "../../src/FlowBody.hpp"
 
 
 /**
@@ -81,19 +81,19 @@ void unit_Flow_assignOverload();
 void run_unit_test_Flow();
 
 
-class FlowTest : public FlowImpl {
+class FlowTest : public FlowBody {
     //Construtor e Destrutor
     public:
 
-        using FlowImpl::operator=;
+        using FlowBody::operator=;
         
         FlowTest(string name=""):
-            FlowImpl(name){}
+            FlowBody(name){}
             
         FlowTest(string name, System *source, System *target): 
-            FlowImpl(name, source, target){}
+            FlowBody(name, source, target){}
 
-        FlowTest(Flow& flow): FlowImpl(flow){}
+        FlowTest(Flow& flow): FlowBody(flow){}
             
     protected:
         double equation(){

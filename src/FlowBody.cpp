@@ -66,7 +66,7 @@ bool FlowBody::clearSource(){
 
 // --------------------------------------------------
 
-Flow& FlowBody::operator= (const Flow& flow) {
+FlowBody& FlowBody::operator= (const FlowBody& flow) {
 
     if(this == &flow)
         return *this;

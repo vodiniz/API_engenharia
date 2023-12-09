@@ -8,8 +8,6 @@ using namespace std;
 #include "System.hpp"
 #include "HandleBodySemDebug.h"
 
-
-
 /**
  * \brief Class for representing stock, quantities, mass or even energy.
 */
@@ -95,7 +93,7 @@ class SystemBody: public Body{
          * 
          * @return return a System reference which is a copy to the assigned System.
         */
-        System& operator=(const System&);
+        SystemBody& operator=(const SystemBody&);
 
 
 

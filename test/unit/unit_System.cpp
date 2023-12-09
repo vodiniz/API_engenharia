@@ -3,12 +3,15 @@
 #include <math.h>
 
 #include "unit_System.hpp"
+#include "../../src/SystemHandle.hpp"
+#include "../../src/SystemBody.hpp"
+
 
 using namespace std;
 
 void unit_System_constructor_default(){
 
-    System *system = new SystemImpl();
+    System *system = new SystemHandle();
     assert(sizeof(*system) > 0);
 
     delete system;
@@ -16,14 +19,14 @@ void unit_System_constructor_default(){
 
 void unit_System_constructor_with_name(){
 
-    System *system = new SystemImpl("SystemWithName");
+    System *system = new SystemHandle("SystemWithName");
     assert(system->getName() == "SystemWithName");
     
     delete system;
 }
 
 void unit_System_constructor_with_name_value(){
-    System *system = new SystemImpl("SystemWithName", 30.);
+    System *system = new SystemHandle("SystemWithName", 30.);
     assert(round(fabs(system->getValue() - 30.0)* 10000) < 1);
 
     delete system;
@@ -31,8 +34,8 @@ void unit_System_constructor_with_name_value(){
 
 void unit_system_copy_constructor(){
 
-    System *system1 = new SystemImpl("System1", 30.);
-    System *system2 = new SystemImpl(*system1);
+    System *system1 = new SystemHandle("System1", 30.);
+    System *system2 = new SystemHandle(*system1);
 
     assert(system1->getName() == system2->getName());
     assert(round(fabs(system1->getValue() - 30.0)* 10000) == round(fabs(system1->getValue() - 30.0)* 10000));
@@ -48,7 +51,7 @@ void unit_System_destructor(){}
 
 void unit_System_getName(){
 
-    System *system = new SystemImpl("SystemWithName");
+    System *system = new SystemHandle("SystemWithName");
     assert(system->getName() == "SystemWithName");
     assert(system->getName() != "Anything");
 
@@ -57,7 +60,7 @@ void unit_System_getName(){
 
 void unit_System_setName(){
 
-    System *system = new SystemImpl("SystemWithName");
+    System *system = new SystemHandle("SystemWithName");
     
     system->setName("NewName");
 
@@ -70,7 +73,7 @@ void unit_System_setName(){
 
 void unit_System_getValue(){
 
-    System *system = new SystemImpl("SystemWithName", 30.);
+    System *system = new SystemHandle("SystemWithName", 30.);
     assert(round(fabs(system->getValue() - 30.0)* 10000) < 1);
 
     delete system;
@@ -78,7 +81,7 @@ void unit_System_getValue(){
 
 void unit_System_setValue(){
 
-    System *system = new SystemImpl("SystemWithName", 30.);
+    System *system = new SystemHandle("SystemWithName", 30.);
 
     system->setValue(100.);
     assert(round(fabs(system->getValue() - 30.0)* 10000) > 1); 
@@ -89,8 +92,8 @@ void unit_System_setValue(){
 
 void unit_System_assignOverload(){
 
-    System *system1 = new SystemImpl("System1", 50.);
-    System *system2 = new SystemImpl();
+    System *system1 = new SystemHandle("System1", 50.);
+    System *system2 = new SystemHandle();
 
     *system2 = *system1;
 

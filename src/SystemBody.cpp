@@ -14,7 +14,7 @@ SystemBody::~SystemBody(){}
 SystemBody::SystemBody(const System& system){
 
     
-    if(this == &system)
+    if(this == (SystemBody*) &system)
         return;
 
     name = system.getName();
@@ -46,10 +46,7 @@ const double SystemBody::getValue() const{
 
 // --------------------------------------------------
 
-System& SystemBody::operator= (const System &system){
-
-    if(this == &system)
-        return *this;
+SystemBody& SystemBody::operator= (const SystemBody &system){
 
     name = system.getName();
     value = system.getValue();

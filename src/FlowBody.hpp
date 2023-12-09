@@ -1,7 +1,8 @@
-#ifndef FLOW_BODY_H_
-#define FLOW_BODY_H_
+#ifndef FLOW_BODY_HPP_
+#define FLOW_BODY_HPP_
 
 #include "Flow.hpp"
+#include "HandleBodySemDebug.h"
 
 using namespace std;
 
@@ -11,7 +12,7 @@ using namespace std;
  * Flow will keep track of it source and target, and keeps track of the mathematical equation
  * which will define the flow from one System to another.
  */
-class FlowBody: public Flow{
+class FlowBody: public Body{
 
     protected:
         string name; /*!< A string for naming the Flow. */
@@ -156,7 +157,7 @@ class FlowBody: public Flow{
          * @return return a Flow reference which is a copy to the assigned Flow.
         */
        
-        Flow& operator= (const Flow& flow);
+        FlowBody& operator= (const FlowBody& flow);
         
         /**
          * @brief A pure virtual equation method which defines the flow behavior.

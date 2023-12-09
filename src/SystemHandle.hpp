@@ -6,29 +6,31 @@
 #include "System.hpp"
 #include "SystemBody.hpp"
 
+using namespace std;
 
+// template <typename T>
 class SystemHandle : public System, Handle<SystemBody>{
 
     public:	
 
         SystemHandle(){  
-            pImpl_->setName("");
-            pImpl_->setValue(0.0);
+            this->pImpl_->setName("");
+            this->pImpl_->setValue(0.0);
         }
 
         SystemHandle(string name){  
-            pImpl_->setName(name);
-            pImpl_->setValue(0.0);
+            this->pImpl_->setName(name);
+            this->pImpl_->setValue(0.0);
         }
 
         SystemHandle(double value){  
-            pImpl_->setName("");
-            pImpl_->setValue(value);
+            this->pImpl_->setName("");
+            this->pImpl_->setValue(value);
         }
 
         SystemHandle(string name, double value){  
-            pImpl_->setName(name);
-            pImpl_->setValue(value);
+            this->pImpl_->setName(name);
+            this->pImpl_->setValue(value);
         }
         
         /// Destructor
@@ -36,31 +38,32 @@ class SystemHandle : public System, Handle<SystemBody>{
 
         /// copy constructor 
         SystemHandle(const System &system){ 
-            pImpl_->setName(system.getName());
-            pImpl_->setValue(system.getValue());
+            this->pImpl_->setName(system.getName());
+            this->pImpl_->setValue(system.getValue());
         }
 
         /// assignment operator
         SystemHandle& operator=(const System &system){
-            pImpl_->setName(system.getName());
-            pImpl_->setValue(system.getValue());
+            this->pImpl_->setName(system.getName());
+            this->pImpl_->setValue(system.getValue());
+            return *this;
         }
         
-        double getValue(void){
-            return pImpl_->getValue();
+        const double getValue() const{
+            return this->pImpl_->getValue();
         }
         
-        virtual string getName(void){
-            return pImpl_->getName();
+        bool setValue(double val ){
+            return this->pImpl_->setValue(val);
+        }
+        
+        const string getName() const{
+            return this->pImpl_->getName();
         }
 
-        virtual bool setValue(double val ){
-            return pImpl_->setValue(val);
+        bool setName(string id ){
+            return this->pImpl_->setName( id );
         }
-        virtual bool setName(string id ){
-            return pImpl_->setName( id );
-        }
-	
 };
 
 #endif

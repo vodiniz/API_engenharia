@@ -2,8 +2,6 @@
 #define _UNIT_SYSTEM_H_
 
 
-#include "../../src/SystemImpl.hpp"
-
 /**
  * @brief A unitary test for asserting the default constructor of SystemImpl.
 */

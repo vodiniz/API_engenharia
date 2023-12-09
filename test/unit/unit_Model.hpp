@@ -1,7 +1,7 @@
 #ifndef _UNIT_MODEL_H_
 #define _UNIT_MODEL_H_
 
-#include "../../src/FlowImpl.hpp"
+#include "../../src/FlowBody.hpp"
 
 
 
@@ -133,15 +133,15 @@ void unit_Model_createFlow();
 
 void run_unit_test_Model();
 
-class MyFlow : public FlowImpl {
+class MyFlow : public FlowBody {
     //Construtor e Destrutor
     public:
-        using FlowImpl::operator=;
+        using FlowBody::operator=;
         MyFlow(string name=""):
-            FlowImpl(name){}
+            FlowBody(name){}
             
         MyFlow(string name, System *source, System *target): 
-            FlowImpl(name, source, target){}
+            FlowBody(name, source, target){}
             
     protected:
         double equation(){

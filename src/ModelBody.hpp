@@ -1,10 +1,16 @@
-#ifndef MODEL_BODY_H_
-#define MODEL_BODY_H_
+#ifndef MODEL_BODY_HPP_
+#define MODEL_BODY_HPP_
 
 #include <iostream>
 #include <vector>
 
 #include "Model.hpp"
+#include "HandleBodySemDebug.h"
+
+typedef vector<System*>::iterator SystemIterator;
+typedef vector<Flow*>::iterator FlowIterator;
+typedef vector<Model*>::iterator ModelIterator;
+
 
 using namespace std;
 /**
@@ -14,9 +20,11 @@ using namespace std;
  * We can add, remove and update Systems and Flows.
  * We also run simulations based on the startTime and endTime.
 */
-class ModelBody: public Model{
+class ModelBody: public Body{
 
 
+
+    
     protected:
         string name; /*!< A string for naming the Model. */
         int clock = 0; /*!< A integer for keeping track of elapsed time. */

@@ -1,8 +1,14 @@
 #include "ModelBody.hpp"
-#include "SystemImpl.hpp"
-#include "FlowBody.hpp"
+#include "ModelHandle.hpp"
+#include "FlowHandle.hpp"
+#include "SystemHandle.hpp"
 
 vector<Model*> ModelBody::models;
+
+typedef vector<System*>::iterator SystemIterator;
+typedef vector<Flow*>::iterator FlowIterator;
+typedef vector<Model*>::iterator ModelIterator;
+
 
 using namespace std;
 
@@ -17,13 +23,6 @@ ModelBody::~ModelBody(){
     }
     for(FlowIterator it = flowsBegin(); it < flowsEnd(); it++)
         delete *it;
-
-    for(ModelIterator it = modelsBegin(); it < modelsEnd(); it++){
-        if(*it == this){
-            models.erase(it);
-            break;
-        }
-    }
 }
 
 ModelBody::ModelBody(const Model& model){
@@ -62,29 +61,29 @@ const int ModelBody::getClock() const{
 
 // ---------------------------------
 //Iterator
-ModelBody::SystemIterator ModelBody::systemsBegin(){
+SystemIterator ModelBody::systemsBegin(){
     return systems.begin();
 }
 
 
-ModelBody::SystemIterator ModelBody::systemsEnd(){
+SystemIterator ModelBody::systemsEnd(){
     return systems.end();
 }
 
-ModelBody::FlowIterator ModelBody::flowsBegin(){
+FlowIterator ModelBody::flowsBegin(){
     return flows.begin();
 }
 
-ModelBody::FlowIterator ModelBody::flowsEnd(){
+FlowIterator ModelBody::flowsEnd(){
     return flows.end();
 }
 
-ModelBody::ModelIterator ModelBody::modelsBegin(){
+ModelIterator ModelBody::modelsBegin(){
     return models.begin();
 }
 
 
-ModelBody::ModelIterator ModelBody::modelsEnd(){
+ModelIterator ModelBody::modelsEnd(){
     return models.end();
 }
 
@@ -100,7 +99,7 @@ int ModelBody::modelsSize(){
     return models.size();
 }
 
-int ModelBody::modelsSize(){
+int Model::modelsSize(){
     return ModelBody::modelsSize();
 }
 
@@ -315,9 +314,8 @@ bool ModelBody::run(int startTime, int endTime){
 }
 
 Model* ModelBody::createModel(string name){
-    Model* model = new ModelBody(name);
+    Model* model = new ModelHandle(name);
     add(model);
-
     return model;
 }
 
@@ -327,7 +325,7 @@ Model* Model::createModel(string name){
 
 
 System* ModelBody::createSystem(string name, double value){
-    System* system = new SystemImpl(name, value);
+    System* system = new SystemHandle(name, value);
     add(system);
     return system;
 }
