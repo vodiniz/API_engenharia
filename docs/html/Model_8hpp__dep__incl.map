@@ -1,15 +1,16 @@
 <map id="src/Model.hpp" name="src/Model.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="173,5,276,32"/>
-<area shape="rect" id="Node000002" href="$ModelImpl_8hpp.html" title=" " alt="" coords="5,88,134,115"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,42,95,90,92,85,185,37"/>
-<area shape="rect" id="Node000004" href="$functional__tests_8hpp.html" title=" " alt="" coords="158,80,290,123"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="227,48,227,80,222,80,222,48"/>
-<area shape="rect" id="Node000007" href="$unit__Model_8cpp.html" title=" " alt="" coords="315,88,475,115"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="266,37,369,85,367,90,264,41"/>
-<area shape="rect" id="Node000003" href="$ModelImpl_8cpp.html" title=" " alt="" coords="5,179,134,205"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="72,130,72,178,67,178,67,130"/>
-<area shape="rect" id="Node000005" href="$functional__tests_8cpp.html" title=" " alt="" coords="158,171,290,213"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="227,138,227,170,222,170,222,138"/>
-<area shape="rect" id="Node000006" href="$mainFunctional_8cpp.html" title=" " alt="" coords="315,179,504,205"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="282,127,384,176,382,180,280,132"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="187,5,290,32"/>
+<area shape="rect" id="Node000002" href="$ModelBody_8hpp.html" title=" " alt="" coords="67,88,199,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,44,151,90,148,85,208,39"/>
+<area shape="rect" id="Node000004" href="$ModelHandle_8hpp.html" title=" " alt="" coords="167,171,312,197"/>
+<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="241,47,242,170,237,170,236,48"/>
+<area shape="rect" id="Node000006" href="$functional__tests_8cpp.html" title=" " alt="" coords="276,80,408,123"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="268,40,317,77,314,82,265,44"/>
+<area shape="rect" id="Node000003" href="$ModelBody_8cpp.html" title=" " alt="" coords="5,245,138,272"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,130,79,246,74,244,120,128"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="163,122,225,168,221,172,160,126"/>
+<area shape="rect" id="Node000005" href="$unit__Model_8cpp.html" title=" " alt="" coords="162,245,322,272"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="137,129,143,163,158,196,185,223,216,243,213,247,181,227,153,199,138,164,132,130"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="197,206,102,247,100,242,195,201"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="243,213,244,245,239,245,238,213"/>
 </map>

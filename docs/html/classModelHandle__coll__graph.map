@@ -1,0 +1,26 @@
+<map id="ModelHandle" name="ModelHandle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="193,2524,433,3521"/>
+<area shape="rect" id="Node000002" href="$classModel.html" title="Model interface, which will hide the implementation of methods." alt="" coords="194,1451,400,2475"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="308,2490,308,2524,303,2524,302,2490"/>
+<area shape="rect" id="Node000003" href="$classHandle.html" title=" " alt="" coords="425,1888,633,2037"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="514,2053,417,2525,412,2524,508,2052"/>
+<area shape="rect" id="Node000004" href="$classModelBody.html" title="Represents the simulation model." alt="" coords="276,416,516,1387"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="459,1386,520,1871,515,1871,454,1387"/>
+<area shape="rect" id="Node000005" href="$classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="76,139,238,352"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="203,365,278,571,273,573,198,367"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="18,5,45,75"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="26,75,16,129,9,199,10,276,15,314,24,351,45,409,70,465,130,573,199,672,267,758,263,762,194,676,126,576,65,467,40,411,19,353,10,315,5,276,4,198,11,128,21,74"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="47,61,85,123,81,126,43,64"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="262,211,308,280"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="293,280,313,399,308,400,288,280"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="332,211,459,280"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="398,280,398,399,393,399,393,280"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="484,211,593,280"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="534,281,507,400,502,399,528,279"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="618,211,771,280"/>
+<area shape="poly" id="edge10_Node000004_Node000010" title=" " alt="" coords="681,281,525,623,520,621,677,279"/>
+<area shape="rect" id="Node000011" href="$classHandle.html" title="The classes Handle and Body implements the &quot;bridge&quot; design pattern (also known as &quot;handle/body idiom&quot;..." alt="" coords="630,827,806,976"/>
+<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="705,991,545,1889,539,1888,700,990"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="796,211,825,280"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="808,280,734,810,728,810,803,280"/>
+</map>

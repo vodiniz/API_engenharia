@@ -4,8 +4,13 @@
 {\ttfamily \#include $<$assert.\+h$>$}\newline
 {\ttfamily \#include $<$math.\+h$>$}\newline
 {\ttfamily \#include "{}unit\+\_\+\+Flow.\+hpp"{}}\newline
-{\ttfamily \#include "{}../../src/\+System\+Impl.\+hpp"{}}\newline
-Include dependency graph for unit\+\_\+\+Flow.\+cpp\+:\nopagebreak
+{\ttfamily \#include "{}../../src/\+Flow\+Handle.\+hpp"{}}\newline
+{\ttfamily \#include "{}../../src/\+Flow\+Body.\+hpp"{}}\newline
+{\ttfamily \#include "{}../../src/\+System\+Handle.\+hpp"{}}\newline
+{\ttfamily \#include "{}../../src/\+System\+Body.\+hpp"{}}\newline
+{\ttfamily \#include "{}../flows/\+Flow\+Test.\+hpp"{}}\newline
+Include dependency graph for unit\+\_\+\+Flow.\+cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -15,35 +20,35 @@ Include dependency graph for unit\+\_\+\+Flow.\+cpp\+:\nopagebreak
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{unit__Flow_8cpp_ab32833442c11555f0c9fa1d7c1741c64}{unit\+\_\+\+Flow\+\_\+constructor\+\_\+default}} ()
-\begin{DoxyCompactList}\small\item\em A unitary test for asserting the default constructor of \doxylink{classFlowImpl}{Flow\+Impl}. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{unit__Flow_8cpp_adf0c070fb11219f7f6368e1976a5c7ca}{unit\+\_\+\+Flow\+\_\+constructor\+\_\+with\+\_\+name}} ()
-\begin{DoxyCompactList}\small\item\em A unitary test for asserting the constructor of \doxylink{classFlowImpl}{Flow\+Impl} with name param. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{unit__Flow_8cpp_a96867eac39dbb89af8b3cc722cfdcb6b}{unit\+\_\+\+Flow\+\_\+constructor\+\_\+with\+\_\+name\+\_\+source\+\_\+target}} ()
-\begin{DoxyCompactList}\small\item\em A unitary test for asserting the constructor of \doxylink{classFlowImpl}{Flow\+Impl} with name, source and target params. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{unit__Flow_8cpp_a552e52c045c91bbb5ce653952b7b2075}{unit\+\_\+\+Flow\+\_\+copy\+\_\+constructor}} ()
-\begin{DoxyCompactList}\small\item\em A unitary test for asserting the copy constructor of \doxylink{classFlowImpl}{Flow\+Impl}. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{unit__Flow_8cpp_a5d5063d01336bb21034b1c46dbdb740a}{unit\+\_\+\+Flow\+\_\+destructor}} ()
-\begin{DoxyCompactList}\small\item\em A unitary test for asserting the destructor of \doxylink{classFlowImpl}{Flow\+Impl}. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{unit__Flow_8cpp_a7dcad29026912f67d033a190e6e35ca6}{unit\+\_\+\+Flow\+\_\+get\+Name}} ()
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{unit__Flow_8cpp_ab32833442c11555f0c9fa1d7c1741c64}{unit\+\_\+\+Flow\+\_\+constructor\+\_\+default}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the default constructor of Flow\+Impl. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{unit__Flow_8cpp_adf0c070fb11219f7f6368e1976a5c7ca}{unit\+\_\+\+Flow\+\_\+constructor\+\_\+with\+\_\+name}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the constructor of Flow\+Impl with name param. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{unit__Flow_8cpp_a96867eac39dbb89af8b3cc722cfdcb6b}{unit\+\_\+\+Flow\+\_\+constructor\+\_\+with\+\_\+name\+\_\+source\+\_\+target}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the constructor of Flow\+Impl with name, source and target params. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{unit__Flow_8cpp_a552e52c045c91bbb5ce653952b7b2075}{unit\+\_\+\+Flow\+\_\+copy\+\_\+constructor}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the copy constructor of Flow\+Impl. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{unit__Flow_8cpp_a5d5063d01336bb21034b1c46dbdb740a}{unit\+\_\+\+Flow\+\_\+destructor}} ()
+\begin{DoxyCompactList}\small\item\em A unitary test for asserting the destructor of Flow\+Impl. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{unit__Flow_8cpp_a7dcad29026912f67d033a190e6e35ca6}{unit\+\_\+\+Flow\+\_\+get\+Name}} ()
 \begin{DoxyCompactList}\small\item\em A unitary test for asserting the get\+Name method. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{unit__Flow_8cpp_aadf402251a021acf6fda7327b7a52320}{unit\+\_\+\+Flow\+\_\+set\+Name}} ()
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{unit__Flow_8cpp_aadf402251a021acf6fda7327b7a52320}{unit\+\_\+\+Flow\+\_\+set\+Name}} ()
 \begin{DoxyCompactList}\small\item\em A unitary test for asserting the set\+Name method. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{unit__Flow_8cpp_a0dc76658e06597697628386d69327367}{unit\+\_\+\+Flow\+\_\+get\+Source}} ()
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{unit__Flow_8cpp_a0dc76658e06597697628386d69327367}{unit\+\_\+\+Flow\+\_\+get\+Source}} ()
 \begin{DoxyCompactList}\small\item\em A unitary test for asserting the get\+Source method. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{unit__Flow_8cpp_a213cf3a2bd094e466707a33416124ce4}{unit\+\_\+\+Flow\+\_\+set\+Source}} ()
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{unit__Flow_8cpp_a213cf3a2bd094e466707a33416124ce4}{unit\+\_\+\+Flow\+\_\+set\+Source}} ()
 \begin{DoxyCompactList}\small\item\em A unitary test for asserting the set\+Source method. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{unit__Flow_8cpp_a89661cef89f6beb434f6097691c03538}{unit\+\_\+\+Flow\+\_\+get\+Target}} ()
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{unit__Flow_8cpp_a89661cef89f6beb434f6097691c03538}{unit\+\_\+\+Flow\+\_\+get\+Target}} ()
 \begin{DoxyCompactList}\small\item\em A unitary test for asserting the get\+Target method. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{unit__Flow_8cpp_a0b2a81b6dbbc3c5b1b25874640705654}{unit\+\_\+\+Flow\+\_\+set\+Target}} ()
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{unit__Flow_8cpp_a0b2a81b6dbbc3c5b1b25874640705654}{unit\+\_\+\+Flow\+\_\+set\+Target}} ()
 \begin{DoxyCompactList}\small\item\em A unitary test for asserting the set\+Target method. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{unit__Flow_8cpp_a91e2ffdd821e194708355a4802d9a838}{unit\+\_\+\+Flow\+\_\+clear\+Source}} ()
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{unit__Flow_8cpp_a91e2ffdd821e194708355a4802d9a838}{unit\+\_\+\+Flow\+\_\+clear\+Source}} ()
 \begin{DoxyCompactList}\small\item\em A unitary test for asserting the clear\+Source method. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{unit__Flow_8cpp_adcd6d85344284a146ff77dd6140e94b6}{unit\+\_\+\+Flow\+\_\+clear\+Target}} ()
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{unit__Flow_8cpp_adcd6d85344284a146ff77dd6140e94b6}{unit\+\_\+\+Flow\+\_\+clear\+Target}} ()
 \begin{DoxyCompactList}\small\item\em A unitary test for asserting the clear\+Target method. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{unit__Flow_8cpp_a2e82a59b324cb964c490e446e8378540}{unit\+\_\+\+Flow\+\_\+assign\+Overload}} ()
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{unit__Flow_8cpp_a2e82a59b324cb964c490e446e8378540}{unit\+\_\+\+Flow\+\_\+assign\+Overload}} ()
 \begin{DoxyCompactList}\small\item\em A unitary test for asserting the overload of the assignment(=) operator. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{unit__Flow_8cpp_a6683c1fa1a8445fa330116af20af24dc}{run\+\_\+unit\+\_\+test\+\_\+\+Flow}} ()
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{unit__Flow_8cpp_a6683c1fa1a8445fa330116af20af24dc}{run\+\_\+unit\+\_\+test\+\_\+\+Flow}} ()
 \end{DoxyCompactItemize}
 
 
@@ -52,13 +57,14 @@ void \mbox{\hyperlink{unit__Flow_8cpp_a6683c1fa1a8445fa330116af20af24dc}{run\+\_
 \index{unit\_Flow.cpp@{unit\_Flow.cpp}!run\_unit\_test\_Flow@{run\_unit\_test\_Flow}}
 \index{run\_unit\_test\_Flow@{run\_unit\_test\_Flow}!unit\_Flow.cpp@{unit\_Flow.cpp}}
 \doxysubsubsection{\texorpdfstring{run\_unit\_test\_Flow()}{run\_unit\_test\_Flow()}}
-{\footnotesize\ttfamily void run\+\_\+unit\+\_\+test\+\_\+\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{void}} run\+\_\+unit\+\_\+test\+\_\+\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{unit__Flow_8cpp_a6683c1fa1a8445fa330116af20af24dc_cgraph}
+\includegraphics[height=550pt]{unit__Flow_8cpp_a6683c1fa1a8445fa330116af20af24dc_cgraph}
 \end{center}
 \end{figure}
 Here is the caller graph for this function\+:\nopagebreak
@@ -72,19 +78,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{unit\_Flow.cpp@{unit\_Flow.cpp}!unit\_Flow\_assignOverload@{unit\_Flow\_assignOverload}}
 \index{unit\_Flow\_assignOverload@{unit\_Flow\_assignOverload}!unit\_Flow.cpp@{unit\_Flow.cpp}}
 \doxysubsubsection{\texorpdfstring{unit\_Flow\_assignOverload()}{unit\_Flow\_assignOverload()}}
-{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+assign\+Overload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{void}} unit\+\_\+\+Flow\+\_\+assign\+Overload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 A unitary test for asserting the overload of the assignment(=) operator. 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=334pt]{unit__Flow_8cpp_a2e82a59b324cb964c490e446e8378540_cgraph}
-\end{center}
-\end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -96,19 +95,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{unit\_Flow.cpp@{unit\_Flow.cpp}!unit\_Flow\_clearSource@{unit\_Flow\_clearSource}}
 \index{unit\_Flow\_clearSource@{unit\_Flow\_clearSource}!unit\_Flow.cpp@{unit\_Flow.cpp}}
 \doxysubsubsection{\texorpdfstring{unit\_Flow\_clearSource()}{unit\_Flow\_clearSource()}}
-{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+clear\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{void}} unit\+\_\+\+Flow\+\_\+clear\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 A unitary test for asserting the clear\+Source method. 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=326pt]{unit__Flow_8cpp_a91e2ffdd821e194708355a4802d9a838_cgraph}
-\end{center}
-\end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -120,36 +112,22 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{unit\_Flow.cpp@{unit\_Flow.cpp}!unit\_Flow\_clearTarget@{unit\_Flow\_clearTarget}}
 \index{unit\_Flow\_clearTarget@{unit\_Flow\_clearTarget}!unit\_Flow.cpp@{unit\_Flow.cpp}}
 \doxysubsubsection{\texorpdfstring{unit\_Flow\_clearTarget()}{unit\_Flow\_clearTarget()}}
-{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+clear\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{void}} unit\+\_\+\+Flow\+\_\+clear\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 A unitary test for asserting the clear\+Target method. 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=318pt]{unit__Flow_8cpp_adcd6d85344284a146ff77dd6140e94b6_cgraph}
-\end{center}
-\end{figure}
 \Hypertarget{unit__Flow_8cpp_ab32833442c11555f0c9fa1d7c1741c64}\label{unit__Flow_8cpp_ab32833442c11555f0c9fa1d7c1741c64} 
 \index{unit\_Flow.cpp@{unit\_Flow.cpp}!unit\_Flow\_constructor\_default@{unit\_Flow\_constructor\_default}}
 \index{unit\_Flow\_constructor\_default@{unit\_Flow\_constructor\_default}!unit\_Flow.cpp@{unit\_Flow.cpp}}
 \doxysubsubsection{\texorpdfstring{unit\_Flow\_constructor\_default()}{unit\_Flow\_constructor\_default()}}
-{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+constructor\+\_\+default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{void}} unit\+\_\+\+Flow\+\_\+constructor\+\_\+default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-A unitary test for asserting the default constructor of \doxylink{classFlowImpl}{Flow\+Impl}. 
+A unitary test for asserting the default constructor of Flow\+Impl. 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=315pt]{unit__Flow_8cpp_ab32833442c11555f0c9fa1d7c1741c64_cgraph}
-\end{center}
-\end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -161,19 +139,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{unit\_Flow.cpp@{unit\_Flow.cpp}!unit\_Flow\_constructor\_with\_name@{unit\_Flow\_constructor\_with\_name}}
 \index{unit\_Flow\_constructor\_with\_name@{unit\_Flow\_constructor\_with\_name}!unit\_Flow.cpp@{unit\_Flow.cpp}}
 \doxysubsubsection{\texorpdfstring{unit\_Flow\_constructor\_with\_name()}{unit\_Flow\_constructor\_with\_name()}}
-{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+constructor\+\_\+with\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{void}} unit\+\_\+\+Flow\+\_\+constructor\+\_\+with\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-A unitary test for asserting the constructor of \doxylink{classFlowImpl}{Flow\+Impl} with name param. 
+A unitary test for asserting the constructor of Flow\+Impl with name param. 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=315pt]{unit__Flow_8cpp_adf0c070fb11219f7f6368e1976a5c7ca_cgraph}
-\end{center}
-\end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -185,19 +156,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{unit\_Flow.cpp@{unit\_Flow.cpp}!unit\_Flow\_constructor\_with\_name\_source\_target@{unit\_Flow\_constructor\_with\_name\_source\_target}}
 \index{unit\_Flow\_constructor\_with\_name\_source\_target@{unit\_Flow\_constructor\_with\_name\_source\_target}!unit\_Flow.cpp@{unit\_Flow.cpp}}
 \doxysubsubsection{\texorpdfstring{unit\_Flow\_constructor\_with\_name\_source\_target()}{unit\_Flow\_constructor\_with\_name\_source\_target()}}
-{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+constructor\+\_\+with\+\_\+name\+\_\+source\+\_\+target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{void}} unit\+\_\+\+Flow\+\_\+constructor\+\_\+with\+\_\+name\+\_\+source\+\_\+target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-A unitary test for asserting the constructor of \doxylink{classFlowImpl}{Flow\+Impl} with name, source and target params. 
+A unitary test for asserting the constructor of Flow\+Impl with name, source and target params. 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=336pt]{unit__Flow_8cpp_a96867eac39dbb89af8b3cc722cfdcb6b_cgraph}
-\end{center}
-\end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -209,19 +173,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{unit\_Flow.cpp@{unit\_Flow.cpp}!unit\_Flow\_copy\_constructor@{unit\_Flow\_copy\_constructor}}
 \index{unit\_Flow\_copy\_constructor@{unit\_Flow\_copy\_constructor}!unit\_Flow.cpp@{unit\_Flow.cpp}}
 \doxysubsubsection{\texorpdfstring{unit\_Flow\_copy\_constructor()}{unit\_Flow\_copy\_constructor()}}
-{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+copy\+\_\+constructor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{void}} unit\+\_\+\+Flow\+\_\+copy\+\_\+constructor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-A unitary test for asserting the copy constructor of \doxylink{classFlowImpl}{Flow\+Impl}. 
+A unitary test for asserting the copy constructor of Flow\+Impl. 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=342pt]{unit__Flow_8cpp_a552e52c045c91bbb5ce653952b7b2075_cgraph}
-\end{center}
-\end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -233,11 +190,11 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{unit\_Flow.cpp@{unit\_Flow.cpp}!unit\_Flow\_destructor@{unit\_Flow\_destructor}}
 \index{unit\_Flow\_destructor@{unit\_Flow\_destructor}!unit\_Flow.cpp@{unit\_Flow.cpp}}
 \doxysubsubsection{\texorpdfstring{unit\_Flow\_destructor()}{unit\_Flow\_destructor()}}
-{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+destructor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{void}} unit\+\_\+\+Flow\+\_\+destructor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-A unitary test for asserting the destructor of \doxylink{classFlowImpl}{Flow\+Impl}. 
+A unitary test for asserting the destructor of Flow\+Impl. 
 
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -250,19 +207,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{unit\_Flow.cpp@{unit\_Flow.cpp}!unit\_Flow\_getName@{unit\_Flow\_getName}}
 \index{unit\_Flow\_getName@{unit\_Flow\_getName}!unit\_Flow.cpp@{unit\_Flow.cpp}}
 \doxysubsubsection{\texorpdfstring{unit\_Flow\_getName()}{unit\_Flow\_getName()}}
-{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{void}} unit\+\_\+\+Flow\+\_\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 A unitary test for asserting the get\+Name method. 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=302pt]{unit__Flow_8cpp_a7dcad29026912f67d033a190e6e35ca6_cgraph}
-\end{center}
-\end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -274,19 +224,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{unit\_Flow.cpp@{unit\_Flow.cpp}!unit\_Flow\_getSource@{unit\_Flow\_getSource}}
 \index{unit\_Flow\_getSource@{unit\_Flow\_getSource}!unit\_Flow.cpp@{unit\_Flow.cpp}}
 \doxysubsubsection{\texorpdfstring{unit\_Flow\_getSource()}{unit\_Flow\_getSource()}}
-{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{void}} unit\+\_\+\+Flow\+\_\+get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 A unitary test for asserting the get\+Source method. 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=319pt]{unit__Flow_8cpp_a0dc76658e06597697628386d69327367_cgraph}
-\end{center}
-\end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -298,19 +241,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{unit\_Flow.cpp@{unit\_Flow.cpp}!unit\_Flow\_getTarget@{unit\_Flow\_getTarget}}
 \index{unit\_Flow\_getTarget@{unit\_Flow\_getTarget}!unit\_Flow.cpp@{unit\_Flow.cpp}}
 \doxysubsubsection{\texorpdfstring{unit\_Flow\_getTarget()}{unit\_Flow\_getTarget()}}
-{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+get\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{void}} unit\+\_\+\+Flow\+\_\+get\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 A unitary test for asserting the get\+Target method. 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=315pt]{unit__Flow_8cpp_a89661cef89f6beb434f6097691c03538_cgraph}
-\end{center}
-\end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -322,19 +258,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{unit\_Flow.cpp@{unit\_Flow.cpp}!unit\_Flow\_setName@{unit\_Flow\_setName}}
 \index{unit\_Flow\_setName@{unit\_Flow\_setName}!unit\_Flow.cpp@{unit\_Flow.cpp}}
 \doxysubsubsection{\texorpdfstring{unit\_Flow\_setName()}{unit\_Flow\_setName()}}
-{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+set\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{void}} unit\+\_\+\+Flow\+\_\+set\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 A unitary test for asserting the set\+Name method. 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=302pt]{unit__Flow_8cpp_aadf402251a021acf6fda7327b7a52320_cgraph}
-\end{center}
-\end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -346,19 +275,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{unit\_Flow.cpp@{unit\_Flow.cpp}!unit\_Flow\_setSource@{unit\_Flow\_setSource}}
 \index{unit\_Flow\_setSource@{unit\_Flow\_setSource}!unit\_Flow.cpp@{unit\_Flow.cpp}}
 \doxysubsubsection{\texorpdfstring{unit\_Flow\_setSource()}{unit\_Flow\_setSource()}}
-{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+set\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{void}} unit\+\_\+\+Flow\+\_\+set\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 A unitary test for asserting the set\+Source method. 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=319pt]{unit__Flow_8cpp_a213cf3a2bd094e466707a33416124ce4_cgraph}
-\end{center}
-\end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -370,19 +292,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{unit\_Flow.cpp@{unit\_Flow.cpp}!unit\_Flow\_setTarget@{unit\_Flow\_setTarget}}
 \index{unit\_Flow\_setTarget@{unit\_Flow\_setTarget}!unit\_Flow.cpp@{unit\_Flow.cpp}}
 \doxysubsubsection{\texorpdfstring{unit\_Flow\_setTarget()}{unit\_Flow\_setTarget()}}
-{\footnotesize\ttfamily void unit\+\_\+\+Flow\+\_\+set\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{void}} unit\+\_\+\+Flow\+\_\+set\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 A unitary test for asserting the set\+Target method. 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=315pt]{unit__Flow_8cpp_a0b2a81b6dbbc3c5b1b25874640705654_cgraph}
-\end{center}
-\end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}

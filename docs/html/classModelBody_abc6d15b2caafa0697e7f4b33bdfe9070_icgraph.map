@@ -1,0 +1,5 @@
+<map id="ModelBody::getClock" name="ModelBody::getClock">
+<area shape="rect" id="Node000001" title="Get the clock field on Flow." alt="" coords="211,5,357,32"/>
+<area shape="rect" id="Node000002" href="$classModelHandle.html#a19328ab5256d9d6ba86cea8f6f41562d" title="Virtual method to get the current clock." alt="" coords="5,5,163,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,21,163,21,163,16,195,16"/>
+</map>

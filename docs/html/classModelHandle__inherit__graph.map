@@ -1,0 +1,9 @@
+<map id="ModelHandle" name="ModelHandle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1292,245,2289"/>
+<area shape="rect" id="Node000002" href="$classModel.html" title="Model interface, which will hide the implementation of methods." alt="" coords="6,219,213,1243"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,1258,120,1292,115,1292,115,1258"/>
+<area shape="rect" id="Node000003" href="$classHandle.html" title=" " alt="" coords="237,656,445,805"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="326,821,229,1293,224,1292,321,820"/>
+<area shape="rect" id="Node000004" href="$classHandle.html" title="The classes Handle and Body implements the &quot;bridge&quot; design pattern (also known as &quot;handle/body idiom&quot;..." alt="" coords="253,5,429,155"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="344,170,344,656,339,656,339,170"/>
+</map>

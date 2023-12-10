@@ -133,22 +133,5 @@ void unit_Model_createFlow();
 
 void run_unit_test_Model();
 
-class MyFlow : public FlowBody {
-    //Construtor e Destrutor
-    public:
-        using FlowBody::operator=;
-        MyFlow(string name=""):
-            FlowBody(name){}
-            
-        MyFlow(string name, System *source, System *target): 
-            FlowBody(name, source, target){}
-            
-    protected:
-        double equation(){
-            return (getSource()->getValue())/2;
-        }
-    
-};
-
 
 #endif

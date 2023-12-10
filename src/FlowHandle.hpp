@@ -41,24 +41,24 @@ public:
         return  Handle<T>::pImpl_->getName();
     }
 
-    bool setName(string){
-        return  Handle<T>::pImpl_->setName();
+    bool setName(string name){
+        return  Handle<T>::pImpl_->setName(name);
     }
 
     System* getSource() const{
         return  Handle<T>::pImpl_->getSource();
     }
 
-    bool setSource(System*){
-        return  Handle<T>::pImpl_->getSource();
+    bool setSource(System *source){
+        return  Handle<T>::pImpl_->setSource(source);
     }
 
     System* getTarget() const{
         return  Handle<T>::pImpl_->getTarget();
     }
 
-    bool setTarget(System*){
-        return  Handle<T>::pImpl_->setTarget();
+    bool setTarget(System *target){
+        return  Handle<T>::pImpl_->setTarget(target);
     }
 
     bool clearSource(){
@@ -67,14 +67,6 @@ public:
 
     bool clearTarget(){
         return  Handle<T>::pImpl_->clearTarget();
-    }
-
-    Flow& operator= (const Flow& flow){
-            Handle<T>::pImpl_->setName(flow.getName());
-            Handle<T>::pImpl_->setSource(flow.getSource());
-            Handle<T>::pImpl_->setTarget(flow.getTarget());
-
-        return this;
     }
 
     double equation(){

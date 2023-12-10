@@ -237,6 +237,13 @@ bool ModelBody::updateFlow(string currentName, System* source, System* target, s
     return false;
 }
 
+
+bool ModelBody::removeModel(ModelIterator model){
+    models.erase(model);
+    return true;
+}
+
+
 bool ModelBody::add(Model* model){
     
     size_t size = models.size();

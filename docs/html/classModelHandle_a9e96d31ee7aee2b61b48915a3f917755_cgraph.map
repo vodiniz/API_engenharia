@@ -1,0 +1,5 @@
+<map id="ModelHandle::flowsEnd" name="ModelHandle::flowsEnd">
+<area shape="rect" id="Node000001" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="5,5,165,32"/>
+<area shape="rect" id="Node000002" href="$classModelBody.html#aa554b9cc96eec3ee9bcc19b7f79bbb28" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="213,5,361,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,16,197,16,197,21,165,21"/>
+</map>

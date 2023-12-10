@@ -1,0 +1,9 @@
+<map id="ModelHandle::removeFlow" name="ModelHandle::removeFlow">
+<area shape="rect" id="Node000001" title="Virtual method to remove a Flow pointer from the #flows container." alt="" coords="5,31,182,57"/>
+<area shape="rect" id="Node000002" href="$classModelBody.html#a5588ff1697d769b9d927c3ac95e99c23" title="Remove a Flow pointer from the flows container." alt="" coords="230,31,395,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,41,214,41,214,47,182,47"/>
+<area shape="rect" id="Node000003" href="$classModelBody.html#abc366685d85c4c93d10936f697e286b8" title="Return a iterator to the first Flow in the container." alt="" coords="443,5,601,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="395,31,427,27,428,33,396,37"/>
+<area shape="rect" id="Node000004" href="$classModelBody.html#aa554b9cc96eec3ee9bcc19b7f79bbb28" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="448,56,596,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="396,51,433,56,432,61,395,57"/>
+</map>

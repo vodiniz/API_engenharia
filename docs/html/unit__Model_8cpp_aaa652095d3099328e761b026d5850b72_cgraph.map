@@ -1,21 +1,13 @@
 <map id="unit_Model_removeSystem_pointer" name="unit_Model_removeSystem_pointer">
-<area shape="rect" id="Node000001" title="A unitary test for asserting the removeSystem method with a System pointer." alt="" coords="5,124,185,167"/>
-<area shape="rect" id="Node000002" href="$classModel.html#a97f352b56351b15cea6d989f82ebd19a" title="Method for Creating a Model object." alt="" coords="241,31,377,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,121,177,94,232,67,247,61,249,66,234,72,180,99,133,126"/>
-<area shape="rect" id="Node000007" href="$classModel.html#a7b9f1b0741088f4cf0874a477fb663b5" title="Method for creating a System." alt="" coords="236,81,382,108"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="185,121,234,110,235,115,186,127"/>
-<area shape="rect" id="Node000008" href="$classModel.html#a8d3f7c6c1176d094c1e63fc6270d6edc" title="Virtual method to remove a System pointer from the #systems container." alt="" coords="233,132,385,159"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="185,143,217,143,217,148,185,148"/>
-<area shape="rect" id="Node000009" href="$classModel.html#a07fcdf49b02e037cfcf1036b47b9ac27" title="Virtual method which return a iterator to the first System in the container." alt="" coords="235,183,383,209"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="186,164,235,176,234,181,185,169"/>
-<area shape="rect" id="Node000010" href="$classModel.html#a0fbe0f40b959f8303d23a003d4a00257" title="Virtual method for getting the size of the systems container." alt="" coords="239,233,379,260"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="133,165,180,192,234,219,249,225,247,230,232,224,177,197,130,169"/>
-<area shape="rect" id="Node000003" href="$classModelImpl.html#a4b8c8df9ccdc2fc1365ab520689d4763" title="Method for Creating a Model object." alt="" coords="433,31,593,57"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="377,41,417,41,417,47,377,47"/>
-<area shape="rect" id="Node000004" href="$classModelImpl.html#aa01c228bf49f0b7f5d72e293ac18defb" title="Add a System pointer to the systems container." alt="" coords="641,31,752,57"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="594,41,626,41,626,47,594,47"/>
-<area shape="rect" id="Node000005" href="$classModelImpl.html#aa4e0c943fef808771f0800f03ae84386" title="Function for getting the size of the flows container." alt="" coords="809,5,956,32"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="752,34,793,28,794,33,753,39"/>
-<area shape="rect" id="Node000006" href="$classModelImpl.html#ad95b31c43021dec4c4b67cb74a2dc138" title="Method for getting the size of the systems container." alt="" coords="800,56,965,83"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="753,49,785,53,784,59,752,54"/>
+<area shape="rect" id="Node000001" title="A unitary test for asserting the removeSystem method with a System pointer." alt="" coords="5,23,185,65"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a97f352b56351b15cea6d989f82ebd19a" title="Method for Creating a Model object." alt="" coords="233,31,368,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,41,217,41,217,47,185,47"/>
+<area shape="rect" id="Node000003" href="$classModelBody.html#ad404ede797435494c2155ec92f391f0d" title="Method for Creating a Model object." alt="" coords="416,31,581,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="368,41,400,41,400,47,368,47"/>
+<area shape="rect" id="Node000004" href="$classModelBody.html#ac8f68f6da92b5d0444ad0945cc369672" title="Add a System pointer to the systems container." alt="" coords="629,31,745,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="582,41,614,41,614,47,582,47"/>
+<area shape="rect" id="Node000005" href="$classModelBody.html#a11872814d1b06d4f0204c340a98ed36e" title="Function for getting the size of the flows container." alt="" coords="802,5,954,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="745,34,786,28,787,33,746,39"/>
+<area shape="rect" id="Node000006" href="$classModelBody.html#ad69f1633c263a49bda25af43801e34f8" title="Method for getting the size of the systems container." alt="" coords="793,56,963,83"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="746,49,778,53,777,59,745,54"/>
 </map>

@@ -1,23 +1,13 @@
 <map id="complexTest" name="complexTest">
-<area shape="rect" id="Node000001" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="5,107,101,133"/>
-<area shape="rect" id="Node000002" href="$classModel.html#aada2bc25c07fec056a11cec64ab38194" title="Method for creating a Flow with template." alt="" coords="157,5,286,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,105,101,74,147,42,159,36,161,41,150,46,105,78,70,109"/>
-<area shape="rect" id="Node000004" href="$classModel.html#a97f352b56351b15cea6d989f82ebd19a" title="Method for Creating a Model object." alt="" coords="154,56,289,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="99,103,159,85,161,90,101,109"/>
-<area shape="rect" id="Node000009" href="$classModel.html#a7b9f1b0741088f4cf0874a477fb663b5" title="Method for creating a System." alt="" coords="149,107,294,133"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="101,117,133,117,133,123,101,123"/>
-<area shape="rect" id="Node000010" href="$classSystem.html#aab7b27ce6f7644395b8a47b5edfe37a3" title="Virtual method to get the value field on System." alt="" coords="159,157,284,184"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="101,131,161,150,159,155,99,137"/>
-<area shape="rect" id="Node000011" href="$classModel.html#aa2c58d924e023fe497cefbc6547dbea6" title="Virtual method to run the simulation." alt="" coords="180,208,263,235"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="70,131,105,162,150,194,167,202,165,207,147,198,101,166,66,135"/>
-<area shape="rect" id="Node000003" href="$classModel.html#a5518050921f78abc062b9d861c15db11" title="Virtual method to add a Flow pointer to the #flows container." alt="" coords="380,5,465,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="286,16,364,16,364,21,286,21"/>
-<area shape="rect" id="Node000005" href="$classModelImpl.html#a4b8c8df9ccdc2fc1365ab520689d4763" title="Method for Creating a Model object." alt="" coords="342,56,502,83"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="289,67,326,67,326,72,289,72"/>
-<area shape="rect" id="Node000006" href="$classModelImpl.html#aa01c228bf49f0b7f5d72e293ac18defb" title="Add a System pointer to the systems container." alt="" coords="550,56,661,83"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="503,67,535,67,535,72,503,72"/>
-<area shape="rect" id="Node000007" href="$classModelImpl.html#aa4e0c943fef808771f0800f03ae84386" title="Function for getting the size of the flows container." alt="" coords="718,31,865,57"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="661,59,702,53,703,59,662,64"/>
-<area shape="rect" id="Node000008" href="$classModelImpl.html#ad95b31c43021dec4c4b67cb74a2dc138" title="Method for getting the size of the systems container." alt="" coords="709,81,874,108"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="662,74,694,79,693,84,661,80"/>
+<area shape="rect" id="Node000001" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="5,31,101,57"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a97f352b56351b15cea6d989f82ebd19a" title="Method for Creating a Model object." alt="" coords="149,31,284,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,41,133,41,133,47,101,47"/>
+<area shape="rect" id="Node000003" href="$classModelBody.html#ad404ede797435494c2155ec92f391f0d" title="Method for Creating a Model object." alt="" coords="332,31,497,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="284,41,316,41,316,47,284,47"/>
+<area shape="rect" id="Node000004" href="$classModelBody.html#ac8f68f6da92b5d0444ad0945cc369672" title="Add a System pointer to the systems container." alt="" coords="545,31,661,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="498,41,530,41,530,47,498,47"/>
+<area shape="rect" id="Node000005" href="$classModelBody.html#a11872814d1b06d4f0204c340a98ed36e" title="Function for getting the size of the flows container." alt="" coords="718,5,870,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="661,34,702,28,703,33,662,39"/>
+<area shape="rect" id="Node000006" href="$classModelBody.html#ad69f1633c263a49bda25af43801e34f8" title="Method for getting the size of the systems container." alt="" coords="709,56,879,83"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="662,49,694,53,693,59,661,54"/>
 </map>

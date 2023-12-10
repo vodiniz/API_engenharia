@@ -1,0 +1,9 @@
+<map id="ModelBody::setName" name="ModelBody::setName">
+<area shape="rect" id="Node000001" title="Set a new name for the Model." alt="" coords="235,56,382,83"/>
+<area shape="rect" id="Node000002" href="$classModelHandle.html#a1c203c425e69e245ad1e3f65143fa69b" title=" " alt="" coords="5,5,187,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,54,154,35,156,30,235,49"/>
+<area shape="rect" id="Node000003" href="$classModelHandle.html#acfca9fe5f344efadae912c048ef65138" title=" " alt="" coords="5,56,187,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,72,187,72,187,67,219,67"/>
+<area shape="rect" id="Node000004" href="$classModelHandle.html#ac5b47b6aba39fd6d0a4c590e07a2d2be" title="Virtual method to set a new name for the Model." alt="" coords="17,107,175,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="235,90,156,109,154,103,234,84"/>
+</map>

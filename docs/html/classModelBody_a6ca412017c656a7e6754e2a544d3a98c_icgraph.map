@@ -1,0 +1,13 @@
+<map id="ModelBody::modelsSize" name="ModelBody::modelsSize">
+<area shape="rect" id="Node000001" title="Virtual method for getting the size of the models container." alt="" coords="721,31,883,57"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a0a50b4f964386d6ce3b5cb462be066a2" title="Virtual method for getting the size of the models container." alt="" coords="520,5,652,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="705,35,652,29,653,24,706,30"/>
+<area shape="rect" id="Node000006" href="$classModelHandle.html#ad249f819055f552968f34846f39a42e8" title=" " alt="" coords="499,56,673,83"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="706,58,673,62,673,56,705,53"/>
+<area shape="rect" id="Node000003" href="$unit__Model_8cpp.html#abb49fbd77462625039c6d5ec4a8c7667" title="A unitary test for asserting the createModel method." alt="" coords="289,5,451,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="505,21,452,21,452,16,505,16"/>
+<area shape="rect" id="Node000004" href="$unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title=" " alt="" coords="103,5,241,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="274,21,242,21,242,16,274,16"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

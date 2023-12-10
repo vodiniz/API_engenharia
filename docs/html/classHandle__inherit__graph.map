@@ -1,0 +1,13 @@
+<map id="Handle&lt; T &gt;" name="Handle&lt; T &gt;">
+<area shape="rect" id="Node000001" title="The classes Handle and Body implements the &quot;bridge&quot; design pattern (also known as &quot;handle/body idiom&quot;..." alt="" coords="210,5,386,155"/>
+<area shape="rect" id="Node000002" href="$classFlowHandle.html" title=" " alt="" coords="5,219,169,725"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,168,184,220,172,243,167,240,180,217,216,165"/>
+<area shape="rect" id="Node000003" href="$classHandle.html" title=" " alt="" coords="194,397,402,547"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="301,170,301,398,295,398,295,170"/>
+<area shape="rect" id="Node000005" href="$classHandle.html" title=" " alt="" coords="430,389,606,555"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="389,164,399,177,430,229,457,284,497,388,492,390,452,287,426,232,394,180,385,167"/>
+<area shape="rect" id="Node000004" href="$classModelHandle.html" title=" " alt="" coords="174,775,414,1772"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="300,561,299,775,294,775,295,561"/>
+<area shape="rect" id="Node000006" href="$classSystemHandle.html" title=" " alt="" coords="438,1076,614,1471"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="522,569,527,1076,521,1076,516,569"/>
+</map>

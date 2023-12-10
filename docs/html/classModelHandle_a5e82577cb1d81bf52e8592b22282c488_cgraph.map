@@ -1,0 +1,9 @@
+<map id="ModelHandle::removeSystem" name="ModelHandle::removeSystem">
+<area shape="rect" id="Node000001" title="Virtual method to remove a System pointer from the systems container." alt="" coords="5,31,199,57"/>
+<area shape="rect" id="Node000002" href="$classModelBody.html#a9155f2d28d39778cd8b5eea59e3781ed" title="Remove a System pointer from the systems container." alt="" coords="247,31,429,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,41,231,41,231,47,199,47"/>
+<area shape="rect" id="Node000003" href="$classModelBody.html#a43043dca7c25d2476225bb02b3c2950b" title="Return a iterator to the first System in the container." alt="" coords="477,5,654,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="429,31,461,28,462,33,430,36"/>
+<area shape="rect" id="Node000004" href="$classModelBody.html#ac5c09d2d554c3ff6cff7f8a45344f18e" title="Returns an iterator referring to the past&#45;the&#45;end element in the systems container." alt="" coords="482,56,649,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="430,52,467,56,466,61,429,57"/>
+</map>

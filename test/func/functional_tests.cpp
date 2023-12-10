@@ -1,5 +1,5 @@
 #include "functional_tests.hpp"
-
+#include "../../src/Model.hpp"
 
 #include <math.h>
 #include <assert.h>

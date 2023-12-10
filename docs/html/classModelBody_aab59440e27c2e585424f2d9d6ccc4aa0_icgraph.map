@@ -1,0 +1,5 @@
+<map id="ModelBody::updateFlow" name="ModelBody::updateFlow">
+<area shape="rect" id="Node000001" title="Update a Flow pointer from the flows container." alt="" coords="226,5,387,32"/>
+<area shape="rect" id="Node000002" href="$classModelHandle.html#a7d5db75292d0f0df9a77431f6567a14e" title="Virtual method to update a Flow pointer from the flows container." alt="" coords="5,5,178,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,21,178,21,178,16,210,16"/>
+</map>

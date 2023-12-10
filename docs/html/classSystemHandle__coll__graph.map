@@ -1,0 +1,21 @@
+<map id="SystemHandle" name="SystemHandle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="51,1084,227,1479"/>
+<area shape="rect" id="Node000002" href="$classSystem.html" title="System interface, which will hide the implementation of methods." alt="" coords="27,779,219,1035"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,1049,134,1084,128,1085,127,1050"/>
+<area shape="rect" id="Node000003" href="$classHandle.html" title=" " alt="" coords="243,824,419,989"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="285,1004,230,1111,225,1108,280,1001"/>
+<area shape="rect" id="Node000004" href="$classSystemBody.html" title="Class for representing stock, quantities, mass or even energy." alt="" coords="122,416,306,715"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="268,713,300,807,295,809,263,715"/>
+<area shape="rect" id="Node000005" href="$classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="5,139,167,352"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="137,365,157,415,152,417,132,367"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="73,5,99,75"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="89,74,89,122,83,122,83,74"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="191,211,237,280"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="217,279,217,399,211,399,211,279"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="262,211,313,280"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="284,280,261,393,259,400,254,399,255,391,279,279"/>
+<area shape="rect" id="Node000009" href="$classHandle.html" title="The classes Handle and Body implements the &quot;bridge&quot; design pattern (also known as &quot;handle/body idiom&quot;..." alt="" coords="330,491,506,640"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="398,655,355,825,350,823,393,654"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="403,211,433,280"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="421,279,421,474,415,474,415,279"/>
+</map>

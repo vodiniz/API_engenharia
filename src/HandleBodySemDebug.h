@@ -9,6 +9,8 @@
 #if ! defined( HANDLE_BODY )
 #define HANDLE_BODY
 
+using namespace std;
+
 /** 
  * \brief
  *
@@ -36,6 +38,7 @@ public:
 
 	/// assignment operator
 	Handle<T>& operator=( const Handle& hd) {
+
 		if (  this != &hd )
 		{
 			hd.pImpl_->attach();

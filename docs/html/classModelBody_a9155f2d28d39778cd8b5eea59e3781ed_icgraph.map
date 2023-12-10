@@ -1,0 +1,7 @@
+<map id="ModelBody::removeSystem" name="ModelBody::removeSystem">
+<area shape="rect" id="Node000001" title="Remove a System pointer from the systems container." alt="" coords="247,31,429,57"/>
+<area shape="rect" id="Node000002" href="$classModelHandle.html#a5e82577cb1d81bf52e8592b22282c488" title="Virtual method to remove a System pointer from the systems container." alt="" coords="5,5,199,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,35,199,32,199,26,231,30"/>
+<area shape="rect" id="Node000003" href="$classModelHandle.html#a1c46faccdff6f6817fac891fa44261f5" title="Virtual method to remove a System pointer from the #systems container." alt="" coords="5,56,199,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,58,199,62,199,56,231,53"/>
+</map>

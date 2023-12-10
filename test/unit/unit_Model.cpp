@@ -6,6 +6,7 @@
 #include "../../src/ModelHandle.hpp"
 #include "../../src/ModelBody.hpp"
 
+#include "../flows/FlowTest.hpp"
 
 
 
@@ -14,7 +15,7 @@ using namespace std;
 void unit_Model_constructor_default(){
 
 
-    Model *model = new ModelHandle();
+    Model *model = Model::createModel();
 
     assert(sizeof(*model) > 0);
     assert(model->getName() == "");
@@ -27,7 +28,7 @@ void unit_Model_constructor_default(){
 
 void unit_Model_constructor_with_name(){
 
-    Model *model = new ModelHandle("Model");
+    Model *model = Model::createModel("Model");
     
     assert(sizeof(*model) > 0);
     assert(model->getName() == "Model");
@@ -41,7 +42,7 @@ void unit_Model_destructor(){}
 
 void unit_Model_getName(){
 
-    Model *model = new ModelHandle("Model");
+    Model *model = Model::createModel("Model");
 
     assert(model->getName() == "Model");
 
@@ -49,7 +50,7 @@ void unit_Model_getName(){
 }
 void unit_Model_setName(){
 
-    Model *model = new ModelHandle();
+    Model *model = Model::createModel();
 
     
     model->setName("NewName");
@@ -61,7 +62,7 @@ void unit_Model_setName(){
 }
 
 void unit_Model_getClock(){
-    Model *model = new ModelHandle();
+    Model *model = Model::createModel();
 
     assert(model->getClock() == 0);
 
@@ -70,7 +71,7 @@ void unit_Model_getClock(){
 
 void unit_Model_removeSystem_pointer(){
 
-    Model* model = new ModelHandle("Model");
+    Model* model = Model::createModel("Model");
 
     System *system = model->createSystem("System");
 
@@ -81,10 +82,11 @@ void unit_Model_removeSystem_pointer(){
     assert(model->systemsSize() == 0);
 
     delete model;
+    
 }
 void unit_Model_removeSystem_name(){
 
-    Model* model = new ModelHandle("Model");
+    Model* model = Model::createModel("Model");
     System *system = model->createSystem("System");
 
     assert(model->systemsSize() == 1);
@@ -98,9 +100,9 @@ void unit_Model_removeSystem_name(){
 
 void unit_Model_removeFlow_pointer(){
 
-    Model* model = new ModelHandle("Model");
+    Model* model = Model::createModel("Model");
 
-    Flow *flow = model->createFlow<MyFlow>("Flow");
+    Flow *flow = model->createFlow<FlowTest>("Flow");
 
     assert(model->flowsSize() == 1);
     assert(*(model->flowsBegin()) == flow);
@@ -113,9 +115,9 @@ void unit_Model_removeFlow_pointer(){
 }
 void unit_Model_removeFlow_name(){
     
-    Model* model = new ModelHandle("Model");
+    Model* model = Model::createModel("Model");
 
-    Flow *flow = model->createFlow<MyFlow>("Flow");
+    Flow *flow = model->createFlow<FlowTest>("Flow");
 
     assert(model->flowsSize() == 1);
     assert(*(model->flowsBegin()) == flow);
@@ -128,7 +130,7 @@ void unit_Model_removeFlow_name(){
 
 void unit_Model_updateSystem(){
 
-    Model* model = new ModelHandle("Model");
+    Model* model = Model::createModel("Model");
 
     System *system = model->createSystem("System");
 
@@ -144,9 +146,9 @@ void unit_Model_updateSystem(){
 
 void unit_Model_updateFlow(){
 
-    Model* model = new ModelHandle("Model");
+    Model* model = Model::createModel("Model");
 
-    Flow *flow = model->createFlow<MyFlow>("Flow");
+    Flow *flow = model->createFlow<FlowTest>("Flow");
 
     System* system1 = model->createSystem();
     System* system2 = model->createSystem();
@@ -165,7 +167,7 @@ void unit_Model_updateFlow(){
 
 void unit_Model_run(){
 
-    Model* model = new ModelHandle("Model");
+    Model* model = Model::createModel("Model");
 
     int startTime = 0;
     int endTime = 100;
@@ -179,7 +181,7 @@ void unit_Model_run(){
 
 void unit_Model_systemsBegin(){
 
-    Model* model = new ModelHandle("Model");
+    Model* model = Model::createModel("Model");
 
     System *system = model->createSystem("System");
     System *system2 = model->createSystem("System2");
@@ -191,7 +193,7 @@ void unit_Model_systemsBegin(){
 }
 void unit_Model_systemsEnd(){
 
-    Model* model = new ModelHandle("Model");
+    Model* model = Model::createModel("Model");
 
     System *system = model->createSystem("System");
     System *system2 = model->createSystem("System2");
@@ -207,7 +209,7 @@ void unit_Model_systemsEnd(){
 }
 void unit_Model_systemsSize(){
 
-    Model* model = new ModelHandle("Model");
+    Model* model = Model::createModel("Model");
 
     for(int i = 0; i < 10; i++){
         model->createSystem();
@@ -222,10 +224,10 @@ void unit_Model_systemsSize(){
 
 void unit_Model_flowsBegin(){
 
-    Model* model = new ModelHandle("Model");
+    Model* model = Model::createModel("Model");
 
-    Flow *flow = model->createFlow<MyFlow>("Flow");
-    Flow *flow2 = model->createFlow<MyFlow>("Flow2");
+    Flow *flow = model->createFlow<FlowTest>("Flow");
+    Flow *flow2 = model->createFlow<FlowTest>("Flow2");
 
     assert(*(model->flowsBegin()) != flow2); 
     assert(*(model->flowsBegin()) == flow); 
@@ -234,10 +236,10 @@ void unit_Model_flowsBegin(){
 }
 void unit_Model_flowsEnd(){
 
-    Model* model = new ModelHandle("Model");
+    Model* model = Model::createModel("Model");
 
-    Flow *flow = model->createFlow<MyFlow>("Flow");
-    Flow *flow2 = model->createFlow<MyFlow>("Flow2");
+    Flow *flow = model->createFlow<FlowTest>("Flow");
+    Flow *flow2 = model->createFlow<FlowTest>("Flow2");
 
     Model::FlowIterator it = model->flowsEnd();
 
@@ -252,14 +254,13 @@ void unit_Model_flowsSize(){
 }
 
 void unit_Model_createModel(){
-    assert(Model::modelsSize() == 0);
 
-    Model* model = new ModelHandle();
+    Model* model = Model::createModel();
 
     assert(model->modelsSize() == 1);
 
-    delete model;
 
+    delete model;
     assert(Model::modelsSize() == 0);
 
 
@@ -267,7 +268,7 @@ void unit_Model_createModel(){
 
 void unit_Model_createSystem(){
 
-    Model* model = new ModelHandle();
+    Model* model =Model::createModel();
 
     assert(model->systemsSize() == 0);
 
@@ -283,14 +284,14 @@ void unit_Model_createSystem(){
 }
 
 void unit_Model_createFlow(){
-    Model* model = new ModelHandle();
+    Model* model = Model::createModel();
 
     assert(model->flowsSize() == 0);
 
-    Flow* flow1 = model->createFlow<MyFlow>("Flow1");
+    Flow* flow1 = model->createFlow<FlowTest>("Flow1");
     assert(model->flowsSize() == 1);
 
-    Flow* flow2 = model->createFlow<MyFlow>("Flow2");
+    Flow* flow2 = model->createFlow<FlowTest>("Flow2");
     assert(model->flowsSize() == 2);
 
     delete model;

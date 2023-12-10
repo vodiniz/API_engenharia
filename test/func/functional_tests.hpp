@@ -1,8 +1,7 @@
 #ifndef _FUNCTIONAL_TESTS_H_
 #define _FUNCTIONAL_TESTS_H_
 
-#include "../../src/Model.hpp"
-#include "../../src/FlowImpl.hpp"
+#include "../../src/FlowBody.hpp"
 
 
 using namespace std;
@@ -16,10 +15,10 @@ using namespace std;
  * in which we have a exponential behavior, a specific behavior that is not
  * implemented, so we redefined the equation
 */
-class ExponentialFlow : public FlowImpl {
+class ExponentialFlow : public FlowBody {
     //Construtor e Destrutor
     public:
-        using FlowImpl::operator=;
+        using FlowBody::operator=;
         /**
          * \brief Creates a ExponentialFlow.
          *
@@ -31,7 +30,7 @@ class ExponentialFlow : public FlowImpl {
          * @param name
         */
         ExponentialFlow(string name=""):
-            FlowImpl(name){}
+            FlowBody(name){}
             
         /**
          * \brief Creates a ExponentialFlow.
@@ -43,7 +42,7 @@ class ExponentialFlow : public FlowImpl {
          * @param target
         */
         ExponentialFlow(string name, System *source, System *target): 
-            FlowImpl(name, source, target){}
+            FlowBody(name, source, target){}
         
 
         /**
@@ -69,10 +68,10 @@ class ExponentialFlow : public FlowImpl {
  * in which we have a logistic behavior, a specific behavior that is not
  * implemented, so we redefined the equation
 */
-class logisticFlow : public FlowImpl {
+class logisticFlow : public FlowBody {
     //Construtor e Destrutor
     public:
-        using FlowImpl::operator=;
+        using FlowBody::operator=;
 
 
         /**
@@ -86,7 +85,7 @@ class logisticFlow : public FlowImpl {
          * @param name
         */
         logisticFlow(string name=""):
-            FlowImpl(name){}
+            FlowBody(name){}
             
 
         /**
@@ -99,7 +98,7 @@ class logisticFlow : public FlowImpl {
          * @param target
         */
         logisticFlow(string name, System *source, System *target): 
-            FlowImpl(name, source, target){}
+            FlowBody(name, source, target){}
         
 
         /**

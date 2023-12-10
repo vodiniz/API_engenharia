@@ -1,9 +1,20 @@
 var searchData=
 [
-  ['_7eflow_0',['~Flow',['../classFlow.html#a325d284a50ca3274b126b21f5c39b9af',1,'Flow']]],
-  ['_7eflowimpl_1',['~FlowImpl',['../classFlowImpl.html#a2d91539593b336aee4a19048f8a82e8c',1,'FlowImpl']]],
-  ['_7emodel_2',['~Model',['../classModel.html#af032d8433c87a0a3a431faf6563a1f03',1,'Model']]],
-  ['_7emodelimpl_3',['~ModelImpl',['../classModelImpl.html#a427f422a6d356b94afbe3937d6452a2b',1,'ModelImpl']]],
-  ['_7esystem_4',['~System',['../classSystem.html#a2fc0f34023977cab9b628aa9f734d88c',1,'System']]],
-  ['_7esystemimpl_5',['~SystemImpl',['../classSystemImpl.html#a0cd451779458a7bd7c224a48ed163a9e',1,'SystemImpl']]]
+  ['setname_0',['setname',['../classSystemHandle.html#ad71fdd6a6b48830d1017535d8ba507c1',1,'SystemHandle::setName()'],['../classSystemBody.html#a431bb094f6a35dd7e62a836220d00422',1,'SystemBody::setName()'],['../classSystem.html#ab184ca2f85e981d9bd231b4cf40b4642',1,'System::setName()'],['../classModelHandle.html#ac5b47b6aba39fd6d0a4c590e07a2d2be',1,'ModelHandle::setName()'],['../classModelBody.html#a87f173d473424a421046e6b96b60f496',1,'ModelBody::setName()'],['../classModel.html#a12f7dc1bf60351497ca4b4960d92a528',1,'Model::setName()'],['../classFlow.html#a3b1816775f7d2e9497236b38ab173d44',1,'Flow::setName()'],['../classFlowBody.html#aa68e7b91778e3ca2f0a7f649971cf4ec',1,'FlowBody::setName()'],['../classFlowHandle.html#afc2e32309dc39e9616b13ea0a9434383',1,'FlowHandle::setName()']]],
+  ['setsource_1',['setsource',['../classFlow.html#a303311b84fb748a4a7fb9a0312b4ff23',1,'Flow::setSource()'],['../classFlowBody.html#ae2ef844ecc0827647fa79e6f02b491dc',1,'FlowBody::setSource()'],['../classFlowHandle.html#a98f9a1c023b25ea151b009965582638e',1,'FlowHandle::setSource()']]],
+  ['settarget_2',['settarget',['../classFlow.html#a738ba8d73ee3ec358d94f131e695fc97',1,'Flow::setTarget()'],['../classFlowBody.html#aa44f2806ff490f8ed24fbf88e8410e01',1,'FlowBody::setTarget()'],['../classFlowHandle.html#ac096f8c9f5deba90d75ee9cb5d9f706d',1,'FlowHandle::setTarget()']]],
+  ['setvalue_3',['setvalue',['../classSystem.html#a6fb149fd239b9840d4f73677b0568012',1,'System::setValue()'],['../classSystemBody.html#ad35f8c920364e3a48224749dc6238d94',1,'SystemBody::setValue()'],['../classSystemHandle.html#ade311d00c3fec63cc82801d70d2a9e21',1,'SystemHandle::setValue()']]],
+  ['source_4',['source',['../classFlowBody.html#a7c46fc66ff02f18c387535e914337c82',1,'FlowBody']]],
+  ['system_5',['System',['../classSystem.html',1,'']]],
+  ['system_2ehpp_6',['System.hpp',['../System_8hpp.html',1,'']]],
+  ['systembody_7',['systembody',['../classSystemBody.html#a60172e8112c9a06de3412cdca019c6d1',1,'SystemBody::SystemBody(string=&quot;&quot;, double=0.)'],['../classSystemBody.html#abf9a246f622478eece11ca3db88973a1',1,'SystemBody::SystemBody(const System &amp;system)'],['../classSystemBody.html',1,'SystemBody']]],
+  ['systembody_2ecpp_8',['SystemBody.cpp',['../SystemBody_8cpp.html',1,'']]],
+  ['systembody_2ehpp_9',['SystemBody.hpp',['../SystemBody_8hpp.html',1,'']]],
+  ['systemhandle_10',['systemhandle',['../classSystemHandle.html',1,'SystemHandle'],['../classSystemHandle.html#a89a4db1dc76231a95167a904fd0175c4',1,'SystemHandle::SystemHandle()'],['../classSystemHandle.html#a785f902bccb70ff97dc13189104a6d23',1,'SystemHandle::SystemHandle(string name)'],['../classSystemHandle.html#afc6544a46a26a1662b166f41f592c9e7',1,'SystemHandle::SystemHandle(double value)'],['../classSystemHandle.html#a643b5fead6aca3df6ff28ee359d9e63b',1,'SystemHandle::SystemHandle(string name, double value)'],['../classSystemHandle.html#a8aaaa9b2329025501ffb01bab47acaec',1,'SystemHandle::SystemHandle(const System &amp;system)']]],
+  ['systemhandle_2ehpp_11',['SystemHandle.hpp',['../SystemHandle_8hpp.html',1,'']]],
+  ['systemiterator_12',['systemiterator',['../ModelBody_8hpp.html#ab9eabb4b0b8774e7f04dba7dca23471d',1,'SystemIterator:&#160;ModelBody.hpp'],['../ModelBody_8cpp.html#ab9eabb4b0b8774e7f04dba7dca23471d',1,'SystemIterator:&#160;ModelBody.cpp'],['../classModel.html#aa298940a05166ef87cb083e46b101019',1,'Model::SystemIterator']]],
+  ['systems_13',['systems',['../classModelBody.html#a6204f76405f7d7fea398a3dd03f144e7',1,'ModelBody']]],
+  ['systemsbegin_14',['systemsbegin',['../classModel.html#a07fcdf49b02e037cfcf1036b47b9ac27',1,'Model::systemsBegin()'],['../classModelBody.html#a43043dca7c25d2476225bb02b3c2950b',1,'ModelBody::systemsBegin()'],['../classModelHandle.html#a53159d7d75ea568e569c0a70a0a462d9',1,'ModelHandle::systemsBegin()']]],
+  ['systemsend_15',['systemsend',['../classModel.html#a278952b46d4b5185272b17016a61bc55',1,'Model::systemsEnd()'],['../classModelBody.html#ac5c09d2d554c3ff6cff7f8a45344f18e',1,'ModelBody::systemsEnd()'],['../classModelHandle.html#a0408a1f0cc15ccaf0b014a00f59b16a4',1,'ModelHandle::systemsEnd()']]],
+  ['systemssize_16',['systemssize',['../classModel.html#a0fbe0f40b959f8303d23a003d4a00257',1,'Model::systemsSize()'],['../classModelBody.html#ad69f1633c263a49bda25af43801e34f8',1,'ModelBody::systemsSize()'],['../classModelHandle.html#a663fd17a4b79ceb18bc334a8a2c99d63',1,'ModelHandle::systemsSize()']]]
 ];

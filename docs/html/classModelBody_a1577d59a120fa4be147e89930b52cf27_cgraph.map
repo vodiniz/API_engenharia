@@ -1,0 +1,17 @@
+<map id="ModelBody::ModelBody" name="ModelBody::ModelBody">
+<area shape="rect" id="Node000001" title="Copy constructor." alt="" coords="5,132,165,159"/>
+<area shape="rect" id="Node000002" href="$classModelBody.html#ac8f68f6da92b5d0444ad0945cc369672" title="Add a System pointer to the systems container." alt="" coords="244,31,359,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,129,152,98,212,67,228,60,230,65,214,72,154,103,107,134"/>
+<area shape="rect" id="Node000005" href="$classModelBody.html#abc366685d85c4c93d10936f697e286b8" title="Return a iterator to the first Flow in the container." alt="" coords="222,81,381,108"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="145,129,226,110,227,115,146,134"/>
+<area shape="rect" id="Node000006" href="$classModelBody.html#aa554b9cc96eec3ee9bcc19b7f79bbb28" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="227,132,376,159"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="165,143,212,143,212,148,165,148"/>
+<area shape="rect" id="Node000007" href="$classModelBody.html#a43043dca7c25d2476225bb02b3c2950b" title="Return a iterator to the first System in the container." alt="" coords="213,183,390,209"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="146,157,227,176,226,181,145,162"/>
+<area shape="rect" id="Node000008" href="$classModelBody.html#ac5c09d2d554c3ff6cff7f8a45344f18e" title="Returns an iterator referring to the past&#45;the&#45;end element in the systems container." alt="" coords="218,233,385,260"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="107,157,154,188,214,219,230,225,228,230,212,224,152,192,104,161"/>
+<area shape="rect" id="Node000003" href="$classModelBody.html#a11872814d1b06d4f0204c340a98ed36e" title="Function for getting the size of the flows container." alt="" coords="448,5,599,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="359,35,432,26,432,32,359,40"/>
+<area shape="rect" id="Node000004" href="$classModelBody.html#ad69f1633c263a49bda25af43801e34f8" title="Method for getting the size of the systems container." alt="" coords="438,56,608,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="359,48,423,55,422,61,359,53"/>
+</map>

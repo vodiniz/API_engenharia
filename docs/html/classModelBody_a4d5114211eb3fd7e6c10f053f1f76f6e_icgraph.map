@@ -1,0 +1,7 @@
+<map id="ModelBody::modelsBegin" name="ModelBody::modelsBegin">
+<area shape="rect" id="Node000001" title="Virtual method which return a iterator to the first Model in the container." alt="" coords="471,5,640,32"/>
+<area shape="rect" id="Node000002" href="$classModelHandle.html#a12ec7dbf8082bb95b4e3cf629a33ff73" title="Virtual method which return a iterator to the first Model in the container." alt="" coords="243,5,423,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="455,21,424,21,424,16,455,16"/>
+<area shape="rect" id="Node000003" href="$classModelHandle.html#a095baeec8246278541118441388d7b60" title=" " alt="" coords="5,5,195,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="227,21,195,21,195,16,227,16"/>
+</map>

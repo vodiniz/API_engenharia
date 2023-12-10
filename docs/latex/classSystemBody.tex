@@ -1,0 +1,250 @@
+\doxysection{System\+Body Class Reference}
+\hypertarget{classSystemBody}{}\label{classSystemBody}\index{SystemBody@{SystemBody}}
+
+
+Class for representing stock, quantities, mass or even energy.  
+
+
+
+
+{\ttfamily \#include $<$System\+Body.\+hpp$>$}
+
+
+
+Inheritance diagram for System\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classSystemBody__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for System\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classSystemBody__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSystemBody_a60172e8112c9a06de3412cdca019c6d1}{System\+Body}} (string="{}"{}, double=0.)
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{classSystem}{System}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classSystemBody_a3087c37788fb37dad0538eccb5485cfd}{\texorpdfstring{$\sim$}{\string~}\+System\+Body}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{const}} string \mbox{\hyperlink{classSystemBody_aa7b3e459c916fe901aa967f46ac0cd4b}{get\+Name}} () \mbox{\hyperlink{classHandle}{const}}
+\begin{DoxyCompactList}\small\item\em Get the Name field on \doxylink{classSystem}{System}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{bool}} \mbox{\hyperlink{classSystemBody_a431bb094f6a35dd7e62a836220d00422}{set\+Name}} (string)
+\begin{DoxyCompactList}\small\item\em Set a new name for the \doxylink{classSystem}{System}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{const}} double \mbox{\hyperlink{classSystemBody_a3f53e5021a7ed03c6ff92eb09fe98777}{get\+Value}} () \mbox{\hyperlink{classHandle}{const}}
+\begin{DoxyCompactList}\small\item\em Get the value field on \doxylink{classSystem}{System}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{bool}} \mbox{\hyperlink{classSystemBody_ad35f8c920364e3a48224749dc6238d94}{set\+Value}} (double)
+\begin{DoxyCompactList}\small\item\em Set a new Value for the \doxylink{classSystem}{System}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classBody}{Body}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBody_a7727b0d8c998bbc2942e4c802e31e2eb}{Body}} ()
+\begin{DoxyCompactList}\small\item\em Constructor\+: zero references when the object is being built. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{classBody_a5d53322c76a6952d096cb7564ac86db1}{attach}} ()
+\begin{DoxyCompactList}\small\item\em Increases the number of references to this object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{classBody_ad481d0c8368db318795c9a0a8fdd3717}{detach}} ()
+\item 
+int \mbox{\hyperlink{classBody_a59ae961812625b8636071ba61b1a75fc}{ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of references to this object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classBody_a9b15e54cf881ac0ca64790ca1d50110e}{\texorpdfstring{$\sim$}{\string~}\+Body}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classSystemBody_ac95aca9d3648f257855ca6436e7cb630}{name}}
+\item 
+double \mbox{\hyperlink{classSystemBody_a82fcaefb88098be09dbc59bf8b012922}{value}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSystemBody_abf9a246f622478eece11ca3db88973a1}{System\+Body}} (\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classSystem}{System}} \&\mbox{\hyperlink{classHandle}{system}})
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystemBody}{System\+Body}} \& \mbox{\hyperlink{classSystemBody_a91567218bc589b03fd34c0a871507888}{operator=}} (\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classSystemBody}{System\+Body}} \&)
+\begin{DoxyCompactList}\small\item\em Overload for = operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for representing stock, quantities, mass or even energy. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classSystemBody_a60172e8112c9a06de3412cdca019c6d1}\label{classSystemBody_a60172e8112c9a06de3412cdca019c6d1} 
+\index{SystemBody@{SystemBody}!SystemBody@{SystemBody}}
+\index{SystemBody@{SystemBody}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{SystemBody()}{SystemBody()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily System\+Body\+::\+System\+Body (\begin{DoxyParamCaption}\item[{string}]{name = {\ttfamily "{}"{}},  }\item[{double}]{value = {\ttfamily 0.} }\end{DoxyParamCaption})}
+
+
+
+Creates a new \doxylink{classSystem}{System}. 
+
+A default constructor with overloaded constructor and default value for name and value 
+\begin{DoxyParams}{Parameters}
+{\em name} & A string for naming the systems. \\
+\hline
+{\em value} & A double value for representing mass, quantities or energy \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classSystemBody_a3087c37788fb37dad0538eccb5485cfd}\label{classSystemBody_a3087c37788fb37dad0538eccb5485cfd} 
+\index{SystemBody@{SystemBody}!````~SystemBody@{\texorpdfstring{$\sim$}{\string~}SystemBody}}
+\index{````~SystemBody@{\texorpdfstring{$\sim$}{\string~}SystemBody}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SystemBody()}{\string~SystemBody()}}
+{\footnotesize\ttfamily System\+Body\+::\texorpdfstring{$\sim$}{\string~}\+System\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+A virtual destructor; \Hypertarget{classSystemBody_abf9a246f622478eece11ca3db88973a1}\label{classSystemBody_abf9a246f622478eece11ca3db88973a1} 
+\index{SystemBody@{SystemBody}!SystemBody@{SystemBody}}
+\index{SystemBody@{SystemBody}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{SystemBody()}{SystemBody()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily System\+Body\+::\+System\+Body (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classSystem}{System}} \&}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Copy constructor. 
+
+Copy constructor takes a reference to system as an argument.
+
+
+\begin{DoxyParams}{Parameters}
+{\em system\&} & A system reference which will be used as the value for our system. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSystemBody_aa7b3e459c916fe901aa967f46ac0cd4b}\label{classSystemBody_aa7b3e459c916fe901aa967f46ac0cd4b} 
+\index{SystemBody@{SystemBody}!getName@{getName}}
+\index{getName@{getName}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{const}} string System\+Body\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Name field on \doxylink{classSystem}{System}. 
+
+\begin{DoxyReturn}{Returns}
+return a const string containing the \doxylink{classSystem}{System} name. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSystemBody_aa7b3e459c916fe901aa967f46ac0cd4b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSystemBody_a3f53e5021a7ed03c6ff92eb09fe98777}\label{classSystemBody_a3f53e5021a7ed03c6ff92eb09fe98777} 
+\index{SystemBody@{SystemBody}!getValue@{getValue}}
+\index{getValue@{getValue}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{const}} double System\+Body\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the value field on \doxylink{classSystem}{System}. 
+
+\begin{DoxyReturn}{Returns}
+return a const double containing the \doxylink{classSystem}{System} current value. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSystemBody_a3f53e5021a7ed03c6ff92eb09fe98777_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSystemBody_a91567218bc589b03fd34c0a871507888}\label{classSystemBody_a91567218bc589b03fd34c0a871507888} 
+\index{SystemBody@{SystemBody}!operator=@{operator=}}
+\index{operator=@{operator=}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSystemBody}{System\+Body}} \& System\+Body\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classSystemBody}{System\+Body}} \&}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Overload for = operator. 
+
+This is an overload for = operator, in the format of a = b, in which a is being assigned as b.
+
+\begin{DoxyReturn}{Returns}
+return a \doxylink{classSystem}{System} reference which is a copy to the assigned \doxylink{classSystem}{System}. 
+\end{DoxyReturn}
+\Hypertarget{classSystemBody_a431bb094f6a35dd7e62a836220d00422}\label{classSystemBody_a431bb094f6a35dd7e62a836220d00422} 
+\index{SystemBody@{SystemBody}!setName@{setName}}
+\index{setName@{setName}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{bool}} System\+Body\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Set a new name for the \doxylink{classSystem}{System}. 
+
+Will set a new name based on the string passed as a param.
+
+\begin{DoxyReturn}{Returns}
+return true if sucefully setted the new name, and false if it failed. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSystemBody_a431bb094f6a35dd7e62a836220d00422_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSystemBody_ad35f8c920364e3a48224749dc6238d94}\label{classSystemBody_ad35f8c920364e3a48224749dc6238d94} 
+\index{SystemBody@{SystemBody}!setValue@{setValue}}
+\index{setValue@{setValue}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{bool}} System\+Body\+::set\+Value (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Set a new Value for the \doxylink{classSystem}{System}. 
+
+Will set a new Value based on the double passed as a param.
+
+\begin{DoxyReturn}{Returns}
+return true if sucefully setted the new Value, and false if it failed. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSystemBody_ad35f8c920364e3a48224749dc6238d94_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classSystemBody_ac95aca9d3648f257855ca6436e7cb630}\label{classSystemBody_ac95aca9d3648f257855ca6436e7cb630} 
+\index{SystemBody@{SystemBody}!name@{name}}
+\index{name@{name}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string System\+Body\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+A string for naming the systems. \Hypertarget{classSystemBody_a82fcaefb88098be09dbc59bf8b012922}\label{classSystemBody_a82fcaefb88098be09dbc59bf8b012922} 
+\index{SystemBody@{SystemBody}!value@{value}}
+\index{value@{value}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily double System\+Body\+::value\hspace{0.3cm}{\ttfamily [protected]}}
+
+A double value for representing mass, quantities or energy. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{SystemBody_8hpp}{System\+Body.\+hpp}}\item 
+src/\mbox{\hyperlink{SystemBody_8cpp}{System\+Body.\+cpp}}\end{DoxyCompactItemize}

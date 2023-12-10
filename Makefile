@@ -1,4 +1,4 @@
-all: bin/unit_tests bin/libSimulation.so
+all: bin/unit_tests bin/libSimulation.so bin/functionalTests
 
 # --------------------------------------------------
 
@@ -8,12 +8,12 @@ bin/libSimulation.so:
 # --------------------------------------------------
 
 bin/functionalTests: bin/libSimulation.so
-	@g++ test/func/*.cpp bin/libSimulation.so -o bin/functionalTests -Wall
+	@g++ test/func/*.cpp bin/libSimulation.so -o bin/functionalTests -Wall -g
 
 # --------------------------------------------------
 
 bin/unit_tests: bin/libSimulation.so
-	@g++ test/unit/*.cpp bin/libSimulation.so -o bin/unit_tests -Wall
+	@g++ test/unit/*.cpp bin/libSimulation.so -o bin/unit_tests -Wall -g
 
 # --------------------------------------------------
 

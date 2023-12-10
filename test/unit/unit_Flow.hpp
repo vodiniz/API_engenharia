@@ -80,27 +80,4 @@ void unit_Flow_assignOverload();
 
 void run_unit_test_Flow();
 
-
-class FlowTest : public FlowBody {
-    //Construtor e Destrutor
-    public:
-        using FlowBody::setName;
-        using FlowBody::operator=;
-        
-        FlowTest(string name=""):
-            FlowBody(name){}
-            
-        FlowTest(string name, System *source, System *target): 
-            FlowBody(name, source, target){}
-
-        FlowTest(Flow& flow): FlowBody(flow){}
-            
-    protected:
-        double equation(){
-            return (getSource()->getValue())/2;
-        }
-    
-};
-
-
 #endif

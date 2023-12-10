@@ -1,0 +1,11 @@
+<map id="SystemHandle::operator=" name="SystemHandle::operator=">
+<area shape="rect" id="Node000001" title="assignment operator" alt="" coords="5,81,176,108"/>
+<area shape="rect" id="Node000002" href="$classSystem.html#a25dff87b3fd15b008622ef9bd10ca1c0" title="Virtual method to get the Name field on System." alt="" coords="239,5,366,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,78,223,41,242,35,244,40,225,47,127,83"/>
+<area shape="rect" id="Node000003" href="$classSystem.html#aab7b27ce6f7644395b8a47b5edfe37a3" title="Virtual method to get the value field on System." alt="" coords="240,56,365,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,82,225,76,225,81,177,87"/>
+<area shape="rect" id="Node000004" href="$classSystemBody.html#a431bb094f6a35dd7e62a836220d00422" title="Set a new name for the System." alt="" coords="224,107,381,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="177,102,209,106,208,111,176,108"/>
+<area shape="rect" id="Node000005" href="$classSystemBody.html#ad35f8c920364e3a48224749dc6238d94" title="Set a new Value for the System." alt="" coords="225,157,380,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="127,106,225,143,244,149,242,155,223,148,125,111"/>
+</map>

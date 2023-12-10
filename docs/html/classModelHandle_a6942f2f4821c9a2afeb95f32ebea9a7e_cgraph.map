@@ -1,0 +1,5 @@
+<map id="ModelHandle::flowsBegin" name="ModelHandle::flowsBegin">
+<area shape="rect" id="Node000001" title="Return a iterator to the first Flow in the container." alt="" coords="5,5,175,32"/>
+<area shape="rect" id="Node000002" href="$classModelBody.html#abc366685d85c4c93d10936f697e286b8" title="Return a iterator to the first Flow in the container." alt="" coords="223,5,381,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,16,207,16,207,21,175,21"/>
+</map>

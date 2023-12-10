@@ -1,0 +1,7 @@
+<map id="ModelBody::modelsEnd" name="ModelBody::modelsEnd">
+<area shape="rect" id="Node000001" title="Virtual method which returns an iterator referring to the past&#45;the&#45;end element in the Model container..." alt="" coords="461,5,620,32"/>
+<area shape="rect" id="Node000002" href="$classModelHandle.html#aa9566502fac6773ee53af6002c3174ee" title="Virtual method which returns an iterator referring to the past&#45;the&#45;end element in the Model container..." alt="" coords="243,5,413,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="445,21,413,21,413,16,445,16"/>
+<area shape="rect" id="Node000003" href="$classModelHandle.html#a095baeec8246278541118441388d7b60" title=" " alt="" coords="5,5,195,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="227,21,195,21,195,16,227,16"/>
+</map>

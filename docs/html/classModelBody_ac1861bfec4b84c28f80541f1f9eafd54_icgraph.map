@@ -1,0 +1,5 @@
+<map id="ModelBody::getName" name="ModelBody::getName">
+<area shape="rect" id="Node000001" title="Get the name field on Flow." alt="" coords="212,5,359,32"/>
+<area shape="rect" id="Node000002" href="$classModelHandle.html#a78da9a6d1a03e8438a5637b53c59b893" title="Virtual method to get the Name field on Model." alt="" coords="5,5,164,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,21,164,21,164,16,196,16"/>
+</map>

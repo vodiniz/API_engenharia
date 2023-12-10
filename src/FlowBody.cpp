@@ -1,4 +1,5 @@
 #include "FlowBody.hpp"
+#include <iostream>
 
 using namespace std;
 
@@ -67,13 +68,14 @@ bool FlowBody::clearSource(){
 // --------------------------------------------------
 
 FlowBody& FlowBody::operator= (const FlowBody& flow) {
-
+    
     if(this == &flow)
         return *this;
-
+        
     this->name = flow.getName();
     this->source = flow.getSource();
     this->target = flow.getTarget();
+
 
     return *this;
 }

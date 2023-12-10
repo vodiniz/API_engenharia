@@ -1,39 +1,7 @@
 <map id="Flow::getSource" name="Flow::getSource">
-<area shape="rect" id="Node000001" title="Virtual method to get the source System." alt="" coords="521,283,638,309"/>
-<area shape="rect" id="Node000002" href="$classFlowImpl.html#ab6633e6def4d5b66b3d7fc84004be98e" title="Copy constructor." alt="" coords="314,5,449,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="572,268,562,219,544,159,514,98,495,70,472,46,448,32,451,27,475,42,499,67,519,95,549,157,567,218,577,266"/>
-<area shape="rect" id="Node000003" href="$classFlowImpl.html#a8cd91ac0d70cc7295952e0ca2ac0473c" title="Overload for = operator." alt="" coords="313,56,450,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="569,269,556,230,536,183,508,136,472,97,449,84,451,79,475,93,513,133,541,181,561,228,574,267"/>
-<area shape="rect" id="Node000004" href="$unit__Flow_8cpp.html#a2e82a59b324cb964c490e446e8378540" title="A unitary test for asserting the overload of the assignment(=) operator." alt="" coords="294,107,468,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="564,270,528,208,503,175,472,148,451,136,454,132,475,143,506,171,533,205,569,267"/>
-<area shape="rect" id="Node000007" href="$unit__Flow_8cpp.html#a91e2ffdd821e194708355a4802d9a838" title="A unitary test for asserting the clearSource method." alt="" coords="305,157,458,184"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="556,273,519,234,472,198,447,187,449,182,475,194,523,230,560,269"/>
-<area shape="rect" id="Node000008" href="$unit__Flow_8cpp.html#ab32833442c11555f0c9fa1d7c1741c64" title="A unitary test for asserting the default constructor of FlowImpl." alt="" coords="307,208,456,251"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="522,280,446,254,448,249,524,275"/>
-<area shape="rect" id="Node000009" href="$unit__Flow_8cpp.html#adf0c070fb11219f7f6368e1976a5c7ca" title="A unitary test for asserting the constructor of FlowImpl with name param." alt="" coords="307,275,456,317"/>
-<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="506,299,456,299,456,293,506,293"/>
-<area shape="rect" id="Node000010" href="$unit__Flow_8cpp.html#a96867eac39dbb89af8b3cc722cfdcb6b" title="A unitary test for asserting the constructor of FlowImpl with name, source and target params." alt="" coords="293,341,470,384"/>
-<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="524,317,448,343,446,338,522,312"/>
-<area shape="rect" id="Node000011" href="$unit__Flow_8cpp.html#a552e52c045c91bbb5ce653952b7b2075" title="A unitary test for asserting the copy constructor of FlowImpl." alt="" coords="289,408,473,435"/>
-<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="560,323,523,362,475,398,449,410,447,405,472,394,519,358,556,319"/>
-<area shape="rect" id="Node000012" href="$unit__Flow_8cpp.html#a0dc76658e06597697628386d69327367" title="A unitary test for asserting the getSource method." alt="" coords="310,459,453,485"/>
-<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="569,325,533,387,506,421,475,449,454,460,451,456,472,444,503,417,528,384,564,322"/>
-<area shape="rect" id="Node000013" href="$unit__Flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="A unitary test for asserting the setSource method." alt="" coords="310,509,453,536"/>
-<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="574,325,561,364,541,411,513,459,475,499,455,512,452,507,472,495,508,456,536,409,556,362,569,323"/>
-<area shape="rect" id="Node000014" href="$unit__Model_8cpp.html#a3f6ec6c3866f3844a18d93f740c009dc" title="A unitary test for asserting the update method with the Flow param overload." alt="" coords="302,560,460,587"/>
-<area shape="poly" id="edge20_Node000001_Node000014" title=" " alt="" coords="577,326,567,374,549,435,519,497,499,525,475,550,457,562,455,557,472,546,495,522,514,494,544,433,562,373,572,324"/>
-<area shape="rect" id="Node000005" href="$unit__Flow_8cpp.html#a6683c1fa1a8445fa330116af20af24dc" title=" " alt="" coords="106,349,238,376"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="297,143,291,147,267,170,246,197,213,255,191,310,179,350,174,348,186,308,208,253,241,194,263,167,287,143,294,139"/>
-<area shape="rect" id="Node000006" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,455,55,481"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="142,388,51,456,48,452,139,383"/>
-<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="298,193,291,198,251,235,219,277,196,319,181,350,176,348,191,316,215,275,247,231,287,194,295,189"/>
-<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="299,260,290,265,231,309,188,351,184,347,228,305,288,260,297,255"/>
-<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="299,325,217,351,215,346,297,320"/>
-<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="277,365,238,365,238,360,277,360"/>
-<area shape="poly" id="edge15_Node000011_Node000005" title=" " alt="" coords="314,406,288,399,220,379,222,374,290,393,316,401"/>
-<area shape="poly" id="edge17_Node000012_Node000005" title=" " alt="" coords="303,455,288,449,230,414,187,379,190,375,233,409,290,444,305,451"/>
-<area shape="poly" id="edge19_Node000013_Node000005" title=" " alt="" coords="297,505,288,500,251,471,220,437,179,378,183,375,224,433,255,467,290,495,300,500"/>
-<area shape="rect" id="Node000015" href="$unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title=" " alt="" coords="103,480,241,507"/>
-<area shape="poly" id="edge21_Node000014_Node000015" title=" " alt="" coords="309,558,288,550,198,510,200,505,290,546,311,553"/>
-<area shape="poly" id="edge22_Node000015_Node000006" title=" " alt="" coords="87,481,54,475,55,470,88,476"/>
+<area shape="rect" id="Node000001" title="Virtual method to get the source System." alt="" coords="221,31,337,57"/>
+<area shape="rect" id="Node000002" href="$classFlowBody.html#a34952906cfe6d8c0fa91555d7e479341" title="Copy constructor." alt="" coords="16,5,162,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,37,162,31,162,26,206,32"/>
+<area shape="rect" id="Node000003" href="$classFlowHandle.html#a90dede7f8bc5b26971b96d32e5b4cb19" title=" " alt="" coords="5,56,173,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,56,173,61,173,56,205,51"/>
 </map>

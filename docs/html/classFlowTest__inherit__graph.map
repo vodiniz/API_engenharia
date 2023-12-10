@@ -1,7 +1,7 @@
 <map id="FlowTest" name="FlowTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="10,981,183,1184"/>
-<area shape="rect" id="Node000002" href="$classFlowImpl.html" title="Represents a flow beetwen Systems." alt="" coords="9,448,185,933"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,948,99,981,94,981,94,948"/>
-<area shape="rect" id="Node000003" href="$classFlow.html" title="Flow interface, which will hide the implementation of methods." alt="" coords="5,5,188,400"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,415,99,448,94,448,94,415"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="7,800,180,1024"/>
+<area shape="rect" id="Node000002" href="$classFlowBody.html" title="Represents a flow beetwen Systems." alt="" coords="5,267,181,752"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,767,96,800,91,800,91,767"/>
+<area shape="rect" id="Node000003" href="$classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="13,5,174,219"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,234,96,267,91,267,91,234"/>
 </map>

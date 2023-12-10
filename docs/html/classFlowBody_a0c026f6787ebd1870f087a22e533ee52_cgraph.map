@@ -1,0 +1,9 @@
+<map id="FlowBody::operator=" name="FlowBody::operator=">
+<area shape="rect" id="Node000001" title="Overload for = operator." alt="" coords="5,56,148,83"/>
+<area shape="rect" id="Node000002" href="$classFlowBody.html#a830bca092889512378a3449a1fda9a9b" title="Get the name field on Flow." alt="" coords="199,5,339,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,53,200,34,201,39,131,58"/>
+<area shape="rect" id="Node000003" href="$classFlowBody.html#a73d79b44f545683272b888963469f9d0" title="Get the source field on Flow." alt="" coords="196,56,342,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,67,180,67,180,72,148,72"/>
+<area shape="rect" id="Node000004" href="$classFlowBody.html#a437ebb62001b40c57cc0bf3effd8a431" title="Get the target field on Flow." alt="" coords="198,107,340,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="131,81,201,100,200,105,129,86"/>
+</map>

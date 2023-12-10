@@ -1,0 +1,9 @@
+<map id="ModelHandle::updateSystem" name="ModelHandle::updateSystem">
+<area shape="rect" id="Node000001" title="Virtual method to update a System pointer from the systems container." alt="" coords="5,31,195,57"/>
+<area shape="rect" id="Node000002" href="$classModelBody.html#abc3aeef5bf34a0147e4f3beb40b4b661" title="Update a System pointer from the systems container." alt="" coords="243,31,421,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,41,227,41,227,47,195,47"/>
+<area shape="rect" id="Node000003" href="$classModelBody.html#a43043dca7c25d2476225bb02b3c2950b" title="Return a iterator to the first System in the container." alt="" coords="469,5,646,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="421,31,453,28,454,33,422,37"/>
+<area shape="rect" id="Node000004" href="$classModelBody.html#ac5c09d2d554c3ff6cff7f8a45344f18e" title="Returns an iterator referring to the past&#45;the&#45;end element in the systems container." alt="" coords="474,56,641,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="422,51,459,56,458,61,421,57"/>
+</map>

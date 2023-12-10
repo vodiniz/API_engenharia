@@ -1,19 +1,13 @@
 <map id="unit_Model_flowsEnd" name="unit_Model_flowsEnd">
-<area shape="rect" id="Node000001" title="A unitary test for asserting the flowsEnd method." alt="" coords="5,56,151,83"/>
-<area shape="rect" id="Node000002" href="$classModel.html#aada2bc25c07fec056a11cec64ab38194" title="Method for creating a Flow with template." alt="" coords="202,5,331,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,53,199,34,200,39,131,58"/>
-<area shape="rect" id="Node000004" href="$classModel.html#a97f352b56351b15cea6d989f82ebd19a" title="Method for Creating a Model object." alt="" coords="199,56,334,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="151,67,183,67,183,72,151,72"/>
-<area shape="rect" id="Node000009" href="$classModel.html#a98e438459d7a43fa94f0e1d8d1354056" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="207,107,326,133"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="131,81,200,100,199,105,130,86"/>
-<area shape="rect" id="Node000003" href="$classModel.html#a5518050921f78abc062b9d861c15db11" title="Virtual method to add a Flow pointer to the #flows container." alt="" coords="420,5,505,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="331,16,404,16,404,21,331,21"/>
-<area shape="rect" id="Node000005" href="$classModelImpl.html#a4b8c8df9ccdc2fc1365ab520689d4763" title="Method for Creating a Model object." alt="" coords="382,56,542,83"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="334,67,366,67,366,72,334,72"/>
-<area shape="rect" id="Node000006" href="$classModelImpl.html#aa01c228bf49f0b7f5d72e293ac18defb" title="Add a System pointer to the systems container." alt="" coords="590,56,701,83"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="543,67,575,67,575,72,543,72"/>
-<area shape="rect" id="Node000007" href="$classModelImpl.html#aa4e0c943fef808771f0800f03ae84386" title="Function for getting the size of the flows container." alt="" coords="758,31,905,57"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="701,59,742,53,743,59,702,64"/>
-<area shape="rect" id="Node000008" href="$classModelImpl.html#ad95b31c43021dec4c4b67cb74a2dc138" title="Method for getting the size of the systems container." alt="" coords="749,81,914,108"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="702,74,734,79,733,84,701,80"/>
+<area shape="rect" id="Node000001" title="A unitary test for asserting the flowsEnd method." alt="" coords="5,31,151,57"/>
+<area shape="rect" id="Node000002" href="$classModel.html#a97f352b56351b15cea6d989f82ebd19a" title="Method for Creating a Model object." alt="" coords="199,31,334,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,41,183,41,183,47,151,47"/>
+<area shape="rect" id="Node000003" href="$classModelBody.html#ad404ede797435494c2155ec92f391f0d" title="Method for Creating a Model object." alt="" coords="382,31,547,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="334,41,366,41,366,47,334,47"/>
+<area shape="rect" id="Node000004" href="$classModelBody.html#ac8f68f6da92b5d0444ad0945cc369672" title="Add a System pointer to the systems container." alt="" coords="595,31,711,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="548,41,580,41,580,47,548,47"/>
+<area shape="rect" id="Node000005" href="$classModelBody.html#a11872814d1b06d4f0204c340a98ed36e" title="Function for getting the size of the flows container." alt="" coords="768,5,920,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="711,34,752,28,753,33,712,39"/>
+<area shape="rect" id="Node000006" href="$classModelBody.html#ad69f1633c263a49bda25af43801e34f8" title="Method for getting the size of the systems container." alt="" coords="759,56,929,83"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="712,49,744,53,743,59,711,54"/>
 </map>

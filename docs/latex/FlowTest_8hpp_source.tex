@@ -1,0 +1,33 @@
+\doxysection{Flow\+Test.\+hpp}
+\hypertarget{FlowTest_8hpp_source}{}\label{FlowTest_8hpp_source}\index{test/flows/FlowTest.hpp@{test/flows/FlowTest.hpp}}
+\mbox{\hyperlink{FlowTest_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FLOW\_TEST\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FLOW\_TEST\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}../../src/FlowBody.hpp"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFlowTest}{FlowTest}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlowBody}{FlowBody}}\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{comment}{//Construtor\ e\ Destrutor}}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }FlowBody::operator=;}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlowTest_a4883847a4fb99890633a21dad18636d6}{FlowTest}}()\{\}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlowTest_a1fdb4fa872c5edc989d7d1218f599d53}{FlowTest}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classFlowBody_a71d618d66f2da215d0f712ea6a757323}{name}}):}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlowBody}{FlowBody}}(\mbox{\hyperlink{classFlowBody_a71d618d66f2da215d0f712ea6a757323}{name}})\{\}}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlowTest_a7719084a1c0784f9793c35136625f3e7}{FlowTest}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classFlowBody_a71d618d66f2da215d0f712ea6a757323}{name}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowBody_a7c46fc66ff02f18c387535e914337c82}{source}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowBody_a4a5d71f46863ff5e9d07161973817a34}{target}}):\ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlowBody}{FlowBody}}(\mbox{\hyperlink{classFlowBody_a71d618d66f2da215d0f712ea6a757323}{name}},\ \mbox{\hyperlink{classFlowBody_a7c46fc66ff02f18c387535e914337c82}{source}},\ \mbox{\hyperlink{classFlowBody_a4a5d71f46863ff5e9d07161973817a34}{target}})\{\}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlowTest_a2abade4a84abd077ef54ca8e003e9c39}{FlowTest}}(\mbox{\hyperlink{classFlow}{Flow}}\&\ \mbox{\hyperlink{classHandle}{flow}}):\ \mbox{\hyperlink{classFlowBody}{FlowBody}}(\mbox{\hyperlink{classHandle}{flow}})\{\}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classFlowTest_af8567b29765904e63633959c90edbc70}{equation}}()\{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{classFlowBody_a73d79b44f545683272b888963469f9d0}{getSource}}()-\/>getValue())/2;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00024\ \ \ \ \ }
+\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

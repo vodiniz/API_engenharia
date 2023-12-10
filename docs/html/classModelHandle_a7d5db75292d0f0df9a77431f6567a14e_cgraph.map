@@ -1,0 +1,9 @@
+<map id="ModelHandle::updateFlow" name="ModelHandle::updateFlow">
+<area shape="rect" id="Node000001" title="Virtual method to update a Flow pointer from the flows container." alt="" coords="5,31,178,57"/>
+<area shape="rect" id="Node000002" href="$classModelBody.html#aab59440e27c2e585424f2d9d6ccc4aa0" title="Update a Flow pointer from the flows container." alt="" coords="226,31,387,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,41,210,41,210,47,178,47"/>
+<area shape="rect" id="Node000003" href="$classModelBody.html#abc366685d85c4c93d10936f697e286b8" title="Return a iterator to the first Flow in the container." alt="" coords="435,5,593,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="387,31,419,28,420,33,388,37"/>
+<area shape="rect" id="Node000004" href="$classModelBody.html#aa554b9cc96eec3ee9bcc19b7f79bbb28" title="Returns an iterator referring to the past&#45;the&#45;end element in the flows container." alt="" coords="440,56,588,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="388,51,425,56,424,61,387,57"/>
+</map>

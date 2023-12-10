@@ -1,7 +1,7 @@
 <map id="logisticFlow::equation" name="logisticFlow::equation">
 <area shape="rect" id="Node000001" title="A pure virtual equation method which defines the LogisticFlow behavior." alt="" coords="5,31,153,57"/>
-<area shape="rect" id="Node000002" href="$classFlowImpl.html#ab07923bc230308cd949f627a92901bca" title="Get the target field on Flow." alt="" coords="201,5,337,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,31,185,27,186,32,154,37"/>
-<area shape="rect" id="Node000003" href="$classSystem.html#aab7b27ce6f7644395b8a47b5edfe37a3" title="Virtual method to get the value field on System." alt="" coords="207,56,331,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,51,191,56,191,62,153,57"/>
+<area shape="rect" id="Node000002" href="$classFlowBody.html#a437ebb62001b40c57cc0bf3effd8a431" title="Get the target field on Flow." alt="" coords="201,5,342,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,32,185,27,186,33,153,37"/>
+<area shape="rect" id="Node000003" href="$classSystem.html#aab7b27ce6f7644395b8a47b5edfe37a3" title="Virtual method to get the value field on System." alt="" coords="209,56,334,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,51,194,57,194,62,153,56"/>
 </map>

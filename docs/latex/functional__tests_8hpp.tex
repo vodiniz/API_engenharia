@@ -1,12 +1,12 @@
 \doxysection{test/func/functional\+\_\+tests.hpp File Reference}
 \hypertarget{functional__tests_8hpp}{}\label{functional__tests_8hpp}\index{test/func/functional\_tests.hpp@{test/func/functional\_tests.hpp}}
-{\ttfamily \#include "{}../../src/\+Model.\+hpp"{}}\newline
-{\ttfamily \#include "{}../../src/\+Flow\+Impl.\+hpp"{}}\newline
-Include dependency graph for functional\+\_\+tests.\+hpp\+:\nopagebreak
+{\ttfamily \#include "{}../../src/\+Flow\+Body.\+hpp"{}}\newline
+Include dependency graph for functional\+\_\+tests.\+hpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=347pt]{functional__tests_8hpp__incl}
+\includegraphics[width=286pt]{functional__tests_8hpp__incl}
 \end{center}
 \end{figure}
 This graph shows which files directly or indirectly include this file\+:\nopagebreak
@@ -26,11 +26,11 @@ class \mbox{\hyperlink{classlogisticFlow}{logistic\+Flow}}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{functional__tests_8hpp_afc8689ad075e91b2ee99dc91c0834cea}{exponential\+Test}} ()
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{functional__tests_8hpp_afc8689ad075e91b2ee99dc91c0834cea}{exponential\+Test}} ()
 \begin{DoxyCompactList}\small\item\em A test for verifying if the model running a exponential\+Test asserts. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{functional__tests_8hpp_a6c242456889f3f38d4f88e34922fada6}{logistic\+Test}} ()
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{functional__tests_8hpp_a6c242456889f3f38d4f88e34922fada6}{logistic\+Test}} ()
 \begin{DoxyCompactList}\small\item\em A test for verifying if the model running a \doxylink{classlogisticFlow}{logistic\+Flow} asserts. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{functional__tests_8hpp_a342098ba1b793b28d015331449d280d5}{complex\+Test}} ()
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{functional__tests_8hpp_a342098ba1b793b28d015331449d280d5}{complex\+Test}} ()
 \begin{DoxyCompactList}\small\item\em A test for verifying if the model running a \doxylink{classlogisticFlow}{logistic\+Flow} asserts. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -39,13 +39,14 @@ void \mbox{\hyperlink{functional__tests_8hpp_a342098ba1b793b28d015331449d280d5}{
 \index{functional\_tests.hpp@{functional\_tests.hpp}!complexTest@{complexTest}}
 \index{complexTest@{complexTest}!functional\_tests.hpp@{functional\_tests.hpp}}
 \doxysubsubsection{\texorpdfstring{complexTest()}{complexTest()}}
-{\footnotesize\ttfamily void complex\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{void}} complex\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 A test for verifying if the model running a \doxylink{classlogisticFlow}{logistic\+Flow} asserts. 
 
-Given a Complex \doxylink{classModel}{Model} with 6 \doxylink{classSystem}{System}, Q1, Q2, Q3, Q4, Q5 and Q6, with the values 100.\+0, 0.\+0, 100.\+0, 0.\+0, 0.\+0 and 6 Exponential\+Flows. When the \doxylink{classModel}{Model} will ran for 100 time units with one increments Them we will assert the resulting \doxylink{classSystem}{System} value with 31.\+8513, 18.\+4003, 77.\+1143, 56.\+1728, 16.\+4612 respectvely. Here is the call graph for this function\+:\nopagebreak
+Given a Complex \doxylink{classModel}{Model} with 6 \doxylink{classSystem}{System}, Q1, Q2, Q3, Q4, Q5 and Q6, with the values \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{100.\+0}, \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{0.\+0}, \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{100.\+0}, \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{0.\+0}, \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{0.\+0} and 6 Exponential\+Flows. When the \doxylink{classModel}{Model} will ran for 100 time units with one increments Them we will assert the resulting \doxylink{classSystem}{System} value with \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{31.\+8513}, \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{18.\+4003}, \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{77.\+1143}, \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{56.\+1728}, \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{16.\+4612} respectvely. Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -63,13 +64,14 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{functional\_tests.hpp@{functional\_tests.hpp}!exponentialTest@{exponentialTest}}
 \index{exponentialTest@{exponentialTest}!functional\_tests.hpp@{functional\_tests.hpp}}
 \doxysubsubsection{\texorpdfstring{exponentialTest()}{exponentialTest()}}
-{\footnotesize\ttfamily void exponential\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{void}} exponential\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 A test for verifying if the model running a exponential\+Test asserts. 
 
-Given a \doxylink{classModel}{Model} with two \doxylink{classSystem}{System}, pop1 and pop2 with value of 100.\+0 and 0.\+0 When the \doxylink{classModel}{Model} will ran for 100 time units with one increments Them we will assert the resulting value with 36.\+6032 and 63.\+3968, respectvely. Here is the call graph for this function\+:\nopagebreak
+Given a \doxylink{classModel}{Model} with two \doxylink{classSystem}{System}, pop1 and pop2 with value of \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{100.\+0} and \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{0.\+0} When the \doxylink{classModel}{Model} will ran for 100 time units with one increments Them we will assert the resulting value with \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{36.\+6032} and \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{63.\+3968}, respectvely. Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -87,13 +89,14 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{functional\_tests.hpp@{functional\_tests.hpp}!logisticTest@{logisticTest}}
 \index{logisticTest@{logisticTest}!functional\_tests.hpp@{functional\_tests.hpp}}
 \doxysubsubsection{\texorpdfstring{logisticTest()}{logisticTest()}}
-{\footnotesize\ttfamily void logistic\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHandle}{void}} logistic\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 A test for verifying if the model running a \doxylink{classlogisticFlow}{logistic\+Flow} asserts. 
 
-Given a \doxylink{classModel}{Model} with two \doxylink{classSystem}{System}, p1 and p2 with value of 100.\+0 and 0.\+0 When the \doxylink{classModel}{Model} will ran for 100 time units with one increments Them we will assert the resulting value with 88.\+2167 and 21.\+7833, respectvely. Here is the call graph for this function\+:\nopagebreak
+Given a \doxylink{classModel}{Model} with two \doxylink{classSystem}{System}, p1 and p2 with value of \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{100.\+0} and \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{0.\+0} When the \doxylink{classModel}{Model} will ran for 100 time units with one increments Them we will assert the resulting value with \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{88.\+2167} and \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{21.\+7833}, respectvely. Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

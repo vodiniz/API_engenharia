@@ -6,6 +6,7 @@
 
 #include "System.hpp"
 #include "Flow.hpp"
+#include "FlowHandle.hpp"
 
 
 /**
@@ -263,6 +264,16 @@ class Model{
         static int modelsSize();
 
 
+        /**
+         * @brief Virtual method to remove a Model pointer from the @ref models container.
+         * 
+         * Uses a Model pointer as a parameter for removing the System.
+         * 
+         * @param model A pointer to the Model.
+         * 
+         * @return return true if sucefully removed the Model, and false if it failed.
+        */
+        virtual bool removeModel(ModelIterator model)  = 0;
 
 
         /**
@@ -302,7 +313,7 @@ class Model{
 
         template <typename T>
         Flow* createFlow(string name = "", System * source = NULL, System * target = NULL){
-            Flow* flow = new T(name, source, target);
+            Flow* flow = new FlowHandle<T>(name, source, target);
             add(flow);
             return flow;
         }

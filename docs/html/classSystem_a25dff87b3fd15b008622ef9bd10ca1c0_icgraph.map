@@ -1,44 +1,7 @@
 <map id="System::getName" name="System::getName">
-<area shape="rect" id="Node000001" title="Virtual method to get the Name field on System." alt="" coords="546,284,674,311"/>
-<area shape="rect" id="Node000002" href="$classSystemImpl.html#ab1f1b75e09856bcd55ce841468b37972" title="Overload for = operator." alt="" coords="322,5,476,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="602,269,591,221,572,160,541,98,521,70,497,46,475,33,477,28,500,42,525,67,545,96,577,158,596,219,607,268"/>
-<area shape="rect" id="Node000003" href="$classSystemImpl.html#a4c3c5002d08cac6cd442057559e89bbe" title="Copy constructor." alt="" coords="314,56,483,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="599,270,585,231,564,184,535,137,497,97,478,86,480,81,500,93,539,133,569,181,590,229,604,268"/>
-<area shape="rect" id="Node000004" href="$unit__Flow_8cpp.html#a0dc76658e06597697628386d69327367" title="A unitary test for asserting the getSource method." alt="" coords="327,107,470,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="594,271,556,208,529,175,497,148,470,134,472,129,500,143,533,172,561,205,598,269"/>
-<area shape="rect" id="Node000007" href="$unit__Flow_8cpp.html#a89661cef89f6beb434f6097691c03538" title="A unitary test for asserting the getTarget method." alt="" coords="330,157,468,184"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="586,274,547,235,497,198,467,186,469,181,500,194,550,231,590,270"/>
-<area shape="rect" id="Node000008" href="$unit__Flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="A unitary test for asserting the setSource method." alt="" coords="327,208,470,235"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="568,279,497,249,460,238,462,233,499,244,570,274"/>
-<area shape="rect" id="Node000009" href="$unit__Flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="A unitary test for asserting the setTarget method." alt="" coords="330,259,468,285"/>
-<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="531,291,468,283,469,278,532,285"/>
-<area shape="rect" id="Node000010" href="$unit__Model_8cpp.html#a2df8cfaa0b0b5a56ecd4a316b8aba627" title="A unitary test for asserting the update method with the System param overload." alt="" coords="311,309,486,336"/>
-<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="531,309,487,315,487,309,531,304"/>
-<area shape="rect" id="Node000012" href="$unit__System_8cpp.html#a6efdf0b01b264138781b0ffd0938b986" title="A unitary test for asserting the overload of the assignment(=) operator." alt="" coords="303,360,494,387"/>
-<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="570,320,499,351,462,362,460,357,497,345,568,315"/>
-<area shape="rect" id="Node000014" href="$unit__System_8cpp.html#a1c32c0bebb61f3534c717bbab56ddf4d" title="A unitary test for asserting the constructor of SystemImpl with the name parameter." alt="" coords="316,411,482,453"/>
-<area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="589,324,550,363,500,401,477,412,474,408,497,396,546,359,585,321"/>
-<area shape="rect" id="Node000015" href="$unit__System_8cpp.html#af9aa8412e32b2f95e2171054667337e0" title="A unitary test for asserting the copy constructor of SystemImpl." alt="" coords="299,477,498,504"/>
-<area shape="poly" id="edge20_Node000001_Node000015" title=" " alt="" coords="600,326,585,359,563,397,535,435,500,468,478,479,476,474,497,463,531,432,559,395,580,357,595,324"/>
-<area shape="rect" id="Node000016" href="$unit__System_8cpp.html#a672a51794472bbde676a33115e003b15" title="A unitary test for asserting the getName method." alt="" coords="322,528,476,555"/>
-<area shape="poly" id="edge22_Node000001_Node000016" title=" " alt="" coords="605,326,592,369,572,421,541,473,522,497,500,518,478,531,475,527,497,514,518,494,537,470,567,419,587,367,600,325"/>
-<area shape="rect" id="Node000017" href="$unit__System_8cpp.html#a470f565c55f643e387d5cc7005cab1ea" title="A unitary test for asserting the setName method." alt="" coords="322,579,476,605"/>
-<area shape="poly" id="edge24_Node000001_Node000017" title=" " alt="" coords="608,327,598,379,579,444,547,511,526,542,500,569,478,583,475,578,497,565,522,538,543,508,574,442,593,377,603,326"/>
-<area shape="rect" id="Node000005" href="$unit__Flow_8cpp.html#a6683c1fa1a8445fa330116af20af24dc" title=" " alt="" coords="111,208,243,235"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="318,141,300,148,243,179,198,210,195,205,240,174,298,143,316,136"/>
-<area shape="rect" id="Node000006" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,309,55,336"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="145,246,52,311,49,307,142,242"/>
-<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="323,191,239,210,238,205,321,185"/>
-<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="312,224,243,224,243,219,312,219"/>
-<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="321,257,238,238,239,233,323,252"/>
-<area shape="rect" id="Node000011" href="$unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title=" " alt="" coords="108,309,246,336"/>
-<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="296,325,247,325,247,320,296,320"/>
-<area shape="poly" id="edge14_Node000011_Node000006" title=" " alt="" coords="92,325,55,325,55,320,92,320"/>
-<area shape="rect" id="Node000013" href="$unit__System_8cpp.html#a508d8501edd77719732fca2f7985d316" title=" " alt="" coords="103,448,251,475"/>
-<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="321,394,300,401,247,425,202,450,200,445,244,421,298,396,319,389"/>
-<area shape="poly" id="edge17_Node000013_Node000006" title=" " alt="" coords="148,439,44,338,47,334,152,435"/>
-<area shape="poly" id="edge19_Node000014_Node000013" title=" " alt="" coords="301,448,252,454,251,449,300,442"/>
-<area shape="poly" id="edge21_Node000015_Node000013" title=" " alt="" coords="283,478,251,474,252,468,284,473"/>
-<area shape="poly" id="edge23_Node000016_Node000013" title=" " alt="" coords="321,526,298,518,204,478,207,473,300,514,323,521"/>
-<area shape="poly" id="edge25_Node000017_Node000013" title=" " alt="" coords="311,575,298,569,264,548,233,522,188,477,192,473,237,518,267,543,300,564,314,570"/>
+<area shape="rect" id="Node000001" title="Virtual method to get the Name field on System." alt="" coords="255,31,382,57"/>
+<area shape="rect" id="Node000002" href="$classSystemHandle.html#aa89a8833038a373653387d3553f3df56" title="assignment operator" alt="" coords="21,5,191,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,37,191,31,192,26,239,32"/>
+<area shape="rect" id="Node000003" href="$classSystemHandle.html#a8aaaa9b2329025501ffb01bab47acaec" title="copy constructor" alt="" coords="5,56,207,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,56,207,60,207,55,239,51"/>
 </map>

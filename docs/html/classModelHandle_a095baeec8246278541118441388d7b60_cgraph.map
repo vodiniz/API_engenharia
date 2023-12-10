@@ -1,0 +1,15 @@
+<map id="ModelHandle::~ModelHandle" name="ModelHandle::~ModelHandle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,195,83"/>
+<area shape="rect" id="Node000002" href="$classModelHandle.html#a12ec7dbf8082bb95b4e3cf629a33ff73" title="Virtual method which return a iterator to the first Model in the container." alt="" coords="244,5,425,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,53,254,33,255,38,166,58"/>
+<area shape="rect" id="Node000004" href="$classModelHandle.html#aa9566502fac6773ee53af6002c3174ee" title="Virtual method which returns an iterator referring to the past&#45;the&#45;end element in the Model container..." alt="" coords="249,56,420,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="195,67,233,67,233,72,195,72"/>
+<area shape="rect" id="Node000006" href="$classModelHandle.html#a0723ef4d211076bc1b42f6805572a000" title="Virtual method to remove a Model pointer from the models container." alt="" coords="243,107,426,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="166,81,255,100,254,105,165,86"/>
+<area shape="rect" id="Node000003" href="$classModelBody.html#a4d5114211eb3fd7e6c10f053f1f76f6e" title="Virtual method which return a iterator to the first Model in the container." alt="" coords="476,5,645,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="425,16,460,16,460,21,425,21"/>
+<area shape="rect" id="Node000005" href="$classModelBody.html#aa3412fd3802e4303ad7b786c9bb08f82" title="Virtual method which returns an iterator referring to the past&#45;the&#45;end element in the Model container..." alt="" coords="481,56,640,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="420,67,465,67,465,72,420,72"/>
+<area shape="rect" id="Node000007" href="$classModelBody.html#a2e0f0b3fbcaa50cddd098b78ccc8f3f2" title="Virtual method to remove a Model pointer from the models container." alt="" coords="474,107,646,133"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="426,117,459,117,459,123,426,123"/>
+</map>

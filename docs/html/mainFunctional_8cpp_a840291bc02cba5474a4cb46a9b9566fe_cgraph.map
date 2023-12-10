@@ -1,39 +1,21 @@
 <map id="main" name="main">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,55,133"/>
-<area shape="rect" id="Node000002" href="$functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="111,56,207,83"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,108,108,86,110,91,56,113"/>
-<area shape="rect" id="Node000013" href="$functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="103,107,215,133"/>
-<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="55,117,87,117,87,123,55,123"/>
-<area shape="rect" id="Node000014" href="$functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="115,157,203,184"/>
-<area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="56,127,110,149,108,154,54,132"/>
-<area shape="rect" id="Node000003" href="$classModel.html#aada2bc25c07fec056a11cec64ab38194" title="Method for creating a Flow with template." alt="" coords="272,56,400,83"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="207,67,256,67,256,72,207,72"/>
-<area shape="rect" id="Node000005" href="$classModel.html#a97f352b56351b15cea6d989f82ebd19a" title="Method for Creating a Model object." alt="" coords="268,107,403,133"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="208,80,273,99,271,104,206,85"/>
-<area shape="rect" id="Node000010" href="$classModel.html#a7b9f1b0741088f4cf0874a477fb663b5" title="Method for creating a System." alt="" coords="263,157,408,184"/>
-<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="197,81,217,93,231,106,241,119,250,131,265,143,273,148,270,153,261,148,246,135,237,122,227,110,213,97,194,86"/>
-<area shape="rect" id="Node000011" href="$classSystem.html#aab7b27ce6f7644395b8a47b5edfe37a3" title="Virtual method to get the value field on System." alt="" coords="274,208,398,235"/>
-<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="201,81,217,93,235,120,241,145,247,170,265,194,269,198,266,202,261,198,242,172,236,147,230,122,213,97,197,85"/>
-<area shape="rect" id="Node000012" href="$classModel.html#aa2c58d924e023fe497cefbc6547dbea6" title="Virtual method to run the simulation." alt="" coords="295,5,377,32"/>
-<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="206,53,279,32,280,37,208,58"/>
-<area shape="rect" id="Node000004" href="$classModel.html#a5518050921f78abc062b9d861c15db11" title="Virtual method to add a Flow pointer to the #flows container." alt="" coords="494,56,579,83"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="400,67,479,67,479,72,400,72"/>
-<area shape="rect" id="Node000006" href="$classModelImpl.html#a4b8c8df9ccdc2fc1365ab520689d4763" title="Method for Creating a Model object." alt="" coords="456,107,617,133"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="404,117,441,117,441,123,404,123"/>
-<area shape="rect" id="Node000007" href="$classModelImpl.html#aa01c228bf49f0b7f5d72e293ac18defb" title="Add a System pointer to the systems container." alt="" coords="665,107,775,133"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="617,117,649,117,649,123,617,123"/>
-<area shape="rect" id="Node000008" href="$classModelImpl.html#aa4e0c943fef808771f0800f03ae84386" title="Function for getting the size of the flows container." alt="" coords="833,81,979,108"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="775,110,817,104,817,109,776,115"/>
-<area shape="rect" id="Node000009" href="$classModelImpl.html#ad95b31c43021dec4c4b67cb74a2dc138" title="Method for getting the size of the systems container." alt="" coords="823,132,988,159"/>
-<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="776,125,808,129,807,135,775,130"/>
-<area shape="poly" id="edge13_Node000013_Node000003" title=" " alt="" coords="207,103,272,85,273,90,209,109"/>
-<area shape="poly" id="edge14_Node000013_Node000005" title=" " alt="" coords="215,117,252,117,252,123,215,123"/>
-<area shape="poly" id="edge15_Node000013_Node000010" title=" " alt="" coords="209,131,273,150,272,155,207,137"/>
-<area shape="poly" id="edge16_Node000013_Node000011" title=" " alt="" coords="197,132,217,143,231,157,241,170,250,182,265,194,273,199,270,203,261,198,246,185,237,173,227,160,213,147,194,136"/>
-<area shape="poly" id="edge17_Node000013_Node000012" title=" " alt="" coords="194,104,213,93,227,80,237,67,246,55,262,42,279,33,281,37,264,46,250,58,241,70,231,83,217,97,197,108"/>
-<area shape="poly" id="edge19_Node000014_Node000003" title=" " alt="" coords="194,154,213,143,227,130,237,118,246,105,261,92,270,87,273,92,265,97,250,109,241,121,231,134,217,147,197,159"/>
-<area shape="poly" id="edge20_Node000014_Node000005" title=" " alt="" coords="202,156,271,136,273,141,204,161"/>
-<area shape="poly" id="edge21_Node000014_Node000010" title=" " alt="" coords="203,168,248,168,248,173,203,173"/>
-<area shape="poly" id="edge22_Node000014_Node000011" title=" " alt="" coords="204,181,273,201,271,206,202,186"/>
-<area shape="poly" id="edge23_Node000014_Node000012" title=" " alt="" coords="197,155,213,143,230,118,236,93,242,68,261,42,279,30,282,35,265,46,247,70,241,95,235,120,217,147,201,159"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,55,83"/>
+<area shape="rect" id="Node000002" href="$functional__tests_8cpp.html#a342098ba1b793b28d015331449d280d5" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="111,5,207,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,57,108,36,110,41,56,62"/>
+<area shape="rect" id="Node000008" href="$functional__tests_8cpp.html#afc8689ad075e91b2ee99dc91c0834cea" title="A test for verifying if the model running a exponentialTest asserts." alt="" coords="103,56,215,83"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="55,67,87,67,87,72,55,72"/>
+<area shape="rect" id="Node000009" href="$functional__tests_8cpp.html#a6c242456889f3f38d4f88e34922fada6" title="A test for verifying if the model running a logisticFlow asserts." alt="" coords="115,107,203,133"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="56,76,110,98,108,103,54,81"/>
+<area shape="rect" id="Node000003" href="$classModel.html#a97f352b56351b15cea6d989f82ebd19a" title="Method for Creating a Model object." alt="" coords="263,56,398,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="208,30,269,49,268,54,206,35"/>
+<area shape="rect" id="Node000004" href="$classModelBody.html#ad404ede797435494c2155ec92f391f0d" title="Method for Creating a Model object." alt="" coords="446,56,612,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="399,67,431,67,431,72,399,72"/>
+<area shape="rect" id="Node000005" href="$classModelBody.html#ac8f68f6da92b5d0444ad0945cc369672" title="Add a System pointer to the systems container." alt="" coords="660,56,775,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="612,67,644,67,644,72,612,72"/>
+<area shape="rect" id="Node000006" href="$classModelBody.html#a11872814d1b06d4f0204c340a98ed36e" title="Function for getting the size of the flows container." alt="" coords="833,31,984,57"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="775,59,816,53,817,59,776,64"/>
+<area shape="rect" id="Node000007" href="$classModelBody.html#ad69f1633c263a49bda25af43801e34f8" title="Method for getting the size of the systems container." alt="" coords="823,81,993,108"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="776,74,808,79,807,84,775,80"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="216,67,247,67,247,72,216,72"/>
+<area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="202,105,268,85,269,90,204,110"/>
 </map>

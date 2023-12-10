@@ -13,13 +13,24 @@ class ModelHandle: public Model, Handle<ModelBody>{
     public:
         ModelHandle(){
             this->pImpl_->setName("");
+            add((Model*)pImpl_);
         }
 
         ModelHandle(string name){
             this->pImpl_->setName(name);
         }
 
-        ~ModelHandle(){}
+        ~ModelHandle(){
+            for(Model::ModelIterator it = modelsBegin(); it < modelsEnd(); it++)
+                if(*it == (Model*)this){
+                    removeModel(it);
+                break;
+            }     
+        }
+
+        bool removeModel(ModelIterator model){
+            return this->pImpl_->removeModel(model);
+        }
 
         const string getName() const{
             return this->pImpl_->getName();
@@ -62,13 +73,12 @@ class ModelHandle: public Model, Handle<ModelBody>{
         }
 
 
-
         bool updateFlow(string currentName, System* source, System* target, string newName = ""){
             return this->pImpl_->updateFlow(currentName, source, target, newName);
         }
         
         bool add(Model *model){
-            return this->pImpl_->add(model);
+            return Handle<ModelBody>::pImpl_->add(model);
         }
 
         bool run(int startTime, int endTime){

@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['name_0',['name',['../classFlowImpl.html#a4f3915297f6ef9d76acc5f9fef67342c',1,'FlowImpl::name'],['../classModelImpl.html#aa32e79af7c5dfa46a3ea476796a33fb4',1,'ModelImpl::name'],['../classSystemImpl.html#acd123bacad8aa2b830d9ca9c8098fa84',1,'SystemImpl::name']]]
+  ['handle_0',['handle',['../classHandle.html',1,'Handle&lt; T &gt;'],['../classHandle.html#a6a72028918adf79c0ff8d9996e5e4107',1,'Handle::Handle()'],['../classHandle.html#af304e7014a2e600e235140d246783f85',1,'Handle::Handle(const Handle &amp;hd)']]],
+  ['handle_3c_20modelbody_20_3e_1',['Handle&lt; ModelBody &gt;',['../classHandle.html',1,'']]],
+  ['handle_3c_20systembody_20_3e_2',['Handle&lt; SystemBody &gt;',['../classHandle.html',1,'']]],
+  ['handlebodysemdebug_2eh_3',['HandleBodySemDebug.h',['../HandleBodySemDebug_8h.html',1,'']]]
 ];

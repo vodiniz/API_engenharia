@@ -153,7 +153,18 @@ class ModelBody: public Body{
         */
         bool removeFlow(string name);
 
+        /**
+         * @brief Virtual method to remove a Model pointer from the @ref models container.
+         * 
+         * Uses a Model iteratos as a parameter for removing the System.
+         * 
+         * @param model A iterator to a model.
+         * 
+         * @return return true if sucefully removed the Model, and false if it failed.
+        */
+        bool removeModel(ModelIterator model);
 
+    
         /**
          * @brief Update a System pointer from the systems container.
          * 

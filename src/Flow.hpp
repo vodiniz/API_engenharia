@@ -93,17 +93,6 @@ class Flow{
         */
         virtual bool clearTarget() = 0;
     
-        /**
-         * @brief Overload for = operator.
-         * 
-         * This is an overload for = operator, in the format of a = b, in which a is being assigned as b.
-         * 
-         * @return return a Flow reference which is a copy to the assigned Flow.
-        */
-
-        
-        virtual Flow& operator= (const Flow& flow) = 0;
-        
 
         /**
          * @brief A pure virtual equation method which defines the flow behavior.

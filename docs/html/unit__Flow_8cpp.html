@@ -82,81 +82,101 @@ $(function() {
 <code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="unit__Flow_8hpp_source.html">unit_Flow.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="SystemImpl_8hpp_source.html">../../src/SystemImpl.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="FlowHandle_8hpp_source.html">../../src/FlowHandle.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="FlowBody_8hpp_source.html">../../src/FlowBody.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SystemHandle_8hpp_source.html">../../src/SystemHandle.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SystemBody_8hpp_source.html">../../src/SystemBody.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="FlowTest_8hpp_source.html">../flows/FlowTest.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for unit_Flow.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="unit__Flow_8cpp__incl.png" border="0" usemap="#atest_2unit_2unit__Flow_8cpp" alt=""/></div>
 <map name="atest_2unit_2unit__Flow_8cpp" id="atest_2unit_2unit__Flow_8cpp">
-<area shape="rect" title=" " alt="" coords="70,5,223,32"/>
-<area shape="rect" title=" " alt="" coords="72,155,143,181"/>
-<area shape="poly" title=" " alt="" coords="82,35,43,53,26,66,13,81,9,91,9,99,18,117,37,132,61,145,58,150,34,137,14,120,3,101,3,90,8,79,23,62,40,48,80,30"/>
-<area shape="rect" title=" " alt="" coords="23,80,91,107"/>
-<area shape="poly" title=" " alt="" coords="133,35,86,72,83,68,129,30"/>
-<area shape="rect" title=" " alt="" coords="116,80,177,107"/>
-<area shape="poly" title=" " alt="" coords="149,33,149,64,144,64,144,33"/>
-<area shape="rect" href="unit__Flow_8hpp.html" title=" " alt="" coords="388,80,489,107"/>
-<area shape="poly" title=" " alt="" coords="198,30,373,73,372,78,197,35"/>
-<area shape="rect" href="SystemImpl_8hpp.html" title=" " alt="" coords="201,80,364,107"/>
-<area shape="poly" title=" " alt="" coords="171,30,247,70,244,75,169,35"/>
-<area shape="rect" href="FlowImpl_8hpp.html" title=" " alt="" coords="354,155,499,181"/>
-<area shape="poly" title=" " alt="" coords="439,108,434,140,428,139,434,107"/>
-<area shape="rect" href="Flow_8hpp.html" title=" " alt="" coords="348,229,422,256"/>
-<area shape="poly" title=" " alt="" coords="422,183,402,217,397,215,417,181"/>
-<area shape="rect" href="System_8hpp.html" title=" " alt="" coords="285,304,376,331"/>
-<area shape="poly" title=" " alt="" coords="378,258,351,293,347,290,374,255"/>
-<area shape="rect" title=" " alt="" coords="304,379,357,405"/>
-<area shape="poly" title=" " alt="" coords="333,331,333,363,328,363,328,331"/>
-<area shape="poly" title=" " alt="" coords="253,110,154,151,151,146,251,105"/>
-<area shape="poly" title=" " alt="" coords="288,107,327,288,322,289,283,108"/>
+<area shape="rect" title=" " alt="" coords="272,5,424,32"/>
+<area shape="rect" title=" " alt="" coords="50,229,121,256"/>
+<area shape="poly" title=" " alt="" coords="272,26,200,31,124,42,59,58,35,69,20,82,11,97,8,115,11,133,17,151,39,187,64,216,60,220,35,190,12,153,5,134,3,115,6,96,16,78,33,65,58,53,123,36,199,26,272,20"/>
+<area shape="rect" title=" " alt="" coords="30,80,98,107"/>
+<area shape="poly" title=" " alt="" coords="299,35,114,82,113,77,298,30"/>
+<area shape="rect" title=" " alt="" coords="123,80,184,107"/>
+<area shape="poly" title=" " alt="" coords="315,35,200,78,198,73,313,30"/>
+<area shape="rect" href="unit__Flow_8hpp.html" title=" " alt="" coords="462,80,563,107"/>
+<area shape="poly" title=" " alt="" coords="378,30,471,71,469,76,376,35"/>
+<area shape="rect" href="FlowBody_8hpp.html" title=" " alt="" coords="472,155,622,181"/>
+<area shape="poly" title=" " alt="" coords="425,28,516,47,553,61,577,78,584,94,583,112,569,143,564,141,578,110,579,95,573,82,551,66,514,52,424,33"/>
+<area shape="rect" href="FlowHandle_8hpp.html" title=" " alt="" coords="646,155,808,181"/>
+<area shape="poly" title=" " alt="" coords="425,16,525,18,636,26,689,34,735,45,773,59,798,78,805,97,798,116,783,133,764,148,761,144,779,129,794,113,800,97,794,82,770,64,734,50,688,39,636,32,525,23,425,21"/>
+<area shape="rect" href="SystemHandle_8hpp.html" title=" " alt="" coords="259,80,437,107"/>
+<area shape="poly" title=" " alt="" coords="351,33,351,64,346,64,346,33"/>
+<area shape="rect" href="SystemBody_8hpp.html" title=" " alt="" coords="191,155,311,181"/>
+<area shape="poly" title=" " alt="" coords="310,35,276,53,261,66,249,81,244,95,242,110,245,140,240,140,237,110,239,94,245,79,257,62,273,49,307,30"/>
+<area shape="rect" href="FlowTest_8hpp.html" title=" " alt="" coords="638,80,784,107"/>
+<area shape="poly" title=" " alt="" coords="412,30,633,74,632,79,411,35"/>
+<area shape="poly" title=" " alt="" coords="521,106,537,139,532,142,516,108"/>
+<area shape="rect" href="Flow_8hpp.html" title=" " alt="" coords="578,229,652,256"/>
+<area shape="poly" title=" " alt="" coords="561,180,595,216,591,220,557,184"/>
+<area shape="rect" href="HandleBodySemDebug_8h.html" title=" " alt="" coords="385,229,554,256"/>
+<area shape="poly" title=" " alt="" coords="535,184,496,221,492,217,532,180"/>
+<area shape="rect" href="System_8hpp.html" title=" " alt="" coords="303,304,394,331"/>
+<area shape="poly" title=" " alt="" coords="579,257,410,302,409,297,577,251"/>
+<area shape="rect" title=" " alt="" coords="322,379,375,405"/>
+<area shape="poly" title=" " alt="" coords="351,331,351,363,346,363,346,331"/>
+<area shape="poly" title=" " alt="" coords="709,184,649,223,646,218,706,180"/>
+<area shape="poly" title=" " alt="" coords="683,184,530,227,529,222,681,179"/>
+<area shape="poly" title=" " alt="" coords="351,107,351,289,346,289,346,107"/>
+<area shape="poly" title=" " alt="" coords="361,105,452,216,448,219,357,109"/>
+<area shape="poly" title=" " alt="" coords="333,109,281,148,278,143,330,105"/>
+<area shape="poly" title=" " alt="" coords="223,184,130,225,128,220,221,179"/>
+<area shape="poly" title=" " alt="" coords="262,180,334,290,330,293,257,183"/>
+<area shape="poly" title=" " alt="" coords="290,179,418,221,416,226,288,184"/>
+<area shape="poly" title=" " alt="" coords="683,110,591,150,589,145,681,105"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab32833442c11555f0c9fa1d7c1741c64" id="r_ab32833442c11555f0c9fa1d7c1741c64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#ab32833442c11555f0c9fa1d7c1741c64">unit_Flow_constructor_default</a> ()</td></tr>
-<tr class="memdesc:ab32833442c11555f0c9fa1d7c1741c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the default constructor of <a class="el" href="classFlowImpl.html" title="Represents a flow beetwen Systems.">FlowImpl</a>.  <br /></td></tr>
+<tr class="memitem:ab32833442c11555f0c9fa1d7c1741c64" id="r_ab32833442c11555f0c9fa1d7c1741c64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHandle.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#ab32833442c11555f0c9fa1d7c1741c64">unit_Flow_constructor_default</a> ()</td></tr>
+<tr class="memdesc:ab32833442c11555f0c9fa1d7c1741c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the default constructor of FlowImpl.  <br /></td></tr>
 <tr class="separator:ab32833442c11555f0c9fa1d7c1741c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf0c070fb11219f7f6368e1976a5c7ca" id="r_adf0c070fb11219f7f6368e1976a5c7ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#adf0c070fb11219f7f6368e1976a5c7ca">unit_Flow_constructor_with_name</a> ()</td></tr>
-<tr class="memdesc:adf0c070fb11219f7f6368e1976a5c7ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the constructor of <a class="el" href="classFlowImpl.html" title="Represents a flow beetwen Systems.">FlowImpl</a> with name param.  <br /></td></tr>
+<tr class="memitem:adf0c070fb11219f7f6368e1976a5c7ca" id="r_adf0c070fb11219f7f6368e1976a5c7ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHandle.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#adf0c070fb11219f7f6368e1976a5c7ca">unit_Flow_constructor_with_name</a> ()</td></tr>
+<tr class="memdesc:adf0c070fb11219f7f6368e1976a5c7ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the constructor of FlowImpl with name param.  <br /></td></tr>
 <tr class="separator:adf0c070fb11219f7f6368e1976a5c7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96867eac39dbb89af8b3cc722cfdcb6b" id="r_a96867eac39dbb89af8b3cc722cfdcb6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a96867eac39dbb89af8b3cc722cfdcb6b">unit_Flow_constructor_with_name_source_target</a> ()</td></tr>
-<tr class="memdesc:a96867eac39dbb89af8b3cc722cfdcb6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the constructor of <a class="el" href="classFlowImpl.html" title="Represents a flow beetwen Systems.">FlowImpl</a> with name, source and target params.  <br /></td></tr>
+<tr class="memitem:a96867eac39dbb89af8b3cc722cfdcb6b" id="r_a96867eac39dbb89af8b3cc722cfdcb6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHandle.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a96867eac39dbb89af8b3cc722cfdcb6b">unit_Flow_constructor_with_name_source_target</a> ()</td></tr>
+<tr class="memdesc:a96867eac39dbb89af8b3cc722cfdcb6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the constructor of FlowImpl with name, source and target params.  <br /></td></tr>
 <tr class="separator:a96867eac39dbb89af8b3cc722cfdcb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a552e52c045c91bbb5ce653952b7b2075" id="r_a552e52c045c91bbb5ce653952b7b2075"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a552e52c045c91bbb5ce653952b7b2075">unit_Flow_copy_constructor</a> ()</td></tr>
-<tr class="memdesc:a552e52c045c91bbb5ce653952b7b2075"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the copy constructor of <a class="el" href="classFlowImpl.html" title="Represents a flow beetwen Systems.">FlowImpl</a>.  <br /></td></tr>
+<tr class="memitem:a552e52c045c91bbb5ce653952b7b2075" id="r_a552e52c045c91bbb5ce653952b7b2075"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHandle.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a552e52c045c91bbb5ce653952b7b2075">unit_Flow_copy_constructor</a> ()</td></tr>
+<tr class="memdesc:a552e52c045c91bbb5ce653952b7b2075"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the copy constructor of FlowImpl.  <br /></td></tr>
 <tr class="separator:a552e52c045c91bbb5ce653952b7b2075"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d5063d01336bb21034b1c46dbdb740a" id="r_a5d5063d01336bb21034b1c46dbdb740a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a5d5063d01336bb21034b1c46dbdb740a">unit_Flow_destructor</a> ()</td></tr>
-<tr class="memdesc:a5d5063d01336bb21034b1c46dbdb740a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the destructor of <a class="el" href="classFlowImpl.html" title="Represents a flow beetwen Systems.">FlowImpl</a>.  <br /></td></tr>
+<tr class="memitem:a5d5063d01336bb21034b1c46dbdb740a" id="r_a5d5063d01336bb21034b1c46dbdb740a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHandle.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a5d5063d01336bb21034b1c46dbdb740a">unit_Flow_destructor</a> ()</td></tr>
+<tr class="memdesc:a5d5063d01336bb21034b1c46dbdb740a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the destructor of FlowImpl.  <br /></td></tr>
 <tr class="separator:a5d5063d01336bb21034b1c46dbdb740a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dcad29026912f67d033a190e6e35ca6" id="r_a7dcad29026912f67d033a190e6e35ca6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a7dcad29026912f67d033a190e6e35ca6">unit_Flow_getName</a> ()</td></tr>
+<tr class="memitem:a7dcad29026912f67d033a190e6e35ca6" id="r_a7dcad29026912f67d033a190e6e35ca6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHandle.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a7dcad29026912f67d033a190e6e35ca6">unit_Flow_getName</a> ()</td></tr>
 <tr class="memdesc:a7dcad29026912f67d033a190e6e35ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the getName method.  <br /></td></tr>
 <tr class="separator:a7dcad29026912f67d033a190e6e35ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadf402251a021acf6fda7327b7a52320" id="r_aadf402251a021acf6fda7327b7a52320"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#aadf402251a021acf6fda7327b7a52320">unit_Flow_setName</a> ()</td></tr>
+<tr class="memitem:aadf402251a021acf6fda7327b7a52320" id="r_aadf402251a021acf6fda7327b7a52320"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHandle.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#aadf402251a021acf6fda7327b7a52320">unit_Flow_setName</a> ()</td></tr>
 <tr class="memdesc:aadf402251a021acf6fda7327b7a52320"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the setName method.  <br /></td></tr>
 <tr class="separator:aadf402251a021acf6fda7327b7a52320"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dc76658e06597697628386d69327367" id="r_a0dc76658e06597697628386d69327367"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a0dc76658e06597697628386d69327367">unit_Flow_getSource</a> ()</td></tr>
+<tr class="memitem:a0dc76658e06597697628386d69327367" id="r_a0dc76658e06597697628386d69327367"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHandle.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a0dc76658e06597697628386d69327367">unit_Flow_getSource</a> ()</td></tr>
 <tr class="memdesc:a0dc76658e06597697628386d69327367"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the getSource method.  <br /></td></tr>
 <tr class="separator:a0dc76658e06597697628386d69327367"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a213cf3a2bd094e466707a33416124ce4" id="r_a213cf3a2bd094e466707a33416124ce4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4">unit_Flow_setSource</a> ()</td></tr>
+<tr class="memitem:a213cf3a2bd094e466707a33416124ce4" id="r_a213cf3a2bd094e466707a33416124ce4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHandle.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4">unit_Flow_setSource</a> ()</td></tr>
 <tr class="memdesc:a213cf3a2bd094e466707a33416124ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the setSource method.  <br /></td></tr>
 <tr class="separator:a213cf3a2bd094e466707a33416124ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89661cef89f6beb434f6097691c03538" id="r_a89661cef89f6beb434f6097691c03538"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a89661cef89f6beb434f6097691c03538">unit_Flow_getTarget</a> ()</td></tr>
+<tr class="memitem:a89661cef89f6beb434f6097691c03538" id="r_a89661cef89f6beb434f6097691c03538"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHandle.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a89661cef89f6beb434f6097691c03538">unit_Flow_getTarget</a> ()</td></tr>
 <tr class="memdesc:a89661cef89f6beb434f6097691c03538"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the getTarget method.  <br /></td></tr>
 <tr class="separator:a89661cef89f6beb434f6097691c03538"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b2a81b6dbbc3c5b1b25874640705654" id="r_a0b2a81b6dbbc3c5b1b25874640705654"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654">unit_Flow_setTarget</a> ()</td></tr>
+<tr class="memitem:a0b2a81b6dbbc3c5b1b25874640705654" id="r_a0b2a81b6dbbc3c5b1b25874640705654"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHandle.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654">unit_Flow_setTarget</a> ()</td></tr>
 <tr class="memdesc:a0b2a81b6dbbc3c5b1b25874640705654"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the setTarget method.  <br /></td></tr>
 <tr class="separator:a0b2a81b6dbbc3c5b1b25874640705654"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91e2ffdd821e194708355a4802d9a838" id="r_a91e2ffdd821e194708355a4802d9a838"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a91e2ffdd821e194708355a4802d9a838">unit_Flow_clearSource</a> ()</td></tr>
+<tr class="memitem:a91e2ffdd821e194708355a4802d9a838" id="r_a91e2ffdd821e194708355a4802d9a838"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHandle.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a91e2ffdd821e194708355a4802d9a838">unit_Flow_clearSource</a> ()</td></tr>
 <tr class="memdesc:a91e2ffdd821e194708355a4802d9a838"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the clearSource method.  <br /></td></tr>
 <tr class="separator:a91e2ffdd821e194708355a4802d9a838"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcd6d85344284a146ff77dd6140e94b6" id="r_adcd6d85344284a146ff77dd6140e94b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#adcd6d85344284a146ff77dd6140e94b6">unit_Flow_clearTarget</a> ()</td></tr>
+<tr class="memitem:adcd6d85344284a146ff77dd6140e94b6" id="r_adcd6d85344284a146ff77dd6140e94b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHandle.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#adcd6d85344284a146ff77dd6140e94b6">unit_Flow_clearTarget</a> ()</td></tr>
 <tr class="memdesc:adcd6d85344284a146ff77dd6140e94b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the clearTarget method.  <br /></td></tr>
 <tr class="separator:adcd6d85344284a146ff77dd6140e94b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e82a59b324cb964c490e446e8378540" id="r_a2e82a59b324cb964c490e446e8378540"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a2e82a59b324cb964c490e446e8378540">unit_Flow_assignOverload</a> ()</td></tr>
+<tr class="memitem:a2e82a59b324cb964c490e446e8378540" id="r_a2e82a59b324cb964c490e446e8378540"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHandle.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a2e82a59b324cb964c490e446e8378540">unit_Flow_assignOverload</a> ()</td></tr>
 <tr class="memdesc:a2e82a59b324cb964c490e446e8378540"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unitary test for asserting the overload of the assignment(=) operator.  <br /></td></tr>
 <tr class="separator:a2e82a59b324cb964c490e446e8378540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6683c1fa1a8445fa330116af20af24dc" id="r_a6683c1fa1a8445fa330116af20af24dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a6683c1fa1a8445fa330116af20af24dc">run_unit_test_Flow</a> ()</td></tr>
+<tr class="memitem:a6683c1fa1a8445fa330116af20af24dc" id="r_a6683c1fa1a8445fa330116af20af24dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHandle.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unit__Flow_8cpp.html#a6683c1fa1a8445fa330116af20af24dc">run_unit_test_Flow</a> ()</td></tr>
 <tr class="separator:a6683c1fa1a8445fa330116af20af24dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -167,7 +187,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void run_unit_test_Flow </td>
+          <td class="memname"><a class="el" href="classHandle.html">void</a> run_unit_test_Flow </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -179,70 +199,33 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="unit__Flow_8cpp_a6683c1fa1a8445fa330116af20af24dc_cgraph.png" border="0" usemap="#aunit__Flow_8cpp_a6683c1fa1a8445fa330116af20af24dc_cgraph" alt=""/></div>
 <map name="aunit__Flow_8cpp_a6683c1fa1a8445fa330116af20af24dc_cgraph" id="aunit__Flow_8cpp_a6683c1fa1a8445fa330116af20af24dc_cgraph">
-<area shape="rect" title=" " alt="" coords="5,349,137,376"/>
-<area shape="rect" href="unit__Flow_8cpp.html#a2e82a59b324cb964c490e446e8378540" title="A unitary test for asserting the overload of the assignment(=) operator." alt="" coords="190,224,364,251"/>
-<area shape="poly" title=" " alt="" coords="82,347,124,304,152,281,183,260,196,254,198,259,186,265,155,285,127,308,86,351"/>
-<area shape="rect" href="unit__Flow_8cpp.html#a91e2ffdd821e194708355a4802d9a838" title="A unitary test for asserting the clearSource method." alt="" coords="200,408,354,435"/>
-<area shape="poly" title=" " alt="" coords="119,374,185,393,211,401,210,406,184,399,118,379"/>
-<area shape="rect" href="unit__Flow_8cpp.html#ab32833442c11555f0c9fa1d7c1741c64" title="A unitary test for asserting the default constructor of FlowImpl." alt="" coords="202,275,352,317"/>
-<area shape="poly" title=" " alt="" coords="114,346,193,320,195,325,116,351"/>
-<area shape="rect" href="unit__Flow_8cpp.html#adf0c070fb11219f7f6368e1976a5c7ca" title="A unitary test for asserting the constructor of FlowImpl with name param." alt="" coords="202,107,352,149"/>
-<area shape="poly" title=" " alt="" coords="74,348,87,311,109,260,141,207,160,182,183,159,187,156,191,160,186,163,164,185,145,210,114,263,92,313,79,350"/>
-<area shape="rect" href="unit__Flow_8cpp.html#a96867eac39dbb89af8b3cc722cfdcb6b" title="A unitary test for asserting the constructor of FlowImpl with name, source and target params." alt="" coords="188,341,366,384"/>
-<area shape="poly" title=" " alt="" coords="137,360,172,360,172,365,137,365"/>
-<area shape="rect" href="unit__Flow_8cpp.html#a552e52c045c91bbb5ce653952b7b2075" title="A unitary test for asserting the copy constructor of FlowImpl." alt="" coords="185,173,369,200"/>
-<area shape="poly" title=" " alt="" coords="76,348,115,282,146,243,183,210,192,205,194,209,186,214,149,247,119,285,81,350"/>
-<area shape="rect" href="unit__Flow_8cpp.html#a5d5063d01336bb21034b1c46dbdb740a" title="A unitary test for asserting the destructor of FlowImpl." alt="" coords="206,661,348,688"/>
-<area shape="poly" title=" " alt="" coords="76,376,83,427,101,500,116,540,134,579,158,616,186,647,193,653,190,657,183,651,153,619,130,582,111,542,96,502,78,428,71,377"/>
-<area shape="rect" href="unit__Flow_8cpp.html#a7dcad29026912f67d033a190e6e35ca6" title="A unitary test for asserting the getName method." alt="" coords="208,56,346,83"/>
-<area shape="poly" title=" " alt="" coords="71,349,80,300,99,231,113,194,132,157,155,123,183,93,193,85,196,90,186,97,159,126,136,160,118,196,104,233,85,302,77,350"/>
-<area shape="rect" href="unit__Flow_8cpp.html#a0dc76658e06597697628386d69327367" title="A unitary test for asserting the getSource method." alt="" coords="205,509,349,536"/>
-<area shape="poly" title=" " alt="" coords="82,375,122,433,151,467,186,495,195,500,192,505,183,500,148,471,117,437,78,378"/>
-<area shape="rect" href="unit__Flow_8cpp.html#a89661cef89f6beb434f6097691c03538" title="A unitary test for asserting the getTarget method." alt="" coords="208,459,346,485"/>
-<area shape="poly" title=" " alt="" coords="89,375,131,409,186,444,200,451,198,456,183,449,128,414,85,379"/>
-<area shape="rect" href="unit__Flow_8cpp.html#aadf402251a021acf6fda7327b7a52320" title="A unitary test for asserting the setName method." alt="" coords="208,5,346,32"/>
-<area shape="poly" title=" " alt="" coords="70,349,76,292,92,210,107,165,126,120,151,78,183,42,192,35,196,39,186,46,155,82,131,123,112,167,98,211,81,293,76,349"/>
+<area shape="rect" title=" " alt="" coords="5,357,137,384"/>
+<area shape="rect" href="unit__Flow_8cpp.html#a2e82a59b324cb964c490e446e8378540" title="A unitary test for asserting the overload of the assignment(=) operator." alt="" coords="190,5,364,32"/>
+<area shape="poly" title=" " alt="" coords="70,357,75,299,91,215,106,168,125,122,151,80,183,42,187,39,190,43,187,46,155,83,130,125,111,170,97,216,80,300,75,357"/>
+<area shape="rect" href="unit__Flow_8cpp.html#a91e2ffdd821e194708355a4802d9a838" title="A unitary test for asserting the clearSource method." alt="" coords="200,56,354,83"/>
+<area shape="poly" title=" " alt="" coords="71,356,79,307,98,236,112,197,131,159,154,124,183,93,187,89,191,93,186,97,158,127,136,162,117,199,103,237,84,308,76,357"/>
+<area shape="rect" href="unit__Flow_8cpp.html#ab32833442c11555f0c9fa1d7c1741c64" title="A unitary test for asserting the default constructor of FlowImpl." alt="" coords="202,107,352,149"/>
+<area shape="poly" title=" " alt="" coords="73,356,86,318,108,265,140,209,160,183,183,159,188,156,191,160,186,163,164,186,144,212,113,267,91,319,79,358"/>
+<area shape="rect" href="unit__Flow_8cpp.html#adf0c070fb11219f7f6368e1976a5c7ca" title="A unitary test for asserting the constructor of FlowImpl with name param." alt="" coords="202,173,352,216"/>
+<area shape="poly" title=" " alt="" coords="77,355,117,294,147,258,183,226,190,221,193,226,186,230,151,261,121,297,82,358"/>
+<area shape="rect" href="unit__Flow_8cpp.html#a96867eac39dbb89af8b3cc722cfdcb6b" title="A unitary test for asserting the constructor of FlowImpl with name, source and target params." alt="" coords="188,240,366,283"/>
+<area shape="poly" title=" " alt="" coords="88,355,130,324,183,292,195,287,197,292,186,297,133,329,91,359"/>
+<area shape="rect" href="unit__Flow_8cpp.html#a552e52c045c91bbb5ce653952b7b2075" title="A unitary test for asserting the copy constructor of FlowImpl." alt="" coords="185,307,369,333"/>
+<area shape="poly" title=" " alt="" coords="128,354,204,335,206,340,129,359"/>
+<area shape="rect" href="unit__Flow_8cpp.html#a5d5063d01336bb21034b1c46dbdb740a" title="A unitary test for asserting the destructor of FlowImpl." alt="" coords="206,357,348,384"/>
+<area shape="poly" title=" " alt="" coords="137,368,190,368,190,373,137,373"/>
+<area shape="rect" href="unit__Flow_8cpp.html#a7dcad29026912f67d033a190e6e35ca6" title="A unitary test for asserting the getName method." alt="" coords="208,408,346,435"/>
+<area shape="poly" title=" " alt="" coords="129,382,206,401,204,406,128,387"/>
+<area shape="rect" href="unit__Flow_8cpp.html#a0dc76658e06597697628386d69327367" title="A unitary test for asserting the getSource method." alt="" coords="205,459,349,485"/>
+<area shape="poly" title=" " alt="" coords="91,383,133,413,186,444,201,451,199,456,183,449,130,418,88,387"/>
+<area shape="rect" href="unit__Flow_8cpp.html#a89661cef89f6beb434f6097691c03538" title="A unitary test for asserting the getTarget method." alt="" coords="208,509,346,536"/>
+<area shape="poly" title=" " alt="" coords="83,383,123,438,152,469,186,495,196,501,193,505,183,500,149,473,119,441,79,386"/>
+<area shape="rect" href="unit__Flow_8cpp.html#aadf402251a021acf6fda7327b7a52320" title="A unitary test for asserting the setName method." alt="" coords="208,560,346,587"/>
+<area shape="poly" title=" " alt="" coords="80,384,93,417,116,461,147,507,186,546,196,552,193,556,183,550,142,510,111,464,88,419,75,386"/>
 <area shape="rect" href="unit__Flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="A unitary test for asserting the setSource method." alt="" coords="205,611,349,637"/>
-<area shape="poly" title=" " alt="" coords="77,376,87,419,108,478,140,542,161,571,186,597,193,602,190,606,183,601,157,575,135,545,103,481,82,420,72,377"/>
-<area shape="rect" href="unit__Flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="A unitary test for asserting the setTarget method." alt="" coords="208,560,346,587"/>
-<area shape="poly" title=" " alt="" coords="79,375,92,410,114,456,146,505,165,527,186,546,195,552,192,556,183,550,161,531,141,508,110,459,87,412,74,377"/>
-<area shape="rect" href="classFlow.html#a523026b5d1867a809aa167af000fac78" title="Virtual method to get the Name field on Flow." alt="" coords="426,144,536,171"/>
-<area shape="poly" title=" " alt="" coords="334,221,368,210,440,176,442,181,370,214,335,226"/>
-<area shape="rect" href="classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title="Virtual method to get the source System." alt="" coords="423,341,539,368"/>
-<area shape="poly" title=" " alt="" coords="347,249,370,260,387,275,396,289,405,304,419,319,437,332,434,336,415,323,400,307,392,292,383,278,368,265,345,254"/>
-<area shape="rect" href="classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Virtual method to get the Target System." alt="" coords="425,283,536,309"/>
-<area shape="poly" title=" " alt="" coords="329,249,370,260,420,275,419,280,368,265,328,254"/>
-<area shape="poly" title=" " alt="" coords="330,405,368,393,430,372,431,377,370,399,332,410"/>
-<area shape="rect" href="classFlow.html#abe15474181d5a75f21f28146b30058ab" title="Virtual method to clear the Flow source." alt="" coords="418,408,544,435"/>
-<area shape="poly" title=" " alt="" coords="354,419,402,419,402,424,354,424"/>
-<area shape="poly" title=" " alt="" coords="346,272,368,260,418,221,457,180,461,184,421,225,370,265,348,277"/>
-<area shape="poly" title=" " alt="" coords="353,315,418,334,417,339,351,320"/>
-<area shape="poly" title=" " alt="" coords="352,293,409,293,409,299,352,299"/>
-<area shape="poly" title=" " alt="" coords="352,136,411,145,410,150,352,141"/>
-<area shape="poly" title=" " alt="" coords="354,146,371,159,386,180,394,200,397,240,399,279,406,299,419,320,431,331,428,335,415,323,401,301,394,280,392,240,389,202,381,183,367,163,350,150"/>
-<area shape="poly" title=" " alt="" coords="351,148,371,159,400,184,427,213,466,268,462,271,423,217,397,188,367,164,348,152"/>
-<area shape="poly" title=" " alt="" coords="366,357,407,355,407,360,366,362"/>
-<area shape="poly" title=" " alt="" coords="343,338,422,312,424,317,345,343"/>
-<area shape="poly" title=" " alt="" coords="369,171,410,165,411,170,370,176"/>
-<area shape="poly" title=" " alt="" coords="353,198,371,210,383,224,391,237,397,265,402,292,409,306,419,320,432,331,429,335,415,323,404,308,397,294,392,266,386,239,379,227,367,214,350,203"/>
-<area shape="poly" title=" " alt="" coords="341,198,370,210,417,239,455,270,452,274,414,243,368,214,339,203"/>
-<area shape="poly" title=" " alt="" coords="337,81,370,92,411,112,447,133,444,138,408,117,368,97,335,86"/>
-<area shape="poly" title=" " alt="" coords="347,507,367,495,386,472,392,448,399,422,415,394,438,374,441,378,419,398,404,424,398,449,390,474,371,499,350,512"/>
-<area shape="rect" href="classSystem.html#a25dff87b3fd15b008622ef9bd10ca1c0" title="Virtual method to get the Name field on System." alt="" coords="417,509,544,536"/>
-<area shape="poly" title=" " alt="" coords="349,520,402,520,402,525,349,525"/>
-<area shape="poly" title=" " alt="" coords="345,458,367,445,379,431,386,418,392,389,397,359,403,344,415,328,429,316,432,320,419,331,408,346,402,361,397,390,391,419,384,434,371,449,348,463"/>
-<area shape="poly" title=" " alt="" coords="334,483,410,502,409,508,333,489"/>
-<area shape="poly" title=" " alt="" coords="345,30,370,42,398,61,424,85,463,130,459,133,420,88,395,66,368,46,343,35"/>
-<area shape="rect" href="classFlow.html#a3b1816775f7d2e9497236b38ab173d44" title="Virtual method to set a new name for the Flow." alt="" coords="426,5,536,32"/>
-<area shape="poly" title=" " alt="" coords="346,16,410,16,410,21,346,21"/>
-<area shape="poly" title=" " alt="" coords="347,610,367,597,385,573,394,549,396,525,395,501,394,450,400,423,415,394,435,375,438,379,419,398,405,425,399,451,400,501,401,525,399,550,390,575,371,601,350,615"/>
-<area shape="poly" title=" " alt="" coords="343,608,368,596,382,585,391,572,400,559,415,546,423,541,426,546,419,550,404,563,396,575,386,588,370,601,346,613"/>
-<area shape="rect" href="classFlow.html#a303311b84fb748a4a7fb9a0312b4ff23" title="Virtual method to set a new source for the Flow." alt="" coords="423,611,539,637"/>
-<area shape="poly" title=" " alt="" coords="349,621,407,621,407,627,349,627"/>
-<area shape="poly" title=" " alt="" coords="345,561,367,546,386,520,394,494,396,468,393,442,391,414,391,386,398,358,415,328,427,316,430,320,419,331,403,360,396,387,396,414,399,441,401,468,400,495,391,522,371,550,348,566"/>
-<area shape="poly" title=" " alt="" coords="333,557,409,538,410,543,334,562"/>
-<area shape="rect" href="classFlow.html#a738ba8d73ee3ec358d94f131e695fc97" title="Virtual method to set a new target for the Flow." alt="" coords="425,560,536,587"/>
-<area shape="poly" title=" " alt="" coords="346,571,409,571,409,576,346,576"/>
+<area shape="poly" title=" " alt="" coords="78,384,88,425,109,483,141,544,162,572,186,597,193,602,190,606,183,601,158,576,136,547,104,485,83,427,72,385"/>
+<area shape="rect" href="unit__Flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="A unitary test for asserting the setTarget method." alt="" coords="208,661,346,688"/>
+<area shape="poly" title=" " alt="" coords="76,384,84,433,102,505,117,543,135,581,158,617,186,647,196,654,192,658,183,651,154,620,130,584,112,545,97,506,79,434,71,384"/>
 </map>
 </div>
 <div class="dynheader">
@@ -265,7 +248,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unit_Flow_assignOverload </td>
+          <td class="memname"><a class="el" href="classHandle.html">void</a> unit_Flow_assignOverload </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -274,20 +257,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>A unitary test for asserting the overload of the assignment(=) operator. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__Flow_8cpp_a2e82a59b324cb964c490e446e8378540_cgraph.png" border="0" usemap="#aunit__Flow_8cpp_a2e82a59b324cb964c490e446e8378540_cgraph" alt=""/></div>
-<map name="aunit__Flow_8cpp_a2e82a59b324cb964c490e446e8378540_cgraph" id="aunit__Flow_8cpp_a2e82a59b324cb964c490e446e8378540_cgraph">
-<area shape="rect" title="A unitary test for asserting the overload of the assignment(=) operator." alt="" coords="5,56,180,83"/>
-<area shape="rect" href="classFlow.html#a523026b5d1867a809aa167af000fac78" title="Virtual method to get the Name field on Flow." alt="" coords="231,5,341,32"/>
-<area shape="poly" title=" " alt="" coords="146,53,217,34,219,39,147,58"/>
-<area shape="rect" href="classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title="Virtual method to get the source System." alt="" coords="228,56,344,83"/>
-<area shape="poly" title=" " alt="" coords="180,67,212,67,212,72,180,72"/>
-<area shape="rect" href="classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Virtual method to get the Target System." alt="" coords="230,107,342,133"/>
-<area shape="poly" title=" " alt="" coords="147,81,219,100,217,105,146,86"/>
-</map>
-</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -310,7 +279,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unit_Flow_clearSource </td>
+          <td class="memname"><a class="el" href="classHandle.html">void</a> unit_Flow_clearSource </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -319,18 +288,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>A unitary test for asserting the clearSource method. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__Flow_8cpp_a91e2ffdd821e194708355a4802d9a838_cgraph.png" border="0" usemap="#aunit__Flow_8cpp_a91e2ffdd821e194708355a4802d9a838_cgraph" alt=""/></div>
-<map name="aunit__Flow_8cpp_a91e2ffdd821e194708355a4802d9a838_cgraph" id="aunit__Flow_8cpp_a91e2ffdd821e194708355a4802d9a838_cgraph">
-<area shape="rect" title="A unitary test for asserting the clearSource method." alt="" coords="5,31,159,57"/>
-<area shape="rect" href="classFlow.html#abe15474181d5a75f21f28146b30058ab" title="Virtual method to clear the Flow source." alt="" coords="207,5,333,32"/>
-<area shape="poly" title=" " alt="" coords="159,31,191,27,191,32,160,36"/>
-<area shape="rect" href="classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title="Virtual method to get the source System." alt="" coords="212,56,328,83"/>
-<area shape="poly" title=" " alt="" coords="160,52,197,57,196,62,159,57"/>
-</map>
-</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -353,7 +310,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unit_Flow_clearTarget </td>
+          <td class="memname"><a class="el" href="classHandle.html">void</a> unit_Flow_clearTarget </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -362,18 +319,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>A unitary test for asserting the clearTarget method. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__Flow_8cpp_adcd6d85344284a146ff77dd6140e94b6_cgraph.png" border="0" usemap="#aunit__Flow_8cpp_adcd6d85344284a146ff77dd6140e94b6_cgraph" alt=""/></div>
-<map name="aunit__Flow_8cpp_adcd6d85344284a146ff77dd6140e94b6_cgraph" id="aunit__Flow_8cpp_adcd6d85344284a146ff77dd6140e94b6_cgraph">
-<area shape="rect" title="A unitary test for asserting the clearTarget method." alt="" coords="5,31,154,57"/>
-<area shape="rect" href="classFlow.html#a658b9d7a92f7771a050b826a141b46fd" title="Virtual method to clear the Flow target." alt="" coords="202,5,323,32"/>
-<area shape="poly" title=" " alt="" coords="154,31,186,27,186,32,154,36"/>
-<area shape="rect" href="classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Virtual method to get the Target System." alt="" coords="207,56,318,83"/>
-<area shape="poly" title=" " alt="" coords="154,52,191,57,191,62,154,57"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -384,7 +329,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unit_Flow_constructor_default </td>
+          <td class="memname"><a class="el" href="classHandle.html">void</a> unit_Flow_constructor_default </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -392,21 +337,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>A unitary test for asserting the default constructor of <a class="el" href="classFlowImpl.html" title="Represents a flow beetwen Systems.">FlowImpl</a>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__Flow_8cpp_ab32833442c11555f0c9fa1d7c1741c64_cgraph.png" border="0" usemap="#aunit__Flow_8cpp_ab32833442c11555f0c9fa1d7c1741c64_cgraph" alt=""/></div>
-<map name="aunit__Flow_8cpp_ab32833442c11555f0c9fa1d7c1741c64_cgraph" id="aunit__Flow_8cpp_ab32833442c11555f0c9fa1d7c1741c64_cgraph">
-<area shape="rect" title="A unitary test for asserting the default constructor of FlowImpl." alt="" coords="5,48,155,91"/>
-<area shape="rect" href="classFlow.html#a523026b5d1867a809aa167af000fac78" title="Virtual method to get the Name field on Flow." alt="" coords="206,5,316,32"/>
-<area shape="poly" title=" " alt="" coords="154,46,195,34,197,39,156,51"/>
-<area shape="rect" href="classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title="Virtual method to get the source System." alt="" coords="203,56,319,83"/>
-<area shape="poly" title=" " alt="" coords="155,67,187,67,187,72,155,72"/>
-<area shape="rect" href="classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Virtual method to get the Target System." alt="" coords="205,107,317,133"/>
-<area shape="poly" title=" " alt="" coords="156,88,197,99,195,104,154,93"/>
-</map>
-</div>
+<p>A unitary test for asserting the default constructor of FlowImpl. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -429,7 +360,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unit_Flow_constructor_with_name </td>
+          <td class="memname"><a class="el" href="classHandle.html">void</a> unit_Flow_constructor_with_name </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -437,21 +368,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>A unitary test for asserting the constructor of <a class="el" href="classFlowImpl.html" title="Represents a flow beetwen Systems.">FlowImpl</a> with name param. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__Flow_8cpp_adf0c070fb11219f7f6368e1976a5c7ca_cgraph.png" border="0" usemap="#aunit__Flow_8cpp_adf0c070fb11219f7f6368e1976a5c7ca_cgraph" alt=""/></div>
-<map name="aunit__Flow_8cpp_adf0c070fb11219f7f6368e1976a5c7ca_cgraph" id="aunit__Flow_8cpp_adf0c070fb11219f7f6368e1976a5c7ca_cgraph">
-<area shape="rect" title="A unitary test for asserting the constructor of FlowImpl with name param." alt="" coords="5,48,155,91"/>
-<area shape="rect" href="classFlow.html#a523026b5d1867a809aa167af000fac78" title="Virtual method to get the Name field on Flow." alt="" coords="206,5,316,32"/>
-<area shape="poly" title=" " alt="" coords="154,46,195,34,197,39,156,51"/>
-<area shape="rect" href="classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title="Virtual method to get the source System." alt="" coords="203,56,319,83"/>
-<area shape="poly" title=" " alt="" coords="155,67,187,67,187,72,155,72"/>
-<area shape="rect" href="classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Virtual method to get the Target System." alt="" coords="205,107,317,133"/>
-<area shape="poly" title=" " alt="" coords="156,88,197,99,195,104,154,93"/>
-</map>
-</div>
+<p>A unitary test for asserting the constructor of FlowImpl with name param. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -474,7 +391,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unit_Flow_constructor_with_name_source_target </td>
+          <td class="memname"><a class="el" href="classHandle.html">void</a> unit_Flow_constructor_with_name_source_target </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -482,19 +399,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>A unitary test for asserting the constructor of <a class="el" href="classFlowImpl.html" title="Represents a flow beetwen Systems.">FlowImpl</a> with name, source and target params. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__Flow_8cpp_a96867eac39dbb89af8b3cc722cfdcb6b_cgraph.png" border="0" usemap="#aunit__Flow_8cpp_a96867eac39dbb89af8b3cc722cfdcb6b_cgraph" alt=""/></div>
-<map name="aunit__Flow_8cpp_a96867eac39dbb89af8b3cc722cfdcb6b_cgraph" id="aunit__Flow_8cpp_a96867eac39dbb89af8b3cc722cfdcb6b_cgraph">
-<area shape="rect" title="A unitary test for asserting the constructor of FlowImpl with name, source and target params." alt="" coords="5,23,183,65"/>
-<area shape="rect" href="classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title="Virtual method to get the source System." alt="" coords="231,5,347,32"/>
-<area shape="poly" title=" " alt="" coords="183,30,215,26,216,31,183,35"/>
-<area shape="rect" href="classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Virtual method to get the Target System." alt="" coords="233,56,345,83"/>
-<area shape="poly" title=" " alt="" coords="183,53,218,58,218,63,183,58"/>
-</map>
-</div>
+<p>A unitary test for asserting the constructor of FlowImpl with name, source and target params. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -517,7 +422,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unit_Flow_copy_constructor </td>
+          <td class="memname"><a class="el" href="classHandle.html">void</a> unit_Flow_copy_constructor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -525,21 +430,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>A unitary test for asserting the copy constructor of <a class="el" href="classFlowImpl.html" title="Represents a flow beetwen Systems.">FlowImpl</a>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__Flow_8cpp_a552e52c045c91bbb5ce653952b7b2075_cgraph.png" border="0" usemap="#aunit__Flow_8cpp_a552e52c045c91bbb5ce653952b7b2075_cgraph" alt=""/></div>
-<map name="aunit__Flow_8cpp_a552e52c045c91bbb5ce653952b7b2075_cgraph" id="aunit__Flow_8cpp_a552e52c045c91bbb5ce653952b7b2075_cgraph">
-<area shape="rect" title="A unitary test for asserting the copy constructor of FlowImpl." alt="" coords="5,56,190,83"/>
-<area shape="rect" href="classFlow.html#a523026b5d1867a809aa167af000fac78" title="Virtual method to get the Name field on Flow." alt="" coords="241,5,351,32"/>
-<area shape="poly" title=" " alt="" coords="152,53,225,34,227,39,153,58"/>
-<area shape="rect" href="classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title="Virtual method to get the source System." alt="" coords="238,56,354,83"/>
-<area shape="poly" title=" " alt="" coords="190,67,222,67,222,72,190,72"/>
-<area shape="rect" href="classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Virtual method to get the Target System." alt="" coords="240,107,352,133"/>
-<area shape="poly" title=" " alt="" coords="153,81,227,100,225,105,152,86"/>
-</map>
-</div>
+<p>A unitary test for asserting the copy constructor of FlowImpl. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -562,7 +453,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unit_Flow_destructor </td>
+          <td class="memname"><a class="el" href="classHandle.html">void</a> unit_Flow_destructor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -570,7 +461,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>A unitary test for asserting the destructor of <a class="el" href="classFlowImpl.html" title="Represents a flow beetwen Systems.">FlowImpl</a>. </p>
+<p>A unitary test for asserting the destructor of FlowImpl. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -593,7 +484,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unit_Flow_getName </td>
+          <td class="memname"><a class="el" href="classHandle.html">void</a> unit_Flow_getName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -602,16 +493,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>A unitary test for asserting the getName method. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__Flow_8cpp_a7dcad29026912f67d033a190e6e35ca6_cgraph.png" border="0" usemap="#aunit__Flow_8cpp_a7dcad29026912f67d033a190e6e35ca6_cgraph" alt=""/></div>
-<map name="aunit__Flow_8cpp_a7dcad29026912f67d033a190e6e35ca6_cgraph" id="aunit__Flow_8cpp_a7dcad29026912f67d033a190e6e35ca6_cgraph">
-<area shape="rect" title="A unitary test for asserting the getName method." alt="" coords="5,5,143,32"/>
-<area shape="rect" href="classFlow.html#a523026b5d1867a809aa167af000fac78" title="Virtual method to get the Name field on Flow." alt="" coords="191,5,301,32"/>
-<area shape="poly" title=" " alt="" coords="143,16,175,16,175,21,143,21"/>
-</map>
-</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -634,7 +515,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unit_Flow_getSource </td>
+          <td class="memname"><a class="el" href="classHandle.html">void</a> unit_Flow_getSource </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -643,18 +524,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>A unitary test for asserting the getSource method. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__Flow_8cpp_a0dc76658e06597697628386d69327367_cgraph.png" border="0" usemap="#aunit__Flow_8cpp_a0dc76658e06597697628386d69327367_cgraph" alt=""/></div>
-<map name="aunit__Flow_8cpp_a0dc76658e06597697628386d69327367_cgraph" id="aunit__Flow_8cpp_a0dc76658e06597697628386d69327367_cgraph">
-<area shape="rect" title="A unitary test for asserting the getSource method." alt="" coords="5,31,149,57"/>
-<area shape="rect" href="classSystem.html#a25dff87b3fd15b008622ef9bd10ca1c0" title="Virtual method to get the Name field on System." alt="" coords="197,5,324,32"/>
-<area shape="poly" title=" " alt="" coords="149,31,181,27,182,32,150,37"/>
-<area shape="rect" href="classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title="Virtual method to get the source System." alt="" coords="202,56,319,83"/>
-<area shape="poly" title=" " alt="" coords="150,51,187,57,187,62,149,57"/>
-</map>
-</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -677,7 +546,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unit_Flow_getTarget </td>
+          <td class="memname"><a class="el" href="classHandle.html">void</a> unit_Flow_getTarget </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -686,18 +555,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>A unitary test for asserting the getTarget method. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__Flow_8cpp_a89661cef89f6beb434f6097691c03538_cgraph.png" border="0" usemap="#aunit__Flow_8cpp_a89661cef89f6beb434f6097691c03538_cgraph" alt=""/></div>
-<map name="aunit__Flow_8cpp_a89661cef89f6beb434f6097691c03538_cgraph" id="aunit__Flow_8cpp_a89661cef89f6beb434f6097691c03538_cgraph">
-<area shape="rect" title="A unitary test for asserting the getTarget method." alt="" coords="5,31,144,57"/>
-<area shape="rect" href="classSystem.html#a25dff87b3fd15b008622ef9bd10ca1c0" title="Virtual method to get the Name field on System." alt="" coords="192,5,319,32"/>
-<area shape="poly" title=" " alt="" coords="144,32,176,27,177,32,145,37"/>
-<area shape="rect" href="classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Virtual method to get the Target System." alt="" coords="200,56,311,83"/>
-<area shape="poly" title=" " alt="" coords="145,51,185,57,184,62,144,56"/>
-</map>
-</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -720,7 +577,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unit_Flow_setName </td>
+          <td class="memname"><a class="el" href="classHandle.html">void</a> unit_Flow_setName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -729,18 +586,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>A unitary test for asserting the setName method. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__Flow_8cpp_aadf402251a021acf6fda7327b7a52320_cgraph.png" border="0" usemap="#aunit__Flow_8cpp_aadf402251a021acf6fda7327b7a52320_cgraph" alt=""/></div>
-<map name="aunit__Flow_8cpp_aadf402251a021acf6fda7327b7a52320_cgraph" id="aunit__Flow_8cpp_aadf402251a021acf6fda7327b7a52320_cgraph">
-<area shape="rect" title="A unitary test for asserting the setName method." alt="" coords="5,31,143,57"/>
-<area shape="rect" href="classFlow.html#a523026b5d1867a809aa167af000fac78" title="Virtual method to get the Name field on Flow." alt="" coords="191,5,301,32"/>
-<area shape="poly" title=" " alt="" coords="143,31,175,26,175,32,144,36"/>
-<area shape="rect" href="classFlow.html#a3b1816775f7d2e9497236b38ab173d44" title="Virtual method to set a new name for the Flow." alt="" coords="191,56,301,83"/>
-<area shape="poly" title=" " alt="" coords="144,52,175,56,175,62,143,57"/>
-</map>
-</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -763,7 +608,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unit_Flow_setSource </td>
+          <td class="memname"><a class="el" href="classHandle.html">void</a> unit_Flow_setSource </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -772,20 +617,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>A unitary test for asserting the setSource method. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__Flow_8cpp_a213cf3a2bd094e466707a33416124ce4_cgraph.png" border="0" usemap="#aunit__Flow_8cpp_a213cf3a2bd094e466707a33416124ce4_cgraph" alt=""/></div>
-<map name="aunit__Flow_8cpp_a213cf3a2bd094e466707a33416124ce4_cgraph" id="aunit__Flow_8cpp_a213cf3a2bd094e466707a33416124ce4_cgraph">
-<area shape="rect" title="A unitary test for asserting the setSource method." alt="" coords="5,56,149,83"/>
-<area shape="rect" href="classSystem.html#a25dff87b3fd15b008622ef9bd10ca1c0" title="Virtual method to get the Name field on System." alt="" coords="197,5,324,32"/>
-<area shape="poly" title=" " alt="" coords="127,53,194,34,195,39,129,58"/>
-<area shape="rect" href="classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title="Virtual method to get the source System." alt="" coords="202,56,319,83"/>
-<area shape="poly" title=" " alt="" coords="149,67,186,67,186,72,149,72"/>
-<area shape="rect" href="classFlow.html#a303311b84fb748a4a7fb9a0312b4ff23" title="Virtual method to set a new source for the Flow." alt="" coords="202,107,319,133"/>
-<area shape="poly" title=" " alt="" coords="129,81,195,99,194,105,127,86"/>
-</map>
-</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -808,7 +639,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unit_Flow_setTarget </td>
+          <td class="memname"><a class="el" href="classHandle.html">void</a> unit_Flow_setTarget </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -817,20 +648,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>A unitary test for asserting the setTarget method. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="unit__Flow_8cpp_a0b2a81b6dbbc3c5b1b25874640705654_cgraph.png" border="0" usemap="#aunit__Flow_8cpp_a0b2a81b6dbbc3c5b1b25874640705654_cgraph" alt=""/></div>
-<map name="aunit__Flow_8cpp_a0b2a81b6dbbc3c5b1b25874640705654_cgraph" id="aunit__Flow_8cpp_a0b2a81b6dbbc3c5b1b25874640705654_cgraph">
-<area shape="rect" title="A unitary test for asserting the setTarget method." alt="" coords="5,56,144,83"/>
-<area shape="rect" href="classSystem.html#a25dff87b3fd15b008622ef9bd10ca1c0" title="Virtual method to get the Name field on System." alt="" coords="192,5,319,32"/>
-<area shape="poly" title=" " alt="" coords="124,53,190,34,191,39,126,58"/>
-<area shape="rect" href="classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Virtual method to get the Target System." alt="" coords="200,56,311,83"/>
-<area shape="poly" title=" " alt="" coords="144,67,184,67,184,72,144,72"/>
-<area shape="rect" href="classFlow.html#a738ba8d73ee3ec358d94f131e695fc97" title="Virtual method to set a new target for the Flow." alt="" coords="200,107,311,133"/>
-<area shape="poly" title=" " alt="" coords="126,81,191,99,190,105,124,86"/>
-</map>
-</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
