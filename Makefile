@@ -13,7 +13,7 @@ bin/functionalTests: bin/libSimulation.so
 # --------------------------------------------------
 
 bin/unit_tests: bin/libSimulation.so
-	@g++ test/unit/*.cpp bin/libSimulation.so -o bin/unit_tests -Wall -g
+	@g++ test/unit/*.cpp bin/libSimulation.so -o bin/unit_tests -Wall -g -lm
 
 # --------------------------------------------------
 

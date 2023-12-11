@@ -4,6 +4,14 @@
 #include "Flow.hpp"
 #include "HandleBodySemDebug.h"
 
+
+#define DEBUGING
+#ifdef DEBUGING
+	extern int numBodyCreated;
+	extern int numBodyDeleted;
+#endif
+
+
 using namespace std;
 
 /**

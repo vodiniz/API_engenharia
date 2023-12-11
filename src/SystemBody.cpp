@@ -48,6 +48,9 @@ const double SystemBody::getValue() const{
 
 SystemBody& SystemBody::operator= (const SystemBody &system){
 
+    if(this == &system)
+        return *this;
+
     name = system.getName();
     value = system.getValue();
 

@@ -95,14 +95,12 @@ void unit_System_assignOverload(){
     System *system1 = new SystemHandle("System1", 50.);
     System *system2 = new SystemHandle();
 
-    *system2 = *system1;
-
+    system2 = system1;
 
     assert(system1->getName() == system2->getName());
     assert(round(fabs(system1->getValue() - 50.0)* 10000) == round(fabs(system1->getValue() - 50.0)* 10000));
 
     delete system1;
-    delete system2;
     
 }
 

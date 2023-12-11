@@ -65,7 +65,7 @@ class System{
          * 
          * @return return a System reference which is a copy to the assigned System.
         */
-        virtual System& operator=(const System& system) = 0;
+        // virtual System& operator=(const System& system) = 0;
 
 };
 #endif
