@@ -1,11 +1,14 @@
 <map id="FlowBody" name="FlowBody">
 <area shape="rect" id="Node000001" title="Represents a flow beetwen Systems." alt="" coords="199,267,375,752"/>
-<area shape="rect" id="Node000003" href="$classExponentialFlow.html" title="Represents a Flow with Exponential behavior." alt="" coords="5,813,176,1011"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,705,141,815,136,813,190,703"/>
-<area shape="rect" id="Node000004" href="$classFlowTest.html" title=" " alt="" coords="200,800,373,1024"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="289,767,289,800,284,800,284,767"/>
-<area shape="rect" id="Node000005" href="$classlogisticFlow.html" title="Represents a Flow with Exponential behavior." alt="" coords="397,813,568,1011"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="384,703,438,813,433,815,379,705"/>
+<area shape="rect" id="Node000003" href="$classExponentialFlow.html" title="Represents a Flow with Exponential behavior." alt="" coords="5,800,176,1147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,711,157,801,152,799,191,709"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="195,754,175,801,170,799,190,752"/>
+<area shape="rect" id="Node000004" href="$classFlowTest.html" title=" " alt="" coords="200,861,373,1085"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="289,767,289,862,284,862,284,767"/>
+<area shape="rect" id="Node000005" href="$classLogisticFlow.html" title="Represents a Flow with Exponential behavior." alt="" coords="397,875,568,1072"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="383,730,444,874,439,876,378,732"/>
+<area shape="rect" id="Node000006" href="$classlogisticFlow.html" title="Represents a Flow with Exponential behavior." alt="" coords="592,875,763,1072"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="388,594,486,688,536,742,582,798,631,873,626,876,578,802,532,746,482,692,384,597"/>
 <area shape="rect" id="Node000002" href="$classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="206,5,367,219"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="289,234,289,267,284,267,284,234"/>
 </map>

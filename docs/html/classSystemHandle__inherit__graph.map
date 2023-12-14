@@ -1,9 +1,9 @@
 <map id="SystemHandle" name="SystemHandle">
-<area shape="rect" id="Node000001" title=" " alt="" coords="73,524,249,919"/>
-<area shape="rect" id="Node000002" href="$classSystem.html" title="System interface, which will hide the implementation of methods." alt="" coords="5,219,197,475"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,489,132,524,127,525,122,490"/>
-<area shape="rect" id="Node000003" href="$classHandle.html" title=" " alt="" coords="221,264,397,429"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="274,444,242,525,237,523,269,442"/>
-<area shape="rect" id="Node000004" href="$classHandle.html" title="The classes Handle and Body implements the &quot;bridge&quot; design pattern (also known as &quot;handle/body idiom&quot;..." alt="" coords="221,5,397,155"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="312,170,312,264,307,264,307,170"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="43,487,219,881"/>
+<area shape="rect" id="Node000002" href="$classSystem.html" title="System interface, which will hide the implementation of methods." alt="" coords="5,219,149,437"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,452,104,486,98,487,93,453"/>
+<area shape="rect" id="Node000003" href="$classHandle.html" title=" " alt="" coords="173,245,349,411"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="229,425,206,488,201,486,224,423"/>
+<area shape="rect" id="Node000004" href="$classHandle.html" title="The classes Handle and Body implements the &quot;bridge&quot; design pattern (also known as &quot;handle/body idiom&quot;..." alt="" coords="173,5,349,155"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="264,169,264,245,259,245,259,169"/>
 </map>

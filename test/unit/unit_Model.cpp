@@ -272,10 +272,10 @@ void unit_Model_createSystem(){
 
     assert(model->systemsSize() == 0);
 
-    System* system1 = model->createSystem("System1");
+    model->createSystem("System1");
     assert(model->systemsSize() == 1);
 
-    System* system2 = model->createSystem("System2");
+    model->createSystem("System2");
     assert(model->systemsSize() == 2);
 
 
@@ -288,10 +288,10 @@ void unit_Model_createFlow(){
 
     assert(model->flowsSize() == 0);
 
-    Flow* flow1 = model->createFlow<FlowTest>("Flow1");
+    model->createFlow<FlowTest>("Flow1");
     assert(model->flowsSize() == 1);
 
-    Flow* flow2 = model->createFlow<FlowTest>("Flow2");
+    model->createFlow<FlowTest>("Flow2");
     assert(model->flowsSize() == 2);
 
     delete model;

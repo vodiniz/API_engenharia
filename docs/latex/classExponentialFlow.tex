@@ -11,8 +11,7 @@ Represents a \doxylink{classFlow}{Flow} with Exponential behavior.
 
 
 
-Inheritance diagram for Exponential\+Flow\+:
-\nopagebreak
+Inheritance diagram for Exponential\+Flow\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Exponential\+Flow\+:
 \end{figure}
 
 
-Collaboration diagram for Exponential\+Flow\+:
-\nopagebreak
+Collaboration diagram for Exponential\+Flow\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -38,6 +36,14 @@ Collaboration diagram for Exponential\+Flow\+:
 \begin{DoxyCompactList}\small\item\em Creates a \doxylink{classExponentialFlow}{Exponential\+Flow}. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{classExponentialFlow_af755dadaf2fe73d8402958b2a2ee9ca3}{equation}} ()
 \begin{DoxyCompactList}\small\item\em A pure virtual equation method which defines the \doxylink{classExponentialFlow}{Exponential\+Flow} behavior. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classExponentialFlow_ac0599b955afd5d4c4fc4dc7ef4b29c7f}{Exponential\+Flow}} (string \mbox{\hyperlink{classFlowBody_a71d618d66f2da215d0f712ea6a757323}{name}}="{}"{})
+\begin{DoxyCompactList}\small\item\em Creates a \doxylink{classExponentialFlow}{Exponential\+Flow}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classExponentialFlow_a7127ccaf8348a81f8b9a669afa06e1dd}{Exponential\+Flow}} (string \mbox{\hyperlink{classFlowBody_a71d618d66f2da215d0f712ea6a757323}{name}}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlowBody_a7c46fc66ff02f18c387535e914337c82}{source}}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlowBody_a4a5d71f46863ff5e9d07161973817a34}{target}})
+\begin{DoxyCompactList}\small\item\em Creates a \doxylink{classExponentialFlow}{Exponential\+Flow}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classExponentialFlow_af755dadaf2fe73d8402958b2a2ee9ca3}{equation}} ()
+\begin{DoxyCompactList}\small\item\em A pure virtual equation method which defines the \doxylink{classExponentialFlow}{Exponential\+Flow} behavior. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlowBody}{Flow\+Body}} \& \mbox{\hyperlink{classExponentialFlow_a0c026f6787ebd1870f087a22e533ee52}{operator=}} (\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classFlowBody}{Flow\+Body}} \&\mbox{\hyperlink{classHandle}{flow}})
+\begin{DoxyCompactList}\small\item\em Overload for = operator. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classFlowBody}{Flow\+Body}} \& \mbox{\hyperlink{classExponentialFlow_a0c026f6787ebd1870f087a22e533ee52}{operator=}} (\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classFlowBody}{Flow\+Body}} \&\mbox{\hyperlink{classHandle}{flow}})
 \begin{DoxyCompactList}\small\item\em Overload for = operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFlowBody}{Flow\+Body}}}
@@ -103,7 +109,7 @@ This class is a child from \doxylink{classFlow}{Flow} and is implemented for tes
 \Hypertarget{classExponentialFlow_ac0599b955afd5d4c4fc4dc7ef4b29c7f}\label{classExponentialFlow_ac0599b955afd5d4c4fc4dc7ef4b29c7f} 
 \index{ExponentialFlow@{ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
 \index{ExponentialFlow@{ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
-\doxysubsubsection{\texorpdfstring{ExponentialFlow()}{ExponentialFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{ExponentialFlow()}{ExponentialFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily Exponential\+Flow\+::\+Exponential\+Flow (\begin{DoxyParamCaption}\item[{string}]{name = {\ttfamily "{}"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -122,7 +128,47 @@ When not passing the name, the default name string will be empty.
 \Hypertarget{classExponentialFlow_a7127ccaf8348a81f8b9a669afa06e1dd}\label{classExponentialFlow_a7127ccaf8348a81f8b9a669afa06e1dd} 
 \index{ExponentialFlow@{ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
 \index{ExponentialFlow@{ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
-\doxysubsubsection{\texorpdfstring{ExponentialFlow()}{ExponentialFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{\texorpdfstring{ExponentialFlow()}{ExponentialFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Exponential\+Flow\+::\+Exponential\+Flow (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source,  }\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a \doxylink{classExponentialFlow}{Exponential\+Flow}. 
+
+This overloaded constructor acepts tree parameters, the name, a source and a target.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em source} & \\
+\hline
+{\em target} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExponentialFlow_ac0599b955afd5d4c4fc4dc7ef4b29c7f}\label{classExponentialFlow_ac0599b955afd5d4c4fc4dc7ef4b29c7f} 
+\index{ExponentialFlow@{ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
+\index{ExponentialFlow@{ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{ExponentialFlow()}{ExponentialFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Exponential\+Flow\+::\+Exponential\+Flow (\begin{DoxyParamCaption}\item[{string}]{name = {\ttfamily "{}"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a \doxylink{classExponentialFlow}{Exponential\+Flow}. 
+
+Creates a new \doxylink{classExponentialFlow}{Exponential\+Flow}. Is overloaded with a default constructor. Can also accept a string as a parameter.
+
+When not passing the name, the default name string will be empty.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExponentialFlow_a7127ccaf8348a81f8b9a669afa06e1dd}\label{classExponentialFlow_a7127ccaf8348a81f8b9a669afa06e1dd} 
+\index{ExponentialFlow@{ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
+\index{ExponentialFlow@{ExponentialFlow}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{ExponentialFlow()}{ExponentialFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily Exponential\+Flow\+::\+Exponential\+Flow (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source,  }\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -146,7 +192,7 @@ This overloaded constructor acepts tree parameters, the name, a source and a tar
 \Hypertarget{classExponentialFlow_af755dadaf2fe73d8402958b2a2ee9ca3}\label{classExponentialFlow_af755dadaf2fe73d8402958b2a2ee9ca3} 
 \index{ExponentialFlow@{ExponentialFlow}!equation@{equation}}
 \index{equation@{equation}!ExponentialFlow@{ExponentialFlow}}
-\doxysubsubsection{\texorpdfstring{equation()}{equation()}}
+\doxysubsubsection{\texorpdfstring{equation()}{equation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily double Exponential\+Flow\+::equation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
@@ -164,8 +210,35 @@ return a double which is defined by \doxylink{classHandle_a6a72028918adf79c0ff8d
 
 Implements \mbox{\hyperlink{classFlowBody_ad1a13d96c4dbf9e9d53341bed4f1047a}{Flow\+Body}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classExponentialFlow_af755dadaf2fe73d8402958b2a2ee9ca3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classExponentialFlow_af755dadaf2fe73d8402958b2a2ee9ca3}\label{classExponentialFlow_af755dadaf2fe73d8402958b2a2ee9ca3} 
+\index{ExponentialFlow@{ExponentialFlow}!equation@{equation}}
+\index{equation@{equation}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{equation()}{equation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Exponential\+Flow\+::equation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+A pure virtual equation method which defines the \doxylink{classExponentialFlow}{Exponential\+Flow} behavior. 
+
+The equation method will define the mathematical relation beetwen the source and target Systems
+
+The behavior defined is of an exponential
+
+\begin{DoxyReturn}{Returns}
+return a double which is defined by \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{0.\+01} \texorpdfstring{$\ast$}{*} source value, or 1\% of the source energy. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classFlowBody_ad1a13d96c4dbf9e9d53341bed4f1047a}{Flow\+Body}}.
+
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -175,7 +248,22 @@ Here is the call graph for this function\+:
 \Hypertarget{classExponentialFlow_a0c026f6787ebd1870f087a22e533ee52}\label{classExponentialFlow_a0c026f6787ebd1870f087a22e533ee52} 
 \index{ExponentialFlow@{ExponentialFlow}!operator=@{operator=}}
 \index{operator=@{operator=}!ExponentialFlow@{ExponentialFlow}}
-\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFlowBody}{Flow\+Body}} \& Flow\+Body\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classFlowBody}{Flow\+Body}} \&}]{flow }\end{DoxyParamCaption})}
+
+
+
+Overload for = operator. 
+
+This is an overload for = operator, in the format of a = b, in which a is being assigned as b.
+
+\begin{DoxyReturn}{Returns}
+return a \doxylink{classFlow}{Flow} reference which is a copy to the assigned \doxylink{classFlow}{Flow}. 
+\end{DoxyReturn}
+\Hypertarget{classExponentialFlow_a0c026f6787ebd1870f087a22e533ee52}\label{classExponentialFlow_a0c026f6787ebd1870f087a22e533ee52} 
+\index{ExponentialFlow@{ExponentialFlow}!operator=@{operator=}}
+\index{operator=@{operator=}!ExponentialFlow@{ExponentialFlow}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classFlowBody}{Flow\+Body}} \& Flow\+Body\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classFlowBody}{Flow\+Body}} \&}]{flow }\end{DoxyParamCaption})}
 
 
@@ -189,6 +277,7 @@ return a \doxylink{classFlow}{Flow} reference which is a copy to the assigned \d
 \end{DoxyReturn}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-test/func/\mbox{\hyperlink{functional__tests_8hpp}{functional\+\_\+tests.\+hpp}}\end{DoxyCompactItemize}
+test/func/\mbox{\hyperlink{functional__tests_8hpp}{functional\+\_\+tests.\+hpp}}\item 
+test/unit/\mbox{\hyperlink{unit__Handle__Body_8hpp}{unit\+\_\+\+Handle\+\_\+\+Body.\+hpp}}\end{DoxyCompactItemize}

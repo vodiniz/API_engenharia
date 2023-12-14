@@ -14,6 +14,7 @@
 
 void unit_test_handle_body();
 
+void run_unit_test_handle_body();
 
 /**
  * \brief Represents a Flow with Exponential behavior.

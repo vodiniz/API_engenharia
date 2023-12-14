@@ -5,7 +5,7 @@
 
 int main(void){
 
-    unit_test_handle_body();
+    run_unit_test_handle_body();
     run_unit_test_System();
     run_unit_test_Flow();
     run_unit_test_Model();

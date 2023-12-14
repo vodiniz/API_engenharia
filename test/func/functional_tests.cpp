@@ -23,7 +23,7 @@ void exponentialTest(){
     System *pop1 = model->createSystem("pop1", 100.);
     System *pop2 = model->createSystem("pop2", 0.);
 
-    Flow* flow = model->createFlow<ExponentialFlow>("exponencial", pop1, pop2);
+    model->createFlow<ExponentialFlow>("exponencial", pop1, pop2);
 
 
     model->run(0, 100);
@@ -48,7 +48,7 @@ void logisticTest(){
     System *p1 = model->createSystem("p1", 100.);
     System *p2 = model->createSystem("p2", 10.);
 
-    Flow* flow = model->createFlow<logisticFlow>("logistica", p1, p2);
+    model->createFlow<logisticFlow>("logistica", p1, p2);
 
     model->run(0, 100);
     assert(fabs(p1->getValue() - 88.2167) < 0.0001);
@@ -74,12 +74,12 @@ void complexTest(){
     System* Q4 = model->createSystem("Q4", 0.);
     System* Q5 = model->createSystem("Q5", 0.);
 
-    Flow* f = model->createFlow<ExponentialFlow>("f", Q1, Q2);
-    Flow* g = model->createFlow<ExponentialFlow>("g", Q1, Q3);
-    Flow* r = model->createFlow<ExponentialFlow>("r", Q2, Q5);
-    Flow* t = model->createFlow<ExponentialFlow>("t", Q2, Q3);
-    Flow* u = model->createFlow<ExponentialFlow>("u", Q3, Q4);
-    Flow* v = model->createFlow<ExponentialFlow>("v", Q4, Q1);
+    model->createFlow<ExponentialFlow>("f", Q1, Q2);
+    model->createFlow<ExponentialFlow>("g", Q1, Q3);
+    model->createFlow<ExponentialFlow>("r", Q2, Q5);
+    model->createFlow<ExponentialFlow>("t", Q2, Q3);
+    model->createFlow<ExponentialFlow>("u", Q3, Q4);
+    model->createFlow<ExponentialFlow>("v", Q4, Q1);
 
     model->run(0, 100); 
 

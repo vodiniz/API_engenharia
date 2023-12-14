@@ -1,0 +1,191 @@
+\doxysection{Logistic\+Flow Class Reference}
+\hypertarget{classLogisticFlow}{}\label{classLogisticFlow}\index{LogisticFlow@{LogisticFlow}}
+
+
+Represents a \doxylink{classFlow}{Flow} with Exponential behavior.  
+
+
+
+
+{\ttfamily \#include $<$unit\+\_\+\+Handle\+\_\+\+Body.\+hpp$>$}
+
+
+
+Inheritance diagram for Logistic\+Flow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classLogisticFlow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Logistic\+Flow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classLogisticFlow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLogisticFlow_ad435e532c85519803c8fbf8240ae5258}{Logistic\+Flow}} (string \mbox{\hyperlink{classFlowBody_a71d618d66f2da215d0f712ea6a757323}{name}}="{}"{})
+\begin{DoxyCompactList}\small\item\em Creates a \doxylink{classLogisticFlow}{Logistic\+Flow}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLogisticFlow_a6e4d2bf2b778fb3bf70ca6e85a73940d}{Logistic\+Flow}} (string \mbox{\hyperlink{classFlowBody_a71d618d66f2da215d0f712ea6a757323}{name}}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlowBody_a7c46fc66ff02f18c387535e914337c82}{source}}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlowBody_a4a5d71f46863ff5e9d07161973817a34}{target}})
+\begin{DoxyCompactList}\small\item\em Creates a \doxylink{classLogisticFlow}{Logistic\+Flow}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classLogisticFlow_a2ea7d5be93e300c7a20e87949ce87da0}{equation}} ()
+\begin{DoxyCompactList}\small\item\em A pure virtual equation method which defines the \doxylink{classLogisticFlow}{Logistic\+Flow} behavior. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlowBody}{Flow\+Body}} \& \mbox{\hyperlink{classLogisticFlow_a0c026f6787ebd1870f087a22e533ee52}{operator=}} (\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classFlowBody}{Flow\+Body}} \&\mbox{\hyperlink{classHandle}{flow}})
+\begin{DoxyCompactList}\small\item\em Overload for = operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFlowBody}{Flow\+Body}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFlowBody_aa97861d380bfca5ddc873140c68beb7d}{Flow\+Body}} (string="{}"{})
+\begin{DoxyCompactList}\small\item\em Creates a \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlowBody_a91393b0e96d5b0d49f01028ba08e326e}{Flow\+Body}} (string, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Creates a \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classFlowBody_a178e56af6c29c29b49c1f9f7af7d9311}{\texorpdfstring{$\sim$}{\string~}\+Flow\+Body}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlowBody_a34952906cfe6d8c0fa91555d7e479341}{Flow\+Body}} (\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classFlow}{Flow}} \&\mbox{\hyperlink{classHandle}{flow}})
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{const}} string \mbox{\hyperlink{classFlowBody_a830bca092889512378a3449a1fda9a9b}{get\+Name}} () \mbox{\hyperlink{classHandle}{const}}
+\begin{DoxyCompactList}\small\item\em Get the name field on \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{bool}} \mbox{\hyperlink{classFlowBody_aa68e7b91778e3ca2f0a7f649971cf4ec}{set\+Name}} (string)
+\begin{DoxyCompactList}\small\item\em Set a new name for the \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowBody_a73d79b44f545683272b888963469f9d0}{get\+Source}} () \mbox{\hyperlink{classHandle}{const}}
+\begin{DoxyCompactList}\small\item\em Get the source field on \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{bool}} \mbox{\hyperlink{classFlowBody_ae2ef844ecc0827647fa79e6f02b491dc}{set\+Source}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Set a new source for the \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowBody_a437ebb62001b40c57cc0bf3effd8a431}{get\+Target}} () \mbox{\hyperlink{classHandle}{const}}
+\begin{DoxyCompactList}\small\item\em Get the target field on \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{bool}} \mbox{\hyperlink{classFlowBody_aa44f2806ff490f8ed24fbf88e8410e01}{set\+Target}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Set a new target for the \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{bool}} \mbox{\hyperlink{classFlowBody_a877049f4944209596592f9633a3570e5}{clear\+Source}} ()
+\begin{DoxyCompactList}\small\item\em Clear the pointer to the source \doxylink{classSystem}{System}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{bool}} \mbox{\hyperlink{classFlowBody_ab198fa1f4db2bf937ccc06b64f3a2475}{clear\+Target}} ()
+\begin{DoxyCompactList}\small\item\em Clear the pointer to the target \doxylink{classSystem}{System}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlowBody}{Flow\+Body}} \& \mbox{\hyperlink{classFlowBody_a0c026f6787ebd1870f087a22e533ee52}{operator=}} (\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classFlowBody}{Flow\+Body}} \&\mbox{\hyperlink{classHandle}{flow}})
+\begin{DoxyCompactList}\small\item\em Overload for = operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classBody}{Body}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBody_a7727b0d8c998bbc2942e4c802e31e2eb}{Body}} ()
+\begin{DoxyCompactList}\small\item\em Constructor\+: zero references when the object is being built. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{classBody_a5d53322c76a6952d096cb7564ac86db1}{attach}} ()
+\begin{DoxyCompactList}\small\item\em Increases the number of references to this object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{void}} \mbox{\hyperlink{classBody_ad481d0c8368db318795c9a0a8fdd3717}{detach}} ()
+\item 
+int \mbox{\hyperlink{classBody_a59ae961812625b8636071ba61b1a75fc}{ref\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of references to this object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHandle}{virtual}} \mbox{\hyperlink{classBody_a9b15e54cf881ac0ca64790ca1d50110e}{\texorpdfstring{$\sim$}{\string~}\+Body}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classFlowBody}{Flow\+Body}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classFlowBody_a71d618d66f2da215d0f712ea6a757323}{name}}
+\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowBody_a7c46fc66ff02f18c387535e914337c82}{source}}
+\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowBody_a4a5d71f46863ff5e9d07161973817a34}{target}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a \doxylink{classFlow}{Flow} with Exponential behavior. 
+
+This class is a child from \doxylink{classFlow}{Flow} and is implemented for testing puporses, in which we have a logistic behavior, a specific behavior that is not implemented, so we redefined the equation 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classLogisticFlow_ad435e532c85519803c8fbf8240ae5258}\label{classLogisticFlow_ad435e532c85519803c8fbf8240ae5258} 
+\index{LogisticFlow@{LogisticFlow}!LogisticFlow@{LogisticFlow}}
+\index{LogisticFlow@{LogisticFlow}!LogisticFlow@{LogisticFlow}}
+\doxysubsubsection{\texorpdfstring{LogisticFlow()}{LogisticFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Logistic\+Flow\+::\+Logistic\+Flow (\begin{DoxyParamCaption}\item[{string}]{name = {\ttfamily "{}"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a \doxylink{classLogisticFlow}{Logistic\+Flow}. 
+
+Creates a new \doxylink{classLogisticFlow}{Logistic\+Flow}. Is overloaded with a default constructor. Can also accept a string as a parameter.
+
+When not passing the name, the default name string will be empty.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classLogisticFlow_a6e4d2bf2b778fb3bf70ca6e85a73940d}\label{classLogisticFlow_a6e4d2bf2b778fb3bf70ca6e85a73940d} 
+\index{LogisticFlow@{LogisticFlow}!LogisticFlow@{LogisticFlow}}
+\index{LogisticFlow@{LogisticFlow}!LogisticFlow@{LogisticFlow}}
+\doxysubsubsection{\texorpdfstring{LogisticFlow()}{LogisticFlow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Logistic\+Flow\+::\+Logistic\+Flow (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source,  }\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a \doxylink{classLogisticFlow}{Logistic\+Flow}. 
+
+This overloaded constructor acepts tree parameters, the name, a source and a target.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em source} & \\
+\hline
+{\em target} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classLogisticFlow_a2ea7d5be93e300c7a20e87949ce87da0}\label{classLogisticFlow_a2ea7d5be93e300c7a20e87949ce87da0} 
+\index{LogisticFlow@{LogisticFlow}!equation@{equation}}
+\index{equation@{equation}!LogisticFlow@{LogisticFlow}}
+\doxysubsubsection{\texorpdfstring{equation()}{equation()}}
+{\footnotesize\ttfamily double Logistic\+Flow\+::equation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+A pure virtual equation method which defines the \doxylink{classLogisticFlow}{Logistic\+Flow} behavior. 
+
+The equation method will define the mathematical relation beetwen the source and target Systems
+
+The behavior defined is of an Logistic
+
+\begin{DoxyReturn}{Returns}
+return a double \doxylink{classHandle_a6a72028918adf79c0ff8d9996e5e4107}{0.\+01} \texorpdfstring{$\ast$}{*} target\+Value \texorpdfstring{$\ast$}{*} ( 1 -\/ target\+Value)/70.0)). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classFlowBody_ad1a13d96c4dbf9e9d53341bed4f1047a}{Flow\+Body}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classLogisticFlow_a2ea7d5be93e300c7a20e87949ce87da0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classLogisticFlow_a0c026f6787ebd1870f087a22e533ee52}\label{classLogisticFlow_a0c026f6787ebd1870f087a22e533ee52} 
+\index{LogisticFlow@{LogisticFlow}!operator=@{operator=}}
+\index{operator=@{operator=}!LogisticFlow@{LogisticFlow}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFlowBody}{Flow\+Body}} \& Flow\+Body\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHandle}{const}} \mbox{\hyperlink{classFlowBody}{Flow\+Body}} \&}]{flow }\end{DoxyParamCaption})}
+
+
+
+Overload for = operator. 
+
+This is an overload for = operator, in the format of a = b, in which a is being assigned as b.
+
+\begin{DoxyReturn}{Returns}
+return a \doxylink{classFlow}{Flow} reference which is a copy to the assigned \doxylink{classFlow}{Flow}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+test/unit/\mbox{\hyperlink{unit__Handle__Body_8hpp}{unit\+\_\+\+Handle\+\_\+\+Body.\+hpp}}\end{DoxyCompactItemize}

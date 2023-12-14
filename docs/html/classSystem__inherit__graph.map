@@ -1,5 +1,5 @@
 <map id="System" name="System">
-<area shape="rect" id="Node000001" title="System interface, which will hide the implementation of methods." alt="" coords="5,5,197,261"/>
-<area shape="rect" id="Node000002" href="$classSystemHandle.html" title=" " alt="" coords="13,309,189,704"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,276,104,310,99,310,99,276"/>
+<area shape="rect" id="Node000001" title="System interface, which will hide the implementation of methods." alt="" coords="21,5,165,224"/>
+<area shape="rect" id="Node000002" href="$classSystemHandle.html" title=" " alt="" coords="5,272,181,667"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,239,96,272,91,272,91,239"/>
 </map>

@@ -1,0 +1,64 @@
+\doxysection{unit\+\_\+\+Handle\+\_\+\+Body.\+hpp}
+\hypertarget{unit__Handle__Body_8hpp_source}{}\label{unit__Handle__Body_8hpp_source}\index{test/unit/unit\_Handle\_Body.hpp@{test/unit/unit\_Handle\_Body.hpp}}
+\mbox{\hyperlink{unit__Handle__Body_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ UNIT\_HANDLE\_BODY\_HPP\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ UNIT\_HANDLE\_BODY\_HPP\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}../../src/Model.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}../../src/SystemHandle.hpp"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}../../src/FlowBody.hpp"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <assert.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <math.h>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__Handle__Body_8hpp_ab8065a005a1a0aaf16805ca50a11f399}{unit\_test\_handle\_body}}();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__Handle__Body_8hpp_a58117fd7818ed7366ef113df705017cc}{run\_unit\_test\_handle\_body}}();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classExponentialFlow}{ExponentialFlow}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlowBody}{FlowBody}}\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//Construtor\ e\ Destrutor}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }FlowBody::operator=;}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classExponentialFlow_ac0599b955afd5d4c4fc4dc7ef4b29c7f}{ExponentialFlow}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classFlowBody_a71d618d66f2da215d0f712ea6a757323}{name}}=\textcolor{stringliteral}{"{}"{}}):}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlowBody}{FlowBody}}(\mbox{\hyperlink{classFlowBody_a71d618d66f2da215d0f712ea6a757323}{name}})\{\}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classExponentialFlow_a7127ccaf8348a81f8b9a669afa06e1dd}{ExponentialFlow}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classFlowBody_a71d618d66f2da215d0f712ea6a757323}{name}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowBody_a7c46fc66ff02f18c387535e914337c82}{source}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowBody_a4a5d71f46863ff5e9d07161973817a34}{target}}):\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlowBody}{FlowBody}}(\mbox{\hyperlink{classFlowBody_a71d618d66f2da215d0f712ea6a757323}{name}},\ \mbox{\hyperlink{classFlowBody_a7c46fc66ff02f18c387535e914337c82}{source}},\ \mbox{\hyperlink{classFlowBody_a4a5d71f46863ff5e9d07161973817a34}{target}})\{\}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classExponentialFlow_af755dadaf2fe73d8402958b2a2ee9ca3}{equation}}()\{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ \mbox{\hyperlink{classFlowBody_a73d79b44f545683272b888963469f9d0}{getSource}}()-\/>\mbox{\hyperlink{classSystem_aab7b27ce6f7644395b8a47b5edfe37a3}{getValue}}();}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00068\ \};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00079\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLogisticFlow}{LogisticFlow}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlowBody}{FlowBody}}\ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{comment}{//Construtor\ e\ Destrutor}}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }FlowBody::operator=;}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLogisticFlow_ad435e532c85519803c8fbf8240ae5258}{LogisticFlow}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classFlowBody_a71d618d66f2da215d0f712ea6a757323}{name}}=\textcolor{stringliteral}{"{}"{}}):}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlowBody}{FlowBody}}(\mbox{\hyperlink{classFlowBody_a71d618d66f2da215d0f712ea6a757323}{name}})\{\}}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLogisticFlow_a6e4d2bf2b778fb3bf70ca6e85a73940d}{LogisticFlow}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classFlowBody_a71d618d66f2da215d0f712ea6a757323}{name}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowBody_a7c46fc66ff02f18c387535e914337c82}{source}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlowBody_a4a5d71f46863ff5e9d07161973817a34}{target}}):\ }
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlowBody}{FlowBody}}(\mbox{\hyperlink{classFlowBody_a71d618d66f2da215d0f712ea6a757323}{name}},\ \mbox{\hyperlink{classFlowBody_a7c46fc66ff02f18c387535e914337c82}{source}},\ \mbox{\hyperlink{classFlowBody_a4a5d71f46863ff5e9d07161973817a34}{target}})\{\}}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classLogisticFlow_a2ea7d5be93e300c7a20e87949ce87da0}{equation}}()\{}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ \mbox{\hyperlink{classFlowBody_a437ebb62001b40c57cc0bf3effd8a431}{getTarget}}()-\/>\mbox{\hyperlink{classSystem_aab7b27ce6f7644395b8a47b5edfe37a3}{getValue}}()\ *\ (1\ -\/\ (\mbox{\hyperlink{classFlowBody_a437ebb62001b40c57cc0bf3effd8a431}{getTarget}}()-\/>\mbox{\hyperlink{classSystem_aab7b27ce6f7644395b8a47b5edfe37a3}{getValue}}()/70.0));}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00124\ \};}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

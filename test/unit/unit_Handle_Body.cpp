@@ -32,10 +32,10 @@ void unit_test_handle_body(){
 
     assert(s3.getName() == "antonio");
     assert(round(fabs(s3.getValue() - 8.0)* 10000) < 1);
+    }
 
     f1->setSource(s1);
     f1->setTarget(s2);
-    cout << "modelsSize:" << model->modelsSize() << endl;
     model->run(0,30);
 
 
@@ -46,9 +46,14 @@ void unit_test_handle_body(){
     cout << "Created bodies: "  << numBodyCreated << endl;
     cout << "Deleted bodies: "  << numBodyDeleted << endl;
 
-
 }
 
 
+void run_unit_test_handle_body(){
+    unit_test_handle_body();
 
+        cout << "------------------------------------------------------------------\n" <<
+        "Passed Handle Body Unit tests.\n" << 
+        "------------------------------------------------------------------\n";
+        
 }

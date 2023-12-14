@@ -1,7 +1,9 @@
 <map id="FlowBody::getTarget" name="FlowBody::getTarget">
-<area shape="rect" id="Node000001" title="Get the target field on Flow." alt="" coords="201,31,342,57"/>
-<area shape="rect" id="Node000002" href="$classlogisticFlow.html#ae380ca5d015a848848a468e749e70333" title="A pure virtual equation method which defines the LogisticFlow behavior." alt="" coords="5,5,153,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,35,153,31,153,26,186,30"/>
-<area shape="rect" id="Node000003" href="$classFlowBody.html#a0c026f6787ebd1870f087a22e533ee52" title="Overload for = operator." alt="" coords="8,56,150,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,58,151,63,150,57,185,53"/>
+<area shape="rect" id="Node000001" title="Get the target field on Flow." alt="" coords="205,56,346,83"/>
+<area shape="rect" id="Node000002" href="$classlogisticFlow.html#ae380ca5d015a848848a468e749e70333" title="A pure virtual equation method which defines the LogisticFlow behavior." alt="" coords="7,5,155,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,54,134,35,136,30,207,49"/>
+<area shape="rect" id="Node000003" href="$classLogisticFlow.html#a2ea7d5be93e300c7a20e87949ce87da0" title="A pure virtual equation method which defines the LogisticFlow behavior." alt="" coords="5,56,157,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,72,157,72,157,67,189,67"/>
+<area shape="rect" id="Node000004" href="$classFlowBody.html#a0c026f6787ebd1870f087a22e533ee52" title="Overload for = operator." alt="" coords="10,107,152,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="207,90,136,109,134,103,206,85"/>
 </map>
